@@ -1,0 +1,395 @@
+/* fonts */
+/* colors */
+html, body {
+  height: 100%; }
+
+body {
+  background: #ffffff;
+  margin: 0;
+  color: #423f39;
+  font-size: 15px;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "montserratregular"; }
+
+.clearfix:before,
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: ''; }
+
+a:focus {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important; }
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent !important; }
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent !important; }
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+button:hover {
+  cursor: pointer; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+p {
+  margin: 0 0 20px;
+  line-height: 21px; }
+  p:last-child {
+    margin: 0; }
+
+img {
+  display: block; }
+
+.holder {
+  overflow: hidden; }
+
+.wrapper {
+  position: relative; }
+
+.container {
+  padding: 0 15px;
+  max-width: 1330px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+header {
+  padding: 50px 0 80px;
+  background: url(../images/main-visual.svg) no-repeat 75% 0;
+  height: 640px; }
+  header .logo {
+    float: left; }
+  header .business-btn {
+    width: 152px;
+    height: 51px;
+    line-height: 49px;
+    text-align: center;
+    border: solid 1px #ab957d;
+    font-family: "montserratregular";
+    font-size: 16px;
+    color: #423f39;
+    float: right;
+    margin-top: 11px; }
+  header .header-text {
+    width: 505px;
+    float: left;
+    margin: 110px 0 0 112px;
+    font-family: "montserratlight";
+    font-size: 39px;
+    color: #c2baab; }
+    header .header-text span {
+      display: block;
+      color: #423f39; }
+
+.benefits-list {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .benefits-list .benefit-box {
+    padding: 0 56px;
+    position: relative;
+    width: 25%; }
+    .benefits-list .benefit-box:first-child {
+      padding-left: 0; }
+      .benefits-list .benefit-box:first-child:after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 295px;
+        background: rgba(194, 186, 171, 0.5);
+        position: absolute;
+        right: 0;
+        top: 0; }
+    .benefits-list .benefit-box:nth-child(2):after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 223px;
+      background: rgba(194, 186, 171, 0.5);
+      position: absolute;
+      right: 0;
+      bottom: -32px; }
+    .benefits-list .benefit-box:nth-child(3):after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 45px;
+      background: rgba(194, 186, 171, 0.5);
+      position: absolute;
+      right: 8px;
+      bottom: -96px; }
+    .benefits-list .benefit-box:last-child {
+      padding-right: 0; }
+      .benefits-list .benefit-box:last-child:after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 397px;
+        background: rgba(194, 186, 171, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0; }
+    .benefits-list .benefit-box .benefit-img {
+      display: block;
+      margin: 0 0 45px; }
+    .benefits-list .benefit-box .benefit-title {
+      font-family: "montserratlight";
+      font-size: 26px;
+      color: #7a766f;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 35px; }
+    .benefits-list .benefit-box .benefit-text {
+      font-family: "montserratmedium";
+      font-size: 15px;
+      line-height: 21px;
+      text-align: justify;
+      color: #67645e;
+      width: 230px;
+      display: block; }
+
+.main-bn {
+  padding-top: 70px;
+  margin-top: 91px;
+  height: 678px;
+  background-color: #171717; }
+  .main-bn .container {
+    height: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; }
+    .main-bn .container .main-left {
+      float: left;
+      width: 580px; }
+      .main-bn .container .main-left .main-left-text {
+        position: relative;
+        z-index: 10; }
+      .main-bn .container .main-left .main-title {
+        display: block;
+        font-size: 35px;
+        font-family: "montserratbold_italic";
+        color: #ffffff;
+        margin-bottom: 20px;
+        line-height: 40px; }
+        .main-bn .container .main-left .main-title span {
+          font-family: "montserratlight_italic"; }
+      .main-bn .container .main-left .bn-name {
+        display: block;
+        font-family: "montserratmedium";
+        font-size: 18px;
+        color: #ab957d; }
+      .main-bn .container .main-left .bn-pos {
+        margin: 8px 0;
+        display: block;
+        color: #e5dfd4;
+        font-family: "montserratmedium";
+        font-size: 14px; }
+      .main-bn .container .main-left .bn-company {
+        display: block;
+        font-family: "montserratmedium";
+        color: #ffffff;
+        font-size: 14px; }
+      .main-bn .container .main-left .man-photo {
+        position: absolute;
+        left: 190px;
+        display: block;
+        bottom: 0; }
+    .main-bn .container .main-right {
+      width: calc(100% - 600px);
+      padding-left: 80px;
+      float: right; }
+      .main-bn .container .main-right .workers-list {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .main-bn .container .main-right .workers-list .worker-box {
+          margin-bottom: 60px;
+          width: 33.33%; }
+          .main-bn .container .main-right .workers-list .worker-box .worker-name {
+            display: block;
+            font-size: 18px;
+            font-family: "montserratmedium";
+            color: #ab957d;
+            margin-bottom: 7px; }
+          .main-bn .container .main-right .workers-list .worker-box .worker-pos {
+            font-size: 14px;
+            line-height: 18px;
+            font-family: "montserratmedium";
+            color: #e5dfd4;
+            display: block;
+            margin-bottom: 7px; }
+          .main-bn .container .main-right .workers-list .worker-box .worker-team {
+            font-size: 14px;
+            font-family: "montserratmedium";
+            color: #ffffff;
+            display: block; }
+
+.spotlight-section {
+  padding: 108px 0 8px; }
+  .spotlight-section .spotlight-left {
+    float: left;
+    width: 450px;
+    padding-right: 20px; }
+    .spotlight-section .spotlight-left .spotlight-customer {
+      display: block;
+      font-size: 44px;
+      font-family: "montserratlight";
+      color: #000000;
+      line-height: 50px; }
+  .spotlight-section .spotlight-list {
+    float: left;
+    width: calc(100% - 450px);
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .spotlight-section .spotlight-list .spotlight-box {
+      margin-bottom: 87px;
+      width: 380px;
+      position: relative;
+      padding-bottom: 35px; }
+      .spotlight-section .spotlight-list .spotlight-box .spotlight-img-holder {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+        height: 40px; }
+      .spotlight-section .spotlight-list .spotlight-box p {
+        font-size: 15px; }
+      .spotlight-section .spotlight-list .spotlight-box .spotlight-img {
+        display: block;
+        margin: 0 0 20px; }
+      .spotlight-section .spotlight-list .spotlight-box .spotlight-price {
+        display: block;
+        font-family: Georgia;
+        font-size: 30px;
+        color: #67645e;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+
+.careers-section {
+  height: 526px;
+  background-color: #171717;
+  padding: 120px 0 0; }
+  .careers-section .container {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%; }
+  .careers-section .careers-left {
+    font-size: 44px;
+    font-family: "montserratlight";
+    color: #ffffff;
+    width: 450px;
+    float: left;
+    background: url(../images/main-visual-copy.svg) no-repeat 20px 100%; }
+  .careers-section .careers-content {
+    float: left;
+    width: calc(100% - 450px);
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .careers-section .careers-content .careers-box {
+      width: 25%;
+      padding-bottom: 70px; }
+      .careers-section .careers-content .careers-box .career-type {
+        display: block;
+        font-size: 18px;
+        font-family: "montserratmedium";
+        color: #ab957d;
+        margin-bottom: 12px; }
+      .careers-section .careers-content .careers-box .career-group {
+        font-size: 14px;
+        font-family: "montserratbold";
+        color: #ffffff; }
+
+footer {
+  height: 100px;
+  background: #000000; }
+  footer .container {
+    height: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    footer .container .copy {
+      font-size: 16px;
+      color: #ffffff; }
+    footer .container .business-btn {
+      width: 152px;
+      height: 51px;
+      line-height: 49px;
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+      border: solid 1px #ab957d; }
+
+/*# sourceMappingURL=style.css.map */
