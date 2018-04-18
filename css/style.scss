@@ -4,8 +4,10 @@ $font-light: 'montserratlight';
 $font-italic: 'montserratitalic';
 $font-regular: 'montserratregular';
 $font-medium: 'montserratmedium';
+$font-mediumitalic: 'montserratmedium_italic';
 $font-bolditalic: 'montserratbold_italic';
 $font-bold: 'montserratbold';
+$font-semibold: 'montserratsemibold';
 /* colors */
 $dark-color: #423f39;
 $white-color: #ffffff;
@@ -15,6 +17,9 @@ $lght-grey-color: #67645e;
 $lght-brown-color: #ab957d;
 $lght-white-color: #e5dfd4;
 $black-color: #000000;
+$d-black-color: #171717;
+$gr-lght: #979797;
+$gr-drk: #656565;
 html, body {
 	height: 100%;
 }
@@ -221,7 +226,7 @@ header {
     padding-top: 70px;
     margin-top: 91px;
     height: 678px;
-    background-color: #171717;
+    background-color: $d-black-color;
     .container {
         height: 100%;
         display: flex;
@@ -378,7 +383,7 @@ header {
 }
 .careers-section {
     height: 526px;
-    background-color: #171717;
+    background-color: $d-black-color;
     padding: 120px 0 0;
     .container {
         display: flex;
@@ -389,6 +394,7 @@ header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         height: 100%;
+        position: static;
     }
     .careers-left {
         font-size: 44px;
@@ -417,6 +423,9 @@ header {
                 font-family: $font-medium;
                 color: $lght-brown-color;
                 margin-bottom: 12px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .career-group {
                 font-size: 14px;
@@ -455,6 +464,179 @@ footer {
             font-size: 16px;
             color: $white-color;
             border: solid 1px $lght-brown-color;
+        }
+    }
+}
+.careers-up {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    z-index: 100;
+    display: none;
+    background: $d-black-color;
+    padding: 40px;
+    .career-up-title {
+        display: block;
+        font-size: 28px;
+        font-family: $font-light;
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+    .career-up-group {
+        display: block;
+        font-size: 18px;
+        font-family: $font-medium;
+        color: $lght-brown-color;
+        margin-bottom: 40px;
+    }
+    .scroll-pane {
+        height: 216px;
+        .career-up-text {
+            line-height: 24px;
+            font-size: 16px;
+            color: $white-color;
+        }
+    }
+    .career-up-price {
+        margin-top: 40px;
+        display: block;
+        font-family: Georgia;
+        font-size: 30px;
+        color: $lght-brown-color;
+    }
+    .apply-btn {
+        display: block;
+        line-height: 49px;
+        text-align: center;
+        margin: 73px auto 0;
+        width: 152px;
+        height: 51px;
+        background-color: $d-black-color;
+        border: solid 1px $white-color;
+        color: $white-color;
+    }
+    .close-up {
+        position: absolute;
+        display: block;
+        top: 40px;
+        right: 40px;
+        background: url(../images/cross.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+}
+.contact-form-up {
+    padding: 40px 25px;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    width: 100%;
+    background: $d-black-color;
+    .close-up {
+        position: absolute;
+        display: block;
+        top: 40px;
+        right: 40px;
+        background: url(../images/cross.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+    .contact-form-title {
+        display: block;
+        font-size: 28px;
+        font-family: $font-light;
+        color: $white-color;
+        margin-bottom: 5px;
+    }
+    .fields-info {
+        font-size: 16px;
+        font-family: $font-lightitalic;
+        color: #8c8c8c;
+    }
+    .contact-form-inner {
+        padding: 18px 0 0;
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .clearfix {
+            float: left;
+            .contact-row {
+                display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                -webkit-box-pack: justify;
+                -moz-box-pack: justify;
+                -ms-flex-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                width: 530px;
+                &:first-child {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        & > .contact-box {
+            float: left;
+            margin: 0 0 0 50px;
+            textarea {
+                width: 517px;
+                height: 153px;
+                border: solid 1px $gr-lght;
+                padding: 12px 10px;
+                resize: none;
+                font-size: 18px;
+                font-family: $font-mediumitalic;
+                color: $gr-drk;
+                background: none;
+            }
+        }
+        .contact-form-send {
+            float: left;
+            margin-left: 50px;
+            width: 152px;
+            height: 51px;
+            background-color: $d-black-color;
+            line-height: 49px;
+            text-align: center;
+            font-size: 16px;
+            color: $white-color;
+            border: solid 1px $white-color;
+            font-family: $font-semibold;
+            margin-top: 130px;
+        }
+    }
+    .contact-box {
+        .contact-input-name {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-family: $font-medium;
+            color: $white-color;
+        }
+        .contact-input {
+            width: 240px;
+            height: 45px;
+            line-height: 43px;
+            padding: 0 10px;
+            border: solid 1px $gr-lght;
+            font-size: 18px;
+            font-family: $font-mediumitalic;
+            color: $gr-drk;
+            background: none;
         }
     }
 }

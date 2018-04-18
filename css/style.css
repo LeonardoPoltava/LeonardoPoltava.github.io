@@ -331,7 +331,8 @@ header {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 100%; }
+    height: 100%;
+    position: static; }
   .careers-section .careers-left {
     font-size: 44px;
     font-family: "montserratlight";
@@ -358,6 +359,8 @@ header {
         font-family: "montserratmedium";
         color: #ab957d;
         margin-bottom: 12px; }
+        .careers-section .careers-content .careers-box .career-type:hover {
+          cursor: pointer; }
       .careers-section .careers-content .careers-box .career-group {
         font-size: 14px;
         font-family: "montserratbold";
@@ -391,5 +394,157 @@ footer {
       font-size: 16px;
       color: #ffffff;
       border: solid 1px #ab957d; }
+
+.careers-up {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  z-index: 100;
+  display: none;
+  background: #171717;
+  padding: 40px; }
+  .careers-up .career-up-title {
+    display: block;
+    font-size: 28px;
+    font-family: "montserratlight";
+    color: #ffffff;
+    margin-bottom: 20px; }
+  .careers-up .career-up-group {
+    display: block;
+    font-size: 18px;
+    font-family: "montserratmedium";
+    color: #ab957d;
+    margin-bottom: 40px; }
+  .careers-up .scroll-pane {
+    height: 216px; }
+    .careers-up .scroll-pane .career-up-text {
+      line-height: 24px;
+      font-size: 16px;
+      color: #ffffff; }
+  .careers-up .career-up-price {
+    margin-top: 40px;
+    display: block;
+    font-family: Georgia;
+    font-size: 30px;
+    color: #ab957d; }
+  .careers-up .apply-btn {
+    display: block;
+    line-height: 49px;
+    text-align: center;
+    margin: 73px auto 0;
+    width: 152px;
+    height: 51px;
+    background-color: #171717;
+    border: solid 1px #ffffff;
+    color: #ffffff; }
+  .careers-up .close-up {
+    position: absolute;
+    display: block;
+    top: 40px;
+    right: 40px;
+    background: url(../images/cross.svg) no-repeat;
+    width: 20px;
+    height: 20px; }
+
+.contact-form-up {
+  padding: 40px 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  background: #171717; }
+  .contact-form-up .close-up {
+    position: absolute;
+    display: block;
+    top: 40px;
+    right: 40px;
+    background: url(../images/cross.svg) no-repeat;
+    width: 20px;
+    height: 20px; }
+  .contact-form-up .contact-form-title {
+    display: block;
+    font-size: 28px;
+    font-family: "montserratlight";
+    color: #ffffff;
+    margin-bottom: 5px; }
+  .contact-form-up .fields-info {
+    font-size: 16px;
+    font-family: "montserratlight_italic";
+    color: #8c8c8c; }
+  .contact-form-up .contact-form-inner {
+    padding: 18px 0 0;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .contact-form-up .contact-form-inner .clearfix {
+      float: left; }
+      .contact-form-up .contact-form-inner .clearfix .contact-row {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 530px; }
+        .contact-form-up .contact-form-inner .clearfix .contact-row:first-child {
+          margin-bottom: 35px; }
+    .contact-form-up .contact-form-inner > .contact-box {
+      float: left;
+      margin: 0 0 0 50px; }
+      .contact-form-up .contact-form-inner > .contact-box textarea {
+        width: 517px;
+        height: 153px;
+        border: solid 1px #979797;
+        padding: 12px 10px;
+        resize: none;
+        font-size: 18px;
+        font-family: "montserratmedium_italic";
+        color: #656565;
+        background: none; }
+    .contact-form-up .contact-form-inner .contact-form-send {
+      float: left;
+      margin-left: 50px;
+      width: 152px;
+      height: 51px;
+      background-color: #171717;
+      line-height: 49px;
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+      border: solid 1px #ffffff;
+      font-family: "montserratsemibold";
+      margin-top: 130px; }
+  .contact-form-up .contact-box .contact-input-name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "montserratmedium";
+    color: #ffffff; }
+  .contact-form-up .contact-box .contact-input {
+    width: 240px;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 10px;
+    border: solid 1px #979797;
+    font-size: 18px;
+    font-family: "montserratmedium_italic";
+    color: #656565;
+    background: none; }
 
 /*# sourceMappingURL=style.css.map */
