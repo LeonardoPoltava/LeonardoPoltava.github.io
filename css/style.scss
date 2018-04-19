@@ -99,8 +99,8 @@ img {
 }
 header {
     padding: 50px 0 80px;
-    background: url(../images/main-visual.svg) no-repeat 75% 0;
-    height: 640px;
+    background: url(../images/main-visual.svg) no-repeat 74% 0;
+    height: 645px;
     .logo {
         float: left;
     }
@@ -114,14 +114,15 @@ header {
         font-size: 16px;
         color: $dark-color;
         float: right;
-        margin-top: 11px;
+        margin-top: 22px;
     }
     .header-text {
         width: 505px;
         float: left;
-        margin: 110px 0 0 112px;
+        margin: 180px 0 0 112px;
         font-family: $font-light;
         font-size: 39px;
+        line-height: 49px;
         color: $light-color;
         span {
             display: block;
@@ -146,11 +147,12 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     .benefit-box {
-        padding: 0 56px;
+        padding: 0 36px;
         position: relative;
-        width: 25%;
+        width: 24%;
         &:first-child {
             padding-left: 0;
+            width: 28%;
             &:after {
                 content: '';
                 display: block;
@@ -158,7 +160,7 @@ header {
                 height: 295px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
-                right: 0;
+                right: 25px;
                 top: 0;
             }
         }
@@ -170,11 +172,12 @@ header {
                 height: 223px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
-                right: 0;
-                bottom: -32px;
+                right: 5px;
+                bottom: -24px;
             }
         }
         &:nth-child(3) {
+            padding-left: 55px;
             &:after {
                 content: '';
                 display: block;
@@ -182,11 +185,12 @@ header {
                 height: 45px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
-                right: 8px;
-                bottom: -96px;
+                right: -18px;
+                bottom: -115px;
             }
         }
         &:last-child {
+            padding-left: 85px;
             padding-right: 0;
             &:after {
                 content: '';
@@ -195,8 +199,8 @@ header {
                 height: 397px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
-                left: 0;
-                top: 0;
+                left: 23px;
+                top: 24px;
             }
         }
         .benefit-img {
@@ -209,13 +213,12 @@ header {
             color: $grey-color;
             text-transform: uppercase;
             display: block;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
         .benefit-text {
             font-family: $font-medium;
             font-size: 15px;
-            line-height: 21px;
-            text-align: justify;
+            line-height: 23px;
             color: $lght-grey-color;
             width: 230px;
             display: block;
@@ -224,7 +227,7 @@ header {
 }
 .main-bn {
     padding-top: 70px;
-    margin-top: 91px;
+    margin-top: 115px;
     height: 678px;
     background-color: $d-black-color;
     .container {
@@ -246,7 +249,7 @@ header {
                 font-family: $font-bolditalic;
                 color: #ffffff;
                 margin-bottom: 20px;
-                line-height: 40px;
+                line-height: 44px;
                 span {
                     font-family: $font-lightitalic;
                 }
@@ -258,7 +261,7 @@ header {
                 color: $lght-brown-color;
             }
             .bn-pos {
-                margin: 8px 0;
+                margin: 10px 0;
                 display: block;
                 color: $lght-white-color;
                 font-family: $font-medium;
@@ -272,14 +275,15 @@ header {
             }
             .man-photo {
                 position: absolute;
-                left: 190px;
+                left: 210px;
                 display: block;
                 bottom: 0;
             }
         }
         .main-right {
             width:calc(100% - 600px);
-            padding-left: 80px;
+            padding-left: 115px;
+            padding-top: 7px;
             float: right;
             .workers-list {
                 display: flex;
@@ -290,8 +294,15 @@ header {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 .worker-box {
-                    margin-bottom: 60px;
-                    width: 33.33%;
+                    margin-bottom: 71px;
+                    width: 26%;
+                    &:nth-child(3n-1) {
+                        width: 32%;
+                    }
+                    &:nth-child(3n-2) {
+                        width: 42%;
+                        padding-right: 10px;
+                    }
                     .worker-name {
                         display: block;
                         font-size: 18px;
@@ -301,7 +312,7 @@ header {
                     }
                     .worker-pos {
                         font-size: 14px;
-                        line-height: 18px;
+                        line-height: 20px;
                         font-family: $font-medium;
                         color: $lght-white-color;
                         display: block;
@@ -319,7 +330,7 @@ header {
     }
 }
 .spotlight-section {
-    padding: 108px 0 8px;
+    padding: 105px 0 8px;
     .spotlight-left {
         float: left;
         width: 450px;
@@ -334,6 +345,7 @@ header {
     }
     .spotlight-list {
         float: left;
+        padding-top: 10px;
         width: calc(100% - 450px);
         display: flex;
         display: -webkit-box;
@@ -364,6 +376,8 @@ header {
             }
             p {
                 font-size: 15px;
+                line-height: 23px;
+                margin-bottom: 10px;
             }
             .spotlight-img {
                 display: block;
@@ -384,15 +398,8 @@ header {
 .careers-section {
     height: 526px;
     background-color: $d-black-color;
-    padding: 120px 0 0;
+    padding: 114px 0 0;
     .container {
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
         height: 100%;
         position: static;
     }
@@ -401,22 +408,31 @@ header {
         font-family: $font-light;
         color: $white-color;
         width: 450px;
+        height: 406px;
         float: left;
-        background: url(../images/main-visual-copy.svg) no-repeat 20px 100%;
+        background: url(../images/main-visual-copy.svg) no-repeat -11px 100%;
     }
     .careers-content {
+        padding-top: 6px;
         float: left;
         width: calc(100% - 450px);
         display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         .careers-box {
-            width: 25%;
-            padding-bottom: 70px;
+            min-width: 19%;
+            max-width: 25%;
+            margin-bottom: 85px;
+            max-height: 97px;
             .career-type {
                 display: block;
                 font-size: 18px;
@@ -437,6 +453,10 @@ header {
 }
 footer {
     height: 100px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom:0;
     background: $black-color;
     .container {
         height: 100%;
@@ -602,6 +622,9 @@ footer {
                 font-family: $font-mediumitalic;
                 color: $gr-drk;
                 background: none;
+                &.error {
+                    border: solid 2px #fbc250;
+                }
             }
         }
         .contact-form-send {
@@ -637,6 +660,20 @@ footer {
             font-family: $font-mediumitalic;
             color: $gr-drk;
             background: none;
+            &.error {
+                border: solid 2px #fbc250;
+            }
         }
     }
+}
+.view-btn {
+    height: 30px;
+    border: solid 1px #ab957d;
+    width: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: $white-color;
+}
+.visible-xs {
+    display: none;
 }
