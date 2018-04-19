@@ -547,10 +547,11 @@ footer {
 }
 .contact-form-up {
     padding: 40px 25px;
-    position: absolute;
+    position: fixed;
     top:0;
     left: 0;
     display: none;
+    z-index: 100;
     width: 100%;
     background: $d-black-color;
     .close-up {

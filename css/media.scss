@@ -4,17 +4,313 @@
         padding-right: 70px;
     }
 }
+@media (min-width: 1200px) and (max-width: 1344px) {
+    .contact-form-up {
+        .contact-form-inner {
+            & > .contact-box {
+                margin-left: 30px;
+                textarea {
+                    width: 427px;
+                }
+            }
+            .contact-form-send {
+                margin-left: 30px;
+            }
+        }
+    }
+    .spotlight-section {
+        .spotlight-left {
+            width: 350px;
+        }
+        .spotlight-list {
+            width: calc(100% - 350px);
+        }
+    }
+    .careers-section {
+        .careers-left {
+            width: 350px;
+        }
+        .careers-content {
+            width: calc(100% - 350px);
+        }
+    }
+    .main-bn {
+        .container {
+            .main-left {
+                .man-photo {
+                    left: 175px;
+                }
+            }
+            .main-right {
+                padding-left: 35px;
+            }
+        }
+    }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
         max-width: 970px;
     }
-    
+    .benefits-list {
+        .benefit-box {
+            padding: 0 20px 0 0;
+            &:nth-child(3) {
+                padding: 0 20px 0 0;
+                &:after {
+                    right: 5px;
+                }
+            }
+            &:last-child {
+                padding: 0 0 0 40px;
+                &:after {
+                    left: 3px;
+                    top: -23px;
+                }
+            }
+            &:nth-child(2) {
+                &:after {
+                    right: 17px;
+                }
+            }
+            .benefit-img {
+                margin-bottom: 30px;
+            }
+            .benefit-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .benefit-text {
+                width: 200px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+    .main-bn {
+        .container {
+            .main-left {
+                width: 380px;
+                .main-title {
+                    font-size: 28px;
+                }
+                .man-photo {
+                    left: 90px;
+                }
+            }
+            .main-right {
+                width: calc(100% - 360px);
+                margin-right: -20px;
+                padding-left: 145px;
+                .workers-list {
+                    .worker-box {
+                        margin-bottom: 35px;
+                        padding-right: 10px;
+                        .worker-name {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .spotlight-section {
+        .spotlight-left {
+            width: 320px;
+        }
+        .spotlight-list {
+            width: calc(100% - 320px);
+            .spotlight-box {
+                width: 290px;
+            }
+        }
+    }
+    .careers-section {
+        .careers-left {
+            width: 280px;
+        }
+        .careers-content {
+            width: calc(100% - 280px);
+            .careers-box {
+                .career-type {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .contact-form-up {
+        .contact-form-inner {
+            & > .contact-box {
+                margin-left: 20px;
+                textarea {
+                    width: 310px;
+                }
+            }
+            .clearfix {
+                .contact-row {
+                    width: 440px;
+                }
+            }
+            .contact-form-send {
+                margin-left: 20px;
+            }
+        }
+        .contact-box {
+            .contact-input {
+                width: 210px;
+            }
+        }
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 750px;
     }
-    
+    header {
+        height: 550px;
+        .header-text {
+            width: 365px;
+            margin: 120px 0 0 72px;
+            font-size: 25px;
+            line-height: 40px;
+        }
+    }
+    .benefits-list {
+        .benefit-box {
+            padding: 0 15px;
+            &:nth-child(3) {
+                padding-left: 25px;
+                &:after {
+                    right: 0;
+                }
+            }
+            &:last-child {
+                padding-left: 35px;
+                &:after {
+                    left: 7px;
+                }
+            }
+            .benefit-img  {
+                height: auto;
+                max-width: 80%;
+                max-height: 56px;
+                margin-bottom: 25px;
+            }
+            .benefit-title {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .benefit-text {
+                max-width: 100%;
+                font-size: 14px;
+            }
+            &:first-child {
+                &:after {
+                    right: 5px;
+                }
+            }
+        }
+    }
+    .main-bn {
+        padding: 35px 0 0;
+        margin-top: 78px;
+        .container {
+            .main-left {
+                width: 380px;
+                .main-title {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                .man-photo {
+                    left: -28px;
+                }
+            }
+            .main-right {
+                width: calc(100% - 200px);
+                .workers-list {
+                    .worker-box {
+                        &:nth-child(3n-2),
+                        &:nth-child(3n-1){
+                            width: 50%;
+                        }
+                        margin-bottom: 30px;
+                        width: 50%;
+                        .worker-name {
+                            font-size: 16px;
+                        }
+                        .worker-pos,
+                        .worker-team {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .spotlight-section {
+        padding-top: 45px;
+        .spotlight-left {
+            float: none;
+            width: 100%;
+            margin-bottom: 35px;
+            padding-right: 0;
+            .spotlight-customer {
+                text-align: center;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .spotlight-list {
+            width: 100%;
+            .spotlight-box {
+                width: 335px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .careers-section {
+        height: 476px;
+        padding: 64px 0 0;
+        .careers-left {
+            width: 270px;
+        }
+        .careers-content {
+            width: calc(100% - 270px);
+            .careers-box {
+                .career-type {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .careers-up {
+        width: 750px;
+    }
+    .contact-form-up {
+        height: auto;
+        width: 580px;
+        .contact-form-inner {
+            -webkit-box-pack: start;
+            -moz-box-pack: left;
+            -ms-flex-pack: left;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            & > .contact-box {
+                margin: 0;
+                width: 100%;
+                textarea {
+                    width: 100%;
+                }
+            }
+            .clearfix {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+            .contact-form-send {
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     body {
@@ -212,6 +508,16 @@
             float: none;
             display: block;
             padding-top: 0;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+            }
             .spotlight-box {
                 margin: 0;
                 padding-right: 50px;
@@ -228,16 +534,162 @@
         }
     }
     .careers-section {
+        padding:  30px 0;
+        height: auto;
         .careers-left {
             width: 100%;
             float: none;
+            font-size: 22px;
+            margin-bottom: 30px;
+            height: auto;
+            background: none;
+            display: block;
         }
         .careers-content {
             float: none;
             width: 100%;
+            display: block;
+            .careers-box {
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                margin-bottom: 25px;
+                max-height: 100%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     .visible-xs {
         display: block;
+    }
+    footer {
+        position: static;
+        height: auto;
+        padding: 25px 0;
+        .container {
+            flex-direction: column-reverse;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0;
+            .copy {
+                width: 100%;
+                display: block;
+                font-size: 12px;
+                text-align: center;
+            }
+            .business-btn {
+                width: 110px;
+                height: 30px;
+                line-height: 28px;
+                font-size: 12px;
+                margin-top: 15px;
+                margin: 0 auto 25px;
+            }
+        }
+    }
+    .careers-up {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        .close-up {
+            display: none;
+        }
+        .career-up-title,
+        .career-up-group {
+            display: none;
+        }
+        .scroll-pane {
+            .career-up-text {
+                font-size: 14px;
+            }
+        }
+        .career-up-price {
+            margin-top: 25px;
+            font-size: 22px;
+            span {
+                font-size: 16px;
+            }
+        }
+        .apply-btn {
+            margin: 25px 0 0;
+            width: 110px;
+            height: 30px;
+            line-height: 28px;
+            font-size: 12px;
+        }
+    }
+    .contact-form-up {
+        padding: 25px 20px;
+        max-height: 100%;
+        overflow-y: auto;
+        .close-up {
+            right: 20px;
+            top: 20px;
+        }
+        .contact-form-title {
+            font-size: 18px;
+        }
+        .fields-info {
+            font-size: 14px;
+        }
+        .contact-form-inner {
+            padding: 35px 0 0;
+            display: block;
+            .clearfix {
+                float: none;
+                width: 100%;
+                .contact-row {
+                    display: block;
+                    width: 100%;
+                    &:first-child {
+                        margin: 0;
+                    }
+                }
+            }
+            & > .contact-box {
+                margin: 0;
+                width: 100%;
+                float: none;
+                textarea {
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 18px;
+                    height: 160px;
+                }
+            }
+            .contact-form-send {
+                float: right;
+                margin: 25px 0 0;
+                width: 110px;
+                height: 30px;
+                line-height: 28px;
+                font-size: 12px;
+            }
+        }
+        .contact-box {
+            margin-bottom: 25px;
+            .contact-input-name {
+                font-size: 15px;
+                margin-bottom: 12px;
+            }
+            .contact-input {
+                width: 100%;
+                font-size: 14px;
+                height: 40px;
+                line-height: 38px;
+            }
+        }
     }
 }

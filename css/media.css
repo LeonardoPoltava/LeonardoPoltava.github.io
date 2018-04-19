@@ -2,12 +2,204 @@
   .contact-form-up {
     padding-left: 70px;
     padding-right: 70px; } }
+@media (min-width: 1200px) and (max-width: 1344px) {
+  .contact-form-up .contact-form-inner > .contact-box {
+    margin-left: 30px; }
+    .contact-form-up .contact-form-inner > .contact-box textarea {
+      width: 427px; }
+  .contact-form-up .contact-form-inner .contact-form-send {
+    margin-left: 30px; }
+
+  .spotlight-section .spotlight-left {
+    width: 350px; }
+  .spotlight-section .spotlight-list {
+    width: calc(100% - 350px); }
+
+  .careers-section .careers-left {
+    width: 350px; }
+  .careers-section .careers-content {
+    width: calc(100% - 350px); }
+
+  .main-bn .container .main-left .man-photo {
+    left: 175px; }
+  .main-bn .container .main-right {
+    padding-left: 35px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
-    max-width: 970px; } }
+    max-width: 970px; }
+
+  .benefits-list .benefit-box {
+    padding: 0 20px 0 0; }
+    .benefits-list .benefit-box:nth-child(3) {
+      padding: 0 20px 0 0; }
+      .benefits-list .benefit-box:nth-child(3):after {
+        right: 5px; }
+    .benefits-list .benefit-box:last-child {
+      padding: 0 0 0 40px; }
+      .benefits-list .benefit-box:last-child:after {
+        left: 3px;
+        top: -23px; }
+    .benefits-list .benefit-box:nth-child(2):after {
+      right: 17px; }
+    .benefits-list .benefit-box .benefit-img {
+      margin-bottom: 30px; }
+    .benefits-list .benefit-box .benefit-title {
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .benefits-list .benefit-box .benefit-text {
+      width: 200px;
+      font-size: 14px;
+      line-height: 21px; }
+
+  .main-bn .container .main-left {
+    width: 380px; }
+    .main-bn .container .main-left .main-title {
+      font-size: 28px; }
+    .main-bn .container .main-left .man-photo {
+      left: 90px; }
+  .main-bn .container .main-right {
+    width: calc(100% - 360px);
+    margin-right: -20px;
+    padding-left: 145px; }
+    .main-bn .container .main-right .workers-list .worker-box {
+      margin-bottom: 35px;
+      padding-right: 10px; }
+      .main-bn .container .main-right .workers-list .worker-box .worker-name {
+        font-size: 16px; }
+
+  .spotlight-section .spotlight-left {
+    width: 320px; }
+  .spotlight-section .spotlight-list {
+    width: calc(100% - 320px); }
+    .spotlight-section .spotlight-list .spotlight-box {
+      width: 290px; }
+
+  .careers-section .careers-left {
+    width: 280px; }
+  .careers-section .careers-content {
+    width: calc(100% - 280px); }
+    .careers-section .careers-content .careers-box .career-type {
+      font-size: 15px; }
+
+  .contact-form-up .contact-form-inner > .contact-box {
+    margin-left: 20px; }
+    .contact-form-up .contact-form-inner > .contact-box textarea {
+      width: 310px; }
+  .contact-form-up .contact-form-inner .clearfix .contact-row {
+    width: 440px; }
+  .contact-form-up .contact-form-inner .contact-form-send {
+    margin-left: 20px; }
+  .contact-form-up .contact-box .contact-input {
+    width: 210px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    max-width: 750px; } }
+    max-width: 750px; }
+
+  header {
+    height: 550px; }
+    header .header-text {
+      width: 365px;
+      margin: 120px 0 0 72px;
+      font-size: 25px;
+      line-height: 40px; }
+
+  .benefits-list .benefit-box {
+    padding: 0 15px; }
+    .benefits-list .benefit-box:nth-child(3) {
+      padding-left: 25px; }
+      .benefits-list .benefit-box:nth-child(3):after {
+        right: 0; }
+    .benefits-list .benefit-box:last-child {
+      padding-left: 35px; }
+      .benefits-list .benefit-box:last-child:after {
+        left: 7px; }
+    .benefits-list .benefit-box .benefit-img {
+      height: auto;
+      max-width: 80%;
+      max-height: 56px;
+      margin-bottom: 25px; }
+    .benefits-list .benefit-box .benefit-title {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .benefits-list .benefit-box .benefit-text {
+      max-width: 100%;
+      font-size: 14px; }
+    .benefits-list .benefit-box:first-child:after {
+      right: 5px; }
+
+  .main-bn {
+    padding: 35px 0 0;
+    margin-top: 78px; }
+    .main-bn .container .main-left {
+      width: 380px; }
+      .main-bn .container .main-left .main-title {
+        font-size: 20px;
+        line-height: 25px; }
+      .main-bn .container .main-left .man-photo {
+        left: -28px; }
+    .main-bn .container .main-right {
+      width: calc(100% - 200px); }
+      .main-bn .container .main-right .workers-list .worker-box {
+        margin-bottom: 30px;
+        width: 50%; }
+        .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-2), .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-1) {
+          width: 50%; }
+        .main-bn .container .main-right .workers-list .worker-box .worker-name {
+          font-size: 16px; }
+        .main-bn .container .main-right .workers-list .worker-box .worker-pos,
+        .main-bn .container .main-right .workers-list .worker-box .worker-team {
+          font-size: 12px; }
+
+  .spotlight-section {
+    padding-top: 45px; }
+    .spotlight-section .spotlight-left {
+      float: none;
+      width: 100%;
+      margin-bottom: 35px;
+      padding-right: 0; }
+      .spotlight-section .spotlight-left .spotlight-customer {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px; }
+    .spotlight-section .spotlight-list {
+      width: 100%; }
+      .spotlight-section .spotlight-list .spotlight-box {
+        width: 335px;
+        margin-bottom: 50px; }
+
+  .careers-section {
+    height: 476px;
+    padding: 64px 0 0; }
+    .careers-section .careers-left {
+      width: 270px; }
+    .careers-section .careers-content {
+      width: calc(100% - 270px); }
+      .careers-section .careers-content .careers-box .career-type {
+        font-size: 16px; }
+
+  .careers-up {
+    width: 750px; }
+
+  .contact-form-up {
+    height: auto;
+    width: 580px; }
+    .contact-form-up .contact-form-inner {
+      -webkit-box-pack: start;
+      -moz-box-pack: left;
+      -ms-flex-pack: left;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start; }
+      .contact-form-up .contact-form-inner > .contact-box {
+        margin: 0;
+        width: 100%; }
+        .contact-form-up .contact-form-inner > .contact-box textarea {
+          width: 100%; }
+      .contact-form-up .contact-form-inner .clearfix {
+        width: 100%;
+        margin-bottom: 35px; }
+      .contact-form-up .contact-form-inner .contact-form-send {
+        margin-top: 30px;
+        margin-left: 0; } }
 @media (max-width: 767px) {
   body {
     font-size: 12px; }
@@ -160,7 +352,16 @@
       width: 100%;
       float: none;
       display: block;
-      padding-top: 0; }
+      padding-top: 0;
+      position: relative; }
+      .spotlight-section .spotlight-list:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff); }
       .spotlight-section .spotlight-list .spotlight-box {
         margin: 0;
         padding-right: 50px; }
@@ -171,14 +372,135 @@
       .spotlight-section .spotlight-list > div {
         padding-right: 40px; }
 
-  .careers-section .careers-left {
-    width: 100%;
-    float: none; }
-  .careers-section .careers-content {
-    float: none;
-    width: 100%; }
+  .careers-section {
+    padding: 30px 0;
+    height: auto; }
+    .careers-section .careers-left {
+      width: 100%;
+      float: none;
+      font-size: 22px;
+      margin-bottom: 30px;
+      height: auto;
+      background: none;
+      display: block; }
+    .careers-section .careers-content {
+      float: none;
+      width: 100%;
+      display: block; }
+      .careers-section .careers-content .careers-box {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+        max-height: 100%; }
+        .careers-section .careers-content .careers-box:last-child {
+          margin-bottom: 0; }
 
   .visible-xs {
-    display: block; } }
+    display: block; }
+
+  footer {
+    position: static;
+    height: auto;
+    padding: 25px 0; }
+    footer .container {
+      flex-direction: column-reverse;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0; }
+      footer .container .copy {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+        text-align: center; }
+      footer .container .business-btn {
+        width: 110px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 12px;
+        margin-top: 15px;
+        margin: 0 auto 25px; }
+
+  .careers-up {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 30px 0; }
+    .careers-up .close-up {
+      display: none; }
+    .careers-up .career-up-title,
+    .careers-up .career-up-group {
+      display: none; }
+    .careers-up .scroll-pane .career-up-text {
+      font-size: 14px; }
+    .careers-up .career-up-price {
+      margin-top: 25px;
+      font-size: 22px; }
+      .careers-up .career-up-price span {
+        font-size: 16px; }
+    .careers-up .apply-btn {
+      margin: 25px 0 0;
+      width: 110px;
+      height: 30px;
+      line-height: 28px;
+      font-size: 12px; }
+
+  .contact-form-up {
+    padding: 25px 20px;
+    max-height: 100%;
+    overflow-y: auto; }
+    .contact-form-up .close-up {
+      right: 20px;
+      top: 20px; }
+    .contact-form-up .contact-form-title {
+      font-size: 18px; }
+    .contact-form-up .fields-info {
+      font-size: 14px; }
+    .contact-form-up .contact-form-inner {
+      padding: 35px 0 0;
+      display: block; }
+      .contact-form-up .contact-form-inner .clearfix {
+        float: none;
+        width: 100%; }
+        .contact-form-up .contact-form-inner .clearfix .contact-row {
+          display: block;
+          width: 100%; }
+          .contact-form-up .contact-form-inner .clearfix .contact-row:first-child {
+            margin: 0; }
+      .contact-form-up .contact-form-inner > .contact-box {
+        margin: 0;
+        width: 100%;
+        float: none; }
+        .contact-form-up .contact-form-inner > .contact-box textarea {
+          width: 100%;
+          font-size: 14px;
+          line-height: 18px;
+          height: 160px; }
+      .contact-form-up .contact-form-inner .contact-form-send {
+        float: right;
+        margin: 25px 0 0;
+        width: 110px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 12px; }
+    .contact-form-up .contact-box {
+      margin-bottom: 25px; }
+      .contact-form-up .contact-box .contact-input-name {
+        font-size: 15px;
+        margin-bottom: 12px; }
+      .contact-form-up .contact-box .contact-input {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        line-height: 38px; } }
 
 /*# sourceMappingURL=media.css.map */
