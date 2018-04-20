@@ -115,6 +115,7 @@ header {
         color: $dark-color;
         float: right;
         margin-top: 22px;
+        background: $white-color;
     }
     .header-text {
         width: 505px;
@@ -150,12 +151,21 @@ header {
         padding: 0 36px;
         position: relative;
         width: 24%;
+        &:after {
+            display: block;
+            transition: 2s all linear;
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+        &.changed:after {
+            opacity: 1;
+            transform: rotate(360deg);
+        }
         &:first-child {
             padding-left: 0;
             width: 28%;
             &:after {
                 content: '';
-                display: block;
                 width: 2px;
                 height: 295px;
                 background: rgba(194, 186, 171, 0.5);
@@ -167,7 +177,6 @@ header {
         &:nth-child(2) {
             &:after {
                 content: '';
-                display: block;
                 width: 2px;
                 height: 223px;
                 background: rgba(194, 186, 171, 0.5);
@@ -180,13 +189,12 @@ header {
             padding-left: 55px;
             &:after {
                 content: '';
-                display: block;
                 width: 2px;
                 height: 45px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
                 right: -18px;
-                bottom: -115px;
+                bottom: -113px;
             }
         }
         &:last-child {
@@ -194,13 +202,12 @@ header {
             padding-right: 0;
             &:after {
                 content: '';
-                display: block;
                 width: 2px;
                 height: 397px;
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
                 left: 23px;
-                top: 24px;
+                top: 21px;
             }
         }
         .benefit-img {
@@ -550,7 +557,7 @@ footer {
     position: fixed;
     top:0;
     left: 0;
-    display: none;
+    top: -1000px;
     z-index: 100;
     width: 100%;
     background: $d-black-color;

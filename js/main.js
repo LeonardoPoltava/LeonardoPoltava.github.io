@@ -13,14 +13,14 @@ $(document).ready(function () {
     });
     $('.business-btn').click(function(){
         var el = $('.contact-form-up');
-        if(el.css('display') == 'none') {
-            el.fadeIn();
+        if(el.css('top') !== '0') {
+            el.animate({top: "0"}, 1000 );
             el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
         }
     });
     $('.close-up').click(function(){
         $('.careers-up').fadeOut();
-        $('.contact-form-up').fadeOut();
+        $('.contact-form-up').animate({top: "-1000"}, 1000 );
     });
     $('.view-workers-btn').click(function(){
         var el = $(this).parents('.main-right').find('.workers-list');
@@ -46,6 +46,16 @@ $(document).ready(function () {
           autoplaySpeed: 5000,
           pauseOnFocus: false,
           adaptiveHeight: true
+        });
+    }
+    if($(window).width() > 767) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.benefit-box').addClass('changed');
+            }
+            else {
+                $('.benefit-box').removeClass('changed');
+            }
         });
     }
 });

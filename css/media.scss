@@ -51,6 +51,14 @@
     .container {
         max-width: 970px;
     }
+    header {
+        .header-text {
+            width: 410px;
+            margin: 150px 0 0 45px;
+            font-size: 30px;
+            line-height: 49px;
+        }
+    }
     .benefits-list {
         .benefit-box {
             padding: 0 20px 0 0;
@@ -167,9 +175,10 @@
     }
     header {
         height: 550px;
+        background-position: 85% 0;
         .header-text {
             width: 365px;
-            margin: 120px 0 0 72px;
+            margin: 120px 0 0 25px;
             font-size: 25px;
             line-height: 40px;
         }
