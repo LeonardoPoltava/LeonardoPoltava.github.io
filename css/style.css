@@ -530,8 +530,7 @@ footer {
         .contact-form-up .contact-form-inner .clearfix .contact-row:first-child {
           margin-bottom: 35px; }
     .contact-form-up .contact-form-inner > .contact-box {
-      float: left;
-      margin: 0 0 0 50px; }
+      float: left; }
       .contact-form-up .contact-form-inner > .contact-box textarea {
         width: 517px;
         height: 153px;
@@ -546,7 +545,6 @@ footer {
           border: solid 2px #fbc250; }
     .contact-form-up .contact-form-inner .contact-form-send {
       float: left;
-      margin-left: 50px;
       width: 152px;
       height: 51px;
       background-color: #171717;
