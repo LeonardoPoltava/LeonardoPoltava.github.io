@@ -91,8 +91,7 @@ img {
     position: relative;
 }
 .container {
-    padding: 0 15px;
-    max-width: 1330px;
+    padding: 0 70px;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -194,7 +193,7 @@ header {
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
                 right: -18px;
-                bottom: -113px;
+                bottom: -118px;
             }
         }
         &:last-child {
@@ -203,7 +202,7 @@ header {
             &:after {
                 content: '';
                 width: 2px;
-                height: 397px;
+                height: calc(100% + 120px);
                 background: rgba(194, 186, 171, 0.5);
                 position: absolute;
                 left: 23px;
@@ -236,6 +235,8 @@ header {
     padding-top: 70px;
     margin-top: 115px;
     height: 678px;
+    position: relative;
+    z-index: 10;
     background-color: $d-black-color;
     .container {
         height: 100%;
@@ -436,7 +437,7 @@ header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         .careers-box {
-            min-width: 19%;
+            min-width: 25%;
             max-width: 25%;
             margin-bottom: 85px;
             max-height: 97px;

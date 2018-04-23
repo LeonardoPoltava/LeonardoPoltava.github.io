@@ -2,7 +2,14 @@
   .contact-form-up {
     padding-left: 70px;
     padding-right: 70px; } }
-@media (min-width: 1200px) and (max-width: 1344px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
+  header .header-text {
+    margin-left: 70px;
+    font-size: 37px; }
+
+  .benefits-list .benefit-box .benefit-text {
+    width: 100%; }
+
   .contact-form-up .contact-form-inner > .contact-box {
     margin-left: 30px; }
     .contact-form-up .contact-form-inner > .contact-box textarea {
@@ -11,72 +18,93 @@
     margin-left: 30px; }
 
   .spotlight-section .spotlight-left {
-    width: 350px; }
+    width: 270px; }
+    .spotlight-section .spotlight-left .spotlight-customer {
+      font-size: 36px; }
   .spotlight-section .spotlight-list {
-    width: calc(100% - 350px); }
+    width: calc(100% - 270px); }
 
   .careers-section .careers-left {
-    width: 350px; }
+    width: 280px; }
   .careers-section .careers-content {
-    width: calc(100% - 350px); }
+    width: calc(100% - 280px); }
+    .careers-section .careers-content .careers-box {
+      padding: 0 10px; }
+      .careers-section .careers-content .careers-box .career-type {
+        font-size: 16px; }
 
+  .main-bn .container .main-left .main-title {
+    font-size: 30px; }
   .main-bn .container .main-left .man-photo {
-    left: 175px; }
+    left: 195px; }
   .main-bn .container .main-right {
-    padding-left: 35px; } }
+    padding-left: 0; }
+    .main-bn .container .main-right .workers-list .worker-box {
+      margin-bottom: 50px; }
+      .main-bn .container .main-right .workers-list .worker-box .worker-name {
+        font-size: 16px; }
+      .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-1) {
+        padding-right: 10px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    max-width: 970px; }
-
   header .header-text {
     width: 410px;
-    margin: 150px 0 0 45px;
-    font-size: 30px;
+    margin: 150px 0 0 30px;
+    font-size: 28px;
     line-height: 49px; }
 
   .benefits-list .benefit-box {
     padding: 0 20px 0 0; }
     .benefits-list .benefit-box:nth-child(3) {
-      padding: 0 20px 0 0; }
+      padding: 0 20px 0 8px; }
       .benefits-list .benefit-box:nth-child(3):after {
-        right: 5px; }
+        right: 5px;
+        bottom: -118px; }
     .benefits-list .benefit-box:last-child {
       padding: 0 0 0 40px; }
       .benefits-list .benefit-box:last-child:after {
         left: 3px;
-        top: -23px; }
+        top: 10px; }
     .benefits-list .benefit-box:nth-child(2):after {
       right: 17px; }
     .benefits-list .benefit-box .benefit-img {
       margin-bottom: 30px; }
     .benefits-list .benefit-box .benefit-title {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 20px; }
     .benefits-list .benefit-box .benefit-text {
-      width: 200px;
+      width: 170px;
       font-size: 14px;
       line-height: 21px; }
 
   .main-bn .container .main-left {
     width: 380px; }
     .main-bn .container .main-left .main-title {
-      font-size: 28px; }
+      font-size: 24px; }
     .main-bn .container .main-left .man-photo {
-      left: 90px; }
+      left: 115px;
+      max-width: 400px;
+      height: auto; }
   .main-bn .container .main-right {
     width: calc(100% - 360px);
     margin-right: -20px;
-    padding-left: 145px; }
+    padding-left: 65px; }
     .main-bn .container .main-right .workers-list .worker-box {
       margin-bottom: 35px;
       padding-right: 10px; }
+      .main-bn .container .main-right .workers-list .worker-box:nth-child(3n) {
+        padding-right: 0; }
       .main-bn .container .main-right .workers-list .worker-box .worker-name {
-        font-size: 16px; }
+        font-size: 15px; }
+      .main-bn .container .main-right .workers-list .worker-box .worker-pos,
+      .main-bn .container .main-right .workers-list .worker-box .worker-team {
+        font-size: 13px; }
 
   .spotlight-section .spotlight-left {
-    width: 320px; }
+    width: 260px; }
+    .spotlight-section .spotlight-left .spotlight-customer {
+      font-size: 36px; }
   .spotlight-section .spotlight-list {
-    width: calc(100% - 320px); }
+    width: calc(100% - 260px); }
     .spotlight-section .spotlight-list .spotlight-box {
       width: 290px; }
 
@@ -84,8 +112,18 @@
     width: 280px; }
   .careers-section .careers-content {
     width: calc(100% - 280px); }
-    .careers-section .careers-content .careers-box .career-type {
-      font-size: 15px; }
+    .careers-section .careers-content .careers-box {
+      padding: 0 10px; }
+      .careers-section .careers-content .careers-box .career-type {
+        height: 30px;
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+        font-size: 15px; }
 
   .contact-form-up .contact-form-inner > .contact-box {
     margin-left: 20px; }
@@ -99,14 +137,14 @@
     width: 210px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    max-width: 750px; }
+    padding: 0 30px; }
 
   header {
     height: 550px;
     background-position: 85% 0; }
     header .header-text {
       width: 365px;
-      margin: 120px 0 0 25px;
+      margin: 120px 0 0 15px;
       font-size: 25px;
       line-height: 40px; }
 

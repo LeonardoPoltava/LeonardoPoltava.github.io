@@ -48,14 +48,12 @@ $(document).ready(function () {
           adaptiveHeight: true
         });
     }
-    if($(window).width() > 767) {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 300) {
-                $('.benefit-box').addClass('changed');
-            }
-            else {
-                $('.benefit-box').removeClass('changed');
-            }
-        });
-    }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.benefit-box').addClass('changed');
+        }
+        else {
+            $('.benefit-box').removeClass('changed');
+        }
+    });
 });
