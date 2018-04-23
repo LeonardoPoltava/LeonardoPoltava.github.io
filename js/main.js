@@ -29,7 +29,7 @@ $(document).ready(function () {
         var el = $('.bottom-form');
         if(el.css('bottom') !== '0') {
             elHeight = el.outerHeight();
-            $('body').animate({paddingBottom: elFootHeight}, 1000 );
+            $('body').animate({paddingBottom: elHeight}, 1000 );
             el.animate({'bottom': "0", opacity: "1"}, 1000 );
             $(this).fadeOut();
             el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
