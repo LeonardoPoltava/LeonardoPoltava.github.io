@@ -177,6 +177,9 @@
     .careers-section {
         .careers-left {
             width: 280px;
+            .footer-lines-section {
+                left: -40px;
+            }
         }
         .careers-content {
             width: calc(100% - 280px);
@@ -226,12 +229,14 @@
     }
     header {
         height: 550px;
-        background-position: 85% 0;
         .header-text {
             width: 365px;
             margin: 120px 0 0 15px;
             font-size: 25px;
             line-height: 40px;
+        }
+        .header-lines-section {
+            right: 11%;
         }
     }
     .benefits-list {
@@ -383,6 +388,9 @@
         padding-top: 20px;
         height: 360px;
         background: url(../images/main-visual-mob.svg) no-repeat 100% 100%;
+        .header-lines-section {
+            display: none;
+        }
         .container {
             &:after,
             &:before {
@@ -430,6 +438,9 @@
             }
             .benefit-img {
                 margin-bottom: 23px;
+            }
+            &:after {
+                transition: 1s all linear;
             }
             &:first-child,
             &:nth-child(3),
@@ -604,6 +615,9 @@
             height: auto;
             background: none;
             display: block;
+            .footer-lines-section {
+                display: none;
+            }
         }
         .careers-content {
             float: none;

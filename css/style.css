@@ -77,8 +77,85 @@ img {
 
 header {
   padding: 50px 0 80px;
-  background: url(../images/main-visual.svg) no-repeat 74% 0;
   height: 645px; }
+  header .header-lines-section {
+    position: absolute;
+    top: 0;
+    right: 23%;
+    top: -50px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: start;
+    -moz-box-pack: left;
+    -ms-flex-pack: left;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 191px; }
+    header .header-lines-section .header-line {
+      width: 2px;
+      height: 360px;
+      background: rgba(194, 186, 171, 0.5);
+      display: block;
+      animation: lines 2s linear;
+      margin-left: 5px; }
+      header .header-lines-section .header-line:first-child {
+        margin-left: 0; }
+      header .header-lines-section .header-line:nth-child(2) {
+        height: 420px; }
+      header .header-lines-section .header-line:nth-child(3) {
+        height: 479px; }
+      header .header-lines-section .header-line:nth-child(4) {
+        height: 537px; }
+      header .header-lines-section .header-line:nth-child(5) {
+        height: 407px; }
+      header .header-lines-section .header-line:nth-child(6) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(7) {
+        height: 502px; }
+      header .header-lines-section .header-line:nth-child(8) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(9) {
+        height: 489px; }
+      header .header-lines-section .header-line:nth-child(10) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(11) {
+        height: 479px; }
+      header .header-lines-section .header-line:nth-child(12) {
+        height: 489px; }
+      header .header-lines-section .header-line:nth-child(13) {
+        height: 479px; }
+      header .header-lines-section .header-line:nth-child(14) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(15) {
+        height: 502px; }
+      header .header-lines-section .header-line:nth-child(16) {
+        height: 525px; }
+      header .header-lines-section .header-line:nth-child(17) {
+        height: 489px; }
+      header .header-lines-section .header-line:nth-child(18) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(19) {
+        height: 560px; }
+      header .header-lines-section .header-line:nth-child(20) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(21) {
+        height: 454px; }
+      header .header-lines-section .header-line:nth-child(22) {
+        height: 502px; }
+      header .header-lines-section .header-line:nth-child(23) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(24) {
+        height: 420px; }
+      header .header-lines-section .header-line:nth-child(25) {
+        height: 479px; }
+      header .header-lines-section .header-line:nth-child(26) {
+        height: 466px; }
+      header .header-lines-section .header-line:nth-child(27) {
+        height: 383px; }
+      header .header-lines-section .header-line:nth-child(28) {
+        height: 360px; }
   header .logo {
     float: left; }
   header .business-btn {
@@ -92,7 +169,9 @@ header {
     color: #423f39;
     float: right;
     margin-top: 22px;
-    background: #ffffff; }
+    background: #ffffff;
+    position: relative;
+    z-index: 10; }
   header .header-text {
     width: 505px;
     float: left;
@@ -126,13 +205,12 @@ header {
     position: relative;
     width: 24%; }
     .benefits-list .benefit-box:after {
-      display: block;
-      transition: 2s all linear;
       opacity: 0;
-      transform: rotate(0deg); }
+      display: block;
+      transition: 1s linear; }
     .benefits-list .benefit-box.changed:after {
       opacity: 1;
-      transform: rotate(360deg); }
+      animation: lines 2s linear; }
     .benefits-list .benefit-box:first-child {
       padding-left: 0;
       width: 28%; }
@@ -351,8 +429,124 @@ header {
     color: #ffffff;
     width: 450px;
     height: 406px;
-    float: left;
-    background: url(../images/main-visual-copy.svg) no-repeat -11px 100%; }
+    position: relative;
+    float: left; }
+    .careers-section .careers-left .footer-lines-section {
+      position: absolute;
+      top: 0;
+      left: -11px;
+      bottom: 0;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      -webkit-box-pack: start;
+      -moz-box-pack: left;
+      -ms-flex-pack: left;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      align-items: flex-end;
+      width: 310px; }
+      .careers-section .careers-left .footer-lines-section.animated .footer-line {
+        animation: lines 2s linear; }
+      .careers-section .careers-left .footer-lines-section .footer-line {
+        width: 2px;
+        height: 51px;
+        background: rgba(195, 185, 170, 0.2);
+        display: block;
+        margin-left: 5px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:first-child {
+          margin-left: 0; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(2) {
+          height: 61px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(3) {
+          height: 121px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(4) {
+          height: 161px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(5) {
+          height: 151px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(6) {
+          height: 201px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(7) {
+          height: 171px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(8) {
+          height: 191px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(9) {
+          height: 161px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(10) {
+          height: 250px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(11) {
+          height: 214px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(12) {
+          height: 237px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(13) {
+          height: 187px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(14) {
+          height: 267px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(15) {
+          height: 237px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(16) {
+          height: 217px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(17) {
+          height: 252px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(18) {
+          height: 272px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(19) {
+          height: 262px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(20) {
+          height: 282px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(21) {
+          height: 295px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(22) {
+          height: 315px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(23) {
+          height: 307px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(24) {
+          height: 293px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(25) {
+          height: 277px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(26) {
+          height: 290px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(27) {
+          height: 267px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(28) {
+          height: 240px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(29) {
+          height: 250px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(30) {
+          height: 240px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(31) {
+          height: 227px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(32) {
+          height: 233px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(33) {
+          height: 216px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(34) {
+          height: 240px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(35) {
+          height: 217px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(36) {
+          height: 265px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(37) {
+          height: 217px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(38) {
+          height: 205px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(39) {
+          height: 123px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(40) {
+          height: 137px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(41) {
+          height: 181px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(42) {
+          height: 120px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(43) {
+          height: 97px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(44) {
+          height: 114px; }
+        .careers-section .careers-left .footer-lines-section .footer-line:nth-child(45) {
+          height: 41px; }
   .careers-section .careers-content {
     padding-top: 6px;
     float: left;
@@ -585,5 +779,11 @@ footer {
 
 .visible-xs {
   display: none; }
+
+/* animation */
+@keyframes lines {
+  0% {
+    height: 0;
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */
