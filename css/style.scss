@@ -20,9 +20,6 @@ $black-color: #000000;
 $d-black-color: #171717;
 $gr-lght: #979797;
 $gr-drk: #656565;
-html, body {
-	height: 100%;
-}
 body {
     background: $white-color;
     margin: 0;
@@ -829,13 +826,14 @@ footer {
 }
 .contact-form-up {
     padding: 40px 25px;
-    position: fixed;
-    top:0;
-    left: 0;
-    top: -1000px;
     z-index: 100;
+    position: fixed;
+    left: 0;
     width: 100%;
+    opacity: 0;
     background: $d-black-color;
+    &.bottom-form {
+    }
     .close-up {
         position: absolute;
         display: block;

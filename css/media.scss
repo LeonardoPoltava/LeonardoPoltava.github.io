@@ -200,6 +200,7 @@
         }
     }
     .contact-form-up {
+        height: 332px;
         .contact-form-inner {
             & > .contact-box {
                 margin-left: 20px;
@@ -352,7 +353,7 @@
     }
     .contact-form-up {
         height: auto;
-        width: 580px;
+        width: 100%;
         .contact-form-inner {
             -webkit-box-pack: start;
             -moz-box-pack: left;

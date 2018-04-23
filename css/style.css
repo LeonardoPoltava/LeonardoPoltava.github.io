@@ -1,8 +1,5 @@
 /* fonts */
 /* colors */
-html, body {
-  height: 100%; }
-
 body {
   background: #ffffff;
   margin: 0;
@@ -667,12 +664,11 @@ footer {
 
 .contact-form-up {
   padding: 40px 25px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  top: -1000px;
   z-index: 100;
+  position: fixed;
+  left: 0;
   width: 100%;
+  opacity: 0;
   background: #171717; }
   .contact-form-up .close-up {
     position: absolute;

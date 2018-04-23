@@ -11,16 +11,41 @@ $(document).ready(function () {
             el.fadeOut();
         }
     });
-    $('.business-btn').click(function(){
-        var el = $('.contact-form-up');
+    var elHeight = $('.top-form').innerHeight();
+    $('.top-form').css({'top' : -elHeight});
+    var elFootHeight = $('.bottom-form').innerHeight();
+    $('.bottom-form').css({'bottom' : -elFootHeight});
+    $('header .business-btn').click(function(){
+        var el = $('.top-form');
         if(el.css('top') !== '0') {
-            el.animate({top: "0"}, 1000 );
+            elHeight = el.outerHeight();
+            $('.wrapper').animate({marginTop: elHeight}, 1000 );
+            el.animate({top: "0", opacity: "1"}, 1000 );
+            $(this).fadeOut();
             el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+        }
+    });
+    $('footer .business-btn').click(function(){
+        var el = $('.bottom-form');
+        if(el.css('bottom') !== '0') {
+            elHeight = el.outerHeight();
+            $('body').animate({paddingBottom: elFootHeight}, 1000 );
+            el.animate({'bottom': "0", opacity: "1"}, 1000 );
+            $(this).fadeOut();
+            el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+            setTimeout(function() {
+                $("body,html").animate({scrollTop: $(document).height() }, 2000);
+            }, 1000);
         }
     });
     $('.close-up').click(function(){
         $('.careers-up').fadeOut();
-        $('.contact-form-up').animate({top: "-1000"}, 1000 );
+        $('.wrapper').animate({marginTop: "0", marginBottom: "0"}, 1000 );
+        $('header .business-btn').fadeIn();
+        $('.top-form').animate({top: -elHeight, opacity: "0"}, 1000 );
+        $('footer .business-btn').fadeIn();
+        $('.bottom-form').animate({bottom: -elFootHeight, opacity: "0"}, 1000 );
+        $('body').animate({paddingBottom: "0"}, 1000 );
     });
     $('.view-workers-btn').click(function(){
         var el = $(this).parents('.main-right').find('.workers-list');
