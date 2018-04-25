@@ -98,21 +98,27 @@
             padding: 0 20px 0 0;
             &:nth-child(3) {
                 padding: 0 20px 0 8px;
-                &:after {
-                    right: 5px;
-                    bottom: -118px;
+                .benefit-line {
+                    span {
+                        right: 5px;
+                        bottom: -118px;
+                    }
                 }
             }
             &:last-child {
                 padding: 0 0 0 40px;
-                &:after {
-                    left: 3px;
-                    top: 10px;
+                .benefit-line {
+                    span {
+                        left: 3px;
+                        top: 10px;
+                    }
                 }
             }
             &:nth-child(2) {
-                &:after {
-                    right: 17px;
+                .benefit-line {
+                    span {
+                        right: 17px;
+                    }
                 }
             }
             .benefit-img {
@@ -137,8 +143,8 @@
                     font-size: 24px;
                 }
                 .man-photo {
-                    left: 115px;
-                    max-width: 400px;
+                    left: 155px;
+                    max-width: 350px;
                     height: auto;
                 }
             }
@@ -250,14 +256,18 @@
             padding: 0 15px;
             &:nth-child(3) {
                 padding-left: 25px;
-                &:after {
-                    right: 0;
+                .benefit-line {
+                    span {
+                        right: 0;
+                    }
                 }
             }
             &:last-child {
                 padding-left: 35px;
-                &:after {
-                    left: 7px;
+                .benefit-line {
+                    span {
+                        left: 7px;
+                    }
                 }
             }
             .benefit-img  {
@@ -275,14 +285,16 @@
                 font-size: 14px;
             }
             &:first-child {
-                &:after {
-                    right: 5px;
+                .benefit-line {
+                    span {
+                        right: 5px;
+                    }
                 }
             }
         }
     }
     .main-bn {
-        padding: 35px 0 0;
+        padding: 35px 0;
         margin-top: 78px;
         .container {
             .main-left {
@@ -293,6 +305,7 @@
                 }
                 .man-photo {
                     left: -28px;
+                    bottom: -35px;
                 }
             }
             .main-right {
@@ -333,7 +346,6 @@
         .spotlight-list {
             width: 100%;
             .spotlight-box {
-                width: 335px;
                 margin-bottom: 50px;
             }
         }
@@ -445,9 +457,6 @@
             .benefit-img {
                 margin-bottom: 23px;
             }
-            &:after {
-                transition: 1s all linear;
-            }
             &:first-child,
             &:nth-child(3),
             &:last-child{
@@ -460,12 +469,14 @@
                     width: 131px;
                     height: 50px;
                 }
-                &:after {
-                    width: 252px;
-                    height: 1px;
-                    bottom: -25px;
-                    right: -20px;
-                    top: auto;
+                .benefit-line {
+                    span {
+                        width: 252px;
+                        height: 1px;
+                        bottom: -25px;
+                        right: -20px;
+                        top: auto;
+                    }
                 }
             }
             &:nth-child(2) {
@@ -473,12 +484,14 @@
                     width: 61px;;
                     height: 50px;
                 }
-                &:after {
-                    width: 145px;
-                    height: 1px;
-                    bottom: -25px;
-                    right: -20px;
-                    top: auto;
+                .benefit-line {
+                    span {
+                        width: 145px;
+                        height: 1px;
+                        bottom: -25px;
+                        right: -20px;
+                        top: auto;
+                    }
                 }
             }
             &:nth-child(3) {
@@ -486,12 +499,14 @@
                     width: 84px;;
                     height: 50px;
                 }
-                &:after {
-                    width: 300px;
-                    height: 1px;
-                    bottom: -25px;
-                    right: -20px;
-                    top: auto;
+                .benefit-line {
+                    span {
+                        width: 300px;
+                        height: 1px;
+                        bottom: -25px;
+                        right: -20px;
+                        top: auto;
+                    }
                 }
             }
             &:nth-child(4) {
@@ -499,7 +514,7 @@
                     width: 66px;;
                     height: 50px;
                 }
-                &:after {
+                .benefit-line {
                     display: none;
                 }
             }
