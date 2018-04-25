@@ -927,13 +927,21 @@ footer {
     }
 }
 .contact-form-up {
-    padding: 40px 25px;
     z-index: 100;
     position: fixed;
     left: 0;
     width: 100%;
     opacity: 0;
     background: $d-black-color;
+    form {
+        padding: 40px 25px;
+    }
+    &.bottom-form {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
     .close-up {
         position: absolute;
         display: block;
@@ -957,6 +965,7 @@ footer {
     }
     .contact-form-inner {
         padding: 18px 0 0;
+        overflow: hidden;
         display: flex;
         display: -webkit-box;
         display: -ms-flexbox;

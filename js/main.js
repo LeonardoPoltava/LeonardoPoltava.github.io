@@ -17,8 +17,6 @@ $(document).ready(function () {
     });
     var elHeight = $('.top-form').innerHeight();
     $('.top-form').css({'top' : -elHeight});
-    var elFootHeight = $('.bottom-form').innerHeight();
-    $('.bottom-form').css({'bottom' : -elFootHeight});
     $('header .business-btn').click(function(){
         var el = $('.top-form');
         if(el.css('top') !== '0') {
@@ -31,14 +29,13 @@ $(document).ready(function () {
     });
     $('footer .business-btn').click(function(){
         var el = $('.bottom-form');
-        if(el.css('bottom') !== '0') {
-            elHeight = el.outerHeight();
-            $('body').animate({paddingBottom: elHeight-3}, 1000 );
-            el.animate({'bottom': "0", opacity: "1"}, 1000 );
+        if(el.css('height') == '0px') {
+            el.animate({height: $(el).get(0).scrollHeight, opacity: "1"}, 1000, function(){
+                el.css("height", "auto");
+            } );
             $(this).fadeOut();
-            el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
             setTimeout(function() {
-                $("body,html").animate({scrollTop: $(document).height() }, 2000);
+                $("body,html").animate({scrollTop: $(document).height() }, 1000);
             }, 1000);
         }
     });
@@ -50,7 +47,7 @@ $(document).ready(function () {
         $('header .business-btn').fadeIn();
         $('.top-form').animate({top: -elHeight, opacity: "0"}, 1000 );
         $('footer .business-btn').fadeIn();
-        $('.bottom-form').animate({bottom: -elFootHeight, opacity: "0"}, 1000 );
+        $('.bottom-form').animate({height: "0", opacity: "0"}, 1000 );
         $('body').animate({paddingBottom: "0"}, 1000 );
     });
     $('.view-workers-btn').click(function(){

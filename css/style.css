@@ -755,13 +755,19 @@ footer {
     height: 20px; }
 
 .contact-form-up {
-  padding: 40px 25px;
   z-index: 100;
   position: fixed;
   left: 0;
   width: 100%;
   opacity: 0;
   background: #171717; }
+  .contact-form-up form {
+    padding: 40px 25px; }
+  .contact-form-up.bottom-form {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding: 0; }
   .contact-form-up .close-up {
     position: absolute;
     display: block;
@@ -782,6 +788,7 @@ footer {
     color: #8c8c8c; }
   .contact-form-up .contact-form-inner {
     padding: 18px 0 0;
+    overflow: hidden;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;

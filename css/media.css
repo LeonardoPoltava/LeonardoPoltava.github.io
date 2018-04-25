@@ -1,5 +1,5 @@
 @media (min-width: 1400px) {
-  .contact-form-up {
+  .contact-form-up form {
     padding-left: 70px;
     padding-right: 70px; } }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -506,9 +506,10 @@
       font-size: 12px; }
 
   .contact-form-up {
-    padding: 25px 20px;
     max-height: 100%;
     overflow-y: auto; }
+    .contact-form-up form {
+      padding: 25px 20px; }
     .contact-form-up .close-up {
       right: 20px;
       top: 20px; }
