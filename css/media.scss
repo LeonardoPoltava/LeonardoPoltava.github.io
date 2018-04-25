@@ -79,11 +79,6 @@
         }
     }
 }
-@media (min-width: 1200px) {
-    .contact-form-up {
-        height: 332px;
-    }
-}
 @media (min-width: 992px) and (max-width: 1199px) {
     header {
         .header-text {
@@ -211,7 +206,6 @@
         }
     }
     .contact-form-up {
-        height: 332px;
         .contact-form-inner {
             & > .contact-box {
                 margin-left: 20px;

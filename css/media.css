@@ -45,9 +45,6 @@
         font-size: 16px; }
       .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-1) {
         padding-right: 10px; } }
-@media (min-width: 1200px) {
-  .contact-form-up {
-    height: 332px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   header .header-text {
     width: 410px;
@@ -130,18 +127,16 @@
         align-items: flex-end;
         font-size: 15px; }
 
-  .contact-form-up {
-    height: 332px; }
-    .contact-form-up .contact-form-inner > .contact-box {
-      margin-left: 20px; }
-      .contact-form-up .contact-form-inner > .contact-box textarea {
-        width: 310px; }
-    .contact-form-up .contact-form-inner .clearfix .contact-row {
-      width: 440px; }
-    .contact-form-up .contact-form-inner .contact-form-send {
-      margin-left: 20px; }
-    .contact-form-up .contact-box .contact-input {
-      width: 210px; } }
+  .contact-form-up .contact-form-inner > .contact-box {
+    margin-left: 20px; }
+    .contact-form-up .contact-form-inner > .contact-box textarea {
+      width: 310px; }
+  .contact-form-up .contact-form-inner .clearfix .contact-row {
+    width: 440px; }
+  .contact-form-up .contact-form-inner .contact-form-send {
+    margin-left: 20px; }
+  .contact-form-up .contact-box .contact-input {
+    width: 210px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     padding: 0 30px; }

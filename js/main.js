@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $(".bottom-form").each(function(){ 
+        $(this).css("height", Math.ceil(parseInt(getComputedStyle(this).height)) + "px");
+    });
     $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true});
     $('.career-type').click(function(){
         var el = $(this).parents('.careers-box').find('.careers-up');
