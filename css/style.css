@@ -707,7 +707,6 @@ footer {
 .careers-up {
   position: absolute;
   width: 800px;
-  height: 600px;
   z-index: 100;
   display: none;
   background: #171717;
