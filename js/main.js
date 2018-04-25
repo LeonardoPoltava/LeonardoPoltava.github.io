@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    $(".bottom-form").each(function(){ 
-        $(this).css("height", Math.ceil(parseInt(getComputedStyle(this).height)) + "px");
-    });
     $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true});
     $('.career-type').click(function(){
         var el = $(this).parents('.careers-box').find('.careers-up');
@@ -36,7 +33,7 @@ $(document).ready(function () {
         var el = $('.bottom-form');
         if(el.css('bottom') !== '0') {
             elHeight = el.outerHeight();
-            $('body').animate({paddingBottom: elHeight}, 1000 );
+            $('body').animate({paddingBottom: elHeight-3}, 1000 );
             el.animate({'bottom': "0", opacity: "1"}, 1000 );
             $(this).fadeOut();
             el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
