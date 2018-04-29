@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $('.wrapper').each(function(){
+        var footHeight = $(this).find('footer').outerHeight();
+        $(this).css('padding-bottom', footHeight)
+    });
     $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true});
     $('.career-type').click(function(){
         var el = $(this).parents('.careers-box').find('.careers-up');
@@ -91,6 +95,12 @@ $(document).ready(function () {
             });
         }
     });
+    $(window).resize(function(){
+        $('.wrapper').each(function(){
+            var footHeight = $(this).find('footer').outerHeight();
+            $(this).css('padding-bottom', footHeight)
+        });
+    })
 });
 var animateHTML = function () {
   var elems,

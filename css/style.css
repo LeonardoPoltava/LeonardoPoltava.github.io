@@ -453,25 +453,24 @@ header {
         bottom: 0; }
 
 .careers-section {
-  height: 526px;
   background-color: #171717;
-  padding: 114px 0 0; }
+  padding: 114px 0 49px; }
   .careers-section .container {
-    height: 100%;
-    position: static; }
+    position: static;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; }
   .careers-section .careers-left {
     font-size: 44px;
     font-family: "montserratlight";
     color: #ffffff;
     width: 450px;
-    height: 406px;
-    position: relative;
-    float: left; }
+    position: relative; }
     .careers-section .careers-left .footer-lines-section {
       position: absolute;
-      top: 0;
       left: -11px;
-      bottom: 0;
+      bottom: -149px;
       display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -639,7 +638,6 @@ header {
           animation-delay: 1.5s; }
   .careers-section .careers-content {
     padding-top: 6px;
-    float: left;
     width: calc(100% - 450px);
     display: flex;
     display: -webkit-box;

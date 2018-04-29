@@ -559,26 +559,25 @@ header {
     }
 }
 .careers-section {
-    height: 526px;
     background-color: $d-black-color;
-    padding: 114px 0 0;
+    padding: 114px 0 49px;
     .container {
-        height: 100%;
         position: static;
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
     }
     .careers-left {
         font-size: 44px;
         font-family: $font-light;
         color: $white-color;
         width: 450px;
-        height: 406px;
         position: relative;
-        float: left;
         .footer-lines-section {
             position: absolute;
-            top: 0;
             left: -11px;
-            bottom: 0;
+            bottom: -149px;
             display: flex;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -796,7 +795,6 @@ header {
     }
     .careers-content {
         padding-top: 6px;
-        float: left;
         width: calc(100% - 450px);
         display: flex;
         display: -webkit-box;
