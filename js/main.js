@@ -10,7 +10,8 @@ $(document).ready(function () {
             if($(window).width() > 767) {
                 $('.shadow').fadeIn();
             }
-            window.location.hash= $(this).data('hash');
+            //window.location.hash= $(this).data('hash');
+            setParam('position', $(this).data('hash'));
             el.fadeIn();
             el.css("left", (($(window).width() - el.outerWidth()) / 2) + $(window).scrollLeft() + "px");
             el.css("top", (($(window).height() - el.outerHeight()) / 2) + $(window).scrollTop() + "px");
@@ -44,7 +45,8 @@ $(document).ready(function () {
         }
     });
     $('.close-up').click(function(){
-        removeHash();
+        //removeHash();
+        removeParam('position');
         $('.shadow').fadeOut();
         $('.careers-up').fadeOut();
         $('.wrapper').animate({marginTop: "0", marginBottom: "0"}, 1000 );
@@ -82,7 +84,8 @@ $(document).ready(function () {
     }
     $(".careers-up").each(function() {
         var $this = $(this);
-        if(window.location.hash == $(this).data('hash')) {
+        if(('#'+getParam('position')) == $(this).data('hash')) {
+            $('.career-type[data=#'+$(this).data('hash')+']').trigger('click');
             if($(window).width() > 767) {
                 $('.shadow').fadeIn();
             }
@@ -158,19 +161,18 @@ $(window).scroll(function(e){
   winScrollTop = $(this).scrollTop();
   parallax();
 });
-function removeHash () { 
-    var scrollV, scrollH, loc = window.location;
-    if ("pushState" in history)
-        history.pushState("", document.title, loc.pathname + loc.search);
-    else {
-        // Prevent scrolling by storing the page's current scroll offset
-        scrollV = document.body.scrollTop;
-        scrollH = document.body.scrollLeft;
 
-        loc.hash = "";
-
-        // Restore the scroll offset, should be flicker free
-        document.body.scrollTop = scrollV;
-        document.body.scrollLeft = scrollH;
-    }
+function getParam(name) {
+    var params = new URLSearchParams(location.search.slice(1));
+    return params.get(name);
+}
+function setParam(name, val) {
+    var params = new URLSearchParams(location.search.slice(1));
+    params.set(name, val);
+    window.history.replaceState({}, '', location.pathname + '?' + params);
+}
+function removeParam(name) {
+    var params = new URLSearchParams(location.search.slice(1));
+    params.delete(name);
+    window.history.replaceState({}, '', location.pathname + (Array.from(params).length ? '?' : '') + params);
 }

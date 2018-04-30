@@ -85,9 +85,9 @@
     header {
         .header-text {
             width: 410px;
-            margin: 150px 0 0 30px;
+            margin: 240px 0 0 30px;
             font-size: 28px;
-            line-height: 49px;
+            line-height: 40px;
         }
     }
     .benefits-list {
@@ -239,9 +239,9 @@
         height: 550px;
         .header-text {
             width: 365px;
-            margin: 120px 0 0 15px;
+            margin: 260px 0 0 15px;
             font-size: 25px;
-            line-height: 40px;
+            line-height: 30px;
         }
         .header-lines-section {
             right: 11%;
@@ -535,6 +535,12 @@
                     width: auto;
                     height: 270px;
                 }
+                .visiual-xs {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 250px;
+                }
                 .main-title {
                     font-size: 18px;
                     line-height: 28px;
@@ -565,6 +571,13 @@
                         margin: 0 0 25px;
                         padding: 0;
                         width: 100%;
+                        .worker-pos {
+                            display: inline;
+                        }
+                        .worker-team {
+                            display: inline;
+                            margin-left: 13px;
+                        }
                         &:nth-child(3n-2),
                         &:nth-child(3n-1) {
                             margin: 0 0 25px;
@@ -696,6 +709,10 @@
         position: static;
         width: 100%;
         padding: 30px 0;
+        background: #171717;
+        .scroll-pane {
+            height: calc(100% - 55px);
+        }
         .close-up {
             display: none;
         }
@@ -706,6 +723,7 @@
         .scroll-pane {
             .career-up-text {
                 font-size: 14px;
+                color: #fff;
             }
         }
         .career-up-price {
@@ -721,6 +739,9 @@
             height: 30px;
             line-height: 28px;
             font-size: 12px;
+            position: static;
+            border-color: #fff;
+            color: #fff;
         }
     }
     .contact-form-up {

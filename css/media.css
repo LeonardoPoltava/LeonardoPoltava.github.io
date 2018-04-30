@@ -48,9 +48,9 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   header .header-text {
     width: 410px;
-    margin: 150px 0 0 30px;
+    margin: 240px 0 0 30px;
     font-size: 28px;
-    line-height: 49px; }
+    line-height: 40px; }
 
   .benefits-list .benefit-box {
     padding: 0 20px 0 0; }
@@ -145,9 +145,9 @@
     height: 550px; }
     header .header-text {
       width: 365px;
-      margin: 120px 0 0 15px;
+      margin: 260px 0 0 15px;
       font-size: 25px;
-      line-height: 40px; }
+      line-height: 30px; }
     header .header-lines-section {
       right: 11%; }
 
@@ -353,6 +353,11 @@
           top: -20px;
           width: auto;
           height: 270px; }
+        .main-bn .container .main-left .visiual-xs {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 250px; }
         .main-bn .container .main-left .main-title {
           font-size: 18px;
           line-height: 28px; }
@@ -380,6 +385,11 @@
             margin: 0 0 25px;
             padding: 0;
             width: 100%; }
+            .main-bn .container .main-right .workers-list .worker-box .worker-pos {
+              display: inline; }
+            .main-bn .container .main-right .workers-list .worker-box .worker-team {
+              display: inline;
+              margin-left: 13px; }
             .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-2), .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-1) {
               margin: 0 0 25px;
               padding: 0;
@@ -487,14 +497,18 @@
   .careers-up {
     position: static;
     width: 100%;
-    padding: 30px 0; }
+    padding: 30px 0;
+    background: #171717; }
+    .careers-up .scroll-pane {
+      height: calc(100% - 55px); }
     .careers-up .close-up {
       display: none; }
     .careers-up .career-up-title,
     .careers-up .career-up-group {
       display: none; }
     .careers-up .scroll-pane .career-up-text {
-      font-size: 14px; }
+      font-size: 14px;
+      color: #fff; }
     .careers-up .career-up-price {
       margin-top: 25px;
       font-size: 22px; }
@@ -505,7 +519,10 @@
       width: 110px;
       height: 30px;
       line-height: 28px;
-      font-size: 12px; }
+      font-size: 12px;
+      position: static;
+      border-color: #fff;
+      color: #fff; }
 
   .contact-form-up {
     max-height: 100%;

@@ -38,6 +38,18 @@ input:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder {
   color: transparent !important; }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #656565; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #656565; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #656565; }
+
 input:focus,
 textarea:focus,
 button:focus {
@@ -64,7 +76,8 @@ img {
   overflow: hidden; }
 
 .wrapper {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .container {
   padding: 0 70px;
@@ -202,6 +215,8 @@ header {
     background: #ffffff;
     position: relative;
     z-index: 10; }
+    header .business-btn:hover {
+      border: 1px solid #DECAB5; }
   header .header-text {
     width: 505px;
     float: left;
@@ -350,6 +365,8 @@ header {
         left: 270px;
         display: block;
         bottom: -70px; }
+      .main-bn .container .main-left .visiual-xs {
+        display: none; }
     .main-bn .container .main-right {
       width: calc(100% - 600px);
       padding-left: 115px;
@@ -663,7 +680,8 @@ header {
         color: #ab957d;
         margin-bottom: 12px; }
         .careers-section .careers-content .careers-box .career-type:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          color: #DECAB5; }
       .careers-section .careers-content .careers-box .career-group {
         font-size: 14px;
         font-family: "montserratbold";
@@ -701,32 +719,36 @@ footer {
       font-size: 16px;
       color: #ffffff;
       border: solid 1px #ab957d; }
+      footer .container .business-btn:hover {
+        border: 1px solid #DECAB5; }
 
 .careers-up {
   position: absolute;
   width: 800px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
   z-index: 100;
   display: none;
-  background: #171717;
-  padding: 40px; }
+  background: #ffffff;
+  padding: 40px 40px 101px; }
   .careers-up .career-up-title {
     display: block;
     font-size: 28px;
     font-family: "montserratlight";
-    color: #ffffff;
+    color: #7a766f;
     margin-bottom: 20px; }
   .careers-up .career-up-group {
     display: block;
     font-size: 18px;
     font-family: "montserratmedium";
     color: #ab957d;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   .careers-up .scroll-pane {
-    height: 216px; }
+    height: calc(100% - 88px); }
     .careers-up .scroll-pane .career-up-text {
       line-height: 24px;
       font-size: 16px;
-      color: #ffffff; }
+      color: #67645e; }
   .careers-up .career-up-price {
     margin-top: 40px;
     display: block;
@@ -737,12 +759,13 @@ footer {
     display: block;
     line-height: 49px;
     text-align: center;
-    margin: 73px auto 0;
     width: 152px;
     height: 51px;
-    background-color: #171717;
-    border: solid 1px #ffffff;
-    color: #ffffff; }
+    border: solid 1px #ab957d;
+    color: #423f39;
+    position: absolute;
+    left: calc(50% - 76px);
+    bottom: 20px; }
   .careers-up .close-up {
     position: absolute;
     display: block;
@@ -827,7 +850,7 @@ footer {
         resize: none;
         font-size: 18px;
         font-family: "montserratmedium_italic";
-        color: #656565;
+        color: #f1f1f1;
         background: none; }
         .contact-form-up .contact-form-inner > .contact-box textarea.error {
           border: solid 2px #fbc250; }
@@ -857,7 +880,7 @@ footer {
     border: solid 1px #979797;
     font-size: 18px;
     font-family: "montserratmedium_italic";
-    color: #656565;
+    color: #f1f1f1;
     background: none; }
     .contact-form-up .contact-box .contact-input.error {
       border: solid 2px #fbc250; }

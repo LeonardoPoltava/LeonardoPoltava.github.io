@@ -58,6 +58,18 @@ input:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder{
     color: transparent !important;
 }
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $gr-drk;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $gr-drk;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+    color: $gr-drk;
+}
 input:focus,
 textarea:focus,
 button:focus {
@@ -86,6 +98,7 @@ img {
 }
 .wrapper {
     position: relative;
+    overflow: hidden;
 }
 .container {
     padding: 0 70px;
@@ -254,6 +267,9 @@ header {
         background: $white-color;
         position: relative;
         z-index: 10;
+        &:hover {
+            border: 1px solid #DECAB5
+        }
     }
     .header-text {
         width: 505px;
@@ -435,6 +451,9 @@ header {
                 left: 270px;
                 display: block;
                 bottom: -70px;
+            }
+            .visiual-xs {
+                display: none;
             }
         }
         .main-right {
@@ -821,6 +840,7 @@ header {
                 margin-bottom: 12px;
                 &:hover {
                     cursor: pointer;
+                    color: #DECAB5;
                 }
             }
             .career-group {
@@ -864,21 +884,26 @@ footer {
             font-size: 16px;
             color: $white-color;
             border: solid 1px $lght-brown-color;
+            &:hover {
+                border: 1px solid #DECAB5
+            }
         }
     }
 }
 .careers-up {
     position: absolute;
     width: 800px;
+    height: calc(100vh - 100px);
+    overflow: hidden;
     z-index: 100;
     display: none;
-    background: $d-black-color;
-    padding: 40px;
+    background: $white-color;
+    padding: 40px 40px 101px;
     .career-up-title {
         display: block;
         font-size: 28px;
         font-family: $font-light;
-        color: $white-color;
+        color: $grey-color;
         margin-bottom: 20px;
     }
     .career-up-group {
@@ -886,14 +911,14 @@ footer {
         font-size: 18px;
         font-family: $font-medium;
         color: $lght-brown-color;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .scroll-pane {
-        height: 216px;
+        height: calc(100% - 88px);
         .career-up-text {
             line-height: 24px;
             font-size: 16px;
-            color: $white-color;
+            color: $lght-grey-color;
         }
     }
     .career-up-price {
@@ -907,12 +932,13 @@ footer {
         display: block;
         line-height: 49px;
         text-align: center;
-        margin: 73px auto 0;
         width: 152px;
         height: 51px;
-        background-color: $d-black-color;
-        border: solid 1px $white-color;
-        color: $white-color;
+        border: solid 1px $lght-brown-color;
+        color: $dark-color;
+        position: absolute;
+        left: calc(50% - 76px);
+        bottom: 20px;
     }
     .close-up {
         position: absolute;
@@ -1007,7 +1033,7 @@ footer {
                 resize: none;
                 font-size: 18px;
                 font-family: $font-mediumitalic;
-                color: $gr-drk;
+                color: #f1f1f1;
                 background: none;
                 &.error {
                     border: solid 2px #fbc250;
@@ -1044,7 +1070,7 @@ footer {
             border: solid 1px $gr-lght;
             font-size: 18px;
             font-family: $font-mediumitalic;
-            color: $gr-drk;
+            color: #f1f1f1;
             background: none;
             &.error {
                 border: solid 2px #fbc250;
@@ -1054,7 +1080,7 @@ footer {
 }
 .view-btn {
     height: 30px;
-    border: solid 1px #ab957d;
+    border: solid 1px $lght-brown-color;
     width: 100%;
     line-height: 28px;
     text-align: center;
