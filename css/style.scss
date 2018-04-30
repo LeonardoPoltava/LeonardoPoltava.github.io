@@ -939,6 +939,10 @@ footer {
         position: absolute;
         left: calc(50% - 76px);
         bottom: 20px;
+        &:hover {
+            background: $lght-brown-color;
+            color: $white-color;
+        }
     }
     .close-up {
         position: absolute;
@@ -1052,6 +1056,10 @@ footer {
             border: solid 1px $white-color;
             font-family: $font-semibold;
             margin-top: 130px;
+            &:hover {
+                background: $white-color;
+                color: $black-color;
+            }
         }
     }
     .contact-box {

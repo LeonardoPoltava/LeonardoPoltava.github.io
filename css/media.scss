@@ -573,10 +573,10 @@
                         width: 100%;
                         .worker-pos {
                             display: inline;
+                            margin-right: 13px;
                         }
                         .worker-team {
                             display: inline;
-                            margin-left: 13px;
                         }
                         &:nth-child(3n-2),
                         &:nth-child(3n-1) {

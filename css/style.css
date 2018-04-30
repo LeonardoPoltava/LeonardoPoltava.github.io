@@ -766,6 +766,9 @@ footer {
     position: absolute;
     left: calc(50% - 76px);
     bottom: 20px; }
+    .careers-up .apply-btn:hover {
+      background: #ab957d;
+      color: #ffffff; }
   .careers-up .close-up {
     position: absolute;
     display: block;
@@ -866,6 +869,9 @@ footer {
       border: solid 1px #ffffff;
       font-family: "montserratsemibold";
       margin-top: 130px; }
+      .contact-form-up .contact-form-inner .contact-form-send:hover {
+        background: #ffffff;
+        color: #000000; }
   .contact-form-up .contact-box .contact-input-name {
     display: block;
     margin-bottom: 10px;

@@ -386,10 +386,10 @@
             padding: 0;
             width: 100%; }
             .main-bn .container .main-right .workers-list .worker-box .worker-pos {
-              display: inline; }
-            .main-bn .container .main-right .workers-list .worker-box .worker-team {
               display: inline;
-              margin-left: 13px; }
+              margin-right: 13px; }
+            .main-bn .container .main-right .workers-list .worker-box .worker-team {
+              display: inline; }
             .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-2), .main-bn .container .main-right .workers-list .worker-box:nth-child(3n-1) {
               margin: 0 0 25px;
               padding: 0;
