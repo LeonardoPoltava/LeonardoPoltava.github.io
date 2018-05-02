@@ -132,7 +132,7 @@ header {
             animation-delay:0.5s;
             animation-name: lines;
             animation-timing-function: ease-out;
-            animation-duration: 4.5s;
+            animation-duration: 5.5s;
             animation-iteration-count: infinite;
             animation-fill-mode: forwards;            
             transform: translateY(-100%);
@@ -146,7 +146,7 @@ header {
             }
             &:nth-child(3) {
                 height: 479px;
-                animation-delay:1.5s;
+                animation-delay:3.5s;
             }
             &:nth-child(4) {
                 height: 537px;
@@ -154,7 +154,7 @@ header {
             }
             &:nth-child(5) {
                 height: 407px;
-                animation-delay:2.5s;
+                animation-delay:4.5s;
             }
             &:nth-child(6) {
                 height: 466px;
@@ -162,23 +162,23 @@ header {
             }
             &:nth-child(7) {
                 height: 502px;
-                animation-delay:2s;
+                animation-delay:5s;
             }
             &:nth-child(8) {
                 height: 466px;
-                animation-delay:2.5s;
+                animation-delay:5.5s;
             }
             &:nth-child(9) {
                 height: 489px;
-                animation-delay:1s;
+                animation-delay:3s;
             }
             &:nth-child(10) {
                 height: 466px;
-                animation-delay:1.5s;
+                animation-delay:2.5s;
             }
             &:nth-child(11) {
                 height: 479px;
-                animation-delay:2.5s;
+                animation-delay:4.5s;
             }
             &:nth-child(12) {
                 height: 489px;
@@ -186,15 +186,15 @@ header {
             }
             &:nth-child(13) {
                 height: 479px;
-                animation-delay:1s;
+                animation-delay:4s;
             }
             &:nth-child(14) {
-                animation-delay:1.5s;
+                animation-delay:5.5s;
                 height: 466px;
             }
             &:nth-child(15) {
                 height: 502px;
-                animation-delay:2s;
+                animation-delay:3s;
             }
             &:nth-child(16) {
                 animation-delay:1.5s;
@@ -206,14 +206,14 @@ header {
             }
             &:nth-child(18) {
                 height: 466px;
-                animation-delay:1.5s;
+                animation-delay:6.5s;
             }
             &:nth-child(19) {
                 height: 560px;
-                animation-delay:1s;
+                animation-delay:4s;
             }
             &:nth-child(20) {
-                animation-delay:2.5s;
+                animation-delay:5.5s;
                 height: 466px;
             }
             &:nth-child(21) {
@@ -222,31 +222,31 @@ header {
             }
             &:nth-child(22) {
                 height: 502px;
-                animation-delay:1.5s;
+                animation-delay:3.5s;
             }
             &:nth-child(23) {
                 height: 466px;
                 animation-delay:1s;
             }
             &:nth-child(24) {
-                animation-delay:2s;
+                animation-delay:5s;
                 height: 420px;
             }
             &:nth-child(25) {
                 height: 479px;
-                animation-delay:2.5s;
+                animation-delay:3.5s;
             }
             &:nth-child(26) {
-                animation-delay:1s;
+                animation-delay:4s;
                 height: 466px;
             }
             &:nth-child(27) {
-                animation-delay:2s;
+                animation-delay:5s;
                 height: 383px;
             }
             &:nth-child(28) {
                 height: 360px;
-                animation-delay:1.5s;
+                animation-delay:2.5s;
             }
         }
     }
@@ -301,19 +301,16 @@ header {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    position: relative;
     .benefit-box {
         padding: 0 36px;
         position: relative;
         width: 24%;
         transform: translateY(0);
         .benefit-line {
+            position: absolute;
+            transition: 1s all ease;
             span {
-                animation-delay:0s;
-                animation-name: benefit-lines;
-                animation-timing-function: ease-out;
-                animation-duration: 4.5s;
-                animation-iteration-count: infinite;
-                animation-fill-mode: forwards;
                 display: block;
             }
         }
@@ -321,41 +318,44 @@ header {
             padding-left: 0;
             width: 28%;
             .benefit-line {
+                width: 2px;
+                height: 295px;
+                right: 25px;
+                top: 0;
                 span {
                     content: '';
                     width: 2px;
                     height: 295px;
                     background: rgba(194, 186, 171, 0.5);
-                    position: absolute;
-                    right: 25px;
-                    top: 0;
                 }
             }
         }
         &:nth-child(2) {
             .benefit-line {
+                right: 5px;
+                bottom: -24px;
+                width: 2px;
+                height: 223px;
                 span {
-                    content: '';
                     width: 2px;
                     height: 223px;
+                    content: '';
                     background: rgba(194, 186, 171, 0.5);
-                    position: absolute;
-                    right: 5px;
-                    bottom: -24px;
                 }
             }
         }
         &:nth-child(3) {
             padding-left: 55px;
             .benefit-line {
+                right: -18px;
+                bottom: -118px;
+                    width: 2px;
+                    height: 45px;
                 span {
                     content: '';
                     width: 2px;
                     height: 45px;
                     background: rgba(194, 186, 171, 0.5);
-                    position: absolute;
-                    right: -18px;
-                    bottom: -118px;
                 }
             }
         }
@@ -363,14 +363,15 @@ header {
             padding-left: 85px;
             padding-right: 0;
             .benefit-line {
+                left: 23px;
+                top: 21px;
+                width: 2px;
+                height: calc(100% + 120px);
                 span {
                     content: '';
                     width: 2px;
-                    height: calc(100% + 120px);
+                    height: 100%;
                     background: rgba(194, 186, 171, 0.5);
-                    position: absolute;
-                    left: 23px;
-                    top: 21px;
                 }
             }
         }
@@ -616,7 +617,7 @@ header {
                 opacity: 1;
                 .footer-line {
                     animation-delay:0.5s;
-                    animation-name: lines;
+                    animation-name: footer-lines;
                     animation-timing-function: ease-out;
                     animation-duration: 2.5s;
                     animation-iteration-count: 1;
@@ -832,6 +833,7 @@ header {
             max-width: 25%;
             margin-bottom: 65px;
             max-height: 97px;
+            padding: 0 10px;
             .career-type {
                 display: block;
                 font-size: 18px;
@@ -1108,23 +1110,61 @@ footer {
     display: none;
 }
 /* animation */
-@keyframes lines {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(300%);
-    opacity: 1;
-  }
+@keyframes footer-lines {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-@keyframes benefit-lines {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(200%);
-    opacity: 1;
-  }
+@media screen and (min-width:1400px) {
+	@keyframes lines {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        85% {
+            transform: translateY(50%);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+    }
+}
+@media screen and (min-width:992px) and (max-width: 1399px) {
+	@keyframes lines {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        85% {
+            transform: translateY(20%);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(20%);
+            opacity: 0;
+        }
+    }
+}
+@media screen and (max-width:991px) {
+	@keyframes lines {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        85% {
+            transform: translateY(-10%);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+    }
 }

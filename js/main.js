@@ -103,8 +103,24 @@ $(document).ready(function () {
             var footHeight = $(this).find('footer').outerHeight();
             $(this).css('padding-bottom', footHeight)
         });
-    })
+    });
+    if($(window).width() > 767) {
+        winScrollTop = $(this).scrollTop();
+        parallax();
+        function parallax() { 
+          $('.parallax').each(function(){ 
+             var firstTop = $(this).offset().top; 
+             var moveTop = (firstTop-winScrollTop)*0.3 //speed;
+             $(this).css("transform","translate3d(0, "+-moveTop+"px, 0)");
+          });
+        }
+        $(window).scroll(function(e){
+          winScrollTop = $(this).scrollTop();
+          parallax();
+        });
+    }
 });
+
 var animateHTML = function () {
   var elems,
     windowHeight
@@ -129,38 +145,7 @@ var animateHTML = function () {
     init: init
   }
 }
-animateHTML().init()
-/* parallax */
-$.fn.is_on_screen = function(){    
-    var win = $(window);
-    var viewport = {
-        top : win.scrollTop(),
-        left : win.scrollLeft()
-    };
-    //viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
-
-    var bounds = this.offset();
-    //bounds.right = bounds.left + this.outerWidth();
-    bounds.bottom = bounds.top + this.outerHeight();
-
-    return (!(viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-};
-
-function parallax() { 
-  var scrolled = $(window).scrollTop();
-  $('.parallax').each(function(){ 
-  	 if ($(this).is_on_screen()) {	
-          var firstTop = $(this).offset().top; 
-          var moveTop = (firstTop-winScrollTop)*0.3 //speed;
-          $(this).css("transform","translate3d(0, "+-moveTop+"px, 0)");
-     }
-  });
-}
-$(window).scroll(function(e){
-  winScrollTop = $(this).scrollTop();
-  parallax();
-});
+animateHTML().init();
 
 function getParam(name) {
     var params = new URLSearchParams(location.search.slice(1));

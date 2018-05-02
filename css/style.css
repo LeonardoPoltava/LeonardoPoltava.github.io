@@ -111,7 +111,7 @@ header {
       animation-delay: 0.5s;
       animation-name: lines;
       animation-timing-function: ease-out;
-      animation-duration: 4.5s;
+      animation-duration: 5.5s;
       animation-iteration-count: infinite;
       animation-fill-mode: forwards;
       transform: translateY(-100%);
@@ -123,43 +123,43 @@ header {
         animation-delay: 1s; }
       header .header-lines-section .header-line:nth-child(3) {
         height: 479px;
-        animation-delay: 1.5s; }
+        animation-delay: 3.5s; }
       header .header-lines-section .header-line:nth-child(4) {
         height: 537px;
         animation-delay: 2s; }
       header .header-lines-section .header-line:nth-child(5) {
         height: 407px;
-        animation-delay: 2.5s; }
+        animation-delay: 4.5s; }
       header .header-lines-section .header-line:nth-child(6) {
         height: 466px;
         animation-delay: 1.5s; }
       header .header-lines-section .header-line:nth-child(7) {
         height: 502px;
-        animation-delay: 2s; }
+        animation-delay: 5s; }
       header .header-lines-section .header-line:nth-child(8) {
         height: 466px;
-        animation-delay: 2.5s; }
+        animation-delay: 5.5s; }
       header .header-lines-section .header-line:nth-child(9) {
         height: 489px;
-        animation-delay: 1s; }
+        animation-delay: 3s; }
       header .header-lines-section .header-line:nth-child(10) {
         height: 466px;
-        animation-delay: 1.5s; }
+        animation-delay: 2.5s; }
       header .header-lines-section .header-line:nth-child(11) {
         height: 479px;
-        animation-delay: 2.5s; }
+        animation-delay: 4.5s; }
       header .header-lines-section .header-line:nth-child(12) {
         height: 489px;
         animation-delay: 2s; }
       header .header-lines-section .header-line:nth-child(13) {
         height: 479px;
-        animation-delay: 1s; }
+        animation-delay: 4s; }
       header .header-lines-section .header-line:nth-child(14) {
-        animation-delay: 1.5s;
+        animation-delay: 5.5s;
         height: 466px; }
       header .header-lines-section .header-line:nth-child(15) {
         height: 502px;
-        animation-delay: 2s; }
+        animation-delay: 3s; }
       header .header-lines-section .header-line:nth-child(16) {
         animation-delay: 1.5s;
         height: 525px; }
@@ -168,37 +168,37 @@ header {
         animation-delay: 2.5s; }
       header .header-lines-section .header-line:nth-child(18) {
         height: 466px;
-        animation-delay: 1.5s; }
+        animation-delay: 6.5s; }
       header .header-lines-section .header-line:nth-child(19) {
         height: 560px;
-        animation-delay: 1s; }
+        animation-delay: 4s; }
       header .header-lines-section .header-line:nth-child(20) {
-        animation-delay: 2.5s;
+        animation-delay: 5.5s;
         height: 466px; }
       header .header-lines-section .header-line:nth-child(21) {
         height: 454px;
         animation-delay: 2s; }
       header .header-lines-section .header-line:nth-child(22) {
         height: 502px;
-        animation-delay: 1.5s; }
+        animation-delay: 3.5s; }
       header .header-lines-section .header-line:nth-child(23) {
         height: 466px;
         animation-delay: 1s; }
       header .header-lines-section .header-line:nth-child(24) {
-        animation-delay: 2s;
+        animation-delay: 5s;
         height: 420px; }
       header .header-lines-section .header-line:nth-child(25) {
         height: 479px;
-        animation-delay: 2.5s; }
+        animation-delay: 3.5s; }
       header .header-lines-section .header-line:nth-child(26) {
-        animation-delay: 1s;
+        animation-delay: 4s;
         height: 466px; }
       header .header-lines-section .header-line:nth-child(27) {
-        animation-delay: 2s;
+        animation-delay: 5s;
         height: 383px; }
       header .header-lines-section .header-line:nth-child(28) {
         height: 360px;
-        animation-delay: 1.5s; }
+        animation-delay: 2.5s; }
   header .logo {
     float: left; }
   header .business-btn {
@@ -244,60 +244,66 @@ header {
   justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: relative; }
   .benefits-list .benefit-box {
     padding: 0 36px;
     position: relative;
     width: 24%;
     transform: translateY(0); }
-    .benefits-list .benefit-box .benefit-line span {
-      animation-delay: 0s;
-      animation-name: benefit-lines;
-      animation-timing-function: ease-out;
-      animation-duration: 4.5s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: forwards;
-      display: block; }
+    .benefits-list .benefit-box .benefit-line {
+      position: absolute;
+      transition: 1s all ease; }
+      .benefits-list .benefit-box .benefit-line span {
+        display: block; }
     .benefits-list .benefit-box:first-child {
       padding-left: 0;
       width: 28%; }
-      .benefits-list .benefit-box:first-child .benefit-line span {
-        content: '';
+      .benefits-list .benefit-box:first-child .benefit-line {
         width: 2px;
         height: 295px;
-        background: rgba(194, 186, 171, 0.5);
-        position: absolute;
         right: 25px;
         top: 0; }
-    .benefits-list .benefit-box:nth-child(2) .benefit-line span {
-      content: '';
-      width: 2px;
-      height: 223px;
-      background: rgba(194, 186, 171, 0.5);
-      position: absolute;
+        .benefits-list .benefit-box:first-child .benefit-line span {
+          content: '';
+          width: 2px;
+          height: 295px;
+          background: rgba(194, 186, 171, 0.5); }
+    .benefits-list .benefit-box:nth-child(2) .benefit-line {
       right: 5px;
-      bottom: -24px; }
+      bottom: -24px;
+      width: 2px;
+      height: 223px; }
+      .benefits-list .benefit-box:nth-child(2) .benefit-line span {
+        width: 2px;
+        height: 223px;
+        content: '';
+        background: rgba(194, 186, 171, 0.5); }
     .benefits-list .benefit-box:nth-child(3) {
       padding-left: 55px; }
-      .benefits-list .benefit-box:nth-child(3) .benefit-line span {
-        content: '';
-        width: 2px;
-        height: 45px;
-        background: rgba(194, 186, 171, 0.5);
-        position: absolute;
+      .benefits-list .benefit-box:nth-child(3) .benefit-line {
         right: -18px;
-        bottom: -118px; }
+        bottom: -118px;
+        width: 2px;
+        height: 45px; }
+        .benefits-list .benefit-box:nth-child(3) .benefit-line span {
+          content: '';
+          width: 2px;
+          height: 45px;
+          background: rgba(194, 186, 171, 0.5); }
     .benefits-list .benefit-box:last-child {
       padding-left: 85px;
       padding-right: 0; }
-      .benefits-list .benefit-box:last-child .benefit-line span {
-        content: '';
-        width: 2px;
-        height: calc(100% + 120px);
-        background: rgba(194, 186, 171, 0.5);
-        position: absolute;
+      .benefits-list .benefit-box:last-child .benefit-line {
         left: 23px;
-        top: 21px; }
+        top: 21px;
+        width: 2px;
+        height: calc(100% + 120px); }
+        .benefits-list .benefit-box:last-child .benefit-line span {
+          content: '';
+          width: 2px;
+          height: 100%;
+          background: rgba(194, 186, 171, 0.5); }
     .benefits-list .benefit-box .benefit-img {
       display: block;
       margin: 0 0 45px; }
@@ -507,7 +513,7 @@ header {
         opacity: 1; }
         .careers-section .careers-left .footer-lines-section.animated .footer-line {
           animation-delay: 0.5s;
-          animation-name: lines;
+          animation-name: footer-lines;
           animation-timing-function: ease-out;
           animation-duration: 2.5s;
           animation-iteration-count: 1;
@@ -672,7 +678,8 @@ header {
       min-width: 25%;
       max-width: 25%;
       margin-bottom: 65px;
-      max-height: 97px; }
+      max-height: 97px;
+      padding: 0 10px; }
       .careers-section .careers-content .careers-box .career-type {
         display: block;
         font-size: 18px;
@@ -913,19 +920,45 @@ footer {
   display: none; }
 
 /* animation */
-@keyframes lines {
+@keyframes footer-lines {
   from {
     transform: translateY(-100%);
     opacity: 0; }
   to {
-    transform: translateY(300%);
-    opacity: 1; } }
-@keyframes benefit-lines {
-  from {
-    transform: translateY(-100%);
-    opacity: 0; }
-  to {
-    transform: translateY(200%);
-    opacity: 1; } }
+    opacity: 1;
+    transform: translateY(0); } }
+@media screen and (min-width: 1400px) {
+  @keyframes lines {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0; }
+    85% {
+      transform: translateY(50%);
+      opacity: 1; }
+    100% {
+      transform: translateY(50%);
+      opacity: 0; } } }
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+  @keyframes lines {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0; }
+    85% {
+      transform: translateY(20%);
+      opacity: 1; }
+    100% {
+      transform: translateY(20%);
+      opacity: 0; } } }
+@media screen and (max-width: 991px) {
+  @keyframes lines {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0; }
+    85% {
+      transform: translateY(-10%);
+      opacity: 1; }
+    100% {
+      transform: translateY(-10%);
+      opacity: 0; } } }
 
 /*# sourceMappingURL=style.css.map */

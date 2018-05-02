@@ -304,30 +304,39 @@
         .benefits-list .benefit-box:first-child img {
           width: 131px;
           height: 50px; }
-        .benefits-list .benefit-box:first-child .benefit-line span {
+        .benefits-list .benefit-box:first-child .benefit-line {
           width: 252px;
           height: 1px;
           bottom: -25px;
           right: -20px;
           top: auto; }
+          .benefits-list .benefit-box:first-child .benefit-line span {
+            width: 252px;
+            height: 1px; }
       .benefits-list .benefit-box:nth-child(2) img {
         width: 61px;
         height: 50px; }
-      .benefits-list .benefit-box:nth-child(2) .benefit-line span {
+      .benefits-list .benefit-box:nth-child(2) .benefit-line {
         width: 145px;
         height: 1px;
         bottom: -25px;
         right: -20px;
         top: auto; }
+        .benefits-list .benefit-box:nth-child(2) .benefit-line span {
+          width: 145px;
+          height: 1px; }
       .benefits-list .benefit-box:nth-child(3) img {
         width: 84px;
         height: 50px; }
-      .benefits-list .benefit-box:nth-child(3) .benefit-line span {
+      .benefits-list .benefit-box:nth-child(3) .benefit-line {
         width: 300px;
-        height: 1px;
-        bottom: -25px;
-        right: -20px;
-        top: auto; }
+        height: 1px; }
+        .benefits-list .benefit-box:nth-child(3) .benefit-line span {
+          width: 300px;
+          height: 1px;
+          bottom: -25px;
+          right: -20px;
+          top: auto; }
       .benefits-list .benefit-box:nth-child(4) img {
         width: 66px;
         height: 50px; }
