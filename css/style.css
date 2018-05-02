@@ -111,8 +111,8 @@ header {
       animation-delay: 0.5s;
       animation-name: lines;
       animation-timing-function: ease-out;
-      animation-duration: 2.5s;
-      animation-iteration-count: 1;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
       animation-fill-mode: forwards;
       transform: translateY(-100%);
       margin-left: 5px; }
@@ -252,10 +252,10 @@ header {
     transform: translateY(0); }
     .benefits-list .benefit-box .benefit-line span {
       animation-delay: 0s;
-      animation-name: lines;
+      animation-name: benefit-lines;
       animation-timing-function: ease-out;
-      animation-duration: 2.5s;
-      animation-iteration-count: 1;
+      animation-duration: 4.5s;
+      animation-iteration-count: infinite;
       animation-fill-mode: forwards;
       display: block; }
     .benefits-list .benefit-box:first-child {
@@ -918,7 +918,14 @@ footer {
     transform: translateY(-100%);
     opacity: 0; }
   to {
-    transform: translateY(0);
+    transform: translateY(300%);
+    opacity: 1; } }
+@keyframes benefit-lines {
+  from {
+    transform: translateY(-100%);
+    opacity: 0; }
+  to {
+    transform: translateY(200%);
     opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
