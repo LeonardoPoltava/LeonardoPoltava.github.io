@@ -400,9 +400,14 @@
     header {
         padding-top: 20px;
         height: 360px;
-        background: url(../images/main-visual-mob.svg) no-repeat 100% 100%;
         .header-lines-section {
-            display: none;
+            transform: rotate(90deg);
+            right: 10vw;
+            top: 35px;
+            width: 133px;
+            .header-line {
+                margin-left: 2px;
+            }
         }
         .container {
             &:after,

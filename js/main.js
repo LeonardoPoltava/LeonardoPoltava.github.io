@@ -110,7 +110,7 @@ $(document).ready(function () {
         function parallax() { 
           $('.parallax').each(function(){ 
              var firstTop = $(this).offset().top; 
-             var moveTop = (firstTop-winScrollTop)*0.3 //speed;
+             var moveTop = (firstTop-winScrollTop-640)*0.3 //speed;
              $(this).css("transform","translate3d(0, "+-moveTop+"px, 0)");
           });
         }
