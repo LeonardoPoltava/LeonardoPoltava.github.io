@@ -54,17 +54,12 @@
 
   .benefits-list .benefit-box {
     padding: 0 20px 0 0; }
-    .benefits-list .benefit-box:nth-child(3) {
-      padding: 0 20px 0 8px; }
-      .benefits-list .benefit-box:nth-child(3) .benefit-line span {
-        right: 5px;
-        bottom: -118px; }
     .benefits-list .benefit-box:last-child {
       padding: 0 0 0 40px; }
-      .benefits-list .benefit-box:last-child .benefit-line span {
+      .benefits-list .benefit-box:last-child .benefit-line {
         left: 3px;
         top: 10px; }
-    .benefits-list .benefit-box:nth-child(2) .benefit-line span {
+    .benefits-list .benefit-box:nth-child(2) .benefit-line {
       right: 17px; }
     .benefits-list .benefit-box .benefit-img {
       margin-bottom: 30px; }
@@ -153,13 +148,9 @@
 
   .benefits-list .benefit-box {
     padding: 0 15px; }
-    .benefits-list .benefit-box:nth-child(3) {
-      padding-left: 25px; }
-      .benefits-list .benefit-box:nth-child(3) .benefit-line span {
-        right: 0; }
     .benefits-list .benefit-box:last-child {
       padding-left: 35px; }
-      .benefits-list .benefit-box:last-child .benefit-line span {
+      .benefits-list .benefit-box:last-child .benefit-line {
         left: 7px; }
     .benefits-list .benefit-box .benefit-img {
       height: auto;
@@ -172,7 +163,7 @@
     .benefits-list .benefit-box .benefit-text {
       max-width: 100%;
       font-size: 14px; }
-    .benefits-list .benefit-box:first-child .benefit-line span {
+    .benefits-list .benefit-box:first-child .benefit-line {
       right: 5px; }
 
   .main-bn {
@@ -332,20 +323,17 @@
       .benefits-list .benefit-box:nth-child(3) img {
         width: 84px;
         height: 50px; }
-      .benefits-list .benefit-box:nth-child(3) .benefit-line {
-        width: 300px;
-        height: 1px; }
-        .benefits-list .benefit-box:nth-child(3) .benefit-line span {
-          width: 300px;
-          height: 1px;
-          bottom: -25px;
-          right: -20px;
-          top: auto; }
       .benefits-list .benefit-box:nth-child(4) img {
         width: 66px;
         height: 50px; }
       .benefits-list .benefit-box:nth-child(4) .benefit-line {
-        display: none; }
+        width: 300px;
+        height: 1px;
+        right: -20px;
+        top: -35px; }
+        .benefits-list .benefit-box:nth-child(4) .benefit-line span {
+          width: 300px;
+          height: 1px; }
 
   .main-bn {
     overflow: hidden;

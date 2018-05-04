@@ -344,21 +344,6 @@ header {
                 }
             }
         }
-        &:nth-child(3) {
-            padding-left: 55px;
-            .benefit-line {
-                right: -18px;
-                bottom: -118px;
-                    width: 2px;
-                    height: 45px;
-                span {
-                    content: '';
-                    width: 2px;
-                    height: 45px;
-                    background: rgba(194, 186, 171, 0.5);
-                }
-            }
-        }
         &:last-child {
             padding-left: 85px;
             padding-right: 0;
