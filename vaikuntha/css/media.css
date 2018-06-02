@@ -42,8 +42,13 @@
     margin-left: 10px; }
 
   .main-bn {
-    height: 680px;
-    padding-top: 160px; }
+    height: 550px; }
+    .main-bn .slick-slide {
+      height: 550px;
+      padding-top: 160px; }
+    .main-bn .main-bn-title {
+      font-size: 34px;
+      line-height: 44px; }
 
   .about-section {
     padding: 50px 0 35px; }
@@ -64,9 +69,9 @@
         font-size: 16px; }
       .products .products-list li .products-col-content p {
         margin-bottom: 10px;
-        line-height: 22px;
         height: 140px;
-        font-size: 13px; }
+        font-size: 13px;
+        line-height: 19px; }
 
   .strategic-cooperation {
     margin-top: 250px; }
@@ -167,15 +172,19 @@
     line-height: 40px; }
 
   .main-bn {
-    height: 450px;
-    padding-top: 120px; }
+    height: 450px; }
+    .main-bn .slick-slide {
+      height: 450px;
+      padding-top: 120px; }
     .main-bn .main-bn-title {
-      font-size: 30px;
-      line-height: 40px; }
+      font-size: 25px;
+      line-height: 30px; }
     .main-bn .main-bn-sub {
-      font-size: 16px; }
+      font-size: 16px;
+      margin: 20px 0; }
     .main-bn .sign-up-btn {
       width: 200px;
+      margin-top: 20px;
       font-size: 18px; }
 
   .about-section {
@@ -203,6 +212,8 @@
       margin-right: 0; }
       .products .products-list li .products-col-content {
         padding: 15px 10px 0; }
+        .products .products-list li .products-col-content p {
+          line-height: 19px; }
 
   .button-std {
     font-size: 18px; }

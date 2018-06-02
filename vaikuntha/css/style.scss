@@ -179,12 +179,6 @@ img {
 .wrapper {
     position: relative;
 }
-header {
-    position: absolute;
-    top: 33px;
-    left: 0;
-    width: 100%;
-}
 .container {
     padding: 0 15px;
     max-width: 1200px;
@@ -192,6 +186,11 @@ header {
     margin: 0 auto;
 }
 header {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
     .logo {
         float: left;
     }
@@ -233,10 +232,23 @@ header {
     }
 }
 .main-bn {
-    background: url(../images/vincentiu-solomon-4602-unsplash.jpg) no-repeat 50% 50%;
-    background-size: cover;
     height: 739px;
-    padding-top: 220px;
+    .slick-slide {
+        height: 739px;
+        padding-top: 240px;
+        .container {
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .main-bn-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
     .sign-up-btn {
         display: block;
         line-height: 45px;
@@ -244,26 +256,50 @@ header {
         color: $white-color;
         width: 270px;
         height: 45px;
-        margin-top: 35px;
+        margin-top: 27px;
         text-transform: uppercase;
         font-size: 20px;
     }
     .main-bn-title {
         display: block;
-        font-size: 71px;
+        font-size: 46px;
         font-family: $font-bold;
         color: $white-color;
-        line-height: 81px;
+        line-height: 58px;
         text-transform: uppercase;
-        max-width: 819px;
         margin-bottom: 10px;
     }
     .main-bn-sub {
         display: block;
         font-family: $font-std;
         font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 35px;
         max-width: 600px;
         color: $white-color;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        height: 16px;
+        text-align: center;
+        li {
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            margin: 0 7px;
+            display: inline-block;
+            background: $white-color;
+            text-indent: -99999px;
+            &.slick-active {
+                background: $pink-color;
+            }
+            &:hover:not(.slick-active) {
+                cursor: pointer;
+            }
+        }
     }
 }
 .btn-std {

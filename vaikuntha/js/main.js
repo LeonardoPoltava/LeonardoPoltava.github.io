@@ -10,4 +10,15 @@ $(document).ready(function () {
             $(this).removeClass('active');
         }
     });
+    $('.main-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: false,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      pauseOnFocus: false,
+      adaptiveHeight: true
+    });
 });
