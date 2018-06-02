@@ -13,11 +13,12 @@ $(document).ready(function () {
     $('.main-slider').slick({
       dots: true,
       arrows: false,
-      infinite: false,
+      infinite: true,
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplaySpeed: 4000,
+      autoplay: true,
       pauseOnFocus: false,
       adaptiveHeight: true
     });
