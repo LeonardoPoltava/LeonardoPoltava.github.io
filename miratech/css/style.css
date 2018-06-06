@@ -242,12 +242,15 @@ header {
   margin-bottom: 21px; }
   .content .content-filter .sort-by {
     float: left;
-    margin-left: 9px; }
+    margin-left: 8px; }
     .content .content-filter .sort-by .sort-by-box {
       float: left;
       margin-left: 9px; }
       .content .content-filter .sort-by .sort-by-box input[type=checkbox] + label {
         padding-left: 18px; }
+      .content .content-filter .sort-by .sort-by-box input[type=checkbox]:checked + label {
+        font-family: 'fira_sansmedium';
+        color: #000000; }
       .content .content-filter .sort-by .sort-by-box:first-child {
         margin-left: 0; }
   .content .content-filter .sort-by-select {

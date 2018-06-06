@@ -310,11 +310,17 @@ header {
         margin-bottom: 21px;
         .sort-by {
             float: left;
-            margin-left: 9px;
+            margin-left: 8px;
             .sort-by-box {
                 float: left;
-                input[type=checkbox] + label {
-                    padding-left: 18px;
+                input[type=checkbox] {
+                    & + label {
+                        padding-left: 18px;
+                    }
+                    &:checked + label {
+                        font-family: 'fira_sansmedium';
+                        color: $black;
+                    }
                 }
                 margin-left: 9px;
                 &:first-child {
