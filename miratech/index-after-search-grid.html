@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/simple-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+  </head>
+  <body>
+    <header>
+        <div class="grid-container">
+            <div class="flex-center-y flex-space-b">
+                <div class="pull-left flex-center-y">
+                    <a href="javascript:void(0)" class="logo flex-center-y"><img src="images/logo.png" srcset="images/logo@2x.png 2x, images/logo@3x.png 3x" class="logo-img"></a>
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-elem">
+                                <a href="javascript:void(0)" class="header-nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="header-nav-elem">
+                                <a href="javascript:void(0)" class="header-nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="header-nav-elem">
+                                <a href="javascript:void(0)" class="header-nav-link">
+                                    Explore
+                                </a>
+                            </li>
+                            <li class="header-nav-elem">
+                                <a href="javascript:void(0)" class="header-nav-link">
+                                    Map
+                                </a>
+                            </li>
+                            <li class="header-nav-elem">
+                                <a href="javascript:void(0)" class="header-nav-link">
+                                    My Plants Map
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pull-right">
+                    <form action="#" class="search-form">
+                        <input type="search" class="search-form-input" placeholder="search">
+                    </form>
+                    <ul class="header-actions">
+                        <li class="header-actions-elem show-search">
+                            <a href="javascript:void(0)" class="header-actions-link flex-center-y">
+                                <img src="images/search1.svg" width="23" height="23" alt="" class="header-actions-img">
+                            </a>
+                        </li>
+                        <li class="header-actions-elem">
+                            <a href="javascript:void(0)" class="header-actions-link flex-center-y">
+                                <img src="images/notification.svg" class="header-actions-img" width="20" height="22" alt="">
+                            </a>
+                        </li>
+                        <li class="header-actions-elem">
+                            <a href="javascript:void(0)" class="header-actions-link flex-center-y">
+                                <img src="images/basket.svg" width="25" class="header-actions-img" height="23" alt="">
+                            </a>
+                        </li>
+                        <li class="header-actions-elem">
+                            <a href="javascript:void(0)" class="header-actions-link flex-center-y">
+                                <img src="images/login.svg" width="28" class="header-actions-img" height="28" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" class="show-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="grid-container">
+        <div class="plant-finder">
+            <span class="plant-finder-title">PLANT FINDER</span>
+            <div class="flex-space-b">
+                <select name="" id="" class="selectpicker plant-select">
+                    <option>Plants</option>
+                    <option>Collections</option>
+                    <option>Community</option>
+                    <option>Recources</option>
+                    <option>Events</option>
+                </select>
+                <ul class="plant-finder-list hidden-xs">
+                    <li class="plant-finder-list-elem active">Plants</li>
+                    <li class="plant-finder-list-elem">Collections</li>
+                    <li class="plant-finder-list-elem">Community</li>
+                    <li class="plant-finder-list-elem">Recources</li>
+                    <li class="plant-finder-list-elem">Events</li>
+                </ul>
+                <a href="javascript:void(0)" class="add-new-btn">Add New +</a>
+            </div>
+        </div>
+        <div class="visible-xs content-buttons">
+            <a href="javascript:void(0)" class="content-button filter-up">Filters</a>
+            <a href="javascript:void(0)" class="content-button sort-up">Sort By</a>
+            <a href="javascript:void(0)" class="content-button search-up">Search</a>
+        </div>
+        <div class="main grid-x grid-padding-x">
+            <div class="sidebar large-3 medium-12 cell pop-up">
+                <div class="popup-head">
+                    <span class="popup-title">Filters</span>
+                    <a href="javascript:void(0)" class="close-up"></a>
+                </div>
+                <div class="filter">
+                    <div class="filter-section flex-space-b">
+                        <span class="filter-title">Filters:</span>
+                        <a href="javascript:void(0)" class="filter-clear">Clear All</a>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title">Purpose</span>
+                        <ul class="purpose-list">
+                            <li class="purpose-list-elem active">
+                                <a href="javascript:void(0)" class="purpose-list-link">
+                                    <div class="purpose-img-box flex-center-y">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" class="purpose-img">
+                                            <path fill-rule="nonzero" stroke="#FFF" stroke-width=".4" d="M16.17 14.576H1.18a.18.18 0 1 1 0-.361h14.99a.18.18 0 1 1 0 .361zm-1.235 0a.18.18 0 0 1-.18-.18v-4.21a.18.18 0 1 1 .361 0v4.21c0 .1-.08.18-.18.18zm2.884-3.423a.181.181 0 0 1-.092-.026 5.5 5.5 0 0 0-5.583 0 .18.18 0 0 1-.252-.24l1.591-3.023a5.297 5.297 0 0 0-1.243.533.181.181 0 0 1-.245-.253l2.03-3.209a3.03 3.03 0 0 0-.673.293.181.181 0 0 1-.258-.228l1.675-3.9c.057-.133.275-.133.333 0L16.777 5a.18.18 0 0 1-.258.228 3.039 3.039 0 0 0-.672-.293l2.029 3.21a.18.18 0 0 1-.245.252 5.297 5.297 0 0 0-1.243-.533l1.591 3.023a.18.18 0 0 1-.16.266zm-2.884-1.149c.838 0 1.676.18 2.454.538L15.88 7.678a.18.18 0 0 1 .197-.262c.394.081.775.203 1.14.363l-1.91-3.02a.18.18 0 0 1 .181-.276c.267.043.522.114.764.211l-1.317-3.065-1.316 3.065c.242-.097.497-.168.763-.211a.18.18 0 1 1 .182.275l-1.91 3.02a5.67 5.67 0 0 1 1.14-.362.18.18 0 0 1 .196.261l-1.508 2.865a5.857 5.857 0 0 1 2.453-.538zm-8.754.131c.003-.134.002-1.142-.864-1.759l-.08.08a.775.775 0 0 1-.559.217c-.285 0-.598-.125-.856-.368a4.727 4.727 0 0 1-.109-.105c-.96-.96-1.032-2.412-1.035-2.473a.18.18 0 0 1 .189-.189c.061.003 1.513.075 2.473 1.035l.105.108c.426.453.492 1.075.151 1.415l-.02.021c.595.446.826 1.049.914 1.486a1.32 1.32 0 0 1 .569-.396c.06-.022.104-.046.15-.071.036-.02.073-.04.118-.06a.18.18 0 1 1 .154.327c-.037.017-.069.034-.1.05a1.35 1.35 0 0 1-.2.095c-.404.143-.671.545-.797 1.193.77.16 1.401.885 1.661 1.642.225-.11.467-.168.714-.168.965 0 1.713 1.172 1.713 2.18a.18.18 0 1 1-.361 0c0-.818-.624-1.819-1.352-1.819-.253 0-.502.08-.72.229a.182.182 0 0 1-.278-.107c-.193-.8-.879-1.628-1.694-1.628-.868 0-1.587.677-1.71 1.61a.18.18 0 0 1-.282.125 1.273 1.273 0 0 0-.72-.229c-.728 0-1.352 1-1.352 1.82a.18.18 0 1 1-.361 0c0-1.01.748-2.181 1.713-2.181.238 0 .473.054.692.157.234-.963 1.027-1.642 1.974-1.663.04-.212.093-.403.16-.574zM3.06 5.921c.056.417.252 1.367.908 2.023l.1.098c.305.285.714.357.912.158l.36-.36c.198-.198.127-.607-.16-.91a4.821 4.821 0 0 0-.097-.101c-.656-.656-1.606-.852-2.023-.908zm5.292 4.063a1.04 1.04 0 0 1-.75-.291l-.52-.52c-.461-.46-.364-1.31.22-1.932.046-.048.095-.1.15-.155 1.365-1.364 3.433-1.468 3.52-1.471.056-.004.1.016.136.052a.18.18 0 0 1 .053.136c-.004.087-.107 2.155-1.472 3.52a6.14 6.14 0 0 1-.155.15c-.358.337-.79.511-1.182.511zm2.429-3.99c-.546.063-2.05.325-3.072 1.348-.053.052-.1.1-.143.147-.443.47-.545 1.112-.228 1.43l.52.518c.317.318.958.215 1.429-.227.046-.043.094-.09.147-.143 1.023-1.023 1.284-2.527 1.347-3.072z"/>
+                                        </svg>
+
+                                    </div>
+                                    <span class="purpose-text">All plants</span>
+                                </a>
+                            </li>
+                            <li class="purpose-list-elem">
+                                <a href="javascript:void(0)" class="purpose-list-link">
+                                    <div class="purpose-img-box flex-center-y">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" class="purpose-img">
+                                            <path fill-rule="nonzero" stroke="#888" stroke-width=".4" d="M5.028 7.585a.57.57 0 0 0 .57-.57V4.503c0-.85-.26-1.67-.733-2.313a3.453 3.453 0 0 0-1.503-1.177.168.168 0 0 0-.126 0A3.452 3.452 0 0 0 1.733 2.19C1.26 2.832 1 3.653 1 4.502v2.514c0 .314.255.57.57.57h.865v.625l-.352 4.928c-.025.35.093.692.324.94.213.23.497.355.8.355h.183c.303 0 .587-.126.8-.355a1.25 1.25 0 0 0 .325-.94L4.163 8.21v-.626h.865zm-.434-5.197c.43.585.668 1.336.668 2.114v2.514a.234.234 0 0 1-.234.233H3.467V1.43c.442.222.82.543 1.127.96zM1.336 7.016V4.502c0-.778.237-1.529.667-2.114a3.137 3.137 0 0 1 1.128-.96V7.25H1.569a.234.234 0 0 1-.233-.233zm2.608 6.834a.754.754 0 0 1-.554.248h-.183a.754.754 0 0 1-.554-.248.914.914 0 0 1-.236-.687l.342-4.779h1.08l.34 4.779a.914.914 0 0 1-.235.687zM3.827 8.05H2.77v-.464h1.057v.464zm7.052-.464c.331 0 .601-.27.601-.601V1.168a.168.168 0 1 0-.336 0v4.307H9.93V1.168a.168.168 0 1 0-.336 0v4.307h-1.31V1.168a.168.168 0 1 0-.336 0v4.307H6.876V1.168a.168.168 0 1 0-.336 0v5.816c0 .331.27.601.602.601h1.004v.626l-.352 4.928c-.025.349.093.692.325.94.213.23.497.355.8.355H9.1c.303 0 .588-.126.8-.355a1.25 1.25 0 0 0 .325-.94L9.874 8.21v-.626h1.005zm-4.003-.601V5.81h4.268v1.173c0 .146-.119.265-.265.265H7.142a.266.266 0 0 1-.266-.265zm2.78 6.866a.753.753 0 0 1-.555.248H8.92a.754.754 0 0 1-.555-.248.914.914 0 0 1-.235-.688l.341-4.778h1.08l.341 4.778a.915.915 0 0 1-.235.688zM9.538 8.05H8.482v-.464h1.056v.464z"/>
+                                        </svg>
+
+                                    </div>
+                                    <span class="purpose-text">To buy</span>
+                                </a>
+                            </li>
+                            <li class="purpose-list-elem">
+                                <a href="javascript:void(0)" class="purpose-list-link">
+                                    <div class="purpose-img-box flex-center-y">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" class="purpose-img">
+                                            <path fill-rule="nonzero" stroke="#FFF" stroke-width=".4" d="M8.823 2.108a2.827 2.827 0 0 0-2.824 2.824 2.827 2.827 0 0 0 2.824 2.824 2.827 2.827 0 0 0 2.824-2.824 2.827 2.827 0 0 0-2.824-2.824zm0 4.326A1.504 1.504 0 0 1 7.32 4.932a1.504 1.504 0 0 1 3.004 0c0 .828-.673 1.502-1.501 1.502zm7.55-1.885C14.506 1.927 11.754.424 8.822.424c-2.933 0-5.685 1.503-7.55 4.125L1 4.932l.273.383C3.138 7.937 5.89 9.44 8.823 9.44c2.932 0 5.684-1.503 7.55-4.125l.272-.383-.273-.383zm-7.55 3.57c-2.356 0-4.586-1.156-6.186-3.187 1.6-2.031 3.83-3.186 6.186-3.186 2.355 0 4.585 1.155 6.186 3.186-1.6 2.031-3.831 3.186-6.186 3.186z"/>
+                                        </svg>
+
+                                    </div>
+                                    <span class="purpose-text">To visit</span>
+                                </a>
+                            </li>
+                            <li class="purpose-list-elem">
+                                <a href="javascript:void(0)" class="purpose-list-link">
+                                    <div class="purpose-img-box flex-center-y">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" class="purpose-img">
+                                            <path fill-rule="nonzero" stroke="#979797" stroke-width=".2" d="M17.837 4.983c-.845-.534-1.767-.816-2.669-.816-1.2 0-2.262.487-2.913 1.337-.53.692-.722 1.553-.554 2.45a7.584 7.584 0 0 0-1.51 2.014 10.385 10.385 0 0 0-1.466-2.826c.556-1.337.46-2.704-.282-3.872C7.542 1.85 5.857 1 3.938 1c-.9 0-1.815.186-2.72.553a.35.35 0 0 0-.054.622c.614.384.91 1.224 1.222 2.113.551 1.566 1.236 3.515 4.056 3.515h.001c.524 0 1.119-.072 1.763-.207 1.892 2.579 2.037 5.553 1.878 7.422a.35.35 0 1 0 .698.06c.079-.922.099-2.398-.284-4.034.005-.01.012-.02.016-.03.318-.983.934-1.824 1.604-2.486.705.283 1.316.423 1.861.423 1.56 0 2.208-1.144 2.73-2.064.322-.568.626-1.104 1.071-1.283a.35.35 0 0 0 .057-.621zM8.213 6.5C7.446 5.62 6.465 4.795 5.21 4.096a.35.35 0 0 0-.342.612c1.19.663 2.119 1.438 2.844 2.27a7.422 7.422 0 0 1-1.269.125c-2.324 0-2.844-1.48-3.395-3.047-.262-.743-.53-1.506-1.016-2.052a6.317 6.317 0 0 1 1.906-.303c1.678 0 3.14.727 3.913 1.945.546.86.668 1.857.362 2.855zm7.886.04c-.498.88-.97 1.71-2.12 1.71-.366 0-.793-.085-1.272-.25.834-.677 1.644-1.067 1.987-1.092a.35.35 0 0 0-.052-.7c-.489.037-1.39.46-2.297 1.18a2.285 2.285 0 0 1 .466-1.459c.51-.665 1.391-1.062 2.357-1.062.6 0 1.216.15 1.806.435-.36.33-.62.79-.875 1.239z"/>
+                                        </svg>
+
+                                    </div>
+                                    <span class="purpose-text">Of interest</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title">Botanical Name</span>
+                        <ul class="botanical-name">
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">a</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">b</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">c</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">d</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">e</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">f</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">g</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">h</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">i</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">j</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">k</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">l</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">m</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">n</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">o</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">p</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">q</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">r</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">s</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">t</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">u</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">v</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">w</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">x</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">y</a>
+                            </li>
+                            <li class="botanical-name-elem">
+                                <a href="javascript:void(0)" class="botanical-name-link">z</a>
+                            </li>
+                            <li class="botanical-elem-all">
+                                <a href="javascript:void(0)" class="btn-std botanical-name-all">All</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Category</span>
+                        <div class="filter-drop category filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Taxonomic Classification</span>
+                        <div class="filter-drop taxonomic-classification filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Sun Preference</span>
+                        <div class="filter-drop sun-preference filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Interior Light </span>
+                        <div class="filter-drop interior-light filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Soil Preferences </span>
+                        <div class="filter-drop soil-preferences filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">pH Preferences </span>
+                        <div class="filter-drop ph-references filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Water Requirements </span>
+                        <div class="filter-drop water-requirements filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">USDA Hardiness Zone </span>
+                        <div class="filter-drop usda-hardiness-zone  filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Average Height</span>
+                        <div class="filter-drop average-height filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Average Width</span>
+                        <div class="filter-drop average-width filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Flower Color</span>
+                        <div class="filter-drop flower-color filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Flowering Period</span>
+                        <div class="filter-drop flowering-period filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Foliage Color</span>
+                        <div class="filter-drop foliage-color filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Plant Attributes</span>
+                        <div class="filter-drop plant-attributes filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Tolerates</span>
+                        <div class="filter-drop tolerates filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-section-title filter-show-btn">Attracts</span>
+                        <div class="filter-drop attracts filter-hidden">
+                            <ul class="filter-list scrollable" ss-container>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                                <li class="filter-list-elem">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="annual">
+                                        <label for="annual"><span class="filter-list-elem-name">Annual </span>(12)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-actions visible-xs">
+                    <a href="javascript:void(0)" class="clear-btn">Clear All</a>
+                    <a href="javascript:void(0)" class="confirm-btn btn-std">Confirm</a>
+                </div>
+            </div>
+            <div class="content large-9 medium-12 cell">
+                <div class="content-filter grid-x grid-padding-x">
+                    <div class="large-8 medium-12 cell search-box pop-up">
+                        <div class="popup-head">
+                            <span class="popup-title">Search</span>
+                            <a href="javascript:void(0)" class="close-up"></a>
+                        </div>
+                        <form action="#" class="search-form flex-center-y">
+                            <div class="search-form-box">
+                                <input type="search" class="search-form-input" placeholder="Search by Botanical, Common or Trade Name ">
+                                <button class="search-btn btn-std">Search</button>
+                            </div>
+                            <div class="sort-by">
+                                <div class="sort-by-box">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="by-name">
+                                        <label for="by-name">By Name</label>
+                                    </div>
+                                </div>
+                                <div class="sort-by-box">
+                                    <div class="checkbox-box">
+                                        <input type="checkbox" class="checkbox" id="by-description">
+                                        <label for="by-description">By Description</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-actions visible-xs">
+                                <button class="search-mob-btn">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="large-4 medium-12 cell flex-center-y flex-space-b sort-box pop-up">
+                        <div class="popup-head">
+                            <span class="popup-title">Sort By</span>
+                            <a href="javascript:void(0)" class="close-up"></a>
+                        </div>
+                        <div class="sort-by-select hidden-xs">
+                            <span class="sort-by-select-text">Sort by:</span>
+                            <select name="" id="" class="selectpicker">
+                                <optgroup label="">
+                                    <option value="0">Botanical name: A - Z</option>
+                                    <option value="0">Botanical name: Z - A</option>
+                                </optgroup>
+                                <optgroup label="">
+                                    <option value="0">Common name: A - Z</option>
+                                    <option value="0">Common name: Z - A</option>
+                                </optgroup>
+                                <optgroup label="">
+                                    <option value="0">Trade name: A - Z</option>
+                                    <option value="0">Trade name: Z - A</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="view-type">
+                            <a href="javascrupt:void(0)" class="view-link view-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="21" viewBox="0 0 34 21">
+                                    <g fill-rule="nonzero">
+                                        <path d="M7.554.439h26.097v4.405H7.554zM7.554 8.1h26.097v4.406H7.554zM7.554 15.762h26.097v4.405H7.554zM.18.439h4.645v4.405H.18zM.18 8.1h4.645v4.406H.18zM.18 15.762h4.645v4.405H.18z"/>
+                                    </g>
+                                </svg>
+                                <span class="view-link-text visible-xs">List view</span>
+                            </a>
+                            <a href="javascrupt:void(0)" class="view-link view-grid active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+                                    <g fill-rule="nonzero">
+                                        <path d="M.18.439h4.645v4.405H.18zM.18 8.1h4.645v4.406H.18zM.18 15.762h4.645v4.405H.18zM8.347.439h4.645v4.405H8.347zM8.347 8.1h4.645v4.406H8.347zM8.347 15.762h4.645v4.405H8.347zM16.513.439h4.645v4.405h-4.645zM16.513 8.1h4.645v4.406h-4.645zM16.513 15.762h4.645v4.405h-4.645z"/>
+                                    </g>
+                                </svg>
+                                <span class="view-link-text visible-xs">Grid view</span>
+                            </a>
+                        </div>
+                        <div class="sort-by-radio visible-xs">
+                            <div class="sort-by-radio-holder">
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="botoanical-a" class="">
+                                    <label for="botoanical-a" class="sort-radio-label">Botanical name: <span>A - Z</span></label>
+                                </div>
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="botoanical-z" class="">
+                                    <label for="botoanical-z" class="sort-radio-label">Botanical name: <span>Z - A</span></label>
+                                </div>
+                            </div>
+                            <div class="sort-by-radio-holder">
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="common-a" class="">
+                                    <label for="common-a" class="sort-radio-label">Common name: <span>A - Z</span></label>
+                                </div>
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="common-z" class="">
+                                    <label for="common-z" class="sort-radio-label">Common name: <span>Z - A</span></label>
+                                </div>
+                            </div>
+                            <div class="sort-by-radio-holder">
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="trade-a" class="">
+                                    <label for="trade-a" class="sort-radio-label">Trade name: <span>A - Z</span></label>
+                                </div>
+                                <div class="sort-by-radio-box">
+                                    <input type="radio" name="sort-radio" id="trade-z" class="">
+                                    <label for="trade-z" class="sort-radio-label">Trade name: <span>Z - A</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-actions visible-xs">
+                            <a href="javascript:void(0)" class="clear-btn">Clear All</a>
+                            <a href="javascript:void(0)" class="confirm-btn btn-std">Confirm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-items content-items-search grid-x grid-padding-x">
+                    <div class="large-4 medium-4 cell">
+                        <div class="content-special-item content-item">
+                            <img src="images/1-8.png" srcset="images/1-8@2x.png 2x, images/1-8@3x.png 3x" class="plants-map-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <a href="javascript:void(0)" class="add-plants-map">Add to My Plants Map <img src="images/core-plant-icon-f.svg" width="27" height="28" alt="" class="plants-map-icon"></a>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <div class="content-special-item content-item">
+                            <img src="images/1-8.png" srcset="images/1-8@2x.png 2x, images/1-8@3x.png 3x" class="plants-map-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <a href="javascript:void(0)" class="add-plants-map">Add to My Plants Map <img src="images/core-plant-icon-f.svg" width="27" height="28" alt="" class="plants-map-icon"></a>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <div class="content-special-item content-item">
+                            <img src="images/1-8.png" srcset="images/1-8@2x.png 2x, images/1-8@3x.png 3x" class="plants-map-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <a href="javascript:void(0)" class="add-plants-map">Add to My Plants Map <img src="images/core-plant-icon-f.svg" width="27" height="28" alt="" class="plants-map-icon"></a>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/default-img.svg" class="default-img" alt="">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/so-called.jpg" srcset="images/so-called@2x.jpg 2x, images/so-called@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/golden-fleece-solidago.jpg" srcset="images/golden-fleece-solidago@2x.jpg 2x, images/golden-fleece-solidago@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/img-1536.jpg" srcset="images/img-1536@2x.jpg 2x, images/img-1536@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/so-called.jpg" srcset="images/so-called@2x.jpg 2x, images/so-called@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/golden-fleece-solidago.jpg" srcset="images/golden-fleece-solidago@2x.jpg 2x, images/golden-fleece-solidago@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/default-img.svg" class="default-img" alt="">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/so-called.jpg" srcset="images/so-called@2x.jpg 2x, images/so-called@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/golden-fleece-solidago.jpg" srcset="images/golden-fleece-solidago@2x.jpg 2x, images/golden-fleece-solidago@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/img-1536.jpg" srcset="images/img-1536@2x.jpg 2x, images/img-1536@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/so-called.jpg" srcset="images/so-called@2x.jpg 2x, images/so-called@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/golden-fleece-solidago.jpg" srcset="images/golden-fleece-solidago@2x.jpg 2x, images/golden-fleece-solidago@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/img-1536.jpg" srcset="images/img-1536@2x.jpg 2x, images/img-1536@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/so-called.jpg" srcset="images/so-called@2x.jpg 2x, images/so-called@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <a href="javascript:void(0)" class="content-item">
+                            <img src="images/golden-fleece-solidago.jpg" srcset="images/golden-fleece-solidago@2x.jpg 2x, images/golden-fleece-solidago@3x.jpg 3x" class="content-item-img">
+                            <div class="content-item-caption">
+                                <span class="content-item-caption-title">Lamprocapnos spectabilis 'Alba'</span>
+                                <span class="content-item-caption-author"><span class="author-by">By:</span> Tracy Blevins</span>
+                                <div class="content-item-drop">
+                                    <span class="content-item-caption-text">Lamprocapnos spectabilis 'Alba' (Bleeding Heart) - A white flowering form of the traditional old-fashioned bleeding heart. Binomial…</span>
+                                    <div class="content-item-caption-images">
+                                        <img src="images/food.svg" width="26" height="26" alt="" class="content-item-caption-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="content-pager flex-center-x">
+                    <li class="prev"><a href="javascript:void(0)">&#60;&#60;</a></li>
+                    <li class="prev"><a href="javascript:void(0)">&#60;</a></li>
+                    <li class="active"><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)">7</a></li>
+                    <li><a href="javascript:void(0)">8</a></li>
+                    <li><a href="javascript:void(0)">9</a></li>
+                    <li><a href="javascript:void(0)">10</a></li>
+                    <li><a href="javascript:void(0)">...</a></li>
+                    <li><a href="javascript:void(0)">27</a></li>
+                    <li class="next"><a href="javascript:void(0)">&#62;</a></li>
+                    <li class="next"><a href="javascript:void(0)">&#62;&#62;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-2 cell">
+                    <a href="javascript:void(0)" class="footer-logo"><img src="images/footer-logo.svg" alt="" class="footer-logo-img"></a>
+                    <span class="copy">&copy; 2018 Plants Map, Inc. All rights reserved.</span>
+                </div>
+                <div class="large-7 medium-8 cell">
+                    <ul class="footer-nav">
+                        <li class="footer-nav-main-item"><a href="javascript:void(0)" class="footer-main-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Terms &amp; Services </a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Copyright Policy</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-main-item"><a href="javascript:void(0)" class="footer-main-link">About</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">About Us</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Help</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Tags &amp; Signs</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Pricing</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Blog</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Contact Us</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-main-item"><a href="javascript:void(0)" class="footer-main-link">Explore</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Plants</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Collections</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Community</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Resources</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Events</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-main-item"><a href="javascript:void(0)" class="footer-main-link">Map</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Plants</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Collections</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Community</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Resources</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">Events</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-main-item"><a href="javascript:void(0)" class="footer-main-link">My Plants Map</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">My Plants</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">My Collections</a></li>
+                        <li class="footer-nav-item"><a href="javascript:void(0)" class="footer-nav-link">My Tags</a></li>
+                    </ul>
+                </div>
+                <div class="large-2 medium-2 cell">
+                    <div class="socials-box">
+                        <a href="javascrpit:void(0)" class="socials-title">Socials:</a>
+                    </div>
+                    <div class="flex-space-b">
+                        <ul class="social-list flex-space-b">
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1146.000000, -77.000000)" fill="#CDCDCD">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33">
+                                                            <g id="Group-5">
+                                                                <path d="M13.7222222,11.5555556 L15.5277778,11.5555556 L15.3020833,13.3611111 L13.7222222,13.3611111 L13.7222222,18.7777778 L11.3806424,18.7777778 L11.3806424,13.3611111 L10.1111111,13.3611111 L10.1111111,11.5555556 L11.3806424,11.5555556 L11.3806424,10.3424479 C11.3806424,9.55251341 11.578123,8.9553695 11.9730903,8.55099826 C12.3680575,8.14662703 13.0263264,7.94444444 13.9479167,7.94444444 L15.5277778,7.94444444 L15.5277778,9.75 L14.5685764,9.75 C14.2112251,9.75 13.980831,9.80642305 13.8773872,9.91927083 C13.7739433,10.0321186 13.7222222,10.2201954 13.7222222,10.4835069 L13.7222222,11.5555556 Z" id="facebook"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1185.000000, -77.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33">
+                                                            <g id="Group-6" transform="translate(43.000000, 0.000000)">
+                                                                <path d="M19.8368251,9.22619824 C19.3459551,9.44370653 18.8192586,9.59121815 18.2658666,9.65707428 C18.8309174,9.31870627 19.2634497,8.78200715 19.4684492,8.14445356 C18.9384185,8.45780409 18.3533624,8.6853368 17.7299738,8.80868084 C17.2307791,8.27614403 16.5207227,7.94444444 15.7331514,7.94444444 C14.2222087,7.94444444 12.9971147,9.16953844 12.9971147,10.679653 C12.9971147,10.8938271 13.0212823,11.1030108 13.0679613,11.3030417 C10.7944647,11.1888504 8.77848698,10.0996092 7.42922084,8.44446724 C7.19336349,8.84784148 7.05918871,9.31785638 7.05918871,9.81957897 C7.05918871,10.7688269 7.54256224,11.6063896 8.27595807,12.0964097 C7.82758287,12.0814167 7.40588136,11.9580726 7.03669913,11.7530513 L7.03669913,11.7872215 C7.03669913,13.1123201 7.98010671,14.2182323 9.2310245,14.4699326 C9.00183558,14.5316047 8.76015971,14.5657749 8.51013741,14.5657749 C8.33346777,14.5657749 8.16261666,14.5482757 7.99509976,14.5149336 C8.34344862,15.6025186 9.35354043,16.3934023 10.5503045,16.4150856 C9.61439347,17.1484814 8.43430044,17.5843479 7.15254664,17.5843479 C6.93170415,17.5843479 6.71417407,17.5710111 6.5,17.5468435 C7.71092904,18.3244122 9.14854089,18.7777778 10.6936538,18.7777778 C15.7265266,18.7777778 18.4775781,14.6091196 18.4775781,10.9938535 L18.4684036,10.6396643 C19.0059308,10.2562735 19.4709553,9.77457801 19.8368251,9.22619824 Z" id="twitter"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1141.000000, -121.000000)" fill="#CDCDCD" fill-rule="nonzero">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33">
+                                                            <g id="Group-7" transform="translate(0.000000, 43.000000)">
+                                                                <path d="M10.4722222,12.1333333 L15.1666667,12.1333333 L15.1666667,13 C15.1666667,15.3894 13.0607389,17.3333333 10.4722222,17.3333333 C7.88370556,17.3333333 5.77777778,15.3894 5.77777778,13 C5.77777778,10.6106 7.88370556,8.66666667 10.4722222,8.66666667 C11.5998278,8.66666667 12.6851833,9.04106667 13.5301833,9.72053333 L12.2964833,11.0274667 C11.7932389,10.6227333 11.1454056,10.4 10.4722222,10.4 C8.9193,10.4 7.65555556,11.5665333 7.65555556,13 C7.65555556,14.4334667 8.9193,15.6 10.4722222,15.6 C11.6965333,15.6 12.7405778,14.8754667 13.1283389,13.8666667 L10.4722222,13.8666667 L10.4722222,12.1333333 Z M18.4888889,11.8444444 L20.2222222,11.8444444 L20.2222222,12.7111111 L18.4888889,12.7111111 L18.4888889,14.4444444 L17.6222222,14.4444444 L17.6222222,12.7111111 L15.8888889,12.7111111 L15.8888889,11.8444444 L17.6222222,11.8444444 L17.6222222,10.1111111 L18.4888889,10.1111111 L18.4888889,11.8444444 Z" id="g+"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1186.000000, -118.000000)" fill="#CDCDCD" fill-rule="nonzero">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33">
+                                                            <g id="Group-8" transform="translate(43.000000, 43.000000)">
+                                                                <path d="M7.37507729,9.61569683 L10.0302014,9.61569683 L10.0302014,17.5890725 L7.37507729,17.5890725 L7.37507729,9.61569683 Z M8.71873081,5.77777778 C9.16390992,5.77777778 9.52074083,5.90783422 9.78882901,6.16803164 C10.0569454,6.4281727 10.1938217,6.7566251 10.1991761,7.15361428 C10.2045024,7.54519267 10.0690915,7.87237691 9.7928871,8.13513883 C9.51668273,8.39804165 9.15322923,8.52939443 8.70261114,8.52939443 L8.68651965,8.52939443 C8.24669498,8.52939443 7.89262583,8.39792892 7.62450948,8.13513883 C7.35630858,7.87237691 7.22222222,7.54507994 7.22222222,7.15361428 C7.22222222,6.75659692 7.36028214,6.4281727 7.63657105,6.16803164 C7.91288815,5.90794694 8.27357989,5.77777778 8.71873081,5.77777778 Z M18.7438983,10.3440129 C19.3018024,10.9526432 19.5805149,11.8442978 19.5807122,13.0191175 L19.5807122,17.5888752 L16.9336198,17.5888752 L16.9336198,13.3246585 C16.9336198,12.7614282 16.8250092,12.3202226 16.6078164,12.0010982 C16.390539,11.6819456 16.0511523,11.5223834 15.5899944,11.5223834 C15.2519604,11.5223834 14.9691052,11.6149025 14.7410344,11.8001096 C14.5129355,11.9850913 14.3428053,12.214233 14.2300803,12.4879292 C14.1709561,12.648985 14.1416194,12.8661779 14.1416194,13.1396768 L14.1416194,17.5891289 L11.494527,17.5891289 C11.5052922,15.4489043 11.5106466,13.7137288 11.5106466,12.3834332 C11.5106466,11.0532503 11.5079694,10.259441 11.5025304,10.0018926 L11.4944142,9.61564047 L14.1416194,9.61564047 L14.1416194,10.7494283 C14.2437482,10.5883725 14.3484134,10.4460008 14.4554457,10.3237788 C14.5680016,10.1951032 14.7196167,10.0556624 14.909981,9.90545638 C15.100458,9.75525035 15.3337424,9.63860818 15.6099467,9.55547352 C15.8862356,9.47228248 16.1934112,9.43071515 16.5313325,9.43071515 C17.4484911,9.43071515 18.1861633,9.73518531 18.7438983,10.3440129 Z" id="дштлувшт"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social-list flex-space-b">
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1243.000000, -78.000000)" fill="#D2D2D2">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33-Copy" transform="translate(100.000000, 0.000000)">
+                                                            <g id="Group-3">
+                                                                <path d="M18.7100694,10.5850694 C18.7552086,11.3975735 18.7777778,12.2025423 18.7777778,13 C18.7777778,13.7974577 18.7552086,14.6024265 18.7100694,15.4149306 C18.7100694,15.9265072 18.5483234,16.3590839 18.2248264,16.7126736 C17.9013294,17.0662633 17.5063681,17.2430556 17.0399306,17.2430556 C15.8813599,17.303241 14.5347299,17.3333333 13,17.3333333 C11.4652701,17.3333333 10.1186401,17.303241 8.96006944,17.2430556 C8.49363193,17.2430556 8.0986706,17.0662633 7.77517361,16.7126736 C7.45167662,16.3590839 7.28993056,15.9265072 7.28993056,15.4149306 C7.24479144,14.6024265 7.22222222,13.7974577 7.22222222,13 C7.22222222,12.473377 7.25231451,11.6684082 7.3125,10.5850694 C7.3125,10.0734928 7.47048453,9.64091612 7.78645833,9.28732639 C8.10243214,8.93373666 8.49363193,8.75694444 8.96006944,8.75694444 C10.0584546,8.69675896 11.337377,8.66666667 12.796875,8.66666667 L13.203125,8.66666667 C14.662623,8.66666667 15.9415454,8.69675896 17.0399306,8.75694444 C17.5063681,8.75694444 17.9013294,8.93373666 18.2248264,9.28732639 C18.5483234,9.64091612 18.7100694,10.0734928 18.7100694,10.5850694 Z M11.8940972,15.2118056 L15.1666667,13 L11.8940972,10.765625 L11.8940972,15.2118056 Z" id="youtube"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1286.000000, -77.000000)" fill="#CDCDCD">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33-Copy" transform="translate(100.000000, 0.000000)">
+                                                            <g id="Group-4" transform="translate(43.000000, 0.000000)">
+                                                                <path d="M18.0555556,9.20833333 L18.0555556,16.8179977 C18.0555556,17.1515256 17.9326787,17.4411639 17.6869213,17.6869213 C17.4411639,17.9326787 17.1427487,18.0555556 16.7916667,18.0555556 L9.20833333,18.0555556 C8.85725133,18.0555556 8.55883611,17.9326787 8.3130787,17.6869213 C8.0673213,17.4411639 7.94444444,17.1515256 7.94444444,16.8179977 L7.94444444,9.20833333 C7.94444444,8.85725133 8.0673213,8.55883611 8.3130787,8.3130787 C8.55883611,8.0673213 8.85725133,7.94444444 9.20833333,7.94444444 L16.7916667,7.94444444 C17.1427487,7.94444444 17.4411639,8.0673213 17.6869213,8.3130787 C17.9326787,8.55883611 18.0555556,8.85725133 18.0555556,9.20833333 Z M13,10.8333333 C12.4041637,10.8333333 11.8940993,11.045484 11.4697917,11.4697917 C11.045484,11.8940993 10.8333333,12.4041637 10.8333333,13 C10.8333333,13.5958363 11.045484,14.1059007 11.4697917,14.5302083 C11.8940993,14.954516 12.4041637,15.1666667 13,15.1666667 C13.5958363,15.1666667 14.1059007,14.954516 14.5302083,14.5302083 C14.954516,14.1059007 15.1666667,13.5958363 15.1666667,13 C15.1666667,12.4041637 14.954516,11.8940993 14.5302083,11.4697917 C14.1059007,11.045484 13.5958363,10.8333333 13,10.8333333 Z M17.3333333,10.4 L17.3333333,9.1 C17.3333333,8.81110967 17.1888903,8.66666667 16.9,8.66666667 L15.6,8.66666667 C15.3111097,8.66666667 15.1666667,8.81110967 15.1666667,9.1 L15.1666667,10.4 C15.1666667,10.6888903 15.3111097,10.8333333 15.6,10.8333333 L16.9,10.8333333 C17.1888903,10.8333333 17.3333333,10.6888903 17.3333333,10.4 Z M16.9270833,17.3333333 C17.197918,17.3333333 17.3333333,17.1929026 17.3333333,16.912037 L17.3333333,12.2777778 L15.925,12.2777778 C15.9972226,12.5059811 16.0333333,12.7868425 16.0333333,13.1203704 C16.0333333,13.9454131 15.7444473,14.6387896 15.1666667,15.2005208 C14.5708304,15.7798061 13.8486154,16.0694444 13,16.0694444 C12.1694403,16.0694444 11.456253,15.7798061 10.8604167,15.2005208 C10.2645804,14.6212355 9.96666667,13.927859 9.96666667,13.1203704 C9.96666667,12.8570589 10.0118051,12.5761975 10.1020833,12.2777778 L8.66666667,12.2777778 L8.66666667,16.912037 C8.66666667,17.0349157 8.7118051,17.1358503 8.80208333,17.2148438 C8.89236156,17.2938372 9.00069381,17.3333333 9.12708333,17.3333333 L16.9270833,17.3333333 Z" id="insta"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-1243.000000, -118.000000)" fill="#CDCDCD" fill-rule="nonzero">
+                                                <g id="Group-35" transform="translate(1135.000000, 30.000000)">
+                                                    <g id="Group-34" transform="translate(1.000000, 40.000000)">
+                                                        <g id="Group-33-Copy" transform="translate(100.000000, 0.000000)">
+                                                            <g id="Group-9" transform="translate(0.000000, 43.000000)">
+                                                                <path d="M17.2791329,7.28438915 C16.2671066,6.31285907 14.8665726,5.77777778 13.3355402,5.77777778 C10.996812,5.77777778 9.55838978,6.73645718 8.76354464,7.54064396 C7.78395325,8.53171086 7.22222222,9.84764854 7.22222222,11.1511149 C7.22222222,12.787703 7.90676968,14.0438448 9.05313534,14.5111636 C9.13009714,14.5426976 9.20753313,14.5585831 9.2834517,14.5585831 C9.52529099,14.5585831 9.71691307,14.4003443 9.78330032,14.1465079 C9.82199461,14.0008827 9.91166482,13.6416328 9.95064363,13.4856702 C10.0341019,13.1776808 9.96667141,13.0295423 9.78467549,12.8150641 C9.45311856,12.4227628 9.29872077,11.9588581 9.29872077,11.3551135 C9.29872077,9.56180398 10.634053,7.65587327 13.1089699,7.65587327 C15.072705,7.65587327 16.2925708,8.77198531 16.2925708,10.5686141 C16.2925708,11.7023662 16.0483606,12.7523281 15.6047989,13.525218 C15.2965723,14.0622435 14.7545678,14.7024064 13.9224983,14.7024064 C13.5626794,14.7024064 13.2394683,14.5545999 13.0355172,14.2969225 C12.8428519,14.0533287 12.7793572,13.7386531 12.8568406,13.4107 C12.944377,13.0401643 13.0637318,12.6536482 13.1792456,12.2799828 C13.3899303,11.5975218 13.5890921,10.9529489 13.5890921,10.4386848 C13.5890921,9.55905365 13.0483204,8.96801739 12.2435646,8.96801739 C11.2208215,8.96801739 10.4195748,10.0067883 10.4195748,11.3328737 C10.4195748,11.9832317 10.5924187,12.4696607 10.6706608,12.6564459 C10.5418221,13.2023389 9.77609256,16.4477748 9.63084673,17.0597704 C9.54686685,17.4170287 9.04094854,20.2387242 9.87832894,20.4637296 C10.8191786,20.7165228 11.6601629,17.9683749 11.745755,17.6578248 C11.8151297,17.4052687 12.05787,16.450288 12.2066249,15.863235 C12.6608085,16.300727 13.3921116,16.5964822 14.1036881,16.5964822 C15.4451375,16.5964822 16.6515362,15.9928324 17.5006766,14.8968262 C18.3242106,13.8337765 18.7777778,12.3521078 18.7777778,10.7249561 C18.7777778,9.45288146 18.2315055,8.19882619 17.2791329,7.28438915 Z" id="pinterest"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="javascript:void(0)" class="social-list-link flex-center-y flex-center-x">
+                                    <svg width="16" height="13px" viewBox="0 0 46 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer" transform="translate(-150.000000, -35.000000)" stroke="#FFFFFF">
+                                                <g id="Group-11" transform="translate(135.000000, 33.000000)">
+                                                    <g id="Group-2" transform="translate(12.000000, 0.000000)">
+                                                        <g id="Group" transform="translate(3.000000, 0.000000)">
+                                                            <path d="M44.1889429,39.5944735 C33.5115491,30.8335749 24.2577694,28.0651247 16.4276037,31.2891229 C4.68235526,36.1251201 17.5200615,39.0395317 25.2333166,39.5944735 C30.3754868,39.9644346 36.6940289,39.9644346 44.1889429,39.5944735 Z" id="Path-2"></path>
+                                                            <path d="M24.3667964,35.0154479 C22.4756246,31.5034466 20.8087509,28.9668783 19.3661751,27.4057429 C17.9235993,25.8446075 15.4798801,23.9327493 12.0350174,21.6701684" id="Path-3"></path>
+                                                            <path d="M23.2967046,17.5456113 L23.2967046,33.1405824" id="Path-4"></path>
+                                                            <path d="M32.178294,20.3172849 C29.9273624,21.3641656 28.3174619,22.2670763 27.3485926,23.026017 C26.3797232,23.7849577 25.0358509,25.3855923 23.3169758,27.827921" id="Path-5"></path>
+                                                            <path d="M16.7464135,11 C13.2449563,14.0576475 11.3573517,16.2939875 11.0835994,17.7090199 C10.6729711,19.8315686 11.7710776,22.5351788 14.4658539,23.4170336 C17.1606301,24.2988884 20.1460559,24.5055004 20.8430424,20.9027588 C21.3077001,18.5009312 19.9421571,15.2000115 16.7464135,11 Z" id="Path-6"></path>
+                                                            <path d="M9.77986001,4.66826076 C6.27840286,7.72590825 4.39079817,9.96224822 4.11704593,11.3772807 C3.70641758,13.4998293 4.80452411,16.2034395 7.49930036,17.0852944 C10.1940766,17.9671492 13.1795024,18.1737611 13.8764889,14.5710196 C14.3411466,12.1691919 12.9756036,8.8682723 9.77986001,4.66826076 Z" id="Path-6-Copy" transform="translate(8.999206, 11.148622) rotate(-41.000000) translate(-8.999206, -11.148622) "></path>
+                                                            <path d="M18.1609389,4.93362657 C17.9546009,8.41665405 18.1372782,11.1973179 18.7089707,13.2756182 C19.5665096,16.3930686 21.8657084,16.1866139 24.1789671,16.9436186 C26.4922259,17.7006233 29.1966642,15.4782944 28.7146025,11.3279349 C28.3932281,8.56102857 24.8753402,6.42959246 18.1609389,4.93362657 Z" id="Path-6-Copy-3" transform="translate(23.424905, 11.011867) rotate(43.000000) translate(-23.424905, -11.011867) "></path>
+                                                            <path d="M24.6505811,5.84415465 C23.9447059,9.13868884 23.8776146,11.8251061 24.4493072,13.9034063 C25.306846,17.0208567 25.5090925,19.4071028 30.339224,20.663576 C35.1693555,21.9200492 36.2703666,16.2875093 35.6217556,13.6034743 C35.1893483,11.8141176 31.5322901,9.22767774 24.6505811,5.84415465 Z" id="Path-6-Copy-3" transform="translate(29.928353, 13.343953) rotate(21.000000) translate(-29.928353, -13.343953) "></path>
+                                                            <path d="M6.73995052,14.0637598 C3.92333527,16.5233691 2.40492282,18.3223085 2.18471315,19.460578 C1.85439864,21.1679823 2.73772906,23.3427996 4.90544026,24.0521745 C7.07315145,24.7615494 9.47466471,24.9277506 10.0353293,22.0296609 C10.4091056,20.0976012 9.31064604,17.4423008 6.73995052,14.0637598 Z" id="Path-6-Copy-2" transform="translate(6.111983, 19.276642) rotate(-74.000000) translate(-6.111983, -19.276642) "></path>
+                                                            <path d="M37.0643571,17.6625438 C34.2477418,20.1221531 32.7293294,21.9210925 32.5091197,23.059362 C32.1788052,24.7667663 33.0621356,26.9415836 35.2298468,27.6509585 C37.397558,28.3603334 39.7990713,28.5265346 40.3597358,25.6284449 C40.7335122,23.6963852 39.6350526,21.0410848 37.0643571,17.6625438 Z" id="Path-6-Copy-4" transform="translate(36.436389, 22.875426) rotate(116.000000) translate(-36.436389, -22.875426) "></path>
+                                                            <path d="M11.0643571,21.6625438 C8.24774182,24.1221531 6.72932936,25.9210925 6.50911969,27.059362 C6.17880519,28.7667663 7.06213561,30.9415836 9.22984681,31.6509585 C11.397558,32.3603334 13.7990713,32.5265346 14.3597358,29.6284449 C14.7335122,27.6963852 13.6350526,25.0410848 11.0643571,21.6625438 Z" id="Path-6-Copy-5" transform="translate(10.436389, 26.875426) rotate(238.000000) translate(-10.436389, -26.875426) "></path>
+                                                            <path d="M38.1526271,2.28170577 C35.3360118,4.74131507 33.8175994,6.54025447 33.5973897,7.67852399 C33.2670752,9.38592826 34.1504056,11.5607456 36.3181168,12.2701205 C38.485828,12.9794954 40.8873413,13.1456966 41.4480058,10.2476069 C41.8217822,8.31554716 40.7233226,5.66024678 38.1526271,2.28170577 Z" id="Path-6-Copy-4" transform="translate(37.524659, 7.494588) rotate(33.000000) translate(-37.524659, -7.494588) "></path>
+                                                            <path d="M40.1526271,9.28170577 C37.3360118,11.7413151 35.8175994,13.5402545 35.5973897,14.678524 C35.2670752,16.3859283 36.1504056,18.5607456 38.3181168,19.2701205 C40.485828,19.9794954 42.8873413,20.1456966 43.4480058,17.2476069 C43.8217822,15.3155472 42.7233226,12.6602468 40.1526271,9.28170577 Z" id="Path-6-Copy-4" transform="translate(39.524659, 14.494588) rotate(69.000000) translate(-39.524659, -14.494588) "></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/simple-scrollbar.js"></script>
+    <script src="js/foundation.min.js"></script>
+  </body>
+</html>

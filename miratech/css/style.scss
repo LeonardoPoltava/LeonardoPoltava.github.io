@@ -1,0 +1,615 @@
+@import "const.scss";
+@import "all.css";
+/* search form */
+.search-form {
+    .search-form-box {
+        width: 368px;
+        float: left;
+        position: relative;
+    }
+    .search-form-input {
+        font-size: 13px;
+        width: 368px;
+        padding: 0 58px 0 25px;
+        font-family: $font-regular;
+        line-height: 26px;
+        border-radius: 2px;
+        height: 28px;
+        margin: 0;
+        border: solid 1px $gray;
+        background: $white url(../images/search.svg) no-repeat 6px 50%;
+    }
+    .search-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 56px;
+        font-size: 12px;
+        line-height: 20px;
+        height: 20px;
+    }
+}
+/* header */
+header {
+    height: 69px;
+    background-color: $white;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.22);
+    .grid-container {
+        height: 100%;
+        .logo {
+            float: left;
+            margin-right: 35px;
+            width: 71px;
+            height: 69px;
+            .logo-img {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+                margin: 0 auto;
+            }
+        }
+        .header-nav {
+            float: left;
+            .header-nav-list {
+                overflow: hidden;
+                .header-nav-elem {
+                    float: left;
+                    font-size: 16px;
+                    margin-left: 40px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    .header-nav-link {
+                        color: $black;
+                        display: block;
+                        &:hover {
+                            color: $lght-green;
+                        }
+                    }
+                }
+            }
+        }
+        .search-form {
+            width: 310px;
+            float: left;
+            .search-form-input {
+                font-size: 14px;
+                width: 310px;
+                padding: 0 0 0 25px;
+            }
+        }
+        .header-actions {
+            float: left;
+            margin-left: 19px;
+            .header-actions-elem {
+                float: left;
+                margin-left: 20px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                .header-actions-link {
+                    height: 28px;
+                    .header-actions-img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+/* main */
+.plant-finder {
+    margin-bottom: 30px;
+    .plant-finder-title {
+        display: block;
+        font-size: 16px;
+        font-family: $font-medium;
+        letter-spacing: 0.8px;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .plant-finder-list {
+        .plant-finder-list-elem {
+            width: 111px;
+            height: 30px;
+            border-radius: 2px;
+            float: left;
+            margin-left: 10px;
+            border: solid 1px $gray;
+            color: $gray;
+            line-height: 30px;
+            text-align: center;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                background-color: $lght-green;
+                border-color: $lght-green;
+                color: $white;
+                font-family: $font-medium;
+            }
+            &:hover:not(.active) {
+                cursor: pointer;
+            }
+        }
+    }
+    .add-new-btn {
+        width: 157px;
+        height: 30px;
+        border-radius: 2px;
+        line-height: 33px;
+        text-align: center;
+        color: $white;
+        font-size: 16px;
+        font-family: $font-medium;
+        background-color: $orange;
+    }
+}
+/* sidebar */
+.sidebar {
+    .filter {
+        .filter-section {
+            border-bottom: solid 1px #d2d2d2;
+            padding: 10px 0;
+            &:first-child {
+                padding-top: 0;
+            }
+            .filter-title {
+                font-size: 16px;
+                font-family: $font-medium;
+                color: $black;
+                letter-spacing: 0.8px;
+                display: block;
+                text-transform: uppercase;
+            }
+            .filter-clear {
+                font-size: 16px;
+                color: $black;
+                display: block;
+                background: url(../images/close.svg) no-repeat 100% 50%;
+                padding-right: 18px;
+                background-size: 10px 10px;
+            }
+            .purpose-list {
+                .purpose-list-elem {
+                    margin-top: 10px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    .purpose-list-link {
+                        overflow: hidden;
+                        display: block;
+                        background: $white;
+                        color: $gray;
+                        .purpose-img-box {
+                            float: left;
+                            width: 26px;
+                            height: 26px;
+                            border: solid 1px $gray;
+                            border-radius: 100%;
+                            .purpose-img {
+                                display: block;
+                                margin: 0 auto;
+                                path {
+                                    fill: $gray;
+                                }
+                            }
+                        }
+                        .purpose-text {
+                            float: left;
+                            margin-left: 10px;
+                            line-height: 26px;
+                        }
+                    }
+                    &.active {
+                        .purpose-list-link {
+                            color: $black;
+                            font-family: $font-medium;
+                            .purpose-img-box {
+                                background: $lght-green;
+                                border: solid 1px $lght-green;
+                                .purpose-img {
+                                    path {
+                                        fill: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .filter-section-title {
+                display: block;
+                margin-bottom: 12px;
+                font-size: 16px;
+                letter-spacing: 0.8px;
+                color: $black;
+                font-family: $font-bold;
+                position: relative;
+                &.filter-show-btn {
+                    margin-bottom: 0;
+                    &:after {
+                        content: '';
+                        display: block;
+                        background: url(../images/arrow.svg) no-repeat 50% 50%;
+                        background-size: 14px 8px;
+                        width: 14px;
+                        height: 8px;
+                        position: absolute;
+                        right: 0;
+                        top: calc(50% - 4px);
+                    }
+                    &.active {
+                        &:after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .botanical-name {
+                display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                -webkit-box-pack: left;
+                -moz-box-pack: start;
+                -ms-flex-pack: start;
+                -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin: 0 -2px;
+                .botanical-name-elem {
+                    margin: 2px 2px;
+                    .botanical-name-link {
+                        display: block;
+                        width: 26px;
+                        height: 26px;
+                        border-radius: 2px;
+                        border: solid 1px $gray;
+                        text-align: center;
+                        line-height: 24px;
+                        font-size: 16px;
+                        color: $gray;
+                        text-transform: uppercase;
+                    }
+                }
+                .botanical-elem-all {
+                    width: 57px;
+                    margin: 3px 0 0;
+                }
+            }
+            .filter-drop {
+                margin-top: 12px;
+                .filter-list {
+                    .filter-list-elem {
+                        margin-top: 8px;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .filter-hidden {
+                display: none;
+                max-height: 379px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.content {
+    .content-filter {
+        margin-bottom: 21px;
+        .sort-by {
+            float: left;
+            margin-left: 9px;
+            .sort-by-box {
+                float: left;
+                input[type=checkbox] + label {
+                    padding-left: 18px;
+                }
+                margin-left: 9px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .sort-by-select {
+            height: 28px;
+            float: left;
+            font-size: 13px;
+            line-height: 28px;
+            .dropdown-menu {
+                left: -45px;
+                width: calc(100% + 45px);
+            }
+            .sort-by-select-text {
+                float: left;
+                margin-right: 3px;
+            }
+            .bootstrap-select {
+                float: left;
+            }
+        }
+        .view-type {
+            float: right;
+            overflow: hidden;
+            .view-link {
+                float: left;
+                margin-left: 10px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                svg {
+                    display: block;
+                }
+                g {
+                    fill: #CDCDCD;
+                }
+                &.active {
+                    g {
+                        fill: #98B927;
+                    }
+                }
+            }
+        }
+        .sort-by-radio {
+            .sort-by-radio-holder {
+                .sort-by-radio-box {
+                    input[type=radio]{
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        visibility: hidden;
+                    }
+                    input[type=radio] + label {
+                        margin: 10px 0;
+                        cursor: pointer;
+                        display: block;
+                        position: relative;
+                        font-size: 18px;
+                        line-height: 28px;
+                        height: 24px;
+                        color: $black;
+                        span {
+                            color: $gray;
+                        }
+                    }
+                    input[type=radio]:checked + label:after {
+                        content: '';
+                        background: url(../images/radio-check.svg) no-repeat 50% 50%;
+                        background-size: 24px 18px;
+                        width: 24px;
+                        height: 18px;
+                        position: absolute;
+                        right: 0;
+                        top: calc(50% - 9px);
+                    }
+                    input[type=radio]:checked + label {
+                        color: $lght-green;
+                        span {
+                            color: $lght-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-items {
+        .content-item {
+            display: block;
+            width: 270px;
+            margin: 0 auto 20px;
+            position: relative;
+            height: 295px;
+            max-width: 100%;
+            background: $white-gray;
+            &.content-special-item {
+                background: $white;
+                border: solid 3px $lght-gray; 
+                .content-item-caption {
+                    border: solid 2px $lght-green;
+                    left: -2px;
+                    width: calc(100% + 4px);
+                    bottom: -2px;
+                }
+                .plants-map-img {
+                    display: block;
+                    left: calc(50% - 48px);
+                    top: calc(50% - 55px);
+                    position: absolute;
+                }
+                .add-plants-map {
+                    font-size: 12px;
+                    color: $lght-green;
+                    font-family: $font-medium;
+                    text-decoration: underline;
+                    display: block;
+                    position: relative;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    .plants-map-icon {
+                        position: absolute;
+                        right: 0;
+                        top: calc(50% - 14px);
+                        width: 27px;
+                        height: 28px;
+                        display: block;
+                    }
+                }
+            }
+            .default-img {
+                width: 54px;
+                height: 54px;
+                position: absolute;
+                left: calc(50% - 27px);
+                top: calc(50% - 60px);
+            }
+            .content-item-img {
+                display: block;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+            .content-item-caption {
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(40,40,40,0.72);
+                .content-item-caption-title {
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                    line-height: 14px;
+                    color: $white;
+                    font-family: $font-semibold;
+                }
+                .content-item-caption-author {
+                    display: block;
+                    color: $white;
+                    font-size: 12px;
+                    .author-by {
+                        color: $lght-gray;
+                    }
+                }
+                .content-item-drop {
+                    display: none;
+                    margin-top: 7px;
+                    .content-item-caption-text {
+                        display: block;
+                        color: $white;
+                        font-size: 12px;
+                        margin-bottom: 3px;
+                    }
+                    .content-item-caption-images {
+                        .content-item-caption-img {
+                            float: left;
+                            margin-left: 10px;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.content-items-search {
+            
+        }
+    }
+    .content-pager {
+        margin: 0;
+        li {
+            font-size: 16px;
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: $black;
+            }
+            &.active {
+                a {
+                    color: $lght-green;
+                }
+            }
+            &.prev {
+                a {
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+}
+footer {
+    margin-top: 90px;
+    background: $dark-gray;
+    padding: 30px 0 68px;
+    .footer-logo {
+        width: 52px;
+        height: 68px;
+        .footer-logo-img {
+            display: block;
+            width: 52px;
+            height: 68px;
+        }
+    }
+    .copy {
+        display: block;
+        margin-top: 29px;
+        font-size: 10px;
+        max-width: 160px;
+        color: $lght-gray;
+    }
+    .footer-nav {
+        padding: 0 15px;
+        float: left;
+        .footer-nav-main-item {
+            font-family: $font-medium;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 10px;
+            .footer-main-link {
+                color: $white;
+            }
+        }
+        .footer-nav-item {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 16px;
+            .footer-nav-link {
+                color: $gray-wh;
+            }
+        }
+    }
+    .socials-box {
+        .socials-title {
+            display: block;
+            font-family: $font-medium;
+            font-size: 14px;
+            line-height: 16px;
+            color: $white;
+            margin-bottom: 10px;
+        }
+    }
+    .social-list {
+        width: 69px;
+        .social-list-item {
+            margin: 8px 0;
+            width: 26px;
+            height: 26px;
+            .social-list-link {
+                width: 26px;
+                height: 26px;
+                border: 1px solid $lght-gray;
+                border-radius: 100%;
+                margin: 0;
+                svg {
+                    path,
+                    g {
+                        fill: $gray-wh;
+                    }
+                }
+                &:hover {
+                    border: 1px solid $lght-green;
+                    background: $lght-green;
+                    svg {
+                        path,
+                        g {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
