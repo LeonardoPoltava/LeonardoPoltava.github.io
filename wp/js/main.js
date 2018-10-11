@@ -17,13 +17,6 @@ $(document).ready(function () {
             el.slideUp();
         }
     });
-    // scroll body to 0px on click
-    $('#to-top').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
     $('.fb-input, .feedback-area').focus(function() {
         $(this).parent('div').addClass('active');
     });
