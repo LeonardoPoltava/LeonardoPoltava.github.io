@@ -539,3 +539,32 @@ a.write-btn {
     height: 20px;
     background-position: -71px 0;
 }
+a#to-top {
+    background: rgba(23,48,66,0.5);
+    width: 58px;
+    height: 58px;
+    position: fixed;
+    z-index: 10;
+    right: 5%;
+    bottom: 25px;
+    display: none;
+    transition: none;
+}
+#to-top:before,
+#to-top:after {
+    width: 14px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: calc(50% - 2px);
+}
+#to-top:before {
+    transform: rotate(45deg);
+}
+#to-top:after {
+    transform: rotate(-45deg);
+    left: calc(50% - 11px);
+}

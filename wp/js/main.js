@@ -29,6 +29,19 @@ $(document).ready(function () {
         var footHeight = $(this).find('.footer').outerHeight();
         $(this).css('padding-bottom', footHeight)
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 450) {
+            $('#to-top').fadeIn();
+        } else {
+            $('#to-top').fadeOut();
+        }
+    });
+    $('#to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
 });
 $(window).resize(function() {
     $('.wrapper').each(function(){
