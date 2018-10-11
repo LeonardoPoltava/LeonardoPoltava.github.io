@@ -412,6 +412,7 @@ a.write-btn {
     color: #acacac;
     height: 32px;
     padding-bottom: 5px;
+    border-radius: 0;
     display: block;
     font-family: 'Roboto';
 }
