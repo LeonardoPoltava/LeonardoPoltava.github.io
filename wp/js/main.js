@@ -15,11 +15,7 @@ $(document).ready(function () {
         var el = $(this).parents('.header').find('.header-menu');
         var currEl = $(this);
         if(el.css('display') == 'none') {
-            currEl.hide();
             currEl.addClass('active');
-            setTimeout(function(){
-                currEl.show(); 
-            }, 1000);
             el.slideDown();
         }
         else {
