@@ -665,6 +665,7 @@
     }
     .contacts-page .fb-inputs .feedback-box {
         margin-top: 25px;
+        margin-bottom: 0;
     }
     .file-upload {
         margin: 25px 0 10px;
