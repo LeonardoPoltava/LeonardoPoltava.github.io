@@ -366,10 +366,6 @@ label {
     top: -23.8vw;
     z-index: 2;
 }
-.main-slide.slick-current .slider-caption {
-    transform: rotate(0);
-    z-index: 10;
-}
 .main-slider .slick-dots {
     position: absolute;
     bottom: 30px;
