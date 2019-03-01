@@ -366,6 +366,9 @@ label {
     top: -23.8vw;
     z-index: 2;
 }
+.main-slide .slider-caption {
+    z-index: 10;
+}
 .main-slider .slick-dots {
     position: absolute;
     bottom: 30px;
