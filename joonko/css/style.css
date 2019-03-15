@@ -1,3 +1,4 @@
+@import url(slick.css);
 @font-face {
   font-family: 'ubunturegular';
   src: url("../fonts/ubuntu-r-webfont.eot");
@@ -22,8 +23,8 @@ html, body {
 body {
   background: #fff;
   margin: 0;
-  color: #000000;
-  font-size: 20px;
+  color: #707070;
+  font-size: 25px;
   overflow-x: hidden;
   position: relative; }
 
@@ -57,7 +58,7 @@ button:focus {
 
 p {
   margin: 0 0 24px;
-  line-height: 26px; }
+  line-height: 1.32; }
   p:last-child {
     margin: 0; }
   p a {
@@ -78,6 +79,26 @@ button {
   border: none; }
   button:hover {
     cursor: pointer; }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: flex-start; }
+  .slick-dots li {
+    margin: 0 5px; }
+    .slick-dots li.slick-active button {
+      background-color: #a95be1; }
+    .slick-dots li button {
+      padding: 0;
+      width: 8px;
+      height: 8px;
+      border: solid 1px #a95be1;
+      background-color: #ffffff;
+      text-indent: -9999px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%; }
 
 .btn {
   border-radius: 50px;
@@ -136,11 +157,15 @@ header {
         color: #040464; }
   header .logo {
     display: block; }
+    header .logo img {
+      max-height: 100%; }
     header .logo:hover {
       opacity: 0.7; }
 
 .culture-section {
   padding: 35px 0 40px; }
+  .culture-section p {
+    margin-bottom: 3px; }
   .culture-section .culture-section__img {
     position: relative;
     max-width: 100%; }
@@ -166,7 +191,8 @@ header {
     color: #ffffff; }
 
 .steps {
-  padding: 170px 0; }
+  padding: 170px 0;
+  overflow: hidden; }
   .steps .title-box,
   .steps .title-sub {
     text-align: center; }
@@ -210,8 +236,16 @@ header {
   padding-bottom: 150px; }
   .clients .title-box {
     text-align: center; }
-  .clients .clients__img {
+  .clients .clients__slider {
     margin: 40px 0 0; }
+    .clients .clients__slider .clients__slide {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      height: 72px;
+      padding: 0 15px; }
+      .clients .clients__slider .clients__slide .clients__img {
+        margin: 0 auto; }
 
 .blog .title-box {
   text-align: center;
@@ -302,9 +336,12 @@ footer {
         display: block;
         width: 44px;
         height: 44px;
-        background-color: #ffffff;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         border-radius: 100%; }
+        footer .footer__soc .footer__soc__el .footer__soc__link img {
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,52 +1,240 @@
-/*
-Error: File to import not found or unreadable: const.scss.
-       Load path: D:/Leonardo/Work/IdeaSoft/joonko/css
-        on line 1 of D:\Leonardo\Work\IdeaSoft\joonko\css\media.scss
+@media (min-width: 991px) and (max-width: 1199.98px) {
+  body {
+    font-size: 22px; }
 
-1: @import "const.scss";
-2: @media (min-width: 1024px) and (max-width: 1199px) {
-3:     header {
-4:         .grid-container {
-5:             .header-nav {
-6:                 .header-nav-list {
+  .title-box {
+    font-size: 45px; }
 
-Backtrace:
-D:\Leonardo\Work\IdeaSoft\joonko\css\media.scss:1
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: const.scss.\A        Load path: D:/Leonardo/Work/IdeaSoft/joonko/css\A         on line 1 of D:\Leonardo\Work\IdeaSoft\joonko\css\media.scss\A \A 1: @import \"const.scss\";\A 2: @media (min-width: 1024px) and (max-width: 1199px) {\A 3:     header {\A 4:         .grid-container {\A 5:             .header-nav {\A 6:                 .header-nav-list {"; }
+  .title-sub {
+    font-size: 22px; }
+
+  .blog .blog__item .blog__title {
+    height: 110px;
+    top: 20%;
+    font-size: 20px; }
+
+  footer .footer__soc .footer__soc__el {
+    margin-left: 5px;
+    margin-right: 5px; } }
+@media (min-width: 767px) and (max-width: 991px) {
+  body {
+    font-size: 19px; }
+
+  .title-sub {
+    font-size: 19px; }
+
+  header .header-nav {
+    margin-right: 25px; }
+    header .header-nav .header-nav__el {
+      padding: 0 10px;
+      font-size: 18px; }
+
+  .btn {
+    padding: 12px 26px;
+    font-size: 18px; }
+
+  .title-box {
+    font-size: 40px; }
+
+  .more-link {
+    font-size: 19px; }
+
+  .culture-section {
+    padding: 25px 0 30px; }
+    .culture-section .more-link {
+      margin-bottom: 20px; }
+
+  .bn-section {
+    padding: 80px 0; }
+    .bn-section .bn-section__txt {
+      font-size: 19px; }
+
+  .steps {
+    padding: 90px 0; }
+    .steps .steps__list {
+      background: url(../images/steps-vertical.png) no-repeat 70% 0;
+      margin: 25px 0 0;
+      padding: 470px 0 0; }
+      .steps .steps__list .steps__el.joonkopool .steps__img {
+        top: -250px;
+        right: -7%; }
+      .steps .steps__list .steps__el.joonkogrow:after {
+        display: none; }
+      .steps .steps__list .steps__el.joonkohire .col-md-4 {
+        margin-left: 7%;
+        flex: 0 0 40%;
+        max-width: 40%; }
+
+  .clients {
+    padding-bottom: 80px; }
+
+  .blog .blog__item .blog__title {
+    font-size: 17px;
+    height: 97px;
+    top: 18%; }
+  .blog .blog__item .blog__link {
+    font-size: 17px;
+    bottom: 25%; }
+
+  .trial {
+    padding: 120px 0 100px; }
+
+  footer .footer__nav .footer__nav__el {
+    font-size: 19px; } }
+@media (min-width: 767px) {
+  .header__right {
+    display: flex !important; }
+
+  .show-menu {
+    display: none; } }
+@media (max-width: 767px) {
+  .col-xs-6 {
+    width: 50%; }
+
+  .title-sub {
+    font-size: 16px; }
+
+  .title-box {
+    font-size: 30px; }
+
+  .more-link {
+    font-size: 16px; }
+
+  body {
+    font-size: 16px; }
+
+  .btn {
+    font-size: 16px;
+    padding: 15px 34px; }
+
+  .wrapper {
+    padding-top: 80px; }
+    .wrapper header {
+      padding: 17px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+      background: #ffffff; }
+      .wrapper header .logo {
+        width: 76px;
+        height: 38px; }
+      .wrapper header .header-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center; }
+        .wrapper header .header-left .show-menu {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          z-index: 7; }
+          .wrapper header .header-left .show-menu span {
+            display: block;
+            width: 8.5px;
+            height: 8.5px;
+            margin: 0 3px;
+            background-color: #a95be1;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%; }
+      .wrapper header .header__right {
+        position: fixed;
+        right: 0;
+        background: #ffffff;
+        top: 0;
+        width: auto;
+        text-align: center;
+        z-index: 5;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+        .wrapper header .header__right.collapsing, .wrapper header .header__right.collapse.show {
+          display: block; }
+        .wrapper header .header__right .header-nav {
+          margin: 0;
+          display: block;
+          padding: 113px 53px; }
+          .wrapper header .header__right .header-nav .header-nav__el {
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            margin: 0 0 35px; }
+        .wrapper header .header__right .btn {
+          margin-bottom: 113px; }
+    .wrapper .culture-section .more-link {
+      margin-bottom: 17px; }
+    .wrapper .culture-section .culture-section__img {
+      margin-top: 32px; }
+    .wrapper .bn-section {
+      padding: 53px 0; }
+      .wrapper .bn-section .title-box {
+        margin-bottom: 20px; }
+      .wrapper .bn-section .bn-section__txt {
+        font-size: 16px; }
+    .wrapper .steps {
+      padding: 62px 0; }
+      .wrapper .steps .steps__list {
+        padding: 180px 0 0;
+        margin: 15px 0 0;
+        height: auto;
+        background-size: 100%; }
+        .wrapper .steps .steps__list .steps__el.joonkogrow:after {
+          display: none; }
+        .wrapper .steps .steps__list .steps__el.joonkopool {
+          padding-left: 15%; }
+          .wrapper .steps .steps__list .steps__el.joonkopool:after {
+            display: none; }
+    .wrapper .blog {
+      overflow: hidden;
+      padding: 0 11px; }
+      .wrapper .blog .blog__item {
+        margin: 0 0 -60px; }
+        .wrapper .blog .blog__item .blog__title {
+          font-size: 16px;
+          height: 87px; }
+        .wrapper .blog .blog__item .blog__link {
+          font-size: 16px; }
+      .wrapper .blog .row .col-md-4:last-child .blog__item {
+        margin: 0; }
+      .wrapper .blog .title-box {
+        margin: 0; }
+    .wrapper .clients {
+      padding-bottom: 60px; }
+      .wrapper .clients .clients__slider {
+        margin: 10px 0 0; }
+    .wrapper .trial {
+      text-align: left;
+      padding: 60px 0;
+      background: url(../images/trial-bg.png) no-repeat;
+      background-size: 200%; }
+      .wrapper .trial .title-sub {
+        text-align: left; }
+      .wrapper .trial .btn {
+        margin: 15px 0 0; }
+    .wrapper footer {
+      padding: 65px 0 145px;
+      position: relative; }
+      .wrapper footer .row > div:first-child {
+        position: static; }
+      .wrapper footer .footer__nav .footer__nav__el {
+        font-size: 16px;
+        margin: 0 0 20px; }
+        .wrapper footer .footer__nav .footer__nav__el:first-child {
+          margin: 0 0 25px; }
+      .wrapper footer .footer-logo {
+        margin: 0 0 27px;
+        width: 104px;
+        height: 52px; }
+      .wrapper footer .footer__soc {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 60px;
+        display: flex;
+        justify-content: space-between; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrapper footer .footer__soc {
+    width: 540px;
+    left: calc(50% - 270px); } }
+
+/*# sourceMappingURL=media.css.map */

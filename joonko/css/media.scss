@@ -1,759 +1,344 @@
 @import "const.scss";
-@media (min-width: 1024px) and (max-width: 1199px) {
-    header {
-        .grid-container {
-            .header-nav {
-                .header-nav-list {
-                    .header-nav-elem {
-                        margin-left: 30px;
-                    }
-                }
+@media (min-width: 991px) and (max-width: 1199.98px) {
+    body {
+        font-size: 22px;
+    }
+    .title-box {
+        font-size: 45px;
+    }
+    .title-sub {
+        font-size: 22px;
+    }
+    .blog {
+        .blog__item {
+            .blog__title {
+                height: 110px;
+                top: 20%;
+                font-size: 20px;
             }
-        }
-    }
-    .search-form {
-        .search-form-box {
-            width: 270px;
-        }
-        .search-form-input {
-            width: 270px;
-            font-size: 12px;
-        }
-    }
-    .sidebar {
-        .filter {
-            .filter-section {
-                .filter-title,
-                .filter-clear,
-                .filter-section-title {
-                    font-size: 15px;
-                }
-                .botanical-name {
-                    .botanical-elem-all {
-                        width: calc(100% - 52px);
-                        .btn-std {
-                            font-size: 15px;
-                            line-height: 20px;
-                            height: 20px;
-                        }
-                    }
-                    .botanical-name-elem {
-                        .botanical-name-link {
-                            width: 20px;
-                            height: 20px;
-                            line-height: 21px;
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .content {
-        .content-filter {
-            .sort-by-select {
-                font-size: 13px;
-                .sort-by-select-text {
-                    margin-left: -5px;
-                }
-            }
-            .view-type {
-                .view-link {
-                    margin-left: 6px;
-                    svg {
-                        max-width: 22px;
-                        max-height: 15px;
-                    }
-                }
-            }
-        }
-    }
-    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-        width: 145px;
-    }
-    .bootstrap-select {
-        width: 145px \0;
-    }
-    .ss-container {
-        .ss-scroll {
-            opacity: 1;
         }
     }
     footer {
-        .footer-nav {
-            padding: 0 12px;
-        }
-    }
-    footer {
-        .social-list {
-            width: 60px;
+        .footer__soc {
+            .footer__soc__el {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
         }
     }
 }
-@media (min-width: 1024px) {
-    header {
-        .grid-container {
-            .show-search {
-                display: none;
-            }
-            .show-menu {
-                display: none;
-            }
-        }
+@media(min-width: 767px) and (max-width: 991px) {
+    body {
+        font-size: 19px;
     }
-    .popup-head {
-        display: none;
-    }
-    .plant-select {
-        display: none;
-    }
-    .visible-xs {
-        display: none;
-    }
-}
-@media (max-width: 1023px) {
-    .hidden-xs {
-        display: none;
-    }
-    .visible-xs {
-        display: block;
+    .title-sub {
+        font-size: 19px;
     }
     header {
-        height: 80px;
-        .grid-container {
-            .flex-space-b {
-                -webkit-flex-wrap: nowrap;
-                -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap;
-                .logo {
-                    margin: 0;
-                    width: 52px;
-                    height: 59px;
-                }
-                .header-actions {
-                    margin: 0 8px 0 0;
-                }
-                .search-form {
-                    display: none;
-                }
-                .header-nav {
-                    display: none;
-                }
-                .show-menu {
-                    width: 20px;
-                    height: 14px;
-                    float: left;
-                    position: relative;
-                    span {
-                        display: block;
-                        width: 20px;
-                        left:50%;
-                        margin: 0 0 0 -10px;
-                        height: 2px;
-                        background: $black;
-                        -webkit-transform: rotate(0deg);
-                        -moz-transform: rotate(0deg);
-                        -o-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                        -webkit-transition: .25s ease-in-out;
-                        -moz-transition: .25s ease-in-out;
-                        -o-transition: .25s ease-in-out;
-                        transition: .25s ease-in-out;
-                        position: absolute;
-                        &:nth-child(1) {
-                            top:0;
-                        }
-                        &:nth-child(2) {
-                            top:6px;
-                        }
-                        &:nth-child(3) {
-                            top:12px;
-                        }
-                    }
-                    &.active {
-                        span {
-                            -webkit-transform: rotate(45deg);
-                            -moz-transform: rotate(45deg);
-                            -o-transform: rotate(45deg);
-                            transform: rotate(45deg);
-                            margin-top:7px;
-                            &:nth-child(2) {
-                                left: -50%;
-                                opacity: 0;
-                            }
-                            &:nth-child(3) {
-                                -webkit-transform: rotate(135deg);
-                                -moz-transform: rotate(135deg);
-                                -o-transform: rotate(135deg);
-                                transform: rotate(135deg);
-                                margin-top: -7px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .plant-finder {
-        margin-bottom: 20px;
-        .bootstrap-select.btn-group.plant-select {
-            & > .dropdown-toggle {
-                height: 30px;
-                color: $white;
-                font-size: 16px;
-                background: $lght-green;
-                font-family: $font-medium;
-                padding: 0 0 0 10px;
-                line-height: 33px;
-                .caret {
-                    right: 15px;
-                    background: url(../images/arrow-wh.svg) no-repeat;
-                }
-            }
-        }
-        .plant-finder-title {
-            margin-bottom: 7px;
-        }
-        .add-new-btn {
-            width: 141px;
-        }
-    }
-    .content-buttons {
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        -webkit-box-pack: center;
-        -moz-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        margin-bottom: 10px;
-        .content-button {
-            margin: 0 6px;
-            display: block;
-            line-height: 27px;
-            text-align: center;
-            font-size: 16px;
-            color: $gray;
-            font-family: $font-medium;
-            width: 92px;
-            height: 29px;
-            border-radius: 2px;
-            border: solid 1px #888888;
-            &:first-child {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-    .sidebar {
-        display: none;
-        .filter {
-            .filter-section {
-                .botanical-name {
-//                    max-width: 304px;
-                }
-                &:first-child {
-                    display: none;
-                }
-                &:nth-child(2) {
-                    padding-top: 0;
-                }
-                .purpose-list {
-                    display: flex;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    -webkit-box-pack: center;
-                    -moz-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: space-around;
-                    justify-content: space-around;
-                    -webkit-flex-wrap: wrap;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                    .purpose-list-elem {
-                        margin: 10px 0;
-                        width: 50%;
-                        &:first-child {
-                            margin: 10px 0;
-                        }
-                    }
-                }
-                .filter-section-title {
-                    font-size: 18px;
-                    margin-bottom: 5px;
-                    &.filter-show-btn {
-                        &:after {
-                            background-size: 19px 11px;
-                        }
-                    }
-                }
-                .filter-drop {
-                    &.filter-hidden {
-                        max-height: 100%;
-                        padding-left: 18px;
-                        height: 100%;
-                        input[type=checkbox] + label {
-                            font-size: 18px;
-                        }
-                    }
-                    .filter-list {
-                        .filter-list-elem {
-                            margin-top: 15px;
-                        }
-                    }
-                }
-                .botanical-name {
-                    .botanical-name-elem {
-                        margin: 4px 4px;
-                        .botanical-name-link {
-                            width: 35px;
-                            height: 35px;
-                            line-height: 36px;
-                            font-size: 18px;
-                        }
-                    }
-                    .botanical-elem-all {
-                        width: 77px;
-                        height: 35px;
-                        margin: 4px 4px;
-                        .btn-std {
-                            display: block;
-                            font-size: 18px;
-                            width: 77px;
-                            height: 35px;
-                            line-height: 35px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .pop-up {
-        display: none;
-        position: fixed;
-        overflow-y: auto;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        padding: 0;
-        background: $white;
-        .popup-head {
-            height: 54px;
-            box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.22);
-            background: $white;
-            position: relative;
-            padding: 0 15px;
-            line-height: 54px;
-            margin-bottom: 24px;
-            margin-right: -.625rem;
-            margin-left: -.625rem;
-            .popup-title {
-                display: block;
-                font-size: 18px;
-                color: $black;
-                font-family: $font-medium;
-            }
-            .close-up {
-                position: absolute;
-                right: 15px;
-                top: calc(50% - 8px);
-                width: 17px;
-                height: 17px;
-                background: url(../images/close.svg) no-repeat;
-                background-size: 17px 17px;
-            }
-        }
-        .popup-actions {
-            box-shadow: 0 -3px 11px 0 rgba(0, 0, 0, 0.22);
-            position: fixed;
-            background: $white;
-            bottom: 0;
-            left: 0;
-            padding-right: .625rem;
-            padding-left: .625rem;
-            width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            z-index: 20;
-        }
-    }
-    .search-box {
-        .search-form {
-            width: 100%;
-            float: none;
-            height: auto;
-            display: block;
-            .search-form-box {
-                width: 100%;
-                float: none;
-                margin-bottom: 20px;
-            }
-            .search-btn {
-                display: none;
-            }
-            .search-form-input {
-                width: 100%;
-                height: 40px;
-                line-height: 38px;
-                background-size: 16px 16px;
-                padding-left: 35px;
-                font-size: 12px;
-                padding-right: 10px;
-            }
-        }
-        .search-mob-btn {
-            width: 100%;
-            height: 40px;
-            border-radius: 2px;
-            line-height: 40px;
-            font-size: 18px;
-            color: $white;
-            background-color: $lght-green;
-            font-family: $font-medium;
-            &.disable {
-                background-color: $gray-wh;
-            }
-        }
-    }
-    .content {
-        .content-pager {
-            margin-top: 10px;
-            li {
-                margin: 0 4px;
-            }
-        }
-        .content-filter {
-            margin: 0;
-            .sort-by {
-                margin-left: 0;
-                float: none;
-                .sort-by-box {
-                    input[type=checkbox] + label {
-                        font-size: 18px;
-                        padding-left: 28px;
-                    }
-                }
-            }
-            .view-type {
-                float: none;
-                display: flex;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                -webkit-box-pack: justify;
-                -moz-box-pack: justify;
-                -ms-flex-pack: justify;
-                -webkit-justify-content: space-between;
-                justify-content: space-between;
-                margin-bottom: 30px;
-                .view-link {
-                    width: 48%;
-                    height: 29px;
-                    border-radius: 2px;
-                    border: solid 2px $lght-gray;
-                    display: flex;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    -webkit-box-align: center;
-                    -webkit-align-items: center;
-                    align-items: center;
-                    align-content: center;
-                    padding: 0 8px;
-                    svg {
-                        margin-right: 7px;
-                        max-width: 22px;
-                        max-height: 15px;
-                    }
-                    .view-link-text {
-                        display: block;
-                        font-size: 16px;
-                        font-family: $font-medium;
-                        color: $lght-gray;
-                        height: 21px;
-                    }
-                    &.active {
-                        .view-link-text {
-                            color: $lght-green;
-                        }
-                    }
-                }
-            }
-        }
-        .content-items {
-            margin-left: -5px;
-            margin-right: -5px;
-            .content-item {
-                margin: 0;
-            }
-            .cell {
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-    }
-    footer {
-        margin-top: 50px;
-        padding: 20px 0 30px;
-        .footer-inner {   
-            display: flex;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            -webkit-box-pack: start;
-            -moz-box-pack: left;
-            -ms-flex-pack: left;
-            -webkit-justify-content: flex-start;
-            justify-content: flex-start;
-            -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            .footer-logo-box {
-                .footer-logo {
-                    margin: 0;
-                }
-                .copy {
-                    text-align: left;
-                    max-width: 100%;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-        .footer-nav {
-            padding: 10px 12px;
-            .footer-nav-item {
-                font-size: 11px;
-            }
-        }
-        .socials-box {
-            margin-top: 10px;
-            .socials-title {
-                text-align: center;
-            }
-        }
-        .footer-social {
-            float: none;
-            width: 100%;
-            .social-list {
-                -webkit-box-pack: center;
-                -moz-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                width: 100%;
-                .social-list-item {
-                    margin-left: 5px;
-                    margin-right: 5px;
-                }
-            }
-        }
-    }
-    .dropdown-menu {
-        & > li {
-            margin-top: 7px;
-            &:first-child {
-                margin-top: 10px;
-            }
-            &:last-child {
-                margin-bottom: 10px;
-            }
-            & > a {
+        .header-nav {
+            margin-right: 25px;
+            .header-nav__el {
                 padding: 0 10px;
+                font-size: 18px;
             }
-            &.selected {
-                & > a {
-                    color: $lght-green;
-                    background: url(../images/radio-check.svg) no-repeat 90% 50%;
-                    background-size: 14px 11px;
+        }
+    }
+    .btn {
+        padding: 12px 26px;
+        font-size: 18px;
+    }
+    .title-box {
+        font-size: 40px;
+    }
+    .more-link {
+        font-size: 19px;
+    }
+    .culture-section {
+        padding: 25px 0 30px;
+        .more-link {
+            margin-bottom: 20px;
+        }
+    }
+    .bn-section {
+        padding: 80px 0;
+        .bn-section__txt {
+            font-size: 19px;
+        }
+    }
+    .steps {
+        padding: 90px 0;
+        .steps__list {
+            background: url(../images/steps-vertical.png) no-repeat 70% 0;
+            margin: 25px 0 0;
+            padding: 470px 0 0;
+            .steps__el {
+                &.joonkopool {
+                    .steps__img {
+                        top: -250px;
+                        right: -7%;
+                    }
+                }
+                &.joonkogrow {
+                    &:after {
+                        display: none;
+                    }
+                }
+                &.joonkohire {
+                    .col-md-4 {
+                        margin-left: 7%;
+                        flex: 0 0 40%;
+                        max-width: 40%;
+                    }
                 }
             }
         }
     }
-    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-        width: 142px;
+    .clients {
+        padding-bottom: 80px;
     }
-    .bootstrap-select {
-        width: 142px \0;
-    }
-}
-@media(min-width: 768px) and (max-width: 1023px) {
-    .sidebar {
-        .filter {
-            .filter-section {
-                .botanical-name {
-                    max-width: 742px;
-                    .botanical-name-elem {
-                        margin: 4px 6px;
-                        .botanical-name-link {
-                            width: 39px;
-                        }
-                    }
-                    .botanical-elem-all {
-                        margin: 4px 6px;
-                        width: 92px;
-                        .btn-std {
-                            width: 92px;
-                        }
-                    }
-                }
+    .blog {
+        .blog__item {
+            .blog__title {
+                font-size: 17px;
+                height: 97px;
+                top: 18%;
+            }
+            .blog__link {
+                font-size: 17px;
+                bottom: 25%;
             }
         }
     }
-}
-@media(min-width: 640px) and (max-width: 1023px) {
+    .trial {
+        padding: 120px 0 100px;
+    }
     footer {
-        .footer-inner {
-            .footer-logo-box {
-                width: 33.33%;
-                padding-left: 12px;
-                margin: 0;
-            }
-            .footer-nav {
-                width: 33.33%;
+        .footer__nav {
+            .footer__nav__el {
+                font-size: 19px;
             }
         }
     }
-    .content-buttons {
-        margin-top: -50px;
+}
+@media (min-width: 767px) {
+    .header__right {
+        display: flex !important;
+    }
+    .show-menu {
+        display: none;
     }
 }
 @media (max-width: 767px) {
-    footer {
-        .footer-social {
-            padding: 0 0 0 12px;
-            .socials-box {
-                .socials-title {
-                    text-align: left;
+    .col-xs-6 {
+        width: 50%;
+    }
+    .title-sub {
+        font-size: 16px;
+    }
+    .title-box {
+        font-size: 30px;
+    }
+    .more-link {
+        font-size: 16px;
+    }
+    body {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 15px 34px;
+    }
+    .wrapper {
+        padding-top: 80px;
+        header {
+            padding: 17px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            background: $white;
+            .logo {
+                width: 76px;
+                height: 38px;
+            }
+            .header-left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                .show-menu {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 7;
+                    span {
+                        display: block;
+                        width: 8.5px;
+                        height: 8.5px;
+                        margin: 0 3px;
+                        background-color: $purple;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        border-radius: 100%;
+                    }
                 }
             }
-            .social-list {
-                -webkit-box-pack: start;
-                -moz-box-pack: left;
-                -ms-flex-pack: left;
-                -webkit-justify-content: flex-start;
-                justify-content: flex-start;
-                max-width: 250px;
-                margin: 0 -5px;
-                .social-list-item {
-                    width: 48px;
-                    height: 48px; 
-                    margin: 6px;
-                    .social-list-link {
-                        width: 48px;
-                        height: 48px;
-                        &.soc-gg {
-                            svg {
-                                width: 70%;
-                            }
+            .header__right {
+                position: fixed;
+                //display: block;
+                right: 0;
+                background: $white;
+                top: 0;
+                width: auto;
+                text-align: center;
+                z-index: 5;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                &.collapsing,
+                &.collapse.show {
+                    display: block;
+                }
+                .header-nav {
+                    margin: 0;
+                    display: block;
+                    padding: 113px 53px;
+                    .header-nav__el {
+                        font-size: 30px;
+                        text-align: center;
+                        width: 100%;
+                        margin: 0 0 35px;
+                    }
+                }
+                .btn {
+                    margin-bottom: 113px;
+                }
+            }
+        }
+        .culture-section {
+            .more-link {
+                margin-bottom: 17px;
+            }
+            .culture-section__img {
+                margin-top: 32px;
+            }
+        }
+        .bn-section {
+            padding: 53px 0;
+            .title-box {
+                margin-bottom: 20px;
+            }
+            .bn-section__txt {
+                font-size: 16px;
+            }
+        }
+        .steps {
+            padding: 62px 0;
+            .steps__list {
+                padding: 180px 0 0;
+                margin: 15px 0 0;
+                height: auto;
+                background-size: 100%;
+                .steps__el {
+                    &.joonkogrow {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &.joonkopool {
+                        padding-left: 15%;
+                        &:after {
+                            display: none;
                         }
                     }
                 }
             }
         }
-    }
-}
-@media(max-width: 639px) {
-    .plant-finder {
-        width: 300px;
-        margin: 0 auto 20px;
-    }
-    .search-results {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    footer {
-        .footer-inner {
-            .footer-logo-box {
-                width: 50%;
-                padding-left: 12px;
+        .blog {
+            overflow: hidden;
+            padding: 0 11px;
+            .blog__item {
+                margin: 0 0 -60px;
+                .blog__title {
+                    font-size: 16px;
+                    height: 87px;
+                }
+                .blog__link {
+                    font-size: 16px;
+                }
+            }
+            .row {
+                .col-md-4 {
+                    &:last-child {
+                        .blog__item {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .title-box {
                 margin: 0;
             }
-            .footer-nav {
-                width: 50%;
+        }
+        .clients {
+            padding-bottom: 60px;
+            .clients__slider {
+                margin: 10px 0 0;
             }
         }
-    }
-    .content {
-        .content-items {
-            .content-item {
-                max-width: 300px;
-                margin: 0 auto;
+        .trial {
+            text-align: left;
+            padding: 60px 0;
+            background: url(../images/trial-bg.png) no-repeat;
+            background-size: 200%;
+            .title-sub {
+                text-align: left;
+            }
+            .btn {
+                margin: 15px 0 0;
             }
         }
-    }
-}
-@media(min-width: 445px) and (max-width: 767px) {
-    .sidebar {
-        .filter {
-            .filter-section {
-                .botanical-name {
-                    -webkit-box-pack: start;
-                    -moz-box-pack: left;
-                    -ms-flex-pack: left;
-                    -webkit-justify-content: flex-start;
-                    justify-content: flex-start;
-                }
-            }
-        }
-    }
-}
-@media(min-width: 425px) and (max-width: 444px) {
-    .sidebar {
-        .filter {
-            .filter-section {
-                .botanical-name {
-                    .botanical-name-elem {
-                        margin: 4px 2px;
-                    }
-                    .botanical-elem-all {
-                        margin: 4px 2px;
-                        width: 158px;
-                        .btn-std {
-                            width: 158px;
-                        }
+        footer {
+            padding: 65px 0 145px;
+            position: relative;
+            .row {
+                & > div {
+                    &:first-child {
+                        position: static;
                     }
                 }
             }
-        }
-    }
-}
-@media(min-width: 375px) and (max-width: 424px) {
-    .sidebar {
-        .filter {
-            .filter-section {
-                .botanical-name {
-                    .botanical-name-elem {
-                        .botanical-name-link {
-                            width: 43px;
-                        }
+            .footer__nav {
+                .footer__nav__el {
+                    font-size: 16px;
+                    &:first-child {
+                        margin: 0 0 25px;
                     }
-                    .botanical-elem-all {
-                        width: 94px;
-                        .btn-std {
-                            width: 94px;
-                        }
-                    }
+                    margin: 0 0 20px;
                 }
+            }
+            .footer-logo {
+                margin: 0 0 27px;
+                width: 104px;
+                height: 52px;
+            }
+            .footer__soc {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                bottom: 60px;
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
 }
-@media print, screen and (min-width: 40em) {
-    .pop-up {
-        .popup-head {
-            margin-right: -.9375rem;
-            margin-left: -.9375rem;
+@media (min-width: 576px) and (max-width: 767px) {
+    .wrapper {
+        footer {
+            .footer__soc {
+                width: 540px;
+                left: calc(50% - 270px);
+            }
         }
     }
 }
