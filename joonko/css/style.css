@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../fonts/ubuntu-r-webfont.eot");
+  src: url("../fonts/ubuntu-r-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-r-webfont.woff2") format("woff2"), url("../fonts/ubuntu-r-webfont.woff") format("woff"), url("../fonts/ubuntu-r-webfont.ttf") format("truetype"), url("../fonts/ubuntu-r-webfont.svg#ubunturegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../fonts/ubuntu-m-webfont.eot");
+  src: url("../fonts/ubuntu-m-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-m-webfont.woff2") format("woff2"), url("../fonts/ubuntu-m-webfont.woff") format("woff"), url("../fonts/ubuntu-m-webfont.ttf") format("truetype"), url("../fonts/ubuntu-m-webfont.svg#ubuntumedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../fonts/ubuntu-l-webfont.eot");
+  src: url("../fonts/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-l-webfont.woff2") format("woff2"), url("../fonts/ubuntu-l-webfont.woff") format("woff"), url("../fonts/ubuntu-l-webfont.ttf") format("truetype"), url("../fonts/ubuntu-l-webfont.svg#ubuntulight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html, body {
+  height: 100%; }
+
+body {
+  background: #fff;
+  margin: 0;
+  color: #000000;
+  font-size: 20px;
+  overflow-x: hidden;
+  position: relative; }
+
+a {
+  text-decoration: none;
+  color: #fe7223; }
+  a:focus {
+    outline: none; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important; }
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent !important; }
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent !important; }
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+p {
+  margin: 0 0 24px;
+  line-height: 26px; }
+  p:last-child {
+    margin: 0; }
+  p a {
+    text-decoration: underline; }
+    p a:hover {
+      text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+button {
+  border: none; }
+  button:hover {
+    cursor: pointer; }
+
+.btn {
+  border-radius: 50px;
+  background-color: #a95be1;
+  border: 1px solid #a95be1;
+  padding: 13px 46px;
+  font-size: 22px;
+  font-family: "ubuntumedium";
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #ffffff; }
+  .btn:hover {
+    color: #a95be1;
+    background-color: #ffffff; }
+
+.title-box {
+  font-size: 50px;
+  font-family: "ubuntumedium";
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  color: #040464;
+  display: block; }
+
+.title-sub {
+  font-size: 25px;
+  font-family: "ubuntulight";
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #707070;
+  display: block; }
+
+.more-link {
+  font-size: 25px;
+  line-height: 1.16;
+  letter-spacing: 0.3px;
+  color: #a95be1;
+  display: inline-block; }
+  .more-link:hover {
+    color: #a95be1; }
+
+header {
+  padding: 45px 0 0; }
+  header .header-nav {
+    margin-right: 56px; }
+    header .header-nav .header-nav__el {
+      padding: 0 15px;
+      font-size: 22px;
+      line-height: 1.18;
+      letter-spacing: 0.2px; }
+      header .header-nav .header-nav__el .header-nav__link {
+        display: block;
+        color: #040464; }
+  header .logo {
+    display: block; }
+    header .logo:hover {
+      opacity: 0.7; }
+
+.culture-section {
+  padding: 35px 0 40px; }
+  .culture-section .culture-section__img {
+    position: relative;
+    max-width: 100%; }
+  .culture-section .more-link {
+    margin-bottom: 34px; }
+
+.bn-section {
+  background: #30234e;
+  padding: 140px 0; }
+  .bn-section .title-box {
+    text-align: center;
+    line-height: 1.24;
+    letter-spacing: 0.5px;
+    color: #ffffff; }
+  .bn-section .bn-section__txt {
+    display: block;
+    font-family: "ubuntulight";
+    font-size: 25px;
+    line-height: 1.32;
+    letter-spacing: 0.3px;
+    text-align: center;
+    padding: 7px 0 0;
+    color: #ffffff; }
+
+.steps {
+  padding: 170px 0; }
+  .steps .title-box,
+  .steps .title-sub {
+    text-align: center; }
+  .steps .steps__list {
+    height: 2949px;
+    margin: 270px 0 0;
+    padding: 470px 0 0;
+    background: url(../images/steps-vertical.png) no-repeat 40% 0; }
+    .steps .steps__list .steps__el {
+      position: relative; }
+      .steps .steps__list .steps__el .title-box, .steps .steps__list .steps__el .title-sub {
+        text-align: left;
+        margin-bottom: 8px; }
+      .steps .steps__list .steps__el .steps__img {
+        position: relative; }
+      .steps .steps__list .steps__el.joonkopool .steps__img {
+        top: -340px; }
+      .steps .steps__list .steps__el.joonkopool:after {
+        content: url(../images/homepage-cloud1.png);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 72px; }
+      .steps .steps__list .steps__el.joonkohire {
+        padding: 420px 0 0; }
+        .steps .steps__list .steps__el.joonkohire .steps__img {
+          top: -310px;
+          left: -10px; }
+      .steps .steps__list .steps__el.joonkogrow {
+        padding: 55px 0 0; }
+        .steps .steps__list .steps__el.joonkogrow .steps__img {
+          top: -400px; }
+        .steps .steps__list .steps__el.joonkogrow:after {
+          content: url(../images/homepage-cloud2.png);
+          display: block;
+          position: absolute;
+          top: -410px;
+          right: -150px; }
+
+.clients {
+  padding-bottom: 150px; }
+  .clients .title-box {
+    text-align: center; }
+  .clients .clients__img {
+    margin: 40px 0 0; }
+
+.blog .title-box {
+  text-align: center;
+  margin-bottom: 30px; }
+.blog .blog__item {
+  position: relative;
+  width: 100%; }
+  .blog .blog__item .blog__bg {
+    position: relative;
+    left: -15%;
+    z-index: 2;
+    width: 130%;
+    max-width: none;
+    object-fit: cover; }
+  .blog .blog__item .blog__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 132px;
+    font-size: 25px;
+    font-family: "ubuntulight";
+    line-height: 1.32;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    top: 25%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3; }
+  .blog .blog__item .blog__link {
+    position: absolute;
+    bottom: 30%;
+    text-decoration: underline;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    z-index: 3; }
+    .blog .blog__item .blog__link:hover {
+      text-decoration: none; }
+
+.trial {
+  padding: 220px 0 350px;
+  text-align: center;
+  background: url(../images/trial-bg.png) no-repeat; }
+  .trial .title-sub {
+    margin: 15px 0 0; }
+  .trial .btn {
+    margin: 35px 0 0; }
+
+footer {
+  padding: 108px 0;
+  border: solid 1px #707070;
+  background-color: #30234e; }
+  footer .footer-logo {
+    width: 152px;
+    height: 76px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: block; }
+    footer .footer-logo:hover {
+      opacity: 0.7; }
+    footer .footer-logo .footer-logo__img {
+      width: 100%; }
+  footer .footer__nav .footer__nav__el {
+    font-size: 25px;
+    font-family: "ubuntulight";
+    line-height: 1.32;
+    letter-spacing: 0.3px;
+    margin: 30px 0 0; }
+    footer .footer__nav .footer__nav__el .footer__nav__link {
+      color: #ffffff; }
+    footer .footer__nav .footer__nav__el:first-child {
+      margin: 0 0 40px;
+      font-family: "ubuntumedium"; }
+  footer .footer__soc {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px; }
+    footer .footer__soc .footer__soc__el {
+      margin: 11px 10px; }
+      footer .footer__soc .footer__soc__el .footer__soc__link {
+        display: block;
+        width: 44px;
+        height: 44px;
+        background-color: #ffffff;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%; }
+
+/*# sourceMappingURL=style.css.map */
