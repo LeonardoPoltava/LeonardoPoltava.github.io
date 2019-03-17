@@ -119,6 +119,63 @@
             }
         }
     }
+    .pool-head {
+        padding: 60px 0 150px;
+    }
+    .benefits {
+        padding: 68px 0;
+        .benefits__row {
+            padding: 45px 0;
+            &.benefits__guarantee {
+                &:after {
+                    left: -20%;
+                }
+            }
+            &.benefits__experience {
+                &:after {
+                    left: 100%;
+                }
+            }
+        }
+    }
+    .title-info {
+        font-size: 24px;
+    }
+    .sign-up {
+        padding-bottom: 70px;
+        .sign-up__row {
+            margin-top: 50px;
+            .sign-up__box {
+                padding: 60px 16% 200px;
+                width: auto;
+                margin: 0 -10%;
+                .sign-up__title {
+                    font-size: 19px;
+                }
+                .sign-up__list {
+                    .sign-up__list__elem {
+                        font-size: 16px;
+                    }
+                }
+                .sign-up__btn {
+                    padding: 12px 17px;
+                }
+            }
+        }
+    }
+    .security {
+        padding: 49px 0 149px;
+        .security__list {
+            .security__list__item {
+                .security__list__title {
+                    font-size: 20px;
+                }
+            }
+        }
+        .security__footer {
+            padding-top: 140px;
+        }
+    }
 }
 @media (min-width: 767px) {
     .header__right {
@@ -234,21 +291,42 @@
         .steps {
             padding: 62px 0;
             .steps__list {
-                padding: 180px 0 0;
-                margin: 15px 0 0;
-                height: auto;
-                background-size: 100%;
+                padding: 80px 0 0;
+                margin: 15px auto 0;
+                background-size: 75%;
+                background-position: 0 0;
+                align-content: flex-start;
+                width: 290px;
+                height: 1500px;
                 .steps__el {
                     &.joonkogrow {
                         &:after {
                             display: none;
                         }
+                        .steps__img {
+                            position: static;
+                        }
                     }
                     &.joonkopool {
-                        padding-left: 15%;
+                        padding-top: 0;
+                        padding-left: 38%;
                         &:after {
                             display: none;
                         }
+                        .steps__img {
+                            position: static;
+                        }
+                    }
+                    &.joonkohire {
+                        padding-top: 228px;
+                        padding-left: 45%;
+                        flex-direction: column-reverse;
+                        .steps__img {
+                            position: static;
+                        }
+                    }
+                    &.joonkogrow {
+                        padding: 0 50% 0 0;
                     }
                 }
             }
@@ -329,6 +407,77 @@
                 display: flex;
                 justify-content: space-between;
             }
+        }
+    }
+    .pool-head {
+        background-size: 100%;
+        padding: 9px 0 43px;
+    }
+    .info-txt {
+        font-size: 13px;
+    }
+    .benefits {
+        padding: 10px 0 20px;
+        .benefits__row {
+            padding: 30px 0;
+            .title-box {
+                position: relative;
+                z-index: 2;
+            }
+            .benefits__img {
+                margin: 27px auto 0;
+                max-height: 430px;
+            }
+            .title-info {
+                font-size: 16px;
+            }
+            &:nth-child(2n) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    .sign-up {
+        padding-bottom: 30px;
+        .sign-up__row {
+            margin-top:0;
+            .sign-up__box {
+                padding: 50px 13% 165px;
+                .sign-up__title {
+                    font-size: 16px;
+                    margin: 0 0 15px;
+                }
+                .sign-up__price {
+                    margin-bottom: 15px;
+                }
+                .sign-up__list {
+                    .sign-up__list__elem {
+                        font-size: 14px;
+                        line-height: 1.24;
+                    }
+                }
+            }
+        }
+    }
+    .security {
+        padding: 30px 0  60px;
+        .security__list {
+            padding: 28px 0 0;
+            .security__list__item {
+                padding: 17px 0;
+                display: block;
+                .security__list__title {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                }
+                .security__list__content {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+        .security__footer {
+            padding-top: 70px;
         }
     }
 }

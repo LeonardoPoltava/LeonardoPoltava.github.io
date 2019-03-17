@@ -151,6 +151,10 @@ button {
     letter-spacing: 0.5px;
     color: $blue-dark;
     display: block;
+    .title-box__colored {
+        color: $gray;
+        font-family: $light-font;
+    }
 }
 .title-sub {
     font-size: 25px;
@@ -173,7 +177,7 @@ button {
 }
 // header
 header {
-    padding: 45px 0 0;
+    padding: 45px 0 35px;
     .header-nav {
         margin-right: 56px;
         .header-nav__el {
@@ -424,6 +428,190 @@ footer {
                     border-radius: 100%;
                 }
             }
+        }
+    }
+}
+// joonkopool.html
+.pool-head {
+    padding: 160px 0 450px;
+    text-align: center;
+    background: url("../images/jpool-bg.png") 50% 100%;
+    .title-box {
+        margin: 0 0 25px;
+    }
+}
+.info-txt {
+    margin: 13px 0 0;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    color: $gray;
+    display: block;
+}
+.joonko-bn {
+    padding: 115px 0;
+    .title-sub {
+        color: $white;
+    }
+}
+// benefits
+.benefits {
+    overflow: hidden;
+    padding: 135px 0;
+    .benefits__row {
+        padding: 90px 0;
+        position: relative;
+        .title-box {
+            line-height: 1.2;
+            margin-bottom: 7px;
+        }
+        .benefits__img {
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        &.benefits__guarantee {
+            padding-top: 0;
+            &:after {
+                content: '';
+                display: block;
+                background: url(../images/cloud1.png) no-repeat;
+                width: 518px;
+                height: 153px;
+                position: absolute;
+                bottom: 90px;
+                left: 0;
+            }
+        }
+        &.benefits__experience {
+            &:after {
+                content: '';
+                display: block;
+                background: url(../images/cloud2.png) no-repeat;
+                width: 326px;
+                height: 138px;
+                background-size: 100% 100%;
+                position: absolute;
+                top: -70px;
+                left: 88%;
+            }
+        }
+    }
+}
+.title-info {
+    font-size: 28px;
+    font-family: $light-font;
+    line-height: 1.14;
+    letter-spacing: 0.3px;
+    color: $blue-dark;
+    display: block;
+    margin-bottom: 10px;
+}
+// sign up
+.sign-up {
+    padding-bottom: 110px;
+    margin-top: -25px;
+    .title-box {
+        text-align: center;
+    }
+    .sign-up__row {
+        margin-top: 100px;
+        .col-md-5 {
+            padding: 0;
+            margin: 0 -1.5%;
+        }
+        .sign-up__box {
+            width: 100%;
+            padding: 80px 16% 250px;
+            &.sign-up__all {
+                background: url(../images/sign-up2.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            &.sign-up__team {
+                background: url(../images/sign-up1.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            .sign-up__btn {
+                padding: 22px 27px;
+            }
+            .sign-up__title {
+                font-size: 25px;
+                font-family: $light-font;
+                line-height: 1.08;
+                letter-spacing: 0.3px;
+                color: $blue-dark;
+                margin: 0 0 20px;
+                display: block;
+                .sign-up__title__bold {
+                    font-family: $medium-font;
+                    display: block;
+                }
+
+            }
+            .sign-up__price {
+                text-align: left;
+                margin: 0 0 20px;
+            }
+            .sign-up__list {
+                .sign-up__list__elem {
+                    font-size: 20px;
+                    font-family: $light-font;
+                    line-height: 1;
+                    letter-spacing: 0.2px;
+                    color: $gray;
+                }
+                margin: 0 0 30px;
+            }
+        }
+    }
+}
+// security
+.security {
+    position: relative;
+    padding: 69px 0 209px;
+    .security__txt {
+        display: block;
+        margin: 0 0 11px;
+        color: $gray;
+        font-family: $light-font;
+        line-height: 1.32;
+        letter-spacing: 0.3px;
+    }
+    .security__list {
+        padding: 84px 0 0;
+        .security__list__item {
+            padding: 15px 0;
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+            .security__list__title {
+                display: block;
+                width: 30%;
+                font-size: 28px;
+                font-family: $medium-font;
+                line-height: 1.86;
+                letter-spacing: 0.3px;
+                color: $blue-dark;
+            }
+            .security__list__content {
+                width: 70%;
+                padding: 0 0 0 25px;
+                .security__list__txt {
+                    font-family: $light-font;
+                    line-height: 1.32;
+                    letter-spacing: 0.3px;
+                    color: $gray;
+                    margin: 0 0 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+    .security__footer {
+        text-align: center;
+        padding-top: 210px;
+        .title-box {
+            margin-bottom: 25px;
         }
     }
 }
