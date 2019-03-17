@@ -24,9 +24,10 @@ body {
   background: #fff;
   margin: 0;
   color: #707070;
-  font-size: 25px;
+  font-size: 20px;
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  font-family: "ubuntulight"; }
 
 a {
   text-decoration: none;
@@ -129,22 +130,33 @@ button {
     font-family: "ubuntulight"; }
 
 .title-sub {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "ubuntulight";
-  line-height: 1.6;
+  line-height: 1.3;
   letter-spacing: 0.3px;
   text-align: center;
   color: #707070;
   display: block; }
 
 .more-link {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.16;
   letter-spacing: 0.3px;
   color: #a95be1;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .more-link:hover {
     color: #a95be1; }
+  .more-link:after {
+    content: '';
+    display: block;
+    background: url(../images/arrow-pointing-to-right.png) no-repeat;
+    width: 31px;
+    height: 22px;
+    background-size: 25px 18px;
+    position: absolute;
+    right: -38px;
+    top: calc(50% - 9px); }
 
 header {
   padding: 45px 0 35px; }
@@ -154,16 +166,18 @@ header {
       padding: 0 15px;
       font-size: 22px;
       line-height: 1.18;
-      letter-spacing: 0.2px; }
+      letter-spacing: 0.2px;
+      font-family: "ubunturegular"; }
       header .header-nav .header-nav__el .header-nav__link {
         display: block;
         color: #040464; }
+        header .header-nav .header-nav__el .header-nav__link:hover {
+          color: #a95be1;
+          text-decoration: none; }
   header .logo {
     display: block; }
     header .logo img {
       max-height: 100%; }
-    header .logo:hover {
-      opacity: 0.7; }
 
 .culture-section {
   padding: 35px 0 40px; }
@@ -269,7 +283,8 @@ header {
     align-items: center;
     align-content: center;
     height: 132px;
-    font-size: 25px;
+    padding: 0 5%;
+    font-size: 20px;
     font-family: "ubuntulight";
     line-height: 1.32;
     letter-spacing: 0.3px;
@@ -287,13 +302,13 @@ header {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.18;
     letter-spacing: 0.2px;
     color: #ffffff;
     z-index: 3; }
     .blog .blog__item .blog__link:hover {
-      text-decoration: none; }
+      color: #a95be1; }
 
 .trial {
   padding: 220px 0 350px;
