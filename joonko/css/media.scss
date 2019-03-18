@@ -634,12 +634,17 @@
                 .form__label {
                     top: -3px;
                     font-size: 13px;
+                    left: 28px;
                 }
             }
             .custom-select-holder{
+                .form__select {
+                    padding-left: 20px;
+                }
                 &.active + .form__label {
                     top: -3px;
                     font-size: 13px;
+                    left: 28px;
                 }
             }
             .form__send {
@@ -651,7 +656,14 @@
     }
     .call {
         padding: 20px 0 60px;
-        background-position: 0 100%;
+        background-position: 0 40%;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        .form {
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
     .contacts {
         padding: 20px 0 60px;
