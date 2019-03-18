@@ -655,13 +655,14 @@ footer {
 
 .contacts {
   padding: 15px 0 73px;
-  background: url(../images/jpool-bg.png) 50% 100%; }
+  background: url(../images/jpool-bg.png) 50% 100%;
+  background-size: auto 60%; }
   .contacts .title-box {
     text-align: center; }
   .contacts .contacts__row {
     margin-top: 77px; }
   .contacts .form .form_box .form__label {
-    left: 30px; }
+    left: 24px; }
   .contacts .contacts__box {
     margin-top: 20px; }
     .contacts .contacts__box .contacts__title {

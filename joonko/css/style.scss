@@ -801,6 +801,7 @@ footer {
 .contacts {
     padding: 15px 0 73px;
     background: url(../images/jpool-bg.png) 50% 100%;
+    background-size: auto 60%;
     .title-box {
         text-align: center;
     }
@@ -810,7 +811,7 @@ footer {
     .form {
         .form_box {
             .form__label {
-                left: 30px;
+                left: 24px;
             }
         }
     }

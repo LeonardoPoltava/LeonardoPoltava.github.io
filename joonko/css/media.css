@@ -493,6 +493,8 @@
       margin-top: 40px; }
       .contacts .contacts__row .form {
         padding-bottom: 30px; }
+        .contacts .contacts__row .form .form_box.active .form__label {
+          left: 14px; }
       .contacts .contacts__row .contacts__box {
         width: 258px;
         margin-left: auto;

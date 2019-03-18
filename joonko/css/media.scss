@@ -672,6 +672,13 @@
             margin-top: 40px;
             .form {
                 padding-bottom: 30px;
+                .form_box {
+                    &.active {
+                        .form__label {
+                            left: 14px;
+                        }
+                    }
+                }
             }
             .contacts__box {
                 width: 258px;
