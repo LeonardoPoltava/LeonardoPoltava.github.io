@@ -21,7 +21,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #fff;
+  background: #ffffff;
   margin: 0;
   color: #707070;
   font-size: 20px;
@@ -31,7 +31,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fe7223; }
+  color: #040464; }
   a:focus {
     outline: none; }
 
@@ -165,7 +165,8 @@ button {
   display: inline-block;
   position: relative; }
   .more-link:hover {
-    color: #a95be1; }
+    color: #a95be1;
+    text-decoration: none; }
   .more-link:after {
     content: '';
     display: block;
@@ -805,5 +806,90 @@ footer {
     font-family: "ubuntulight";
     text-align: center;
     margin-bottom: 20px; }
+
+.grow-hire-head {
+  padding: 20px 0 195px; }
+
+.joonko {
+  padding: 90px 0;
+  position: relative; }
+  .joonko:after {
+    background: url(../images/cloud3.png) no-repeat;
+    width: 439px;
+    height: 205px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    content: ''; }
+  .joonko .joonko__sub {
+    display: block;
+    line-height: 1.14;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #040464;
+    margin-bottom: 15px; }
+  .joonko .joonko__image-holder {
+    padding: 125px 0 0; }
+    .joonko .joonko__image-holder .joonko__image {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
+  .joonko.grow {
+    padding-bottom: 240px; }
+    .joonko.grow .joonko__image-holder {
+      padding-top: 220px; }
+
+.formula {
+  padding: 125px 0 0; }
+  .formula .title-box {
+    text-align: center;
+    margin: 0 0 20px; }
+  .formula .title-sub {
+    margin: 0 auto;
+    max-width: 880px; }
+  .formula .formula__img {
+    display: block;
+    margin: 0 auto 32px; }
+  .formula .formula__vertical {
+    background: url(../images/formula-vertical.png) no-repeat 50% 0;
+    height: 1659px;
+    margin: 89px 0 0;
+    padding: 170px 0 0;
+    position: relative; }
+    .formula .formula__vertical:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 70%;
+      background: url(../images/plus-positive-add-mathematical-symbol.png) no-repeat;
+      width: 42px;
+      height: 42px;
+      background-size: 42px 42px; }
+    .formula .formula__vertical .formula__row .formula__col-img {
+      display: block;
+      margin: 0 auto; }
+    .formula .formula__vertical .formula__row .formula__title {
+      font-size: 28px;
+      line-height: 1.14;
+      letter-spacing: 0.3px;
+      color: #040464;
+      margin: 0 0 15px;
+      display: block; }
+    .formula .formula__vertical .formula__row:nth-child(2) {
+      padding-top: 200px; }
+    .formula .formula__vertical .formula__row:nth-child(3) {
+      padding-top: 160px; }
+
+.joonko__footer {
+  padding: 195px 0 160px;
+  text-align: center;
+  background: url(../images/Path_829.png) no-repeat 2% 0;
+  background-size: 135%; }
+  .joonko__footer .title-box {
+    text-align: center;
+    margin-bottom: 38px; }
 
 /*# sourceMappingURL=style.css.map */

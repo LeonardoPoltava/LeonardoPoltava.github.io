@@ -39,7 +39,7 @@ html, body {
     height: 100%;
 }
 body {
-    background: #fff;
+    background: $white;
     margin: 0;
     color: $gray;
     font-size: 20px;
@@ -52,7 +52,7 @@ a {
       outline: none;
     }
     text-decoration: none;
-    color: #fe7223;
+    color: $blue-dark;
 }
 b {
     font-weight: normal;
@@ -195,6 +195,7 @@ button {
     position: relative;
     &:hover {
         color: $purple;
+        text-decoration: none;
     }
     &:after {
         content: '';
@@ -829,7 +830,7 @@ footer {
         line-height: 1.32;
         letter-spacing: 0.3px;
         font-size: 20px;
-        color: #707070;
+        color: $gray;
     }
 }
 // about
@@ -995,5 +996,109 @@ footer {
         font-family: $light-font;
         text-align: center;
         margin-bottom: 20px;
+    }
+}
+// grow/hire
+.grow-hire-head {
+    padding: 20px 0 195px;
+}
+.joonko {
+    padding: 90px 0;
+    position: relative;
+    &:after {
+        background: url(../images/cloud3.png) no-repeat;
+        width: 439px;
+        height: 205px;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        content: '';
+    }
+    .joonko__sub {
+        display: block;
+        line-height: 1.14;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: $blue-dark;
+        margin-bottom: 15px;
+    }
+    .joonko__image-holder {
+        padding: 125px 0 0;
+        .joonko__image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    &.grow {
+        padding-bottom: 240px;
+        .joonko__image-holder {
+            padding-top: 220px;
+        }
+    }
+}
+.formula {
+    padding: 125px 0 0;
+    .title-box {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    .title-sub {
+        margin: 0 auto;
+        max-width: 880px;
+    }
+    .formula__img {
+        display: block;
+        margin: 0 auto 32px;
+    }
+    .formula__vertical {
+        background: url(../images/formula-vertical.png) no-repeat 50% 0;
+        height: 1659px;
+        margin: 89px 0 0;
+        padding: 170px 0 0;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 70%;
+            background: url(../images/plus-positive-add-mathematical-symbol.png) no-repeat;
+            width: 42px;
+            height: 42px;
+            background-size: 42px 42px;
+        }
+        .formula__row {
+            .formula__col-img {
+                display: block;
+                margin: 0 auto;
+            }
+            .formula__title {
+                font-size: 28px;
+                line-height: 1.14;
+                letter-spacing: 0.3px;
+                color: $blue-dark;
+                margin: 0 0 15px;
+                display: block;
+            }
+            &:nth-child(2) {
+                padding-top: 200px;
+            }
+            &:nth-child(3) {
+                padding-top: 160px;
+            }
+        }
+    }
+}
+.joonko__footer {
+    padding: 195px 0 160px;
+    text-align: center;
+    background: url(../images/Path_829.png) no-repeat 2% 0;
+    background-size: 135%;
+    .title-box {
+        text-align: center;
+        margin-bottom: 38px;
     }
 }
