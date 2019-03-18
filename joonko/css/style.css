@@ -425,9 +425,12 @@ footer {
       margin-bottom: 7px; }
     .benefits .benefits__row .benefits__img {
       max-width: 95%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-height: 800px; }
     .benefits .benefits__row.benefits__guarantee {
       padding-top: 0; }
+      .benefits .benefits__row.benefits__guarantee .benefits__guarantee-col {
+        padding-top: 15%; }
       .benefits .benefits__row.benefits__guarantee:after {
         content: '';
         display: block;
@@ -461,6 +464,8 @@ footer {
   padding-bottom: 110px;
   margin-top: -25px; }
   .sign-up .title-box {
+    line-height: 1.1;
+    margin-bottom: 10px;
     text-align: center; }
   .sign-up .sign-up__row {
     margin-top: 100px; }
@@ -497,7 +502,7 @@ footer {
         .sign-up .sign-up__row .sign-up__box .sign-up__list .sign-up__list__elem {
           font-size: 20px;
           font-family: "ubuntulight";
-          line-height: 1;
+          line-height: 1.3;
           letter-spacing: 0.2px;
           color: #707070; }
 

@@ -398,6 +398,10 @@
         font-size: 16px; }
       .benefits .benefits__row:nth-child(2n) {
         flex-direction: column-reverse; }
+      .benefits .benefits__row.benefits__guarantee .benefits__guarantee-col {
+        padding-top: 0; }
+      .benefits .benefits__row.benefits__guarantee:after {
+        display: none; }
 
   .sign-up {
     padding-bottom: 30px; }

@@ -517,9 +517,13 @@ footer {
         .benefits__img {
             max-width: 95%;
             margin: 0 auto;
+            max-height: 800px;
         }
         &.benefits__guarantee {
             padding-top: 0;
+            .benefits__guarantee-col {
+                padding-top: 15%;
+            }
             &:after {
                 content: '';
                 display: block;
@@ -560,6 +564,8 @@ footer {
     padding-bottom: 110px;
     margin-top: -25px;
     .title-box {
+        line-height: 1.1;
+        margin-bottom: 10px;
         text-align: center;
     }
     .sign-up__row {
@@ -604,7 +610,7 @@ footer {
                 .sign-up__list__elem {
                     font-size: 20px;
                     font-family: $light-font;
-                    line-height: 1;
+                    line-height: 1.3;
                     letter-spacing: 0.2px;
                     color: $gray;
                 }

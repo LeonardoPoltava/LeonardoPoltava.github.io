@@ -546,6 +546,14 @@
             &:nth-child(2n) {
                 flex-direction: column-reverse;
             }
+            &.benefits__guarantee {
+                .benefits__guarantee-col {
+                    padding-top:0;
+                }
+                &:after {
+                    display: none;
+                }
+            }
         }
     }
     .sign-up {
