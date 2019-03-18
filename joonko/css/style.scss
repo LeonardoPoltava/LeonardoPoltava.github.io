@@ -960,6 +960,17 @@ footer {
         display: block;
         margin: 100px auto 0;
     }
+    .locations__arrow {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .title-sub {
+        margin: 5px 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .hiring {
     text-align: center;
@@ -1005,6 +1016,7 @@ footer {
 .joonko {
     padding: 90px 0;
     position: relative;
+    background: url(../images/Path_4294.png) no-repeat 0 225px;
     &:after {
         background: url(../images/cloud3.png) no-repeat;
         width: 439px;
@@ -1022,6 +1034,7 @@ footer {
         letter-spacing: 0.3px;
         text-align: left;
         color: $blue-dark;
+        font-size: 28px;
         margin-bottom: 15px;
     }
     .joonko__image-holder {

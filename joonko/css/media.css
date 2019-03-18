@@ -202,6 +202,8 @@
       padding-bottom: 100px; }
       .joonko.grow .joonko__image-holder {
         padding-top: 100px; }
+    .joonko .joonko__sub {
+      font-size: 22px; }
 
   .formula {
     padding: 60px 0 0; }
@@ -557,6 +559,8 @@
     padding: 0 0 60px; }
     .joonko:after {
       display: none; }
+    .joonko .joonko__sub {
+      font-size: 18px; }
     .joonko .joonko__image-holder {
       padding: 5px 0 0; }
     .joonko.grow {
