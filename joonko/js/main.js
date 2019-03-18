@@ -19,5 +19,22 @@ $(document).ready(function () {
             }
         ]
     });
+    $('.form__input, .form__area').focus(function() {
+        $(this).parent('div').addClass('active');
+    });
+    $( ".form__select" ).change(function() {
+        $(this).parent('div').addClass('active');
+    })
+    $('.form__input, .form__area').focusout(function() {
+        if($(this).val() == "") {
+            $(this).parent('div').removeClass('active');
+        }
+    });
+    var footHeight = $('footer').outerHeight();
+    $('.wrapper').css('padding-bottom', footHeight);
+    $(window).resize(function() {
+        var footHeight = $('footer').outerHeight();
+        $('.wrapper').css('padding-bottom', footHeight);
+    });
 });
 

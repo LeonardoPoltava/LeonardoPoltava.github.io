@@ -139,7 +139,7 @@
         }
     }
     .title-info {
-        font-size: 24px;
+        font-size: 20px;
     }
     .sign-up {
         padding-bottom: 70px;
@@ -163,18 +163,99 @@
             }
         }
     }
-    .security {
+    .standard {
         padding: 49px 0 149px;
-        .security__list {
-            .security__list__item {
-                .security__list__title {
+        &:after {
+            background-size: 200% 450px;
+            background-position: 0 105%;
+            height: 450px;
+            bottom: -100px;
+        }
+        .standard__list {
+            .standard__list__item {
+                .standard__list__title {
                     font-size: 20px;
                 }
             }
         }
-        .security__footer {
+        .standard__footer {
             padding-top: 140px;
         }
+    }
+    .call {
+        padding: 60px 0 80px;
+        .form {
+            margin: 45px auto 0;
+        }
+    }
+    .form {
+        .form_box {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            .form__label {
+                font-size: 16px;
+                top: 22px;
+                line-height: 1.2;
+                left: 35px;
+            }
+            .form__input,
+            .form__select,
+            .form__area {
+                font-size: 16px;
+                line-height: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .form__input,
+            .form__select {
+                height: 47px;
+                line-height: 45px;
+            }
+            &.active {
+                .form__label {
+                    top: -3px;
+                    font-size: 13px;
+                }
+            }
+            .custom-select-holder{
+                &.active + .form__label {
+                    top: -3px;
+                    font-size: 13px;
+                }
+            }
+            .form__send {
+                width: 100%;
+                padding: 15px 0;
+                text-align: center;
+            }
+        }
+    }
+    .about-head {
+        padding: 70px 0 180px;
+        background-position: 20% 0;
+        background-size: 220% 150%;
+    }
+    .why {
+        padding: 70px 0 65vw;
+        background-size: 170% auto;
+    }
+    .pledge {
+        padding: 70px 0;
+    }
+    .advisors {
+        padding: 90px 0 120px;
+    }
+    .locations {
+        padding: 90px 0 100px;
+        .locations__img {
+            margin: 50px auto 0;
+        }
+    }
+    .supports {
+        padding-top: 70px;
+    }
+    .join-us {
+        padding: 70px 0 100px;
     }
 }
 @media (min-width: 767px) {
@@ -377,7 +458,6 @@
         }
         footer {
             padding: 65px 0 145px;
-            position: relative;
             .row {
                 & > div {
                     &:first-child {
@@ -458,27 +538,179 @@
             }
         }
     }
-    .security {
+    .standard {
         padding: 30px 0  60px;
-        .security__list {
+        &:after {
+            background-size: 200% 250px;
+            height: 250px;
+            bottom: 0;
+        }
+        .standard__list {
             padding: 28px 0 0;
-            .security__list__item {
+            .standard__list__item {
                 padding: 17px 0;
                 display: block;
-                .security__list__title {
+                .standard__list__title {
                     width: 100%;
                     margin-bottom: 10px;
                     font-size: 16px;
                 }
-                .security__list__content {
+                .standard__list__content {
                     width: 100%;
                     padding: 0;
                 }
             }
         }
-        .security__footer {
+        .standard__footer {
             padding-top: 70px;
         }
+    }
+    .form {
+        max-width: 258px;
+        margin: 27px auto 0;
+        .form_box {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            .form__label {
+                font-size: 16px;
+                top: 22px;
+                line-height: 1.2;
+                left: 35px;
+            }
+            .form__input,
+            .form__select,
+            .form__area {
+                font-size: 16px;
+                line-height: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .form__input,
+            .form__select {
+                height: 47px;
+                line-height: 45px;
+            }
+            &.active {
+                .form__label {
+                    top: -3px;
+                    font-size: 13px;
+                }
+            }
+            .custom-select-holder{
+                &.active + .form__label {
+                    top: -3px;
+                    font-size: 13px;
+                }
+            }
+            .form__send {
+                width: 100%;
+                padding: 15px 0;
+                text-align: center;
+            }
+        }
+    }
+    .call {
+        padding: 20px 0 60px;
+        background-position: 0 100%;
+    }
+    .contacts {
+        padding: 20px 0 60px;
+        background-position: 0 100%;
+        .contacts__row {
+            margin-top: 40px;
+            .form {
+                padding-bottom: 30px;
+            }
+            .contacts__box {
+                width: 258px;
+                margin-left: auto;
+                margin-right: auto;
+                .contacts__title {
+                    font-size: 18px;
+                }
+                .contacts__value {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .about-head {
+        padding: 60px 0 50px;
+        background-size: 200% auto;
+    }
+    .vision-bn {
+        text-align: left;
+        .title-box {
+            text-align: left;
+        }
+        .title-sub {
+            text-align: left;
+        }
+    }
+    .why {
+        padding: 56px 0 65vw;
+        background-size: 170% auto;
+    }
+    .pledge {
+        padding: 13px 0 60px;
+        .pledge__img {
+            height: 90px;
+            width: 90px;
+        }
+        .pledge__txt {
+            display: block;
+            width: calc(100% - 90px);
+        }
+    }
+    .advisors {
+        padding: 59px 0 47px;
+        .advisors__list {
+            margin: 30px 0 45px;
+            .advisors__row {
+                .advisors__box {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    .advisors__name {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .team {
+            margin-bottom: 0;
+            .advisors__row {
+                .advisors__box {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+    .locations {
+        padding: 55px 0 60px;
+        .locations__img {
+            margin-top: 15px;
+        }
+    }
+    .hiring {
+        .btn {
+            padding: 10px 23px;
+        }
+    }
+    .supports {
+        padding: 29px 0 50px;
+        .supports__slider {
+            .supports__slide {
+                .supports__img {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+    .join-us {
+        padding-bottom: 59px;
+        background-position: 15% 0;
+        background-size: 300%;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {

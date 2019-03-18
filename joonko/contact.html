@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Call</title>
+    <title>Contacts</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
@@ -40,57 +40,53 @@
             </div>
         </header>
         <div class="content">
-            <div class="call">
+            <div class="contacts">
                 <div class="container">
-                    <div class="title-box">Have some questions about JoonkoPool?</div>
-                    <span class="title-sub">We’d love to talk. Fill out the form below and our team will follow up to schedule<br />a conversation with you and your team.</span>
-                    <form action="#" class="form">
-                        <div class="row">
-                            <div class="form_box col-md-4">
-                                <label for="call__name" class="form__label">Name</label>
-                                <input type="text" id="call__name" class="form__input">
-                            </div>
-                            <div class="form_box col-md-4">
-                                <label for="call__email" class="form__label">Email</label>
-                                <input type="email" id="call__email" class="form__input">
-                            </div>
-                            <div class="form_box col-md-4">
-                                <label for="call__phone" class="form__label">Phone Number</label>
-                                <input type="tel" id="call__phone" class="form__input">
-                            </div>
-                            <div class="form_box col-md-4">
-                                <label for="call__company-name" class="form__label">Company Name</label>
-                                <input type="text" id="call__company-name" class="form__input">
-                            </div>
-                            <div class="form_box col-md-4">
-                                <div class="custom-select-holder">
-                                    <select name="" id="call__company-size" class="form__select custom-select">
-                                        <option value="0">Company Size</option>
-                                        <option value="1">Company Size</option>
-                                        <option value="2">Company Size</option>
-                                    </select>
+                    <div class="title-box">Let’s Talk</div>
+                    <span class="title-sub"Looking to get in touch with our team? Drop us a line using the form below to email us<br />directly and we’ll get back to you as quickly as possible.</span>
+                    <div class="contacts__row row">
+                        <div class="col-lg-7 col-md-6">
+                            <form action="#" class="form">
+                                <div class="form_box">
+                                    <label for="call__name" class="form__label">Name</label>
+                                    <input type="text" id="call__name" class="form__input">
                                 </div>
-                                <label for="call__company-size" class="form__label">Company Size</label>
-                            </div>
-                            <div class="form_box col-md-4">
-                                <div class="custom-select-holder">
-                                    <select id="call__company-ats" name="" class="form__select custom-select">
-                                        <option value="0">Company’s ATS</option>
-                                        <option value="1">Company’s ATS</option>
-                                        <option value="2">Company’s ATS</option>
-                                    </select>
+                                <div class="form_box">
+                                    <label for="call__email" class="form__label">Email</label>
+                                    <input type="email" id="call__email" class="form__input">
                                 </div>
-                                <label for="call__company-ats" class="form__label">Company’s ATS</label>
+                                <div class="form_box">
+                                    <label for="call__phone" class="form__label">Phone Number</label>
+                                    <input type="tel" id="call__phone" class="form__input">
+                                </div>
+                                <div class="form_box">
+                                    <label for="call__message" class="form__label">Message</label>
+                                    <textarea name="call__message" id="call__message" class="form__area" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form_box">
+                                    <button class="btn form__send">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-4 offset-md-1">
+                            <div class="contacts__box">
+                                <span class="contacts__title">CUSTOMER SUPPORT</span>
+                                <a href="mailto:support@joonko.co" class="contacts__value">support@joonko.co</a>
                             </div>
-                            <div class="form_box col-md-8">
-                                <label for="call__message" class="form__label">Message</label>
-                                <textarea name="call__message" id="call__message" class="form__area" cols="30" rows="10"></textarea>
+                            <div class="contacts__box">
+                                <span class="contacts__title">GENERAL INQUIRIES</span>
+                                <a href="mailto:hi@joonko.co" class="contacts__value">hi@joonko.co</a>
                             </div>
-                            <div class="form_box col-md-4">
-                                <button class="btn form__send">SUBMIT</button>
+                            <div class="contacts__box">
+                                <span class="contacts__title">USA HQ</span>
+                                <span class="contacts__value">Joonko Diversity, Inc.<br />110 12th St. N<br />Birmingham, AL, 35203<br />USA</span>
+                            </div>
+                            <div class="contacts__box">
+                                <span class="contacts__title">ISRAEL OFFICE</span>
+                                <span class="contacts__value">Joonko Diversity, Ltd.<br />17 Beit Alfa St.<br />Tel Aviv<br />Israel</span>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

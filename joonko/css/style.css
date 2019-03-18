@@ -35,6 +35,10 @@ a {
   a:focus {
     outline: none; }
 
+b {
+  font-weight: normal;
+  font-family: "ubuntumedium"; }
+
 ul {
   padding: 0;
   margin: 0;
@@ -52,10 +56,13 @@ input:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder {
   color: transparent !important; }
 
+.custom-select:focus,
+select:focus,
 input:focus,
 textarea:focus,
 button:focus {
-  outline: none; }
+  outline: none;
+  box-shadow: none; }
 
 p {
   margin: 0 0 24px;
@@ -117,6 +124,10 @@ button {
   .btn:hover {
     color: #a95be1;
     background-color: #ffffff; }
+  .btn.inverse {
+    background: none;
+    color: #ffffff;
+    border-color: #ffffff; }
 
 .title-box {
   font-size: 50px;
@@ -138,6 +149,14 @@ button {
   color: #707070;
   display: block; }
 
+.title-att {
+  display: block;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #2b2046;
+  margin-top: 3px; }
+
 .more-link {
   font-size: 22px;
   line-height: 1.16;
@@ -157,6 +176,10 @@ button {
     position: absolute;
     right: -38px;
     top: calc(50% - 9px); }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
 
 header {
   padding: 45px 0 35px; }
@@ -320,6 +343,10 @@ header {
     margin: 35px 0 0; }
 
 footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
   padding: 108px 0;
   border: solid 1px #707070;
   background-color: #30234e; }
@@ -418,7 +445,7 @@ footer {
       left: 88%; }
 
 .title-info {
-  font-size: 28px;
+  font-size: 24px;
   font-family: "ubuntulight";
   line-height: 1.14;
   letter-spacing: 0.3px;
@@ -470,45 +497,313 @@ footer {
           letter-spacing: 0.2px;
           color: #707070; }
 
-.security {
+.standard {
   position: relative;
   padding: 69px 0 209px; }
-  .security .security__txt {
+  .standard:after {
+    background: url(../images/Path_829.png) no-repeat 2% 0;
+    background-size: 135%;
+    content: '';
+    display: block;
+    left: 0;
+    width: 100%;
+    bottom: -65px;
+    height: 505px;
+    position: absolute; }
+  .standard .standard__txt {
     display: block;
     margin: 0 0 11px;
     color: #707070;
     font-family: "ubuntulight";
     line-height: 1.32;
     letter-spacing: 0.3px; }
-  .security .security__list {
+  .standard .standard__list {
     padding: 84px 0 0; }
-    .security .security__list .security__list__item {
+    .standard .standard__list .standard__list__item {
       padding: 15px 0;
       display: flex;
       align-items: flex-start;
       align-content: flex-start; }
-      .security .security__list .security__list__item .security__list__title {
+      .standard .standard__list .standard__list__item .standard__list__title {
         display: block;
         width: 30%;
         font-size: 28px;
+        line-height: 1.18;
         font-family: "ubuntumedium";
-        line-height: 1.86;
         letter-spacing: 0.3px;
         color: #040464; }
-      .security .security__list .security__list__item .security__list__content {
+      .standard .standard__list .standard__list__item .standard__list__content {
         width: 70%;
         padding: 0 0 0 25px; }
-        .security .security__list .security__list__item .security__list__content .security__list__txt {
+        .standard .standard__list .standard__list__item .standard__list__content .standard__list__txt {
           font-family: "ubuntulight";
           line-height: 1.32;
           letter-spacing: 0.3px;
           color: #707070;
           margin: 0 0 10px;
           display: block; }
-  .security .security__footer {
+  .standard .standard__footer {
     text-align: center;
-    padding-top: 210px; }
-    .security .security__footer .title-box {
+    padding-top: 210px;
+    position: relative;
+    z-index: 5; }
+    .standard .standard__footer .title-box {
       margin-bottom: 25px; }
+
+.form .form_box {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: relative;
+  align-content: flex-end;
+  align-items: flex-end;
+  display: flex; }
+  .form .form_box .form__label {
+    position: absolute;
+    font-size: 25px;
+    font-family: "ubuntulight";
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.32;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #707070;
+    top: 34px;
+    left: 46px;
+    z-index: 2;
+    margin: 0;
+    display: block;
+    transition: 0.5s all ease; }
+  .form .form_box .form__input,
+  .form .form_box .form__select,
+  .form .form_box .form__area {
+    padding: 0 30px;
+    line-height: 58px;
+    font-size: 25px;
+    font-family: "ubuntulight";
+    width: 100%;
+    height: 60px;
+    color: #707070;
+    border-radius: 5px;
+    border: solid 1px #707070;
+    background: #ffffff; }
+  .form .form_box .form__area {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    height: 111px;
+    resize: none;
+    line-height: 1.2; }
+  .form .form_box .form__send {
+    padding: 21px 81px; }
+  .form .form_box.active .form__input,
+  .form .form_box.active .form__area {
+    border: solid 2px #a95be1; }
+  .form .form_box.active .form__label {
+    color: #a95be1;
+    top: 5px;
+    background: #ffffff;
+    padding: 0 8px;
+    font-size: 18px;
+    line-height: 1.83;
+    letter-spacing: 0.2px; }
+  .form .form_box .custom-select-holder {
+    position: relative;
+    z-index: 2;
+    width: 100%; }
+    .form .form_box .custom-select-holder .form__select {
+      padding-left: 24px; }
+    .form .form_box .custom-select-holder + .form__label {
+      z-index: 1; }
+    .form .form_box .custom-select-holder.active .form__select {
+      border: solid 2px #a95be1; }
+    .form .form_box .custom-select-holder.active + .form__label {
+      z-index: 3;
+      color: #a95be1;
+      top: 5px;
+      background: #ffffff;
+      padding: 0 8px;
+      font-size: 18px;
+      line-height: 1.83;
+      letter-spacing: 0.2px; }
+    .form .form_box .custom-select-holder:after {
+      content: '';
+      position: absolute;
+      right: 31px;
+      top: calc(50% - 5px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 9px 0 9px;
+      border-color: #707070 transparent transparent transparent; }
+
+.call {
+  padding: 80px 0 300px;
+  background: url(../images/jpool-bg.png) 50% 100%; }
+  .call .title-box {
+    text-align: center; }
+  .call .form {
+    margin: 77px 0 0; }
+
+.contacts {
+  padding: 15px 0 73px;
+  background: url(../images/jpool-bg.png) 50% 100%; }
+  .contacts .title-box {
+    text-align: center; }
+  .contacts .contacts__row {
+    margin-top: 77px; }
+  .contacts .form .form_box .form__label {
+    left: 30px; }
+  .contacts .contacts__box {
+    margin-top: 20px; }
+    .contacts .contacts__box .contacts__title {
+      font-size: 20px;
+      font-family: "ubuntumedium";
+      display: block;
+      letter-spacing: 0.3px;
+      color: #a95be1; }
+    .contacts .contacts__box .contacts__value {
+      font-size: 18px;
+      display: block;
+      line-height: 1.18;
+      letter-spacing: 0.2px;
+      color: #707070; }
+
+.terms-service .last-modified {
+  display: block;
+  text-align: center;
+  line-height: 1.32;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  color: #707070; }
+
+.about-head {
+  padding: 110px 0 250px;
+  background: url(../images/Path_829.png) no-repeat 2% 0;
+  background-size: 150% 150%; }
+  .about-head .title-box {
+    display: block; }
+  .about-head .title-sub {
+    text-align: left; }
+
+.why {
+  background: url(../images/mountain.png) no-repeat 50% 100%;
+  padding: 250px 0 840px; }
+  .why .title-box {
+    text-align: center; }
+
+.pledge {
+  padding: 110px 0 60px; }
+  .pledge .pledge__txt {
+    max-width: calc(100% - 126px); }
+
+.advisors {
+  background: #30234e;
+  padding: 190px 0 220px; }
+  .advisors .title-box {
+    text-align: center;
+    color: #ffffff; }
+  .advisors .advisors__list {
+    margin-top: 23px;
+    margin-bottom: 23px; }
+    .advisors .advisors__list .advisors__row .advisors__box {
+      padding-top: 47px;
+      padding-bottom: 47px; }
+      .advisors .advisors__list .advisors__row .advisors__box .advisor__photo {
+        display: block;
+        width: 236px;
+        height: 236px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        margin: 0 auto 14px; }
+      .advisors .advisors__list .advisors__row .advisors__box .advisors__name {
+        display: block;
+        font-size: 25px;
+        font-family: "ubuntumedium";
+        line-height: 1.16;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 7px; }
+      .advisors .advisors__list .advisors__row .advisors__box .advisors__info {
+        display: block;
+        font-size: 20px;
+        line-height: 1.18;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #ffffff; }
+      .advisors .advisors__list .advisors__row .advisors__box .advisors__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px; }
+        .advisors .advisors__list .advisors__row .advisors__box .advisors__social .advisors__social-item {
+          padding: 0 4px; }
+          .advisors .advisors__list .advisors__row .advisors__box .advisors__social .advisors__social-item .advisors__social-link {
+            display: block;
+            width: 33px;
+            height: 33px; }
+            .advisors .advisors__list .advisors__row .advisors__box .advisors__social .advisors__social-item .advisors__social-link .advisor__social-img {
+              width: 33px;
+              height: 33px;
+              -webkit-border-radius: 100%;
+              -moz-border-radius: 100%;
+              border-radius: 100%; }
+  .advisors .team {
+    margin-top: 13px;
+    margin-bottom: 0; }
+    .advisors .team .team__work {
+      display: block; }
+    .advisors .team .team__icons-list {
+      margin-top: 16px;
+      height: 60px;
+      display: flex;
+      align-content: flex-end;
+      align-items: flex-end; }
+      .advisors .team .team__icons-list .team__icon {
+        display: block;
+        max-height: 100%;
+        margin: 0 auto; }
+    .advisors .team .team__favorite {
+      display: block; }
+    .advisors .team .advisors__row .advisors__box {
+      padding-top: 47px;
+      padding-bottom: 47px; }
+
+.locations {
+  padding: 180px 0 200px; }
+  .locations .title-box {
+    text-align: center; }
+  .locations .locations__img {
+    display: block;
+    margin: 100px auto 0; }
+
+.hiring {
+  text-align: center;
+  padding: 110px 0; }
+  .hiring .title-sub {
+    color: #ffffff;
+    margin-top: 10px; }
+  .hiring .btn {
+    margin-top: 20px;
+    padding: 20px 49px; }
+
+.supports {
+  padding: 140px 0 160px; }
+  .supports .supports__slider {
+    padding: 75px 0 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around; }
+    .supports .supports__slider .supports__slide .supports__img {
+      margin: 0 auto; }
+
+.join-us {
+  padding: 50px 0 120px;
+  text-align: center;
+  background: url(../images/Path_829.png) no-repeat 2% 0; }
+  .join-us .title-box {
+    font-family: "ubuntulight";
+    text-align: center;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
