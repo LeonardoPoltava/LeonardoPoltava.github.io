@@ -155,6 +155,11 @@ button {
         background: none;
         color: $white;
         border-color: $white;
+        &:hover {
+            border-color: $purple;
+            color: $purple;
+            background-color: $white;
+        }
     }
 }
 .title-box {

@@ -128,6 +128,10 @@ button {
     background: none;
     color: #ffffff;
     border-color: #ffffff; }
+    .btn.inverse:hover {
+      border-color: #a95be1;
+      color: #a95be1;
+      background-color: #ffffff; }
 
 .title-box {
   font-size: 50px;
