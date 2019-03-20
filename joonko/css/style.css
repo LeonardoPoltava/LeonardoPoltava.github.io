@@ -394,10 +394,17 @@ footer {
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         border-radius: 100%; }
-        footer .footer__soc .footer__soc__el .footer__soc__link img {
+        footer .footer__soc .footer__soc__el .footer__soc__link .footer__soc-img {
           -webkit-border-radius: 100%;
           -moz-border-radius: 100%;
-          border-radius: 100%; }
+          border-radius: 100%;
+          display: block; }
+        footer .footer__soc .footer__soc__el .footer__soc__link .footer__soc-img-h {
+          display: none; }
+        footer .footer__soc .footer__soc__el .footer__soc__link:hover .footer__soc-img {
+          display: none; }
+        footer .footer__soc .footer__soc__el .footer__soc__link:hover .footer__soc-img-h {
+          display: block; }
 
 .pool-head {
   padding: 160px 0 450px;
@@ -652,7 +659,7 @@ footer {
 
 .call {
   padding: 80px 0 300px;
-  background: url(../images/call-bg.png) 40% 100%;
+  background: url(../images/call-bg.png) 40% 100% no-repeat;
   background-size: auto 75%; }
   .call .title-box {
     text-align: center; }
@@ -661,7 +668,7 @@ footer {
 
 .contacts {
   padding: 15px 0 73px;
-  background: url(../images/call-bg.png) 40% 100%;
+  background: url(../images/call-bg.png) 40% 100% no-repeat;
   background-size: auto 75%; }
   .contacts .title-box {
     text-align: center; }
