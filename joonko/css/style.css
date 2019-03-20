@@ -652,8 +652,8 @@ footer {
 
 .call {
   padding: 80px 0 300px;
-  background: url(../images/jpool-bg.png) 50% 100%;
-  background-size: auto 60%; }
+  background: url(../images/call-bg.png) 40% 100%;
+  background-size: auto 75%; }
   .call .title-box {
     text-align: center; }
   .call .form {
@@ -661,8 +661,8 @@ footer {
 
 .contacts {
   padding: 15px 0 73px;
-  background: url(../images/jpool-bg.png) 50% 100%;
-  background-size: auto 60%; }
+  background: url(../images/call-bg.png) 40% 100%;
+  background-size: auto 75%; }
   .contacts .title-box {
     text-align: center; }
   .contacts .contacts__row {
