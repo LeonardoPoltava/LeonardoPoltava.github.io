@@ -193,10 +193,6 @@ button {
     color: $purple;
     display: inline-block;
     position: relative;
-    &:hover {
-        color: $purple;
-        text-decoration: none;
-    }
     &:after {
         content: '';
         display: block;
@@ -207,6 +203,13 @@ button {
         position: absolute;
         right: -38px;
         top: calc(50% - 9px);
+    }
+    &:hover {
+        color: $purple;
+        text-decoration: none;
+        &:after {
+            animation: 1s linkArrow ease infinite;
+        }
     }
 }
 .wrapper {
@@ -1017,6 +1020,7 @@ footer {
         font-family: $light-font;
         text-align: center;
         margin-bottom: 20px;
+        line-height: 1.2;
     }
 }
 // grow/hire
@@ -1128,5 +1132,16 @@ footer {
 .vision-bn {
     .title-sub {
         margin-top: 15px;
+    }
+}
+@keyframes linkArrow {
+    0% {
+        right: -38px;
+    }
+    50% {
+        right: -45px;
+    }
+    100% {
+        right: -38px;
     }
 }
