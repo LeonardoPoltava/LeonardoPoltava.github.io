@@ -348,6 +348,8 @@
       width: 100%;
       z-index: 5;
       background: #ffffff; }
+      .wrapper header .header-inner {
+        flex-wrap: nowrap; }
       .wrapper header .logo {
         width: 76px;
         height: 38px; }
@@ -356,42 +358,6 @@
         justify-content: space-between;
         align-items: center;
         align-content: center; }
-        .wrapper header .header-left .show-menu {
-          display: flex;
-          justify-content: center;
-          position: relative;
-          z-index: 7; }
-          .wrapper header .header-left .show-menu span {
-            display: block;
-            width: 8.5px;
-            height: 8.5px;
-            margin: 0 3px;
-            background-color: #a95be1;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%; }
-      .wrapper header .header__right {
-        position: fixed;
-        display: block;
-        right: -290px;
-        background: #ffffff;
-        top: 0;
-        padding: 0;
-        text-align: center;
-        z-index: 5;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        width: 290px; }
-        .wrapper header .header__right .header-nav {
-          margin: 0;
-          display: block;
-          padding: 113px 53px; }
-          .wrapper header .header__right .header-nav .header-nav__el {
-            font-size: 30px;
-            text-align: center;
-            width: 100%;
-            margin: 0 0 35px; }
-        .wrapper header .header__right .btn {
-          margin: 0 auto 113px; }
     .wrapper .culture-section .more-link {
       margin-bottom: 17px; }
     .wrapper .culture-section .culture-section__img {
@@ -405,32 +371,33 @@
     .wrapper .steps {
       padding: 62px 0; }
       .wrapper .steps .steps__list {
-        padding: 80px 0 0;
+        padding: 200px 0 0;
         margin: 15px auto 0;
-        background-size: 75%;
-        background-position: 0 0;
+        background: url(../images/vertical.png) no-repeat;
         align-content: flex-start;
         width: 290px;
-        height: 1500px; }
-        .wrapper .steps .steps__list .steps__el.joonkogrow:after {
-          display: none; }
-        .wrapper .steps .steps__list .steps__el.joonkogrow .steps__img {
-          position: static; }
-        .wrapper .steps .steps__list .steps__el.joonkopool {
+        height: 1755px; }
+        .wrapper .steps .steps__list .steps__el {
           padding-top: 0;
-          padding-left: 38%; }
+          padding-left: 60px; }
+          .wrapper .steps .steps__list .steps__el.joonkogrow {
+            padding-top: 95px; }
+            .wrapper .steps .steps__list .steps__el.joonkogrow:after {
+              display: none; }
+            .wrapper .steps .steps__list .steps__el.joonkogrow .steps__img {
+              position: static; }
           .wrapper .steps .steps__list .steps__el.joonkopool:after {
             display: none; }
           .wrapper .steps .steps__list .steps__el.joonkopool .steps__img {
             position: static; }
-        .wrapper .steps .steps__list .steps__el.joonkohire {
-          padding-top: 228px;
-          padding-left: 45%;
-          flex-direction: column-reverse; }
-          .wrapper .steps .steps__list .steps__el.joonkohire .steps__img {
-            position: static; }
-        .wrapper .steps .steps__list .steps__el.joonkogrow {
-          padding: 0 50% 0 0; }
+          .wrapper .steps .steps__list .steps__el.joonkohire {
+            padding-top: 151px;
+            flex-direction: column-reverse; }
+            .wrapper .steps .steps__list .steps__el.joonkohire .steps__img {
+              position: static; }
+          .wrapper .steps .steps__list .steps__el .steps__img {
+            margin-top: 14px;
+            max-height: 320px; }
     .wrapper .blog {
       overflow: hidden;
       padding: 0 11px; }
@@ -448,7 +415,12 @@
     .wrapper .clients {
       padding-bottom: 60px; }
       .wrapper .clients .clients__slider {
+        display: block;
         margin: 10px 0 0; }
+        .wrapper .clients .clients__slider .clients__slide {
+          height: 70px;
+          padding-top: 0;
+          padding-bottom: 0; }
     .wrapper .trial {
       text-align: left;
       padding: 60px 0;
@@ -795,7 +767,10 @@
       margin-bottom: 5px; }
 
   .hidden-xs {
-    display: none !important; } }
+    display: none !important; }
+
+  .joonko-bn .title-sub {
+    font-size: 18px; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .wrapper footer .footer__soc {
     width: 540px;

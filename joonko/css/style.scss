@@ -112,6 +112,7 @@ button {
     }
 }
 .slick-dots {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -227,6 +228,9 @@ button {
 // header
 header {
     padding: 45px 0 35px;
+    nav {
+        display: none;
+    }
     .header-nav {
         margin-right: 56px;
         .header-nav__el {
@@ -356,14 +360,30 @@ header {
     }
     .clients__slider {
         margin: 40px 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .clients__slide {
             display: flex;
             align-items: center;
             align-content: center;
-            height: 72px;
-            padding: 0 15px;
+            //height: 72px;
+            padding: 33px 15px;
+            width: 33.33%;
             .clients__img {
                 margin: 0 auto;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                width: 25%;
+            }
+        }
+        &.partners__slider {
+            flex-wrap: nowrap;
+            .clients__slide {
+              width: auto;
             }
         }
     }
@@ -579,6 +599,7 @@ footer {
     padding: 115px 0;
     .title-sub {
         color: $white;
+        font-size: 23px;
     }
 }
 // benefits
@@ -695,6 +716,14 @@ footer {
                 margin: 0 0 30px;
             }
         }
+    }
+    .standard__footer {
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      .title-box {
+        margin-bottom: 25px;
+      }
     }
 }
 // standard
@@ -1282,4 +1311,7 @@ footer {
     100% {
         right: -38px;
     }
+}
+.show-menu {
+  display: none;
 }
