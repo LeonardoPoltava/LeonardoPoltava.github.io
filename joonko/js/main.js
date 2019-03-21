@@ -1,4 +1,17 @@
 $(document).ready(function () {
+    $('.show-menu').click(function () {
+       var el = $(this).parents('.header-inner').find('.header__right');
+       if(el.css('right') == '-290px') {
+           el.animate({
+               right: "0"
+           }, 1000);
+       }
+       else {
+           el.animate({
+               right: "-290px"
+           }, 1000);
+       }
+    });
     $('.clients__slider').slick({
         dots: true,
         arrows: false,
