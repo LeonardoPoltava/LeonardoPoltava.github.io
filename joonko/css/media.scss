@@ -201,6 +201,53 @@
     }
     .pool-head {
         padding: 60px 0 150px;
+        .call__bg {
+            .call_bg-cloud {
+                &:first-child {
+                    left: 3vw;
+                    top: 3vw;
+                }
+                &:nth-child(2) {
+                    left: -12vw;
+                    top: 17vw;
+                }
+                &:nth-child(3) {
+                    left: -4.5vw;
+                    bottom: 30vw;
+                    top: auto;
+                }
+                &:nth-child(4) {
+                    right: -6.5vw;
+                    top: auto;
+                    bottom: 35vw;
+                }
+                &:nth-child(5) {
+                    right: 7vw;
+                    top: 1vw;
+                }
+                &:nth-child(6) {
+                    right: 8vw;
+                    bottom: 13vw;
+                    top: auto;
+                }
+                &:nth-child(7) {
+                    right: -4vw;
+                    bottom: 21vw;
+                }
+                &:nth-child(8) {
+                    left: 8vw;
+                    bottom: 12vw;
+                }
+                &:nth-child(9) {
+                    left: 42vw;
+                    bottom: 6vw;
+                }
+                &:nth-child(10) {
+                    left: -1vw;
+                    bottom: 20vw;
+                }
+            }
+        }
     }
     .benefits {
         padding: 68px 0;
@@ -632,8 +679,53 @@
         }
     }
     .pool-head {
-        background-size: 100%;
-        padding: 9px 0 43px;
+        padding: 4vw 0 15vw;
+        .container {
+            padding: 0 10vw;
+        }
+        .call__bg {
+            .call_bg-cloud {
+                &:first-child {
+                    left: -5vw;
+                    top: 0vw;
+                }
+                &:nth-child(2) {
+                    left: -18vw;
+                }
+                &:nth-child(3) {
+                    left: -13.5vw;
+                    top: 33vw;
+                }
+                &:nth-child(4) {
+                    right: -14.5vw;
+                    top: 26vw;
+                }
+                &:nth-child(5) {
+                    right: -2vw;
+                    top: 1vw;
+                }
+                &:nth-child(6) {
+                    right: -15vw;
+                    top: 55vw;
+                }
+                &:nth-child(7) {
+                    right: -11vw;
+                    bottom: 21vw;
+                }
+                &:nth-child(8) {
+                    left: 12vw;
+                    bottom: 7vw;
+                }
+                &:nth-child(9) {
+                    left: 55vw;
+                    bottom: 2vw;
+                }
+                &:nth-child(10) {
+                    left: -21vw;
+                    bottom: 30vw;
+                }
+            }
+        }
     }
     .info-txt {
         font-size: 13px;
@@ -1024,6 +1116,16 @@
             .footer__soc {
                 width: 540px;
                 left: calc(50% - 270px);
+            }
+        }
+    }
+    .pool-head {
+        .call__bg {
+            .call_bg-cloud {
+                &:nth-child(4) {
+                    right: -9.5vw;
+                    top: 15vw;
+                }
             }
         }
     }

@@ -409,11 +409,52 @@ footer {
           display: block; }
 
 .pool-head {
-  padding: 160px 0 450px;
-  text-align: center;
-  background: url("../images/jpool-bg.png") 50% 70%; }
+  position: relative;
+  padding: 10vw 0 22vw;
+  text-align: center; }
+  .pool-head .container {
+    position: relative;
+    z-index: 2; }
   .pool-head .title-box {
     margin: 0 0 25px; }
+  .pool-head .call__bg {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+    .pool-head .call__bg .call_bg-cloud:first-child {
+      left: 20vw;
+      top: 3vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(2) {
+      left: -5vw;
+      top: 10vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(3) {
+      left: -8.5vw;
+      top: 22vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(4) {
+      right: -5.5vw;
+      top: 15vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(5) {
+      right: -2vw;
+      top: 1vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(6) {
+      right: -2vw;
+      top: 34vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(7) {
+      right: 25vw;
+      bottom: 12vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(8) {
+      left: 12vw;
+      bottom: 7vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(9) {
+      left: 40vw;
+      bottom: 2vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(10) {
+      left: -3vw;
+      bottom: 14vw; }
 
 .info-txt {
   margin: 13px 0 0;

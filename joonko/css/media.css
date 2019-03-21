@@ -131,6 +131,39 @@
 
   .pool-head {
     padding: 60px 0 150px; }
+    .pool-head .call__bg .call_bg-cloud:first-child {
+      left: 3vw;
+      top: 3vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(2) {
+      left: -12vw;
+      top: 17vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(3) {
+      left: -4.5vw;
+      bottom: 30vw;
+      top: auto; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(4) {
+      right: -6.5vw;
+      top: auto;
+      bottom: 35vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(5) {
+      right: 7vw;
+      top: 1vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(6) {
+      right: 8vw;
+      bottom: 13vw;
+      top: auto; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(7) {
+      right: -4vw;
+      bottom: 21vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(8) {
+      left: 8vw;
+      bottom: 12vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(9) {
+      left: 42vw;
+      bottom: 6vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(10) {
+      left: -1vw;
+      bottom: 20vw; }
 
   .benefits {
     padding: 68px 0; }
@@ -447,8 +480,38 @@
         justify-content: space-between; }
 
   .pool-head {
-    background-size: 100%;
-    padding: 9px 0 43px; }
+    padding: 4vw 0 15vw; }
+    .pool-head .container {
+      padding: 0 10vw; }
+    .pool-head .call__bg .call_bg-cloud:first-child {
+      left: -5vw;
+      top: 0vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(2) {
+      left: -18vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(3) {
+      left: -13.5vw;
+      top: 33vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(4) {
+      right: -14.5vw;
+      top: 26vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(5) {
+      right: -2vw;
+      top: 1vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(6) {
+      right: -15vw;
+      top: 55vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(7) {
+      right: -11vw;
+      bottom: 21vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(8) {
+      left: 12vw;
+      bottom: 7vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(9) {
+      left: 55vw;
+      bottom: 2vw; }
+    .pool-head .call__bg .call_bg-cloud:nth-child(10) {
+      left: -21vw;
+      bottom: 30vw; }
 
   .info-txt {
     font-size: 13px; }
@@ -736,6 +799,10 @@
 @media (min-width: 576px) and (max-width: 767px) {
   .wrapper footer .footer__soc {
     width: 540px;
-    left: calc(50% - 270px); } }
+    left: calc(50% - 270px); }
+
+  .pool-head .call__bg .call_bg-cloud:nth-child(4) {
+    right: -9.5vw;
+    top: 15vw; } }
 
 /*# sourceMappingURL=media.css.map */
