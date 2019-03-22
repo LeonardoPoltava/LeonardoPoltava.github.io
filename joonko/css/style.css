@@ -821,6 +821,9 @@ footer {
   padding: 250px 0 840px; }
   .why .title-box {
     text-align: center; }
+  .why .title-sub {
+    max-width: 900px;
+    margin: 0 auto; }
 
 .pledge {
   padding: 110px 0 60px; }
