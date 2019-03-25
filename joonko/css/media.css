@@ -62,7 +62,12 @@
   .contacts {
     padding-bottom: 15vw; }
     .contacts .call__bg .call_bg-cloud:nth-child(8) {
-      bottom: 12vw; } }
+      bottom: 12vw; }
+
+  .steps .steps__list .steps__el.joonkogrow .col-md-6:after {
+    top: -450px; }
+  .steps .steps__list .steps__el.joonkogrow .steps__img {
+    top: -350px; } }
 @media (min-width: 767px) and (max-width: 991px) {
   body {
     font-size: 19px; }
@@ -99,18 +104,26 @@
   .steps {
     padding: 90px 0; }
     .steps .steps__list {
-      background: url(../images/steps-vertical.png) no-repeat 70% 0;
-      margin: 25px 0 0;
-      padding: 470px 0 0; }
+      background: url(../images/steps-vertical.png) no-repeat 50% 0;
+      margin: 25px 0 0; }
       .steps .steps__list .steps__el.joonkopool .steps__img {
         top: -250px;
         right: -7%; }
-      .steps .steps__list .steps__el.joonkogrow:after {
-        display: none; }
-      .steps .steps__list .steps__el.joonkohire .col-md-4 {
-        margin-left: 7%;
-        flex: 0 0 40%;
-        max-width: 40%; }
+      .steps .steps__list .steps__el.joonkopool:after {
+        bottom: 0; }
+      .steps .steps__list .steps__el.joonkogrow {
+        padding: 200px 0 0; }
+        .steps .steps__list .steps__el.joonkogrow .steps__img {
+          top: -350px;
+          right: -70px; }
+        .steps .steps__list .steps__el.joonkogrow .col-md-6:after {
+          display: none; }
+      .steps .steps__list .steps__el.joonkohire {
+        padding: 415px 0 0; }
+        .steps .steps__list .steps__el.joonkohire .col-md-4 {
+          margin-left: 7%;
+          flex: 0 0 40%;
+          max-width: 40%; }
 
   .clients {
     padding-bottom: 80px; }
@@ -384,8 +397,8 @@
           padding-top: 0;
           padding-left: 60px; }
           .wrapper .steps .steps__list .steps__el.joonkogrow {
-            padding-top: 95px; }
-            .wrapper .steps .steps__list .steps__el.joonkogrow:after {
+            padding-top: 130px; }
+            .wrapper .steps .steps__list .steps__el.joonkogrow .col-md-6:after {
               display: none; }
             .wrapper .steps .steps__list .steps__el.joonkogrow .steps__img {
               position: static; }
@@ -394,7 +407,7 @@
           .wrapper .steps .steps__list .steps__el.joonkopool .steps__img {
             position: static; }
           .wrapper .steps .steps__list .steps__el.joonkohire {
-            padding-top: 151px;
+            padding-top: 180px;
             flex-direction: column-reverse; }
             .wrapper .steps .steps__list .steps__el.joonkohire .steps__img {
               position: static; }

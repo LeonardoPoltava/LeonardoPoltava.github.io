@@ -106,6 +106,22 @@
             }
         }
     }
+    .steps {
+        .steps__list {
+            .steps__el {
+                &.joonkogrow {
+                    .col-md-6 {
+                        &:after {
+                            top: -450px;
+                        }
+                    }
+                    .steps__img {
+                        top: -350px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(min-width: 767px) and (max-width: 991px) {
     body {
@@ -148,22 +164,32 @@
     .steps {
         padding: 90px 0;
         .steps__list {
-            background: url(../images/steps-vertical.png) no-repeat 70% 0;
+            background: url(../images/steps-vertical.png) no-repeat 50% 0;
             margin: 25px 0 0;
-            padding: 470px 0 0;
             .steps__el {
                 &.joonkopool {
                     .steps__img {
                         top: -250px;
                         right: -7%;
                     }
+                    &:after {
+                        bottom: 0;
+                    }
                 }
                 &.joonkogrow {
-                    &:after {
-                        display: none;
+                    padding: 200px 0 0;
+                    .steps__img {
+                        top: -350px;
+                        right: -70px;
+                    }
+                    .col-md-6 {
+                        &:after {
+                            display: none;
+                        }
                     }
                 }
                 &.joonkohire {
+                    padding: 415px 0 0;
                     .col-md-4 {
                         margin-left: 7%;
                         flex: 0 0 40%;
@@ -582,9 +608,11 @@
                     padding-top: 0;
                     padding-left: 60px;
                     &.joonkogrow {
-                        padding-top: 95px;
-                        &:after {
-                            display: none;
+                        padding-top: 130px;
+                        .col-md-6 {
+                            &:after {
+                                display: none;
+                            }
                         }
                         .steps__img {
                             position: static;
@@ -599,7 +627,7 @@
                         }
                     }
                     &.joonkohire {
-                        padding-top: 151px;
+                        padding-top: 180px;
                         flex-direction: column-reverse;
                         .steps__img {
                             position: static;
