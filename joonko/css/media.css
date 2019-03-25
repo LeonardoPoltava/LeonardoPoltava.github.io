@@ -130,6 +130,8 @@
     .clients .clients__slider .clients__slide .clients__img {
       max-width: 100%;
       max-height: none; }
+    .clients .clients__slider.partners__slider {
+      margin-bottom: 50px; }
 
   .blog .blog__item .blog__title {
     font-size: 17px;
@@ -789,7 +791,17 @@
     display: none !important; }
 
   .joonko-bn .title-sub {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .faq {
+    padding: 0 0 30px; }
+    .faq-list__item {
+      margin-top: 30px;
+      padding: 12px 15px; }
+      .faq-list__item-head__title {
+        display: block;
+        font-size: 18px;
+        line-height: 1.3; } }
 @media (min-width: 576px) and (max-width: 767px) {
   .wrapper footer .footer__soc {
     width: 540px;

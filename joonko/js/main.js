@@ -39,6 +39,17 @@ $(document).ready(function () {
     });
     var footHeight = $('footer').outerHeight();
     $('.wrapper').css('padding-bottom', footHeight);
+    $('.faq-list__item-head__item-btn').click(function () {
+       var el = $(this).parents('.faq-list__item').find('.faq-list__item-drop');
+       if(el.css('display') == 'none') {
+           el.slideDown();
+           $(this).addClass('active');
+       }
+       else {
+           el.slideUp();
+           $(this).removeClass('active');
+       }
+    });
     $(window).resize(function() {
         var footHeight = $('footer').outerHeight();
         $('.wrapper').css('padding-bottom', footHeight);

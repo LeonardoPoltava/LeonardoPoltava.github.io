@@ -208,6 +208,9 @@
                     max-height: none;
                 }
             }
+            &.partners__slider {
+                margin-bottom: 50px;
+            }
         }
     }
     .blog {
@@ -1161,6 +1164,22 @@
     .joonko-bn {
         .title-sub {
             font-size: 18px;
+        }
+    }
+    .faq {
+        padding: 0 0 30px;
+        &-list {
+            &__item {
+                margin-top: 30px;
+                padding: 12px 15px;
+                &-head {
+                    &__title {
+                        display: block;
+                        font-size: 18px;
+                        line-height: 1.3;
+                    }
+                }
+            }
         }
     }
 }
