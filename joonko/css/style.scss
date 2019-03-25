@@ -308,7 +308,7 @@ header {
     }
     .steps__list {
         height: 2949px;
-        margin: 270px 0 0;
+        margin: 100px 0 0;
         padding: 470px 0 0;
         background: url(../images/steps-vertical.png) no-repeat 40% 0;
         .steps__el {
@@ -372,12 +372,25 @@ header {
             width: 33.33%;
             .clients__img {
                 margin: 0 auto;
+                max-width: 260px;
+                max-height: 105px;
             }
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
                 width: 25%;
+            }
+            &:nth-child(4) {
+                .clients__img {
+                    max-width: 100%;
+                }
+            }
+            &:last-child {
+                .clients__img {
+                    max-width: 95%;
+                    max-height: none;
+                }
             }
         }
         &.partners__slider {
@@ -479,6 +492,7 @@ footer {
             line-height: 1.32;
             letter-spacing: 0.3px;
             margin: 30px 0 0;
+            color: $white;
             .footer__nav__link {
                 color: $white;
             }

@@ -114,6 +114,9 @@
 
   .clients {
     padding-bottom: 80px; }
+    .clients .clients__slider .clients__slide .clients__img {
+      max-width: 100%;
+      max-height: none; }
 
   .blog .blog__item .blog__title {
     font-size: 17px;
@@ -421,6 +424,9 @@
           height: 70px;
           padding-top: 0;
           padding-bottom: 0; }
+          .wrapper .clients .clients__slider .clients__slide .clients__img {
+            max-width: 100%;
+            max-height: none; }
     .wrapper .trial {
       text-align: left;
       padding: 60px 0;
