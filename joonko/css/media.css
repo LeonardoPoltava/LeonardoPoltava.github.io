@@ -472,9 +472,11 @@
       .wrapper .trial .btn {
         margin: 15px 0 0; }
     .wrapper footer {
-      padding: 65px 0 145px; }
+      padding: 65px 0 145px;
+      text-align: left; }
       .wrapper footer .row > div:first-child {
-        position: static; }
+        position: static;
+        display: block; }
       .wrapper footer .footer__nav .footer__nav__el {
         font-size: 16px;
         margin: 0 0 20px; }
@@ -488,6 +490,7 @@
         position: absolute;
         left: 0;
         width: 100%;
+        max-width: 100%;
         bottom: 60px;
         display: flex;
         justify-content: space-between; }
@@ -812,6 +815,9 @@
 
   .joonko-bn .title-sub {
     font-size: 18px; }
+
+  .faq-head__img {
+    margin-top: 20px; }
 
   .faq {
     padding: 0 0 30px; }

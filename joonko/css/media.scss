@@ -726,10 +726,12 @@
         }
         footer {
             padding: 65px 0 145px;
+            text-align: left;
             .row {
                 & > div {
                     &:first-child {
                         position: static;
+                        display: block;
                     }
                 }
             }
@@ -751,6 +753,7 @@
                 position: absolute;
                 left: 0;
                 width: 100%;
+                max-width: 100%;
                 bottom: 60px;
                 display: flex;
                 justify-content: space-between;
@@ -1192,6 +1195,9 @@
         .title-sub {
             font-size: 18px;
         }
+    }
+    .faq-head__img {
+        margin-top: 20px;
     }
     .faq {
         padding: 0 0 30px;
