@@ -1410,11 +1410,13 @@ footer {
                 }
                 &__item-btn {
                     background: url(../images/add.png) no-repeat 50% 50%;
+                    background-size: 28px 28px;
                     width: 28px;
                     height: 28px;
                     display: block;
                     &.active {
                         background: url(../images/minus.png) no-repeat 50% 50%;
+                        background-size: 28px 7px;
                     }
                 }
             }

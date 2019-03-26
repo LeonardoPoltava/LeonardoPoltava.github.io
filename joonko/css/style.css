@@ -1128,11 +1128,13 @@ footer {
           max-width: calc(100% - 48px); }
         .faq-list__item-head__item-btn {
           background: url(../images/add.png) no-repeat 50% 50%;
+          background-size: 28px 28px;
           width: 28px;
           height: 28px;
           display: block; }
           .faq-list__item-head__item-btn.active {
-            background: url(../images/minus.png) no-repeat 50% 50%; }
+            background: url(../images/minus.png) no-repeat 50% 50%;
+            background-size: 28px 7px; }
       .faq-list__item-drop {
         display: none;
         padding: 12px 0 0; }
