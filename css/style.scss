@@ -293,11 +293,37 @@ $gray: #4e5c5a;
     position: absolute;
     z-index: 10;
     width: 255px;
-    height: 220px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     background: rgba(255,255,255,0.5);
+    .datepicker-header {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        .datepicker-month {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            color: #ffa500;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .datepicker-btn {
+            height: 30px;
+            width: 30px;
+            margin: 0 5px;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 30px;
+            padding: 0;
+        }
+    }
     .datepicker-head-row {
         border-bottom: 1px solid $black;
         .datepicker-head-col {
@@ -347,6 +373,14 @@ $gray: #4e5c5a;
                     background: #FFA500;
                 }
             }
+        }
+        .datepicker-col-empty {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 100%;
         }
     }
     .datepicker-content {

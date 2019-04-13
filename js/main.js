@@ -67,13 +67,15 @@ let year = today.getFullYear(); // Год
 let month = today.getUTCMonth() + 1; // Месяц
 let day = today.getUTCDay(); // День недели 0 - ВС 1 - ПН 2 - ВТ и тд.
 let date = today.getDate(); // Дата
+const currentDate = today.getDate();
+const currentMonth = today.getUTCMonth() + 1;
 // Считаем кол-во дней в текущем месяце
 function daysInThisMonth() {
     return new Date(today.getFullYear(), today.getMonth()+1, 0).getDate();
 }
 // Конец счета кол-во дней в текущем месяце
 let monthDays = daysInThisMonth(); // Переменная кол-ва дней в текущем месяце
-
+let daysValue = monthDays;
 let offsetTop = datepicker.getBoundingClientRect().top + document.body.scrollTop;
 let offsetLeft = datepicker.getBoundingClientRect().left + document.body.scrollLeft;
 
@@ -87,9 +89,25 @@ let daysArr = [
     "Сб",
     "Вс"
 ];
-
-// Клик на инпут
-datepicker.addEventListener('click', ()=>{
+let monthArr = [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
+]
+var myDate = new Date(year,month-1,1);
+var numDay = myDate.getDay();
+function createDatepicker() {
+    var myDate = new Date(year,month-1,1);
+    var numDay = myDate.getDay();
     let datepickerBody = document.createElement('div');
     // Создаем блок с датапикером
     if(document.getElementsByClassName('datepicker').length < 1) {
@@ -97,6 +115,26 @@ datepicker.addEventListener('click', ()=>{
         mainBody.appendChild(datepickerBody); // закидываем датапикер в body
         datepicker.value = date + "/" +month+ "/" + year; // Добавляем текущю дату в инпут датапикера
     }
+    // Заголовок датапикера
+    let datepickerTop = document.createElement('div');
+    datepickerTop.className = "datepicker-header"; // даём класс ряду
+    datepickerBody.appendChild(datepickerTop); // закидываем ряд в датапикер
+
+    let datepPickerPrev = document.createElement('button')
+    datepPickerPrev.className = "date-prev datepicker-btn";
+    datepickerTop.appendChild(datepPickerPrev);
+    datepPickerPrev.innerHTML = "<<";
+
+    let datepickerMonth = document.createElement('span');
+    datepickerMonth.className = "datepicker-month";
+    datepickerTop.appendChild(datepickerMonth);
+    datepickerMonth.innerHTML = monthArr[month-1];
+
+    let datepPickerNext = document.createElement('button')
+    datepPickerNext.className = "date-next datepicker-btn";
+    datepickerTop.appendChild(datepPickerNext);
+    datepPickerNext.innerHTML = ">>";
+
     // Шапка датапикера
     let datepickerHeadRow = document.createElement('div');
     datepickerHeadRow.className = "datepicker-head-row"; // даём класс ряду
@@ -113,24 +151,35 @@ datepicker.addEventListener('click', ()=>{
         datepickerHeadRow.appendChild(datepickerHeadCol); // закидываем ряд в датапикер
         document.getElementsByClassName('datepicker-head-col')[i].innerHTML = daysArr[i];
     }
-    // Генерируем кол-во рядов в месяце
-    // for(let i=0;i<monthDays;i+=7){
-    //     let datepickerRow = document.createElement('div');
-    //     datepickerRow.className = "datepicker-row"; // даём класс ряду
-    //     datepickerContent.appendChild(datepickerRow); // закидываем ряд в датапикер
-    // }
-    for(let i=0;i<monthDays;i++){
+    if(numDay == 0) {
+        for(j=1;j<7;j++) {
+            let datepickerCol = document.createElement('span');
+            datepickerCol.className = "datepicker-col-empty";
+            datepickerContent.appendChild(datepickerCol);
+            datepickerCol.innerHTML = "";
+        }
+    }
+    else {
+        for(j=1;j<numDay;j++) {
+            let datepickerCol = document.createElement('span');
+            datepickerCol.className = "datepicker-col-empty";
+            datepickerContent.appendChild(datepickerCol);
+            datepickerCol.innerHTML = "";
+        }
+    }
+    for(let i=0;i<daysValue;i++){
         let datepickerCol = document.createElement('span');
         datepickerCol.className = "datepicker-col";
         datepickerContent.appendChild(datepickerCol);
         datepickerCol.innerHTML = i+1;
-        if(i+1 == date) {
+        if(i+1 == currentDate && month == currentMonth ) {
             datepickerCol.classList += " today";
         }
         datepickerCol.setAttribute("date", i+1);
         datepickerCol.setAttribute("month", month);
     }
     let datepickerMainBody = document.getElementsByClassName('datepicker')[0];
+
     // Позиция датапикера
     datepickerMainBody.style.left = offsetLeft + "px";
     datepickerMainBody.style.top = offsetTop + datepicker.offsetHeight + 5 + "px";
@@ -155,4 +204,37 @@ datepicker.addEventListener('click', ()=>{
             }
         });
     }
+}
+// Клик на инпут
+datepicker.addEventListener('click', ()=>{
+    createDatepicker();
 });
+
+document.addEventListener('click', function (event) {
+    if (event.target.matches('.date-next')) {
+        month += 1;
+        // console.log(month);
+        document.querySelector('.datepicker').remove();
+        daysValue = new Date(today.getFullYear(), month, 0).getDate();
+        createDatepicker();
+        if(month > 11) {
+            year += 1;
+            month = 0;
+            day = 1;
+        }
+    }
+    if (event.target.matches('.date-prev')) {
+        month -= 1;
+        document.querySelector('.datepicker').remove();
+        daysValue = new Date(today.getFullYear(), month, 0).getDate();
+        createDatepicker();
+        if(month == 1) {
+            year -= 1;
+            month = 13;
+            day = 1;
+        }
+    }
+    if (!event.target.matches('.datepicker *') && !event.target.matches('#datepicker') && document.getElementsByClassName('datepicker').length > 0 ) {
+        document.querySelector('.datepicker').remove();
+    }
+}, false);
