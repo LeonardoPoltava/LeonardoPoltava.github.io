@@ -257,7 +257,12 @@ button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5); }
+  background: #d8e0de;
+  background: -moz-linear-gradient(top, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+  background: -webkit-linear-gradient(top, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+  background: linear-gradient(to bottom, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=0 );
+  color: #ffffff; }
   .datepicker .datepicker-header {
     display: flex;
     align-items: center;
@@ -281,7 +286,8 @@ button {
       font-weight: 700;
       font-size: 15px;
       line-height: 30px;
-      padding: 0; }
+      padding: 0;
+      border: 1px solid #000000; }
   .datepicker .datepicker-head-row {
     border-bottom: 1px solid #000000; }
     .datepicker .datepicker-head-row .datepicker-head-col {
@@ -308,7 +314,8 @@ button {
       line-height: 35px;
       font-size: 14px;
       text-align: center;
-      border-radius: 100%; }
+      border-radius: 100%;
+      border: 1px solid transparent; }
       .datepicker .datepicker-content .datepicker-col:hover,
       .datepicker .datepicker-head-row .datepicker-col:hover {
         cursor: pointer;
@@ -318,14 +325,16 @@ button {
         background: #FFA500;
         box-shadow: inset 0px 0px 18px 1px #000;
         color: #ffffff;
-        text-shadow: 1px 1px 4px #000; }
+        text-shadow: 1px 1px 4px #000;
+        border: 1px solid #000; }
       .datepicker .datepicker-content .datepicker-col.today,
       .datepicker .datepicker-head-row .datepicker-col.today {
         background: #ffffff;
         box-shadow: inset 0px 0px 18px 1px #000;
         color: #ffffff;
         font-weight: 700;
-        text-shadow: 1px 1px 1px #000; }
+        text-shadow: 1px 1px 1px #000;
+        border: 1px solid #000; }
         .datepicker .datepicker-content .datepicker-col.today.active,
         .datepicker .datepicker-head-row .datepicker-col.today.active {
           background: #FFA500; }

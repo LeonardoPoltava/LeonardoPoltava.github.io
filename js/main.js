@@ -57,11 +57,61 @@ buttonPrev.addEventListener('click', ()=>{
         slidePosition -= slideWidth;
     }
 });
+
+document.querySelector('.main-slider').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('.main-slider').addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
+function getTouches(evt) {
+    return evt.touches || evt.originalEvent.touches;
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+};
+
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+            if (slidePosition < (sliderWidth - slideWidth)) {
+                slidePosition += slideWidth;
+                sliderTrack.style.transform = `translate3d(-${slidePosition}px, 0, 0)`;
+            }
+        }
+        else {
+            sliderTrack.style.transform = `translate3d(-${slidePosition - slideWidth}px, 0, 0)`;
+            if(slidePosition > 0) {
+                slidePosition -= slideWidth;
+            }
+        }
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;
+};
 // Слайдер закончен
 
+
+
+
+
 // Выбор даты
-let datepicker = document.getElementById('datepicker'); // инпут нашего датапикера
-let mainBody = document.getElementsByTagName('body')[0]; // обращаемся к body
+let datepicker = document.getElementById('datepicker');
+let mainBody = document.getElementsByTagName('body')[0];
 let today = new Date(); // Полная дата
 let year = today.getFullYear(); // Год
 let month = today.getUTCMonth() + 1; // Месяц
@@ -69,15 +119,14 @@ let day = today.getUTCDay(); // День недели 0 - ВС 1 - ПН 2 - ВТ
 let date = today.getDate(); // Дата
 const currentDate = today.getDate();
 const currentMonth = today.getUTCMonth() + 1;
+let datepickerWidth = 255;
 // Считаем кол-во дней в текущем месяце
 function daysInThisMonth() {
     return new Date(today.getFullYear(), today.getMonth()+1, 0).getDate();
 }
 // Конец счета кол-во дней в текущем месяце
-let monthDays = daysInThisMonth(); // Переменная кол-ва дней в текущем месяце
+let monthDays = daysInThisMonth();
 let daysValue = monthDays;
-let offsetTop = datepicker.getBoundingClientRect().top + document.body.scrollTop;
-let offsetLeft = datepicker.getBoundingClientRect().left + document.body.scrollLeft;
 
 // Массив с дням недели
 let daysArr = [
@@ -111,14 +160,16 @@ function createDatepicker() {
     let datepickerBody = document.createElement('div');
     // Создаем блок с датапикером
     if(document.getElementsByClassName('datepicker').length < 1) {
-        datepickerBody.className = "datepicker"; // даём класс датапикеру
-        mainBody.appendChild(datepickerBody); // закидываем датапикер в body
-        datepicker.value = date + "/" +month+ "/" + year; // Добавляем текущю дату в инпут датапикера
+        datepickerBody.className = "datepicker";
+        mainBody.appendChild(datepickerBody);
+        datepicker.value = date + "/" +month+ "/" + year;
     }
+    let offsetTop = parseInt(datepicker.getBoundingClientRect().top) + parseInt(document.body.scrollTop);
+    let offsetLeft = parseInt(datepicker.getBoundingClientRect().left) + parseInt(datepicker.offsetWidth) - parseInt(datepickerWidth);
     // Заголовок датапикера
     let datepickerTop = document.createElement('div');
-    datepickerTop.className = "datepicker-header"; // даём класс ряду
-    datepickerBody.appendChild(datepickerTop); // закидываем ряд в датапикер
+    datepickerTop.className = "datepicker-header";
+    datepickerBody.appendChild(datepickerTop);
 
     let datepPickerPrev = document.createElement('button')
     datepPickerPrev.className = "date-prev datepicker-btn";
@@ -137,18 +188,18 @@ function createDatepicker() {
 
     // Шапка датапикера
     let datepickerHeadRow = document.createElement('div');
-    datepickerHeadRow.className = "datepicker-head-row"; // даём класс ряду
-    datepickerBody.appendChild(datepickerHeadRow); // закидываем ряд в датапикер
+    datepickerHeadRow.className = "datepicker-head-row";
+    datepickerBody.appendChild(datepickerHeadRow);
 
     // тело датапикера
     let datepickerContent = document.createElement('div');
-    datepickerContent.className = "datepicker-content"; // даём класс ряду
-    datepickerBody.appendChild(datepickerContent); // закидываем ряд в датапикер
+    datepickerContent.className = "datepicker-content";
+    datepickerBody.appendChild(datepickerContent);
 
     for(let i=0;i<7;i++) {
         let datepickerHeadCol = document.createElement('div');
-        datepickerHeadCol.className = "datepicker-head-col"; // даём класс ряду
-        datepickerHeadRow.appendChild(datepickerHeadCol); // закидываем ряд в датапикер
+        datepickerHeadCol.className = "datepicker-head-col";
+        datepickerHeadRow.appendChild(datepickerHeadCol);
         document.getElementsByClassName('datepicker-head-col')[i].innerHTML = daysArr[i];
     }
     if(numDay == 0) {
@@ -213,7 +264,6 @@ datepicker.addEventListener('click', ()=>{
 document.addEventListener('click', function (event) {
     if (event.target.matches('.date-next')) {
         month += 1;
-        // console.log(month);
         document.querySelector('.datepicker').remove();
         daysValue = new Date(today.getFullYear(), month, 0).getDate();
         createDatepicker();

@@ -296,7 +296,12 @@ $gray: #4e5c5a;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: rgba(255,255,255,0.5);
+    background: #d8e0de;
+    background: -moz-linear-gradient(top, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+    background: -webkit-linear-gradient(top, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+    background: linear-gradient(to bottom, #d8e0de 0%, #aebfbc 9%, #99afab 24%, #829d98 44%, #4e5c5a 86%, #4e5c5a 100%, #0e0e0e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=0 );
+    color: $white;
     .datepicker-header {
         display: flex;
         align-items: center;
@@ -322,6 +327,7 @@ $gray: #4e5c5a;
             font-size: 15px;
             line-height: 30px;
             padding: 0;
+            border: 1px solid $black;
         }
     }
     .datepicker-head-row {
@@ -353,6 +359,7 @@ $gray: #4e5c5a;
             font-size: 14px;
             text-align: center;
             border-radius: 100%;
+            border: 1px solid transparent;
             &:hover {
                 cursor: pointer;
                 background: rgba(255,255,255,0.5);
@@ -362,6 +369,7 @@ $gray: #4e5c5a;
                 box-shadow: inset 0px 0px 18px 1px #000;
                 color: $white;
                 text-shadow: 1px 1px 4px #000;
+                border: 1px solid #000;
             }
             &.today {
                 background: $white;
@@ -369,6 +377,7 @@ $gray: #4e5c5a;
                 color: $white;
                 font-weight: 700;
                 text-shadow: 1px 1px 1px #000;
+                border: 1px solid #000;
                 &.active {
                     background: #FFA500;
                 }

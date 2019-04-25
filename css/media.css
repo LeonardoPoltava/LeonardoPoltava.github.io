@@ -28,4 +28,12 @@
     }
 }
 @media (max-width:767px) {
+    .header .header-nav .header-el {
+        font-size: 14px;
+    }
+    .header .header-nav .header-el:last-child {
+        position: absolute;
+        right: 15px;
+        top: 50px;
+    }
 }
