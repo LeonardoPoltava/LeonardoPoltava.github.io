@@ -1,11 +1,10 @@
-@media (min-width: 991px) and (max-width: 1500px) {
+@media (min-width: 991px) and (max-width: 1400px) {
   .wrapper .section__img {
     width: 100%; }
   .wrapper .section-right {
     overflow: hidden; }
   .wrapper .section-left {
     padding-right: 45px;
-    padding-top: 100px;
     padding-left: 80px; }
   .wrapper .section__nav {
     left: 24px; }
@@ -24,12 +23,18 @@
   .wrapper .payment .section-left {
     padding-top: 5vh; } }
 @media (max-height: 650px) {
+  .wrapper .financial {
+    margin-top: 7%; }
   .wrapper .price {
     margin-top: 7%;
-    margin-bottom: 7%; }
+    margin-bottom: 5%; }
   .wrapper .section__form {
     margin-top: 7%; }
   .wrapper .payment__btn {
-    margin-top: 8%; } }
+    margin-top: 6%; }
+  .wrapper .section-left {
+    padding-top: 100px; }
+  .wrapper .section__nav {
+    top: 100px; } }
 
 /*# sourceMappingURL=media.css.map */

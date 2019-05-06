@@ -5,9 +5,9 @@ $(document).ready(function () {
         $("body,html").animate({scrollTop: destination }, 800);
     });
 
-    $('.section__nav').each(function () {
-        $(this).css('top', 'calc(50% - ' + ($(this).outerHeight() / 2) + 'px)');
-    })
+    // $('.section__nav').each(function () {
+    //     $(this).css('top', 'calc(50% - ' + ($(this).outerHeight() / 2) + 'px)');
+    // })
 
     $('.section__form__box__input').focus(function() {
         $(this).parent('div').addClass('active');

@@ -1,5 +1,5 @@
 @import "const.scss";
-@media (min-width: 991px) and (max-width: 1500px) {
+@media (min-width: 991px) and (max-width: 1400px) {
   .wrapper {
     .section__img {
       width: 100%;
@@ -9,7 +9,6 @@
     }
     .section-left {
       padding-right: 45px;
-      padding-top: 100px;
       padding-left: 80px;
     }
     .section__nav {
@@ -45,15 +44,24 @@
 }
 @media (max-height: 650px) {
   .wrapper {
+    .financial {
+      margin-top: 7%;
+    }
     .price {
       margin-top: 7%;
-      margin-bottom: 7%;
+      margin-bottom: 5%;
     }
     .section__form {
       margin-top: 7%;
     }
     .payment__btn {
-      margin-top: 8%;
+      margin-top: 6%;
+    }
+    .section-left {
+      padding-top: 100px;
+    }
+    .section__nav {
+      top: 100px;
     }
   }
 }
