@@ -1,13 +1,59 @@
 @import "const.scss";
-@media (min-width: 1200px) and (max-width: 1500px) {
+@media (min-width: 991px) and (max-width: 1500px) {
+  .wrapper {
+    .section__img {
+      width: 100%;
+    }
+    .section-right {
+      overflow: hidden;
+    }
+    .section-left {
+      padding-right: 45px;
+      padding-top: 100px;
+      padding-left: 80px;
+    }
+    .section__nav {
+      left: 24px;
+    }
+    .footer {
+      padding: 100px 200px;
+    }
+    .footer__img-l {
+      left: 20px;
+      bottom: 10px;
+    }
+    .footer__img-r {
+      right: 20px;
+      bottom: 10px;
+    }
+    .get-started {
+      .section__img__item {
+        height: 75%;
+      }
+    }
+    .connect {
+      .section__img {
+        margin-left: 0;
+      }
+    }
+    .payment {
+      .section-left {
+        padding-top: 5vh;
+      }
+    }
+  }
 }
-@media (min-width: 991px) and (max-width: 1199.98px) {
-}
-@media(min-width: 767px) and (max-width: 991px) {
-}
-@media (min-width: 767px) {
-}
-@media (max-width: 767px) {
-}
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-height: 650px) {
+  .wrapper {
+    .price {
+      margin-top: 7%;
+      margin-bottom: 7%;
+    }
+    .section__form {
+      margin-top: 7%;
+    }
+    .payment__btn {
+      margin-top: 8%;
+    }
+  }
 }

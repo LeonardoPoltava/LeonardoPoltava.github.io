@@ -1,3 +1,35 @@
-
+@media (min-width: 991px) and (max-width: 1500px) {
+  .wrapper .section__img {
+    width: 100%; }
+  .wrapper .section-right {
+    overflow: hidden; }
+  .wrapper .section-left {
+    padding-right: 45px;
+    padding-top: 100px;
+    padding-left: 80px; }
+  .wrapper .section__nav {
+    left: 24px; }
+  .wrapper .footer {
+    padding: 100px 200px; }
+  .wrapper .footer__img-l {
+    left: 20px;
+    bottom: 10px; }
+  .wrapper .footer__img-r {
+    right: 20px;
+    bottom: 10px; }
+  .wrapper .get-started .section__img__item {
+    height: 75%; }
+  .wrapper .connect .section__img {
+    margin-left: 0; }
+  .wrapper .payment .section-left {
+    padding-top: 5vh; } }
+@media (max-height: 650px) {
+  .wrapper .price {
+    margin-top: 7%;
+    margin-bottom: 7%; }
+  .wrapper .section__form {
+    margin-top: 7%; }
+  .wrapper .payment__btn {
+    margin-top: 8%; } }
 
 /*# sourceMappingURL=media.css.map */
