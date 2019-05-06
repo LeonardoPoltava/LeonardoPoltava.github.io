@@ -483,7 +483,7 @@ button {
     line-height: 43px;
     background: #aa55e4;
     color: #ffffff;
-    margin: 10% auto 0; }
+    margin: 8% auto 0; }
     .wrapper .payment__btn:hover {
       background: #ffffff;
       color: #aa55e4; }
@@ -517,7 +517,7 @@ button {
       display: block;
       top: 2px; }
   .wrapper .financial {
-    margin-top: 10%; }
+    margin-top: 8%; }
     .wrapper .financial__title {
       color: #040464;
       font-family: "rubikmedium";
