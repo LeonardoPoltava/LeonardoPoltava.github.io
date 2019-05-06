@@ -495,11 +495,11 @@ button {
       display: block;
       position: absolute;
       background: #aa55e4;
-      width: 9px;
-      height: 9px;
+      width: 7px;
+      height: 7px;
       z-index: 5;
-      top: 5px;
-      left: 3px;
+      top: 4.5px;
+      left: 2.5px;
       border-radius: 3px; }
   .wrapper .check__label {
     padding: 0 0 0 22px; }
