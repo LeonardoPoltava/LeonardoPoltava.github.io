@@ -386,6 +386,7 @@ button {
             &__video {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -403,9 +404,6 @@ button {
     }
     /* section 2 */
     .connect {
-        .section__img {
-            margin-left: 11vh;
-        }
         &-bottom {
             margin-top: 59px;
             &__text {
@@ -604,13 +602,7 @@ button {
             }
         }
     }
-    /* section 4 */
-    .sign {
-        .section__img {
-            margin-left: 24.3vh;
-        }
-    }
-    /* section 5 */
+    /* section 5 */ 
     .payment {
         .section-left {
             padding-top: 10vh;
