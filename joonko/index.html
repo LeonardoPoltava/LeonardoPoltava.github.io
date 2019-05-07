@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/media.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="section get-started" id="get-started">
             <ul class="section__nav">
                 <li class="section__nav__elem current">
@@ -34,7 +34,7 @@
                 <span class="logo"><img src="images/logo.png" class="logo__img" width="92" height="46" alt="" srcset="images/logo@2x.png 2x"></span>
                 <span class="section__title">Get started with Joonko</span>
                 <span class="section__text">Ready to start building a better talent pipeline for your company? Great, so are we! Enter your email address below to get started.</span>
-                <form action="#" class="section__form">
+                <div class="section__form">
                     <div class="section__form__box">
                         <label for="started-email" class="section__form__box__label">Email</label>
                         <input type="email" id="started-email" class="section__form__box__input">
@@ -42,11 +42,11 @@
                     <div class="flex-end-x">
                         <button class="section__form__button std-btn">Next</button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="section-right get-started-right">
-                <div class="section__img flex-end-y">
-                    <img src="images/Group_2210.png" alt="" class="section__img__item">
+                <div class="section__img">
+                    <video src="images/illustrations/illustrations to animate1_all.mp4" loop autoplay class="section__img__video"></video>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <span class="section__pages">2/5</span>
                 <span class="section__title">Let’s connect</span>
                 <span class="section__text">Select your applicant tracking system from the drop down below and enter your API to set up your integration with Joonko.</span>
-                <form action="#" class="section__form">
+                <div class="section__form">
                     <div class="section__form__box">
                         <select class="section__form__box__select">
                             <option value="0">ATS</option>
@@ -83,7 +83,7 @@
                     <div class="flex-end-x">
                         <button class="section__form__button std-btn">Next</button>
                     </div>
-                </form>
+                </div>
                 <div class="connect-bottom">
                     <span class="connect-bottom__text"><b>Not sure what to do?</b> Here’s how to <a href="javascript:void(0)" class="connect-bottom__text__link">integrate your ATS with Joonko</a>. </span>
                 </div>
@@ -116,7 +116,7 @@
                 <span class="section__pages">3/5</span>
                 <span class="section__title">How big is your team?</span>
                 <span class="section__text">Let us know the size of your company to check out Joonko’s affordable pricing options.</span>
-                <form action="#" class="section__form">
+                <div class="section__form">
                     <div class="section__form__box">
                         <select class="section__form__box__select">
                             <option value="0">Company size</option>
@@ -140,8 +140,8 @@
                     <div class="flex-center-x">
                         <button class="section__form__button std-btn">Next</button>
                     </div>
-                </form>
-                <form action="#" class="section__form promo">
+                </div>
+                <div class="section__form promo">
                     <div class="section__form__box">
                         <label for="promo-input" class="section__form__box__label promo-label"><b>Got a promo?</b> put it here</label>
                         <input type="email" id="promo-input" class="section__form__box__input">
@@ -149,7 +149,7 @@
                     <div class="flex-end-x">
                         <button class="section__form__button std-btn promo-btn">Apply</button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="section-right get-started-right">
                 <div class="section__img flex-end-y">
@@ -179,7 +179,7 @@
                 <span class="section__pages">4/5</span>
                 <span class="section__title">Like what you see?</span>
                 <span class="section__text">We’re almost to the finish line! Tell us who you are so we can make things official.</span>
-                <form action="#" class="section__form">
+                <div class="section__form">
                     <div class="section__form__box">
                         <label for="name" class="section__form__box__label">Name</label>
                         <input type="email" id="name" class="section__form__box__input">
@@ -191,7 +191,7 @@
                     <div class="flex-end-x">
                         <button class="section__form__button std-btn">Next</button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="section-right get-started-right">
                 <div class="section__img flex-end-y">
@@ -220,7 +220,7 @@
             <div class="section-left">
                 <span class="section__pages">5/5</span>
                 <span class="section__title">Choose your payment method</span>
-                <form action="#" class="section__form">
+                <div class="section__form">
                     <div class="price">
                         <div class="price-inner flex-center-x">
                             <div class="price-box">
@@ -250,11 +250,11 @@
                         </div>
                         <button class="section__form__button std-btn payment__btn">Pay Now</button>
                     </div>
-                </form>
+                </div>
                 <div class="financial">
                     <span class="financial__title">Don’t want to use a credit card?</span>
                     <span class="financial__text">Enter the name and email of your financial administrator below to make a bank transfer. We’ll email both of you an invoice with transfer details.</span>
-                    <form action="#" class="section__form">
+                    <div class="section__form">
                         <div class="section__form__box">
                             <label for="admin-name" class="section__form__box__label">Financial admin name</label>
                             <input type="email" id="admin-name" class="section__form__box__input">
@@ -266,7 +266,7 @@
                         <div class="flex-end-x">
                             <button class="section__form__button std-btn">Send Invoice</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="section-right get-started-right">
@@ -284,6 +284,50 @@
             <span class="footer__text">Each week, relevant applicants in the pool who match your company’s qualifications will receive emails promoting your positions and encouraging them to apply.</span>
             <span class="footer__text">Don’t worry – Joonko tracks any new additions to your ATS software, so there’s nothing left for you to update. All you have to do is sit back, smile, and watch the talent roll in.</span>
             <span class="footer__text">Sound good? We thought so too.<br/><b>Thank you for getting on board and helping us build a more equitable world for all!</b></span>
+        </div>
+        <div class="ats-section" id="ats">
+            <img src="images/logo.png" width="92" height="46" alt="" class="ats-section__logo">
+            <span class="ats-section__title">Couldn’t find your ATS?</span>
+            <span>If you’re using a different Applicant Tracking System than the ones we currently support, don’t hesitate to let us know. Upon customer request, we can add most any ATS integration within just a few days.</span>
+            <span class="ats-section__subtext">Enter the name of your current ATS in the box below. Once you hit submit, a member from our team will follow up with you shortly to discuss next steps.</span>
+            <div class="ats-section__form">
+                <div class="section__form__box">
+                    <label for="ats-using" class="section__form__box__label">Wer’e using…</label>
+                    <input type="text" id="ats-using" class="section__form__box__input">
+                </div>
+                <div class="flex-end-x">
+                    <button class="section__form__button std-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="card-modal">
+            <div class="flex-center-y flex-center-x">
+                <span class="section__title">We’re sorry. Your card was declined.</span>
+                <span class="modal__txt">Please switch your payment method to another card or invoice and try again.</span>
+                <div class="flex-center-x">
+                    <a href="javascript:void(0)" class="modal__btn std-btn">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="verification-modal">
+            <div class="flex-center-y flex-center-x">
+                <span class="section__title">Uh oh! Looks like this isn’t your first time here.</span>
+                <span class="modal__txt">Our records show you already signed up for Joonko using this email address.</span>
+                <span class="modal__txt">Look back in your inbox to find a registration confirmation from us to continue with the sign up process.</span>
+                <div class="flex-center-x">
+                    <a href="javascript:void(0)" class="modal__btn std-btn">Got it!</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="error-modal">
+            <div class="flex-center-y flex-center-x">
+                <span class="section__title">Uh oh!</span>
+                <span class="modal__txt">Looks like our system is experiencing some technical difficulties right now.</span>
+                <span class="modal__txt">Standby – someone from our team will email you shortly to resolve this issue.</span>
+                <div class="flex-center-x">
+                    <a href="javascript:void(0)" class="modal__btn std-btn">Close</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- scripts -->
