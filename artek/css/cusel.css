@@ -1,0 +1,78 @@
+.cusel {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -wekit-border-radius: 3px;
+    height: 41px;
+	position: relative;
+	cursor: pointer;
+    width:100%;
+    padding: 0 0 0 16px;
+    color: #616161;
+    font-size: 18px;
+    font-family: 'PTSansProLight';
+    border: 1px solid #d4d4d4;
+    float:left;
+    background: #fff url(../images/select-arrow.png) 95% 50% no-repeat;
+}
+.cusel:focus {
+    outline: none;
+}
+.cusel-scroll-pane label {
+    margin: 0;
+}
+.cuselText { /* контейнер для отображенного текста селект */
+	height: 41px;
+	padding: 0 0 0 16px; /* подбираем отступы и высоту для видимого текста в селекте */
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+    color: #616161;
+	z-index: 1;
+    font-size: 18px;
+    font-family: 'PTSansProLight';
+    line-height: 39px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cusel-scroll-pane > span { /* оформление оптиона */
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+    background: #fff;
+	border-right:1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	z-index: 30;
+	padding: 0 15px 0 0;
+	zoom: 1;
+    color: #616161;
+	overflow:hidden;
+    line-height: 30px;
+    padding: 0 14px;
+	text-decoration: none;
+	display: block;
+}
+.cusel-scroll-pane > span:hover,
+.cusel-scroll-pane .cuselOptHover { /* реакция оптиона на наведение */
+	background: #26323a;
+	color: #ced5d7;
+    cursor: pointer;
+}
+.cusel-scroll-pane > span label:hover {
+    cursor: pointer;
+}
+.cusel-scroll-wrap .cuselActive label:hover {
+    cursor: default;
+}
+.cusel-scroll-wrap .cuselActive,
+.cusel-scroll-wrap .cuselActive:hover { /* оформление активного оптиона в списке */
+	background: #1cbbf6;
+	color: #fff;
+    cursor: default;
+}
+/* Dropdown box for elements */
+#cuselBox {
+  position: absolute;
+  z-index: 9999;
+}
