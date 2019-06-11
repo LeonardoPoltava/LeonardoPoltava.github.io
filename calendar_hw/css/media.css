@@ -1,0 +1,51 @@
+@media (min-width:767px) and (max-width:991px) {
+    .datepicker-content .datepicker-col:nth-child(7n+5) .datepicker__event,
+    .datepicker-content .datepicker-col:nth-child(7n+6) .datepicker__event,
+    .datepicker-content .datepicker-col:nth-child(7n+7) .datepicker__event {
+        left: auto;
+        right: 100%;
+    }
+}
+@media (max-width:767px) {
+    .container {
+        padding: 0 15px;
+    }
+    .calendar-head {
+        padding-top: 25px;
+        padding-bottom: 10px;;
+    }
+    .calendar__btn {
+        margin:5px;
+    }
+    .calendar-search {
+        position: absolute;
+        top: -20px;
+        width: 230px;
+        left: calc(50% - 115px);
+        height: auto;
+    }
+    .calendar-actions {
+        padding-top: 10px;
+        width: 190px;
+        margin: 0 auto;
+    }
+    .calendar__add-event {
+        min-width: 245px;
+        top: calc(100% + 10px);
+    }
+    .datepicker-col, .datepicker-col-empty {
+        min-height: 50px;
+    }
+    .datepicker {
+        min-width: 600px;
+    }
+    .calendar-body {
+        overflow-x: auto;
+    }
+    .datepicker__event {
+        position: fixed;
+        top: 25%;
+        left: 10%;
+        width: 80%;
+    }
+}
