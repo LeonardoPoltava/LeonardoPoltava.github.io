@@ -1,0 +1,319 @@
+@media (min-width:1200px) and (max-width: 1250px) {
+    .main-title-sm {
+        font-size: 26px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .section-training .holder-training-btn {
+        display: block !important;
+    }
+    .section-training .block-quote {
+        top: -32px;
+    }
+    .section-training .holder-training-btn button {
+        margin: 35px auto;
+    }
+    .section-news .block-quote {
+        top: -60px;
+    }
+    .nav-bar li a {
+        font-size: 15px;
+    }
+    q {
+        font-size: 14px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        width: 750px;
+    }
+    .nav-bar li {
+        padding: 12px 5px;
+    }
+    .nav-bar li a {
+        font-size: 12px;
+    }
+    .block-quote {
+        max-width: 300px;
+    }
+    .text-section {
+        font-size: 16px;
+    }
+    .section-environmental .title-section {
+        font-size: 21px;
+        text-align: left;
+    }
+    .section-environmental .text-section {
+        margin: 30px 0;
+        font-size: 15px;
+    }
+    .btn-fb {
+        padding: 0 25px;
+    }
+    .section-training .block-quote {
+        top: -55px;
+    }
+    .section-training .main-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .section-escort .color-yellow {
+        font-size: 23px;
+    }
+    .section-escort .title-section  {
+        font-size: 18px;
+    }
+    .section-escort .block-escort-fb {
+        margin-top: 30px;
+        padding: 13px 10px;
+    }
+    .section-community .text-section {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .footer .block-social li {
+        margin: 0 8px;
+    }
+    .section-news .block-quote {
+        top: -57px;
+    }
+    .section-training .title-fb {
+        font-size: 14px;
+        font-family: RalewayMedium;
+    }
+    .section-training .main-title-sm {
+        font-size: 22px;
+        font-family: RalewayMedium;
+    }
+    .section-training .holder-training-btn {
+        display: block !important;
+    }
+    .block-technology-fb button {
+        max-width: 165px;
+    }
+    .section-technology .text-section {
+        font-size: 16px;
+    }
+    .section-technology .title-section {
+        font-size: 24px;
+    }
+    .main-title {
+        font-size: 42px;
+    }
+    q {
+        font-size: 14px;
+    }
+    .section-technology {
+        margin-top: 80px;
+    }
+    .text-question {
+        max-height: 90px;
+    }
+}
+@media(max-width: 767px) {
+    .block-nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        z-index: 50;
+    }
+    .block-nav-bar .nav-bar {
+        display: block !important;
+    }
+    .nav-bar li {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .block-social-footer {
+        margin-top: 12px;
+        justify-content: center !important;
+    }
+    .copyright {
+        margin-top: 8px;
+    }
+    .section-community .text-section {
+        line-height: 32px;
+    }
+    .main-title {
+        font-size: 35px;
+    }
+    .main-title-sm {
+        font-size: 20px;
+    }
+    .section-news .block-quote {
+        top: -45px;
+    }
+    .section-escort .block-escort-fb {
+        margin: 25px 10px 40px 10px;
+    }
+    .main-content-about .block-fb {
+        margin-top: 30px;
+    }
+    .text-section {
+        font-size: 15px;
+    }
+    .main-content-about span:nth-child(2) {
+        margin-top: 25px;
+    }
+    .section-training .main-title {
+        margin-bottom: 35px;
+    }
+    .section-environmental {
+        padding-bottom: 80px;
+    }
+    .section-training .block-quote {
+        top: -50px;
+    }
+    .section-environmental .text-section {
+        margin: 15px 0;
+    }
+    .section-environmental .block-technology-fb {
+        margin: 0;
+    }
+    .section-technology .block-left {
+        margin-top: 15px;
+    }
+    .section-technology .block-right .img-section-technology {
+        margin: 15px auto;
+    }
+    .section-technology .text-section {
+        font-size: 16px;
+    }
+    .block-left .img-section-technology {
+        margin-bottom: 30px;
+    }
+    .section-technology {
+        padding-top: 60px;
+        margin-top: 60px;
+    }
+    .block-info-company {
+        padding: 50px 0 30px;
+    }
+    .section-about .main-title:after {
+        bottom: -8px;
+    }
+    .section-about .main-title:before {
+        top: -8px;
+    }
+    .main-bn {
+        margin-bottom: 50px;
+    }
+    .section-about .block-quote {
+        top: -43px;
+        max-width: 306px;
+    }
+    .section-about .main-title {
+        font-size: 29px;
+        display: block;
+        line-height: 1;
+    }
+    .section-escort .title-section {
+        font-size: 24px;
+    }
+    .section-escort .color-yellow {
+        font-size: 25px;
+    }
+    .modal-footer {
+        -ms-flex-pack: center;
+        justify-content: space-around;
+    }
+    .block-technology-fb {
+        margin-top: 30px;
+    }
+    .section-training {
+        padding-top: 75px;
+    }
+    .section-community .main-title {
+        line-height: 1;
+    }
+    .section-community {
+        padding-top: 95px;
+    }
+    .section-community .block-escort-fb {
+        display: block !important;
+        text-align: center;
+    }
+    .section-community .text-btn {
+        margin: 0 0 15px;
+    }
+    .section-community .block-escort-fb .btn-fb {
+        display: block;
+        margin: 0 auto;
+    }
+    .section-escort {
+        padding-top: 65px;
+    }
+    .section-news .block-quote {
+        max-width: 350px;
+    }
+}
+@media(max-width: 502px) {
+    .section-news .block-quote {
+        top: -55px;
+        max-width: 290px;
+    }
+    .block-quote {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    q {
+        font-size: 13px;
+    }
+    .main-description {
+        font-size: 22px;
+    }
+    .main-slogan {
+        font-size: 18px;
+    }
+    .section-technology .block-quote {
+        top: -45px;
+    }
+    .section-technology .title-section {
+        font-size: 22px;
+    }
+    .section-environmental .title-section {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    .section-training .main-title  {
+        font-size: 20px;
+    }
+    .section-training .title-fb {
+        font-size: 16px;
+    }
+    .section-training .holder-training-btn button {
+        margin: 35px 5px;
+    }
+    .section-training .block-fb {
+        padding-bottom: 5px;
+    }
+    .section-escort .title-section {
+        font-size: 20px;
+    }
+    .block-social li {
+        margin: 0 17px;
+    }
+    .section-community .block-quote {
+        top: 15px;
+    }
+    .section-community .main-title {
+        font-size: 30px;
+    }
+    .section-community .text-section {
+        line-height: 27px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .btn-fb {
+        font-size: 11px;
+    }
+    .section-news .text-section {
+        margin-top: 30px;
+    }
+}
+
