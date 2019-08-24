@@ -110,7 +110,7 @@ function init() {
     scene.add(rain);
 
     let loader = new THREE.TextureLoader();
-    loader.load("../images/smoke.png", function (texture) {
+    loader.load("images/smoke.png", function (texture) {
         cloudGeo = new THREE.PlaneBufferGeometry(500,500);
         cloudMaterial = new THREE.MeshLambertMaterial({
             map: texture,
@@ -137,7 +137,7 @@ function init() {
     camera.add( listener );
     let sound = new THREE.Audio( listener );
     let audioLoader = new THREE.AudioLoader();
-    audioLoader.load( '../sounds/neizvesten-zvuk-grozy.mp3', function( buffer ) {
+    audioLoader.load( 'sounds/neizvesten-zvuk-grozy.mp3', function( buffer ) {
         sound.setBuffer( buffer );
         sound.setLoop( true );
         sound.setVolume( 0.5 );
