@@ -64,7 +64,7 @@
 // window.onresize = function () {
 //     createCanvas();
 // }
-winddow.onload = function () {
+window.onload = function () {
     let scene, camera, renderer, cloudParticles = [], flash, rain, rainGeo, rainCount = 5000;
     function init() {
         scene = new THREE.Scene();
