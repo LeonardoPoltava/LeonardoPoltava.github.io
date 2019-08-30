@@ -37,7 +37,7 @@
             document.body.appendChild( container );
 
             camera = new THREE.PerspectiveCamera( 35, winWidth / winHeight, 1, 2000 );
-            camera.position.set( 500, 100, 200 );
+            camera.position.set( 500, 100, 400 );
             cameraTarget = new THREE.Vector3( 0, 100, 0 );
             scene = new THREE.Scene();
 
@@ -100,7 +100,7 @@
                 new THREE.MeshBasicMaterial( { map: carTextureF, opacity: 1, transparent: true } )
             );
             plane.position.set(-116,340, -404);
-            plane1.position.set(-755, 409, 33);
+            plane1.position.set(-755, 408, -20);
             plane1.rotateY(1.7);
             scene.add(plane);
             scene.add(plane1);
@@ -144,9 +144,9 @@
             window.addEventListener( 'resize', onWindowResize, false );
         }
         function onWindowResize() {
-            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.aspect = winWidth / winHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize( window.innerWidth, window.innerHeight );
+            renderer.setSize( winWidth, winHeight );
         }
         function animate() {
 
