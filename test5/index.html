@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!--<canvas id="canvas"></canvas>-->
+    <!--<script src="js/three.min.js"></script>-->
+    <script src="js/dat.gui.min.js"></script>
+    <!--<script src="js/main.js"></script>-->
+
+    <script type="module">
+
+        import * as THREE from './js/three.module.js';
+        import { FBXLoader } from './js/FBXLoader.js';
+
+        var container,camera, scene, renderer, light, group, cameraTarget, plane, plane1, planeSize, planeSize1,winWidth, winHeight;
+
+        winWidth = window.innerWidth;
+        winHeight = window.innerHeight;
+        console.log(winHeight > winWidth);
+        if(winWidth < 500 || winHeight > winWidth) {
+            winHeight = window.innerHeight / 2;
+        }
+        else {
+            winHeight = window.innerHeight;
+        }
+        let targetRotation = 0;
+        let targetRotationOnMouseDown = 0;
+        let mouseX = 0;
+        let mouseXOnMouseDown = 0;
+        let windowHalfX = winWidth / 2;
+        init();
+        animate();
+
+        function init() {
+            // let ball = {
+            //   rotationY: 0,
+            //   rotationX: 0,
+            //   rotationZ: 0,
+            //   positionX: 5,
+            //   positionY: -17,
+            //   positionZ: -397
+            // };
+            // // gui
+            // let gui = new dat.GUI();
+            // gui.add(ball, 'rotationY').min(-0.2).max(0.2).step(0.001);
+            // gui.add(ball, 'rotationX').min(-0.2).max(0.2).step(0.001);
+            // gui.add(ball, 'rotationZ').min(-0.2).max(0.2).step(0.001);
+            // gui.add(ball, 'positionX').min(-1000).max(1000).step(1);
+            // gui.add(ball, 'positionY').min(-1000).max(1000).step(1);
+            // gui.add(ball, 'positionZ').min(-1000).max(1000).step(1);
+            container = document.createElement( 'div' );
+            container.classList.add('canvas-box');
+            document.body.appendChild( container );
+
+            // camera = new THREE.PerspectiveCamera( 100, winWidth / winHeight, 1, 3000 );
+            // camera.position.set( 500, 1000, 500 );
+            camera = new THREE.PerspectiveCamera( 40, winWidth / winHeight, 1, 2500 );
+            camera.position.set( 500, 270, 400 );
+            cameraTarget = new THREE.Vector3( 0, 100, 0 );
+            scene = new THREE.Scene();
+
+            light = new THREE.HemisphereLight( 0xffffff, 0x444444 );
+            light.position.set( 0, 200, 0 );
+            scene.add( light );
+            scene.background = new THREE.Color( 0xaa2afb7 );
+            scene.fog = new THREE.Fog( 0xa0a0a0, 200, 100 );
+            group = new THREE.Group();
+            group.position.y = 0;
+            group.position.z = 50;
+            group.position.x = 75;
+            scene.add( group );
+            // EVENTS
+            document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+            document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+            document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+              function onDocumentMouseDown( event ) {
+                event.preventDefault();
+                document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.addEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.addEventListener( 'mouseout', onDocumentMouseOut, false );
+                mouseXOnMouseDown = event.clientX - windowHalfX;
+                targetRotationOnMouseDown = targetRotation;
+            }
+            function onDocumentMouseMove( event ) {
+                mouseX = event.clientX - windowHalfX;
+                targetRotation = targetRotationOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.02;
+            }
+            function onDocumentMouseUp() {
+                document.removeEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.removeEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.removeEventListener( 'mouseout', onDocumentMouseOut, false );
+            }
+            function onDocumentMouseOut() {
+                document.removeEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.removeEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.removeEventListener( 'mouseout', onDocumentMouseOut, false );
+            }
+            function onDocumentTouchStart( event ) {
+                if ( event.touches.length == 1 ) {
+                    event.preventDefault();
+                    mouseXOnMouseDown = event.touches[ 0 ].pageX - windowHalfX;
+                    targetRotationOnMouseDown = targetRotation;
+                }
+            }
+            function onDocumentTouchMove( event ) {
+                if ( event.touches.length == 1 ) {
+                    event.preventDefault();
+                    mouseX = event.touches[ 0 ].pageX - windowHalfX;
+                    targetRotation = targetRotationOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
+                }
+            }
+            let carTextureF = new THREE.TextureLoader().load( './images/car1.jpg' );
+            let carTextureS = new THREE.TextureLoader().load( './images/car3.jpg' );
+            if(window.innerHeight < 400) {
+                planeSize = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
+                planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
+            }
+            else if (window.innerWidth < 500) {
+                planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.2, winHeight);
+                planeSize1 = new THREE.PlaneBufferGeometry( winWidth * 1.2, winHeight);
+            }
+            else {
+                planeSize = new THREE.PlaneBufferGeometry( winWidth, winHeight);
+                planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight);
+            }
+            plane = new THREE.Mesh(
+                planeSize,
+                new THREE.MeshBasicMaterial( { map: carTextureS, opacity: 1, transparent: true } )
+            );
+            plane1 = new THREE.Mesh(
+                planeSize1,
+                new THREE.MeshBasicMaterial( { map: carTextureF, opacity: 1, transparent: true } )
+            );
+            if(window.innerWidth < 500) {
+                plane.position.set(0,winWidth / 2, -winWidth / 1.7);
+                plane1.position.set(-winWidth / 1.65, winWidth / 2, 0);
+            }
+            else {
+                plane.position.set(0,winWidth / 12, -winWidth / 2);
+                plane1.position.set(-winWidth / 2, winWidth / 12, 0);
+            }
+            plane1.rotateY(Math.PI / 2);
+            scene.add(plane);
+            scene.add(plane1);
+
+            light = new THREE.DirectionalLight( 0xffffff );
+            light.position.set( 0, 200, 100 );
+            light.castShadow = true;
+            light.shadow.camera.top = 180;
+            light.shadow.camera.bottom = - 100;
+            light.shadow.camera.left = - 120;
+            light.shadow.camera.right = 120;
+            scene.add( light );
+            // ground
+            // let asphalt = new THREE.TextureLoader().load( './images/asphalt1.png' );
+            // let mesh;
+            // let ground;
+            // ground = new THREE.Group();
+            // ground.position.y = -50;
+            // ground.position.x = 600;
+            // ground.position.z = 0;
+            // scene.add( ground );
+            // ground.rotation.x = - Math.PI / 2;
+            // function getRandomArbitrary(min, max) {
+            //     return Math.random() * (max - min) + min;
+            // }
+            // for(let i=0;i<10;i++) {
+            //     mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 1000, 1000), new THREE.MeshBasicMaterial( { map: asphalt, transparent: true, opacity: 0.95 } ) );
+            //     mesh.position.set(getRandomArbitrary(-2000, 1000),getRandomArbitrary(-2000, 1000), 0);
+            //     ground.add( mesh );
+            // }
+            var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 2000, 2000 ), new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false } ) );
+            mesh.rotation.x = - Math.PI / 2;
+            mesh.receiveShadow = true;
+            scene.add( mesh );
+
+            var grid = new THREE.GridHelper( 2000, 20, 0x000000, 0x000000 );
+            grid.material.opacity = 0.2;
+            grid.material.transparent = true;
+            scene.add( grid );
+            var loader = new FBXLoader();
+            loader.load( 'models/2015 Ford Mustang GT .fbx', function ( object ) {
+                group.add( object );
+            }, undefined, function ( error ) {
+                console.error( error );
+            } );
+            renderer = new THREE.WebGLRenderer( { antialias: true } );
+            renderer.setPixelRatio( window.devicePixelRatio );
+            renderer.setSize( winWidth, winHeight );
+            renderer.shadowMap.enabled = true;
+            container.appendChild( renderer.domElement );
+            window.addEventListener( 'resize', onWindowResize, false );
+            // function loop() {
+            //         plane.position.x = ball.positionX;
+            //         plane.position.y = ball.positionY;
+            //         plane.position.z = ball.positionZ;
+            //         renderer.render(scene, camera);
+            //         requestAnimationFrame(function () {
+            //             loop();
+            //         })
+            //     }
+            //     //
+            //     loop();
+        }
+        function onWindowResize() {
+            camera.aspect = winWidth / winHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize( winWidth, winHeight );
+        }
+        function animate() {
+
+            requestAnimationFrame( animate );
+            renderer.render( scene, camera );
+            group.rotation.y += ( targetRotation - group.rotation.y ) * 0.05;
+            camera.lookAt( cameraTarget );
+        }
+
+    </script>
+  </body>
+</html>
