@@ -3,23 +3,23 @@
 import * as THREE from './three.module.js';
 import { FBXLoader } from './FBXLoader.js';
 
-let container,camera, scene, renderer, light, group, cameraTarget, plane, plane1, planeSize, planeSize1,winWidth, winHeight;
+let container,camera, scene, renderer, light, group, cameraTarget, plane, plane1, planeSize, planeSize1,winWidth, winHeight, boxWidth, boxHeight, carTextureF, carTextureS;
 
+boxWidth = document.querySelector('.main-bn').offsetWidth;
+boxHeight = document.querySelector('.main-bn').offsetHeight;
 winWidth = window.innerWidth;
 winHeight = window.innerHeight;
-if(winWidth < 500 || winHeight > winWidth) {
-    winHeight = window.innerHeight / 2;
-}
-else {
-    winHeight = window.innerHeight;
-}
+// if(winWidth < 500 || winHeight > winWidth) {
+//     boxHeight = document.querySelector('.main-bn').offsetHeight / 2;
+// }
+// else {
+//     boxHeight = document.querySelector('.main-bn').offsetHeight;
+// }
 let targetRotation = 0;
 let targetRotationOnMouseDown = 0;
 let mouseX = 0;
 let mouseXOnMouseDown = 0;
 let windowHalfX = winWidth / 2;
-let boxWidth = document.querySelector('.main-bn').offsetWidth;
-let boxHeight = document.querySelector('.main-bn').offsetHeight;
 init();
 animate();
 
@@ -27,7 +27,7 @@ function init() {
     container = document.createElement( 'div' );
     container.classList.add('canvas-box');
     document.querySelector('.main-bn').appendChild( container );
-    camera = new THREE.PerspectiveCamera( 40, winWidth / winHeight, 1, 2500 );
+    camera = new THREE.PerspectiveCamera( 40, boxWidth / boxHeight, 1, 2500 );
     camera.position.set( 500, 270, 400 );
     cameraTarget = new THREE.Vector3( 0, 100, 0 );
     scene = new THREE.Scene();
@@ -84,23 +84,23 @@ function init() {
             targetRotation = targetRotationOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
         }
     }
-    let carTextureF = new THREE.TextureLoader().load( './images/car1.jpg' );
-    let carTextureS = new THREE.TextureLoader().load( './images/car3.jpg' );
-    if(window.innerWidth < 500 && window.innerHeight < 400 || window.innerWidth > 800 && window.innerHeight < 400) {
-        planeSize = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
-        planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
+    carTextureF = new THREE.TextureLoader().load( './images/car1.jpg' );
+    carTextureS = new THREE.TextureLoader().load( './images/car3.jpg' );
+    if(boxWidth < 500 && boxHeight < 400 || boxWidth > 800 && boxHeight < 400) {
+        planeSize = new THREE.PlaneBufferGeometry( boxWidth, boxHeight * 1.7);
+        planeSize1 = new THREE.PlaneBufferGeometry( boxWidth, boxHeight * 1.7);
     }
-    else if (window.innerWidth < 500) {
-        planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.5, winWidth);
-        planeSize1 = new THREE.PlaneBufferGeometry( winWidth * 1.5, winWidth);
+    else if (boxWidth < 500) {
+        planeSize = new THREE.PlaneBufferGeometry( boxWidth * 1.5, boxWidth);
+        planeSize1 = new THREE.PlaneBufferGeometry( boxWidth * 1.5, boxWidth);
     }
-    else if (window.innerWidth < 800) {
-        planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.3, winWidth);
-        planeSize1 = new THREE.PlaneBufferGeometry( winWidth * 1.3, winWidth);
+    else if (boxWidth < 800) {
+        planeSize = new THREE.PlaneBufferGeometry( boxWidth * 1.3, boxWidth);
+        planeSize1 = new THREE.PlaneBufferGeometry( boxWidth * 1.3, boxWidth);
     }
     else {
-        planeSize = new THREE.PlaneBufferGeometry( winWidth, winHeight);
-        planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight);
+        planeSize = new THREE.PlaneBufferGeometry( boxWidth, boxHeight);
+        planeSize1 = new THREE.PlaneBufferGeometry( boxWidth, boxHeight);
     }
     plane = new THREE.Mesh(
         planeSize,
@@ -110,21 +110,21 @@ function init() {
         planeSize1,
         new THREE.MeshBasicMaterial( { map: carTextureF, opacity: 1, transparent: true } )
     );
-    if(window.innerWidth < 500 && window.innerHeight < 400 || window.innerWidth > 800 && window.innerHeight < 400) {
-        plane.position.set(0,winWidth / 2, -winWidth / 1.7);
-        plane1.position.set(-winWidth / 1.65, winWidth / 2, 0);
+    if(boxWidth < 500 && boxHeight < 400 || boxWidth > 800 && boxHeight < 400) {
+        plane.position.set(0,boxWidth / 2, -boxWidth / 1.7);
+        plane1.position.set(-boxWidth / 1.65, boxWidth / 2, 0);
     }
-    else if(window.innerWidth < 500) {
-        plane.position.set(0,winWidth / 2, -winWidth / 1.45);
-        plane1.position.set(-winWidth / 1.22, winWidth / 2.05, 0);
+    else if(boxWidth < 500) {
+        plane.position.set(0,boxWidth / 2, -boxWidth / 1.45);
+        plane1.position.set(-boxWidth / 1.22, boxWidth / 2.05, 0);
     }
-    else if (window.innerWidth < 800) {
-        plane.position.set(0,winWidth / 2, -winWidth / 1.5);
-        plane1.position.set(-winWidth / 1.59, winWidth / 2, 0);
+    else if (boxWidth < 800) {
+        plane.position.set(0,boxWidth / 2, -boxWidth / 1.5);
+        plane1.position.set(-boxWidth / 1.59, boxWidth / 2, 0);
     }
     else {
-        plane.position.set(0,winWidth / 12, -winWidth / 2);
-        plane1.position.set(-winWidth / 2, winWidth / 12, 0);
+        plane.position.set(0,boxWidth / 12, -boxWidth / 2);
+        plane1.position.set(-boxWidth / 2, boxWidth / 12, 0);
     }
     plane1.rotateY(Math.PI / 2);
     scene.add(plane);
@@ -160,11 +160,11 @@ function init() {
     window.addEventListener( 'resize', onWindowResize, false );
 }
 function onWindowResize() {
-    winWidth = window.innerWidth;
-    winHeight = window.innerHeight;
-    camera.aspect = winWidth / winHeight;
+    boxWidth = document.querySelector('.main-bn').offsetWidth;
+    boxHeight = document.querySelector('.main-bn').offsetHeight;
+    camera.aspect = boxWidth / boxHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize( winWidth, winHeight );
+    renderer.setSize( boxWidth, boxHeight );
 }
 function animate() {
     requestAnimationFrame( animate );
