@@ -260,7 +260,7 @@ header {
     padding-top: 45px;
     background: url(../images/main-bn.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 100vh !important;
+    height: 100vh;
     position: relative;
 }
 .main-bn .canvas-box {
