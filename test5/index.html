@@ -122,8 +122,8 @@
                 planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
             }
             else if (window.innerWidth < 500) {
-                planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.2, winWidth);
-                planeSize1 = new THREE.PlaneBufferGeometry( winWidth * 1.2, winWidth);
+                planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.5, winWidth);
+                planeSize1 = new THREE.PlaneBufferGeometry( winWidth * 1.5, winWidth);
             }
             else if (window.innerWidth < 800) {
                 planeSize = new THREE.PlaneBufferGeometry( winWidth * 1.3, winWidth);
@@ -141,9 +141,13 @@
                 planeSize1,
                 new THREE.MeshBasicMaterial( { map: carTextureF, opacity: 1, transparent: true } )
             );
-            if(window.innerWidth < 500) {
+            if(window.innerWidth < 500 && window.innerHeight < 400 || window.innerWidth > 800 && window.innerHeight < 400) {
                 plane.position.set(0,winWidth / 2, -winWidth / 1.7);
                 plane1.position.set(-winWidth / 1.65, winWidth / 2, 0);
+            }
+            else if(window.innerWidth < 500) {
+                plane.position.set(0,winWidth / 2, -winWidth / 1.45);
+                plane1.position.set(-winWidth / 1.22, winWidth / 2.05, 0);
             }
             else if (window.innerWidth < 800) {
                 plane.position.set(0,winWidth / 2, -winWidth / 1.5);
