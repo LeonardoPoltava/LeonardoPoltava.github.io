@@ -119,7 +119,7 @@ function init() {
         plane1.position.set(-boxWidth / 1.22, boxWidth / 2.05, 0);
     }
     else if (boxWidth < 800) {
-        plane.position.set(0,boxWidth / 2, -boxWidth / 1.5);
+        plane.position.set(0,boxWidth / 2.018, -boxWidth / 1.5);
         plane1.position.set(-boxWidth / 1.59, boxWidth / 2, 0);
     }
     else {
