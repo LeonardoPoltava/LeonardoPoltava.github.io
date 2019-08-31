@@ -118,9 +118,17 @@
             }
             let carTextureF = new THREE.TextureLoader().load( './images/car1.jpg' );
             let carTextureS = new THREE.TextureLoader().load( './images/car2.jpg' );
-            if(winWidth < 800) {
+            if(winWidth < 800 && winHeight > 400) {
                 planeSize = new THREE.PlaneBufferGeometry( 936, winHeight * 3.5);
                 planeSize1 = new THREE.PlaneBufferGeometry( 936, winHeight * 3.3);
+            }
+            else if(winWidth < 800 && winHeight < 400)  {
+                planeSize = new THREE.PlaneBufferGeometry( 1200, winHeight * 5);
+                planeSize1 = new THREE.PlaneBufferGeometry( 1200, winHeight * 5);
+            }
+            else if(winWidth > 800 && winHeight < 400)  {
+                planeSize = new THREE.PlaneBufferGeometry( 1200, winHeight * 3.5);
+                planeSize1 = new THREE.PlaneBufferGeometry( 1200, winHeight * 3.3);
             }
             else if(winWidth < 1400) {
                 planeSize = new THREE.PlaneBufferGeometry( 936, winHeight * 2.1);
