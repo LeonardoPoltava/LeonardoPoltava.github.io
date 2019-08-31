@@ -84,8 +84,8 @@ function init() {
             targetRotation = targetRotationOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
         }
     }
-    let carTextureF = new THREE.TextureLoader().load( '../images/car1.jpg' );
-    let carTextureS = new THREE.TextureLoader().load( '../images/car3.jpg' );
+    let carTextureF = new THREE.TextureLoader().load( './images/car1.jpg' );
+    let carTextureS = new THREE.TextureLoader().load( './images/car3.jpg' );
     if(window.innerWidth < 500 && window.innerHeight < 400 || window.innerWidth > 800 && window.innerHeight < 400) {
         planeSize = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
         planeSize1 = new THREE.PlaneBufferGeometry( winWidth, winHeight * 1.7);
