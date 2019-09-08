@@ -1,0 +1,174 @@
+@media (min-width: 992px) and (max-width: 1199.98px)
+  .content
+    overflow: hidden
+@media (min-width: 768px) and (max-width: 991.98px)
+  .content
+    overflow: hidden
+    &-top
+      &__list-elem
+        font-size: 19px
+  .statistic
+    padding: 25px
+  .quote
+    &__img
+      &.top
+        margin-top: 120px
+        width: 109px
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+  .col-xs-4
+    flex: 0 0 33.333333%
+    max-width: 33.333333%
+  .col-sm-2
+    flex: 0 0 16.666667%
+    max-width: 16.666667%
+  .col-sm-6
+    flex: 0 0 50%
+    max-width: 50%
+  .wrapper
+    overflow: hidden
+  .get-demo,
+  .download-data,
+  .buttons-invert .download-data
+    margin: 11px 11px 11px 0
+  header
+    position: relative
+    #header-collapse
+      width: 100%
+      top: 100%
+      padding: 10px 15px
+      z-index: 3
+      position: absolute
+      background: #29353E
+      left: 0
+      .d-flex
+        justify-content: center
+    .navbar-toggler
+      width: 54px
+      height: 24px
+      display: block
+      position: relative
+      padding: 0
+      span
+        display: block
+        width: 54px
+        left: calc(50% - 27px)
+        height: 4px
+        background: #fff
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+        position: absolute
+        &:nth-child(1)
+          top: 0px
+        &:nth-child(2)
+          top: 10px
+        &:nth-child(3)
+          top: 20px
+      &[aria-expanded="true"]
+        span
+          -webkit-transform: rotate(45deg)
+          -moz-transform: rotate(45deg)
+          -o-transform: rotate(45deg)
+          transform: rotate(45deg)
+          margin-top: 10px
+          &:nth-child(2)
+            left: -50%
+            opacity: 0
+          &:nth-child(3)
+            -webkit-transform: rotate(135deg)
+            -moz-transform: rotate(135deg)
+            -o-transform: rotate(135deg)
+            transform: rotate(135deg)
+            margin-top: -10px
+  // content
+  .content
+    &-top
+      padding: 83px 0 122px
+      &__title
+        font-size: 31px
+        margin-bottom: 22px
+      &__text
+        font-size: 16px
+        &:after
+          margin-top: 38px
+      &__list
+        margin-top: 42px
+        &-elem
+          width: 100%
+          font-size: 18px
+  .statistic
+    margin-top: 0
+    box-shadow: none
+    padding: 55px 0
+    &__title
+      font-size: 19px
+      margin-bottom: 20px
+    &-table
+      margin-top: 20px
+      overflow-x: scroll
+      &__holder
+        min-width: 975px
+  .quote
+    margin: 30px -15px 0
+    padding-bottom: 37px
+    &-box
+      width: 100%
+      padding: 53px 57px 115px
+      position: relative
+      right: auto
+    &__img
+      &.top
+        width: 58px
+        top: 28px
+        margin: 0
+        right: 28px
+      &.bottom
+        left: 57px
+        bottom: 42px
+        margin: 0
+        height: 49px
+        width: 69px
+    &-head
+      flex-wrap: wrap
+    &__author
+      margin: 0 0 60px
+    &__text
+      margin-top: 10px
+  .gallery
+    padding-bottom: 37px
+    .owl-theme
+      &.modal-gallery
+        .owl-nav.disabled + .owl-dots
+          margin-top: 27px
+        .owl-dots
+          margin-top: 27px
+      .owl-nav.disabled + .owl-dots
+        margin-top: 27px
+      .owl-dots
+        margin-top: 27px
+        .owl-dot
+          span
+            width: 19px
+            height: 19px
+  .footer
+    &__copy,
+    &__aside
+      font-size: 15px
+  .modal
+    &-footer
+      padding: 15px
+  .sidebar
+    width: 100%
+    max-width: 450px
+    &__close-btn
+      display: none
+    &__holder
+      padding: 15px 20px
+    &-drop
+      padding: 15px 20px
+@media (max-width: 374.99px)
+  .content
+    &-top
+      &__list
+        &-elem
+          font-size: 16px
