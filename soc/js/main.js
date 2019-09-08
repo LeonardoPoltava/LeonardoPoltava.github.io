@@ -50,32 +50,22 @@ let sidebarBtn = document.querySelector('.show-sidebar');
 let closeSidebarBtn = document.querySelector('.sidebar__close');
 let closeSidebarIcon = document.querySelector('.sidebar__close-btn');
 let sidebar = document.querySelector('.sidebar');
-sidebarBtn.addEventListener("click", showSidebar);
-closeSidebarBtn.addEventListener("click", closeSiebar);
-closeSidebarIcon.addEventListener("click", closeSiebar);
-if ('ontouchstart' in window) {
-    sidebarBtn.addEventListener("touchstart", function() {
-        let touchHndl = function() {
-            showSidebar();
-            this.removeEventListener(touchHndl)
-        }
-        this.addEventListener(touchHndl);
-    });
-    closeSidebarBtn.addEventListener("touchstart", function() {
-        let touchHndl = function() {
-            closeSiebar();
-            this.removeEventListener(touchHndl)
-        }
-        this.addEventListener(touchHndl);
-    });
-    closeSidebarIcon.addEventListener("touchstart", function() {
-        let touchHndl = function() {
-            closeSiebar();
-            this.removeEventListener(touchHndl)
-        }
-        this.addEventListener(touchHndl);
-    });
+function addMultipleListeners(element,events,handler,useCapture,args){
+    if (!(events instanceof Array)){
+        throw 'addMultipleListeners: '+
+        'please supply an array of eventstrings '+
+        '(like ["click","mouseover"])';
+    }
+    var handlerFn = function(e){
+        handler.apply(this, args && args instanceof Array ? args : []);
+    }
+    for (let i=0;i<events.length;i+=1){
+        element.addEventListener(events[i],handlerFn,useCapture);
+    }
 }
+addMultipleListeners(sidebarBtn,['touchstart','click'],showSidebar,false);
+addMultipleListeners(closeSidebarBtn,['touchstart','click'],closeSiebar,false);
+addMultipleListeners(closeSidebarIcon,['touchstart','click'],closeSiebar,false);
 function showSidebar() {
     sidebar.style.right = '0';
     sidebar.style.opacity = '1';
