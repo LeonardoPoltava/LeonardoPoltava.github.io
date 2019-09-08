@@ -53,12 +53,7 @@ let sidebar = document.querySelector('.sidebar');
 sidebarBtn.addEventListener("click", showSidebar);
 closeSidebarBtn.addEventListener("click", closeSiebar);
 closeSidebarIcon.addEventListener("click", closeSiebar);
-sidebarBtn.addEventListener("touchstart", showSidebar);
-closeSidebarBtn.addEventListener("touchstart", closeSiebar);
-closeSidebarIcon.addEventListener("touchstart", closeSiebar);
-function showSidebar(event) {
-    sidebarBtn.removeEventListener("click", showSidebar);
-    sidebarBtn.removeEventListener("touchstart", showSidebar);
+function showSidebar() {
     sidebar.style.right = '0';
     sidebar.style.opacity = '1';
     let shadow = document.createElement("div");
@@ -69,10 +64,6 @@ function showSidebar(event) {
     }, 10)
 }
 function closeSiebar() {
-    sidebarBtn.removeEventListener("click", closeSiebar);
-    sidebarBtn.removeEventListener("touchstart", closeSiebar);
-    closeSidebarIcon.removeEventListener("click", closeSiebar);
-    closeSidebarIcon.removeEventListener("touchstart", closeSiebar);
     sidebar.style.right = '-100%';
     sidebar.style.opacity = '0';
     let shadow = document.querySelector('.shadow');
@@ -82,19 +73,29 @@ function closeSiebar() {
     }, 1000)
 }
 // show drop menu
-let sidebarLink = document.querySelectorAll('.sidebar__link');
-for(let i=0;i<sidebarLink.length;i++) {
-    let count = i;
-    sidebarLink[count].addEventListener("click", showDrop);
-    function showDrop() {
-        if(!sidebarLink[count].classList.contains('active')) {
-            sidebarLink[count].classList.add('active');
-            sidebarLink[count].nextElementSibling.style.display = 'block'
-        }
-        else {
-            sidebarLink[count].classList.remove('active');
-            sidebarLink[count].nextElementSibling.style.display = 'none'
-        }
+// let sidebarLink = document.querySelectorAll('.sidebar__link');
+// for(let i=0;i<sidebarLink.length;i++) {
+//     let myElem = sidebarLink[i];
+//     myElem.addEventListener("click", showDrop(myElem));
+//     function showDrop(arg) {
+//         if(!arg.classList.contains('active')) {
+//             arg.classList.add('active');
+//             arg.nextElementSibling.style.display = 'block'
+//         }
+//         else {
+//             arg.classList.remove('active');
+//             arg.nextElementSibling.style.display = 'none'
+//         }
+//     }
+// }
+function showDrop(arg) {
+    if(!arg.classList.contains('active')) {
+        arg.classList.add('active');
+        arg.nextElementSibling.style.display = 'block'
+    }
+    else {
+        arg.classList.remove('active');
+        arg.nextElementSibling.style.display = 'none'
     }
 }
 // owl carousel
