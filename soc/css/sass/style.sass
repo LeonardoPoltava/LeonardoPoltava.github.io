@@ -4,6 +4,8 @@ $black: #000000
 $orange: #F72D00
 $std-color: #161616
 $blue: #245EC1
+$red: #B12708
+$aqua: #29353E
 img
   display: block
   max-width: 100%
@@ -50,7 +52,7 @@ button
 .btn-primary
   background: $orange
   color: $white
-  border-color: #B12708
+  border-color: $red
   font-size: 17px
   line-height: 1
   padding: 14px 37px
@@ -58,12 +60,12 @@ button
   &.focus
     box-shadow: 0 0 0 0.2rem rgba(177,39,8,.5);
   &:hover
-    background: #B12708
+    background: $red
     border-color: $orange
   &:not(:disabled):not(.disabled).active,
   &:not(:disabled):not(.disabled):active
-    background-color: #B12708
-    border-color: #B12708
+    background-color: $red
+    border-color: $red
     &:focus
       box-shadow: 0 0 0 0.2rem rgba(177,39,8,.5)
 .btn-secondary
@@ -84,7 +86,7 @@ button
   &:not(:disabled):not(.disabled):active
     background: $white
     color: $orange
-    border-color: #B12708
+    border-color: $red
     &:focus
       box-shadow: 0 0 0 0.2rem rgba(177,39,8,.5)
 .buttons-invert
@@ -97,7 +99,7 @@ button
       color: $orange
 //  header
 header
-  background: #29353E
+  background: $aqua
   padding: 19px 0
   #header-collapse
     flex-grow: 0
@@ -331,7 +333,7 @@ header
 // footer
 .footer
   padding: 37px 0
-  background: #29353e
+  background: $aqua
   &__copy,
   &__aside
     display: block
@@ -374,14 +376,14 @@ header
     padding: 46px 69px
     &::-webkit-scrollbar-track
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-      background-color: #F5F5F5;
-      border-radius: 10px;
+      background-color: $std-color
+      border-radius: 10px
     &::-webkit-scrollbar
       width: 10px
-      background-color: #F5F5F5
+      background-color: $std-color
     &::-webkit-scrollbar-thumb
       border-radius: 10px
-      background-color: #FFF
+      background-color: $white
       background-image: -webkit-linear-gradient(top, $black 0%, $std-color 25%, $orange 50%)
   &__close-btn
     position: absolute
