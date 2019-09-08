@@ -50,9 +50,9 @@ let sidebarBtn = document.querySelector('.show-sidebar');
 let closeSidebarBtn = document.querySelector('.sidebar__close');
 let closeSidebarIcon = document.querySelector('.sidebar__close-btn');
 let sidebar = document.querySelector('.sidebar');
-sidebarBtn.addEventListener("click", showSidebar);
-closeSidebarBtn.addEventListener("click", closeSiebar);
-closeSidebarIcon.addEventListener("click", closeSiebar);
+sidebarBtn.addEventListener("click touchstart", showSidebar);
+closeSidebarBtn.addEventListener("click touchstart", closeSiebar);
+closeSidebarIcon.addEventListener("click touchstart", closeSiebar);
 function showSidebar() {
     sidebar.style.right = '0';
     sidebar.style.opacity = '1';
