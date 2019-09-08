@@ -50,23 +50,15 @@ let sidebarBtn = document.querySelector('.show-sidebar');
 let closeSidebarBtn = document.querySelector('.sidebar__close');
 let closeSidebarIcon = document.querySelector('.sidebar__close-btn');
 let sidebar = document.querySelector('.sidebar');
-function addMultipleListeners(element,events,handler,useCapture,args){
-    if (!(events instanceof Array)){
-        throw 'addMultipleListeners: '+
-        'please supply an array of eventstrings '+
-        '(like ["click","mouseover"])';
-    }
-    var handlerFn = function(e){
-        handler.apply(this, args && args instanceof Array ? args : []);
-    }
-    for (let i=0;i<events.length;i+=1){
-        element.addEventListener(events[i],handlerFn,useCapture);
-    }
-}
-addMultipleListeners(sidebarBtn,['touchstart','click'],showSidebar,false);
-addMultipleListeners(closeSidebarBtn,['touchstart','click'],closeSiebar,false);
-addMultipleListeners(closeSidebarIcon,['touchstart','click'],closeSiebar,false);
-function showSidebar() {
+sidebarBtn.addEventListener("click", showSidebar);
+closeSidebarBtn.addEventListener("click", closeSiebar);
+closeSidebarIcon.addEventListener("click", closeSiebar);
+sidebarBtn.addEventListener("touchstart", showSidebar);
+closeSidebarBtn.addEventListener("touchstart", closeSiebar);
+closeSidebarIcon.addEventListener("touchstart", closeSiebar);
+function showSidebar(event) {
+    sidebarBtn.removeEventListener("click", showSidebar);
+    sidebarBtn.removeEventListener("touchstart", showSidebar);
     sidebar.style.right = '0';
     sidebar.style.opacity = '1';
     let shadow = document.createElement("div");
@@ -77,6 +69,10 @@ function showSidebar() {
     }, 10)
 }
 function closeSiebar() {
+    sidebarBtn.removeEventListener("click", closeSiebar);
+    sidebarBtn.removeEventListener("touchstart", closeSiebar);
+    closeSidebarIcon.removeEventListener("click", closeSiebar);
+    closeSidebarIcon.removeEventListener("touchstart", closeSiebar);
     sidebar.style.right = '-100%';
     sidebar.style.opacity = '0';
     let shadow = document.querySelector('.shadow');
