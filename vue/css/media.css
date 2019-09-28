@@ -1,0 +1,238 @@
+@media (min-width:1215px) {
+    .container {
+        width: 1215px;
+    }
+    .medium-container {
+        width: 970px;
+    }
+}
+@media (min-width:992px) and (max-width: 1214px) {
+    .container {
+        width: 970px;
+    }
+    .box-title,
+    h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+    .title-border:after,
+    h2:after,
+    h1:after {
+        margin-top: 25px;
+    }
+    .working-section {
+        padding: 70px 0;
+    }
+    .content-text {
+        width:500px;
+    }
+    .inner-main-box {
+        -webkit-box-align: start;
+        -webkit-align-items: start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .working-img-box {
+        width: 385px;
+    }
+    .working-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .working-img-box:before {
+        width: 100%;
+        background-size: 100%;
+        right: -15px;
+        top: -40px;
+    }
+    .working-img-box:after {
+        left: -20px;
+        bottom: -25px;
+    }
+    .inner-content {
+        padding: 45px 0 75px 0;
+    }
+    .inner-bn {
+        padding-top: 120px;
+        height: 480px;
+    }
+    .work-main-ico {
+        margin: 0 auto 45px;
+    }
+    h1,
+    .title-page {
+        font-size: 40px;
+    }
+    .inner-bn.title-page-box {
+        padding-top: 150px;
+    }
+    .header-phones {
+        margin-right: 14px;
+    }
+    .video-box {
+        height: auto;
+    }
+    .video-fill video {
+        object-fit: cover;
+    }
+}
+
+@media (max-width:991px) {
+    .service-section .container:before, .service-section .container:after {
+        display: none;
+    }
+    .inner-bn.title-page-box h1,
+    .inner-bn.title-page-box .title-page {
+        margin: 0;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .container {
+        width: 750px;
+    }
+    .box-title,
+    h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .title-border:after,
+    h2:after,
+    h1:after {
+        margin-top: 20px;
+    }
+    .work-main-ico {
+        margin: 0 auto 35px;
+    }
+    h1,
+    .title-page {
+        font-size: 36px;
+        margin: 0 0 25px;
+    }
+    .inner-bn {
+        padding-top: 175px;
+    }
+    .inner-main-box {
+        display: block;
+    }
+    .working-img-box {
+        margin: 0 15px 15px 0;
+        float: left;
+    }
+    .content-text {
+        width: auto;
+    }
+    .working-img-box:before {
+        right: auto;
+        left: -15px;
+        top: -44px;
+    }
+    .working-img-box:after {
+        left: -20px;
+        bottom: -15px;
+    }
+    .inner-content {
+        padding: 40px 0 70px 0;
+    }
+    .inner-bn.title-page-box {
+        height: 280px;
+    }
+    .about-content {
+        padding: 60px 0;
+    }
+    .video-box {
+        height: auto;
+    }
+    .video-fill video {
+        object-fit: cover;
+    }
+    .content-head {
+        padding-bottom: 80px;
+    }
+}
+@media (min-width: 768px) {
+    .visible-xs {
+        display: none;
+    }
+    .show-menu {
+        display: none;
+    }
+}
+@media (max-width:767.98px) {
+    .bn-content h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .box-title,
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .title-border:after,
+    h2:after,
+    h1:after {
+        margin-top: 15px;
+    }
+    .working-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .working-img-box:before {
+        right: -10px;
+        top: -25px;
+    }
+    .working-img-box:after {
+        left: -10px;
+        bottom: -25px;
+    }
+    .working-img-box {
+        width: 500px;
+        max-width: 100%;
+        margin: 35px auto 40px;
+    }
+    .inner-bn {
+        padding: 40px 0;
+        height: auto;
+    }
+    h1, .title-page {
+        font-size: 30px;
+    }
+    .work-main-ico {
+        margin: 0 auto 30px;
+    }
+    .inner-content {
+        padding: 20px 0;
+    }
+    .content-text {
+        width: 100%;
+    }
+    .inner-bn.title-page-box {
+        height: auto;
+    }
+    .video-bg {
+        position: static;
+    }
+    .bn-content {
+        padding: 25px 0;
+    }
+    .video-box {
+        height: auto;
+    }
+    .content-head {
+        padding: 0 0 35px;
+    }
+    .content-head h1 {
+        margin-bottom: 25px;
+    }
+    .portfolio .swiper-slide {
+        width: 100%;
+    }
+    .portfolio-ipad .portfolio-link {
+        font-size: 14px;
+    }
+    .portfolio-mac .portfolio-link {
+        font-size: 18px;
+    }
+    .portfolio-iphone .portfolio-link {
+        font-size: 9px;
+    }
+}
