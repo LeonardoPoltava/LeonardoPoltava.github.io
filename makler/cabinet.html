@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+  </head>
+  <body class="inner-body">
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="flex-space-b flex-center-y header-container">
+                    <a href="javascript:void(0)" class="logo"><img src="images/logo.svg" alt=""></a>
+                    <div class="header-right flex-space-b flex-center-y">
+                        <div class="header-r-box">
+                            <a href="javascript:void(0)" class="user-link flex flex-center-y">
+                                <span class="user-name">Mark Markov</span>
+                                <img src="images/avatar.png" width="26" height="26" alt="" class="user-photo">
+                            </a>
+                        </div>
+                        <div class="header-r-box">
+                            <span class="header-time">12:37:40</span>
+                        </div>
+                        <div class="header-r-box">
+                            <div class="header-actions flex-center-y">
+                                <a href="javascript:void(0)" class="header-mail">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.53568 3.69888C1.73808 3.83521 2.34818 4.24012 3.36601 4.91339C4.38388 5.58666 5.16364 6.10506 5.70531 6.46862C5.76482 6.50848 5.89126 6.59511 6.08468 6.72863C6.27814 6.86225 6.43888 6.97022 6.56678 7.05258C6.69478 7.13491 6.84952 7.22727 7.03115 7.32951C7.21272 7.43166 7.38388 7.5085 7.54459 7.55937C7.70533 7.61066 7.85413 7.63606 7.99101 7.63606H7.99998H8.00899C8.14587 7.63606 8.29473 7.61063 8.45547 7.55937C8.61612 7.5085 8.78743 7.43158 8.96885 7.32951C9.15035 7.22715 9.30509 7.13488 9.43309 7.05258C9.56109 6.97022 9.72171 6.86225 9.91522 6.72863C10.1086 6.59499 10.2352 6.50848 10.2947 6.46862C10.8422 6.10506 12.2352 5.18172 14.4732 3.6987C14.9077 3.40905 15.2707 3.05955 15.5624 2.65043C15.8542 2.24149 16 1.8125 16 1.36368C16 0.988624 15.8585 0.66757 15.5758 0.400548C15.293 0.133466 14.9581 0 14.5714 0H1.42851C0.970207 0 0.617512 0.147706 0.370489 0.443117C0.123496 0.738587 0 1.10791 0 1.55106C0 1.90901 0.163744 2.2969 0.491076 2.71449C0.818377 3.13212 1.16669 3.46027 1.53568 3.69888Z" fill="#C4C4C4"/>
+                                        <path d="M15.107 4.61072C13.1548 5.87197 11.6725 6.85218 10.6607 7.55112C10.3215 7.78967 10.0462 7.97588 9.83485 8.10932C9.62348 8.24285 9.34237 8.37921 8.99111 8.51834C8.63998 8.65769 8.31274 8.72716 8.00912 8.72716H8.00002H7.99104C7.68747 8.72716 7.36005 8.65769 7.00892 8.51834C6.65779 8.37921 6.37649 8.24285 6.16518 8.10932C5.95393 7.97588 5.67861 7.78967 5.33936 7.55112C4.53574 6.98866 3.0566 6.0084 0.901876 4.61072C0.562504 4.39495 0.26191 4.14763 0 3.86926V10.6362C0 11.0114 0.139821 11.3323 0.419618 11.5993C0.699353 11.8665 1.03572 12 1.4286 12H14.5715C14.9643 12 15.3006 11.8665 15.5804 11.5993C15.8602 11.3322 16 11.0114 16 10.6362V3.86926C15.744 4.14187 15.4465 4.38919 15.107 4.61072Z" fill="#C4C4C4"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="header-settings">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9495 7.11169C15.9242 6.88678 15.662 6.71777 15.4352 6.71777C14.7021 6.71777 14.0516 6.2873 13.7787 5.62156C13.5 4.93968 13.6797 4.14446 14.2261 3.64326C14.3981 3.48604 14.419 3.22285 14.2747 3.04003C13.8995 2.56354 13.473 2.13312 13.0074 1.7601C12.825 1.61377 12.5575 1.63413 12.3994 1.80921C11.9225 2.33732 11.066 2.53359 10.4041 2.25743C9.71533 1.96769 9.28099 1.26974 9.32349 0.520533C9.33748 0.285204 9.1655 0.0805941 8.93088 0.0532691C8.33331 -0.0158471 7.73049 -0.0179902 7.13112 0.0485066C6.89919 0.0741052 6.7272 0.273893 6.735 0.506245C6.76108 1.24807 6.32149 1.93381 5.63956 2.21314C4.98561 2.48025 4.13508 2.28564 3.65918 1.76224C3.5019 1.58984 3.23871 1.56865 3.05547 1.71146C2.576 2.08764 2.13994 2.51841 1.76125 2.99098C1.61356 3.17469 1.63529 3.44097 1.809 3.59903C2.3658 4.10326 2.54558 4.90539 2.25632 5.59513C1.98015 6.25271 1.29733 6.67652 0.515616 6.67652C0.261951 6.66836 0.0812731 6.83862 0.0535314 7.06925C-0.016835 7.67028 -0.0176684 8.28268 0.0500785 8.88859C0.0752009 9.11446 0.345415 9.28198 0.574671 9.28198C1.27131 9.26418 1.94015 9.69548 2.22072 10.3783C2.5004 11.0601 2.32061 11.8549 1.7734 12.3565C1.60225 12.5137 1.58052 12.7765 1.72476 12.9593C2.09648 13.4328 2.52302 13.8636 2.99034 14.2397C3.17364 14.3874 3.44034 14.3666 3.59923 14.1915C4.07787 13.6621 4.93435 13.4662 5.5936 13.7429C6.28411 14.0317 6.71845 14.7296 6.67595 15.4792C6.66207 15.7147 6.83489 15.9196 7.06856 15.9465C7.37425 15.9822 7.68179 16 7.99017 16C8.28288 16 8.57566 15.9839 8.86837 15.9514C9.10037 15.9258 9.27224 15.726 9.26444 15.4932C9.23759 14.7518 9.67795 14.0661 10.359 13.7872C11.0173 13.5183 11.8643 13.7151 12.3403 14.238C12.4984 14.41 12.7598 14.4308 12.944 14.2885C13.4226 13.9132 13.8578 13.4828 14.2382 13.0089C14.3859 12.8256 14.365 12.5589 14.1904 12.4009C13.6336 11.8967 13.453 11.0944 13.7422 10.4052C14.0142 9.75632 14.6716 9.32067 15.3788 9.32067L15.4778 9.32323C15.7071 9.34187 15.9182 9.16518 15.946 8.93104C16.0165 8.32947 16.0173 7.71761 15.9495 7.11169ZM8.01249 10.6854C6.54099 10.6854 5.34405 9.48843 5.34405 8.01693C5.34405 6.54549 6.54099 5.34849 8.01249 5.34849C9.48393 5.34849 10.6809 6.54549 10.6809 8.01693C10.6809 9.48843 9.48393 10.6854 8.01249 10.6854Z" fill="#C4C4C4"/>
+                                    </svg>
+                                </a>
+                                <div class="header-lang">
+                                    <span class="current-lang flex-center-y">
+                                        Русский
+                                        <span class="lang-arr">
+                                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 1L6 6L1 1" stroke="#9E9E9E" stroke-linecap="round"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <ul class="lang-drop">
+                                        <li>English</li>
+                                        <li>Deutch</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-r-box">
+                            <ul class="header-social flex-center-y">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.72916 3.09869C1.72916 3.5019 1.72916 5.30158 1.72916 5.30158H0V7.99528H1.72916V16H5.28122V7.9955H7.66481C7.66481 7.9955 7.88804 6.70389 7.99625 5.29165C7.68601 5.29165 5.29465 5.29165 5.29465 5.29165C5.29465 5.29165 5.29465 3.72454 5.29465 3.44985C5.29465 3.17458 5.68193 2.80429 6.06471 2.80429C6.44677 2.80429 7.25314 2.80429 8 2.80429C8 2.43754 8 1.17034 8 9.62225e-09C7.00296 9.62225e-09 5.86865 9.62225e-09 5.36866 9.62225e-09C1.64136 -0.000185988 1.72916 2.69619 1.72916 3.09869Z" fill="#46454B"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.9151 9.0311C15.8958 8.98536 15.8777 8.94742 15.8609 8.91702C15.5833 8.36934 15.0528 7.6971 14.2698 6.9001L14.2533 6.88185L14.245 6.8729L14.2366 6.86373H14.2282C13.8728 6.49261 13.6478 6.24307 13.5535 6.11532C13.3811 5.87195 13.3424 5.62561 13.4367 5.37602C13.5033 5.18743 13.7534 4.78918 14.1864 4.1807C14.4142 3.85823 14.5946 3.59977 14.7279 3.40506C15.6887 2.00572 16.1053 1.11153 15.9775 0.722125L15.9279 0.631127C15.8945 0.576343 15.8084 0.526225 15.6698 0.480518C15.5308 0.434907 15.3531 0.427364 15.1364 0.45776L12.7373 0.475915C12.6985 0.460829 12.643 0.462235 12.5707 0.480518C12.4984 0.4988 12.4623 0.507974 12.4623 0.507974L12.4206 0.530827L12.3874 0.558283C12.3596 0.576438 12.3291 0.60837 12.2957 0.654013C12.2626 0.699496 12.2348 0.752873 12.2126 0.813699C11.9514 1.54984 11.6545 2.23426 11.3212 2.86693C11.1157 3.24419 10.9269 3.57114 10.7546 3.84797C10.5825 4.1247 10.4381 4.32859 10.3215 4.45929C10.2048 4.59011 10.0995 4.69492 10.0049 4.77409C9.91044 4.85329 9.83834 4.88676 9.78842 4.87452C9.73838 4.86228 9.69125 4.85013 9.64664 4.83798C9.56894 4.7832 9.50644 4.70869 9.45932 4.6144C9.41199 4.52011 9.38013 4.40144 9.36347 4.25847C9.34689 4.1154 9.33709 3.99234 9.33429 3.88888C9.33169 3.78554 9.33289 3.63938 9.33852 3.4508C9.3443 3.26212 9.3469 3.13446 9.3469 3.06753C9.3469 2.83631 9.35101 2.58537 9.35927 2.31464C9.36767 2.04392 9.37447 1.82941 9.38016 1.67139C9.38582 1.51321 9.38844 1.34585 9.38844 1.16941C9.38844 0.992979 9.37864 0.854611 9.35927 0.754184C9.34013 0.653884 9.31074 0.556526 9.27202 0.462139C9.23307 0.367849 9.17606 0.294909 9.10125 0.24313C9.02629 0.191414 8.93309 0.150373 8.82219 0.119881C8.52781 0.0469095 8.15296 0.00743533 7.69747 0.00129845C6.66454 -0.0108474 6.00083 0.0622196 5.70648 0.220404C5.58985 0.287238 5.48432 0.378556 5.38996 0.49407C5.28996 0.627962 5.27602 0.70103 5.3482 0.713048C5.68147 0.767736 5.91741 0.89856 6.05626 1.10539L6.1063 1.21499C6.14523 1.29407 6.18409 1.43407 6.22299 1.63479C6.26182 1.83552 6.28689 2.05757 6.29792 2.3008C6.32563 2.74499 6.32563 3.12522 6.29792 3.44153C6.27011 3.75796 6.24385 4.0043 6.21878 4.18073C6.19372 4.35717 6.15626 4.50014 6.1063 4.60961C6.05626 4.71911 6.02297 4.78604 6.00628 4.81034C5.98962 4.83463 5.97573 4.84994 5.9647 4.85595C5.89252 4.88625 5.81744 4.90169 5.73974 4.90169C5.66192 4.90169 5.56756 4.85905 5.45651 4.77384C5.34549 4.68862 5.23026 4.57157 5.11084 4.4225C4.99141 4.27339 4.85673 4.06503 4.70673 3.79737C4.55684 3.52971 4.40132 3.21338 4.24026 2.84836L4.107 2.58364C4.0237 2.41334 3.9099 2.16538 3.7655 1.83996C3.62101 1.51442 3.4933 1.19952 3.38228 0.895332C3.3379 0.767576 3.27123 0.670314 3.18238 0.603383L3.14069 0.575927C3.11297 0.551635 3.06847 0.525841 3.00743 0.498353C2.9463 0.470897 2.88252 0.451208 2.81582 0.439094L0.533256 0.457249C0.300008 0.457249 0.141747 0.515133 0.0584143 0.630743L0.0250639 0.685432C0.00840325 0.715892 0 0.76454 0 0.831502C0 0.898432 0.0166606 0.980577 0.050011 1.07784C0.383223 1.93572 0.745584 2.76308 1.13709 3.56004C1.5286 4.35701 1.86882 4.99898 2.15753 5.48539C2.44631 5.97216 2.74066 6.43156 3.04058 6.86338C3.3405 7.29535 3.53902 7.57219 3.63616 7.6938C3.73341 7.81565 3.80979 7.90674 3.86532 7.96757L4.07362 8.18654C4.20691 8.33258 4.40263 8.50748 4.66089 8.71125C4.9192 8.91514 5.20517 9.11586 5.51895 9.31375C5.83279 9.51131 6.19789 9.67253 6.61447 9.79722C7.03098 9.92203 7.43638 9.97212 7.83072 9.94795H8.78875C8.98305 9.92957 9.13025 9.86264 9.2303 9.74713L9.26345 9.70139C9.28574 9.66508 9.3066 9.60867 9.32586 9.53276C9.34535 9.45672 9.35504 9.37294 9.35504 9.28181C9.34935 9.02026 9.36752 8.78454 9.40907 8.57467C9.45059 8.36486 9.49792 8.20668 9.55085 8.10015C9.60375 7.99371 9.66345 7.9039 9.72989 7.83108C9.79647 7.75811 9.84391 7.71391 9.87175 7.69869C9.89941 7.68338 9.9215 7.673 9.93816 7.66676C10.0714 7.61812 10.2283 7.66523 10.409 7.80833C10.5895 7.9513 10.7588 8.12783 10.9172 8.33763C11.0755 8.54763 11.2657 8.78323 11.4878 9.04478C11.71 9.30643 11.9043 9.50092 12.0709 9.62887L12.2374 9.73837C12.3487 9.81144 12.4931 9.87837 12.6708 9.9392C12.8482 9.99999 13.0037 10.0152 13.1372 9.98481L15.2697 9.94837C15.4807 9.94837 15.6448 9.91011 15.7612 9.8342C15.8779 9.75816 15.9472 9.67438 15.9695 9.58326C15.9918 9.49203 15.993 9.38854 15.9737 9.27283C15.954 9.15742 15.9345 9.07671 15.9151 9.0311Z" fill="#46454B"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!--<li>-->
+                                <!--<a href="javascript:void(0)">-->
+                                <!--<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                                <!--<path d="M15.32 1.15636C14.886 0.314182 14.415 0.159273 13.456 0.100364C12.498 0.0294546 10.089 0 8.002 0C5.911 0 3.501 0.0294546 2.544 0.0992728C1.587 0.159273 1.115 0.313091 0.677 1.15636C0.23 1.99745 0 3.44618 0 5.99673C0 5.99891 0 6 0 6C0 6.00218 0 6.00327 0 6.00327V6.00546C0 8.54509 0.23 10.0047 0.677 10.8371C1.115 11.6793 1.586 11.832 2.543 11.9029C3.501 11.964 5.911 12 8.002 12C10.089 12 12.498 11.964 13.457 11.904C14.416 11.8331 14.887 11.6804 15.321 10.8382C15.772 10.0058 16 8.54618 16 6.00655C16 6.00655 16 6.00327 16 6.00109C16 6.00109 16 5.99891 16 5.99782C16 3.44618 15.772 1.99745 15.32 1.15636ZM6 9.27273V2.72727L11 6L6 9.27273Z" fill="#46454B"/>-->
+                                <!--</svg>-->
+                                <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<a href="javascript:void(0)">-->
+                                <!--<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                                <!--<path d="M11.3523 0H4.64775C2.08497 0 0 2.08497 0 4.64775V11.3523C0 13.915 2.08497 16 4.64775 16H11.3523C13.915 16 16 13.915 16 11.3523V4.64775C16 2.08497 13.915 0 11.3523 0ZM14.75 11.3523C14.75 13.2258 13.2258 14.75 11.3523 14.75H4.64775C2.77422 14.75 1.25 13.2258 1.25 11.3523V4.64775C1.25 2.77422 2.77422 1.25 4.64775 1.25H11.3523C13.2258 1.25 14.75 2.77422 14.75 4.64775V11.3523Z" fill="#46454B"/>-->
+                                <!--<path d="M8 3.6875C5.62206 3.6875 3.6875 5.62206 3.6875 8C3.6875 10.3779 5.62206 12.3125 8 12.3125C10.3779 12.3125 12.3125 10.3779 12.3125 8C12.3125 5.62206 10.3779 3.6875 8 3.6875ZM8 11.0625C6.31134 11.0625 4.9375 9.68866 4.9375 8C4.9375 6.31134 6.31134 4.9375 8 4.9375C9.68866 4.9375 11.0625 6.31134 11.0625 8C11.0625 9.68866 9.68866 11.0625 8 11.0625Z" fill="#46454B"/>-->
+                                <!--<path d="M12.375 4.25C12.7202 4.25 13 3.97018 13 3.625C13 3.27982 12.7202 3 12.375 3C12.0298 3 11.75 3.27982 11.75 3.625C11.75 3.97018 12.0298 4.25 12.375 4.25Z" fill="#46454B"/>-->
+                                <!--</svg>-->
+                                <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<a href="javascript:void(0)">-->
+                                <!--<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                                <!--<path d="M16 1.5381C15.4111 1.79911 14.7792 1.97613 14.1153 2.05516C14.7932 1.64911 15.3121 1.00508 15.5581 0.240011C14.9222 0.616032 14.2203 0.889071 13.4724 1.03708C12.8736 0.398039 12.0217 0 11.0769 0C9.26422 0 7.7945 1.47011 7.7945 3.28225C7.7945 3.53926 7.82349 3.79028 7.87949 4.03032C5.15201 3.89329 2.73347 2.5862 1.11477 0.600027C0.831818 1.08408 0.670851 1.64809 0.670851 2.25016C0.670851 3.38926 1.25075 4.39433 2.13059 4.98236C1.59268 4.96437 1.08677 4.81635 0.64387 4.57033V4.61133C0.64387 6.20145 1.77566 7.52855 3.27637 7.83059C3.00142 7.90459 2.71148 7.9456 2.41153 7.9456C2.19959 7.9456 1.99462 7.9246 1.79365 7.88459C2.21156 9.18969 3.42335 10.1387 4.85909 10.1648C3.73629 11.0448 2.32055 11.5679 0.782851 11.5679C0.517909 11.5679 0.256942 11.5519 0 11.5229C1.45273 12.456 3.17742 13 5.03107 13C11.0689 13 14.3693 7.99761 14.3693 3.65929L14.3583 3.23426C15.0032 2.77419 15.5611 2.19616 16 1.5381Z" fill="#46454B"/>-->
+                                <!--</svg>-->
+                                <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <ul class="header-bottom-nav flex">
+                        <li class="header-bottom-el active">
+                            <a href="javascript:void(0)" class="header-bottom-link">Рынки</a>
+                        </li>
+                        <li class="header-bottom-el">
+                            <a href="javascript:void(0)" class="header-bottom-link">Рейтинг трейдеров</a>
+                        </li>
+                        <li class="header-bottom-el">
+                            <a href="javascript:void(0)" class="header-bottom-link">Рынок труда</a>
+                        </li>
+                    </ul>
+                    <ul class="header-filter-menu flex">
+                        <li class="active"><a href="javascript:void(0)">Популярные</a></li>
+                        <li><a href="javascript:void(0)">Лидеры роста</a></li>
+                        <li><a href="javascript:void(0)">Лидеры падения</a></li>
+                        <li><a href="javascript:void(0)">Валюты</a></li>
+                        <li><a href="javascript:void(0)">Криптовалюты</a></li>
+                        <li><a href="javascript:void(0)">Индексы</a></li>
+                        <li><a href="javascript:void(0)">Нефть и газ</a></li>
+                        <li><a href="javascript:void(0)">Металлы</a></li>
+                        <li><a href="javascript:void(0)">Акции</a></li>
+                        <li><a href="javascript:void(0)">Сельхозтовары</a></li>
+                        <li><a href="javascript:void(0)">ETFs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content flex-center-y">
+            <div class="container">
+                <div class="content-top">
+                    <div class="content-row flex">
+                        <div class="col-sm">
+                            <div class="changes-box ">
+                                <div class="changes-head flex">
+                                    <div class="changes-col">
+                                        <span class="changes-text">Инструмент</span>
+                                    </div>
+                                    <div class="changes-col">
+                                        <span class="changes-text">Котировка</span>
+                                    </div>
+                                    <div class="changes-col">
+                                        <span class="changes-text">Изменение</span>
+                                        <div class="help-ico">
+                                            <img src="images/quesstion.svg" width="16" height="16" alt="">
+                                            <div class="help-text-box">
+                                                <span class="help-text">Компания TRADING CENTRAL руководствуется Кодексом деловой этики ассоциации ANACOFI-CIF, одобренной Управлением по финансовым рынкам Франции, и зарегистрирована ORIAS за номером 17005458.</span>
+                                                <span class="help-text">Компания TRADING CENTRAL руководствуется Кодексом деловой этики ассоциации ANACOFI-CIF, одобренной Управлением по финансовым рынкам Франции, и зарегистрирована ORIAS за номером 17005458.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="changes-body scroll">
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-up">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-down">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-up">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-down">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-up">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text quotation-down">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text up">0.16%</span>
+                                        </div>
+                                    </div>
+                                    <div class="changes-row flex">
+                                        <div class="changes-col">
+                                            <span class="changes-text">USD/EUR</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text">65.6044</span>
+                                        </div>
+                                        <div class="changes-col">
+                                            <span class="changes-text down">-0.06%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="section">
+                                <div class="news-head flex-space-b section-head">
+                                    <span class="section-title">Новости и аналитика</span>
+                                    <ul class="news-pager flex">
+                                        <li class="active">
+                                            <a href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">6</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">7</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">...</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">137</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Вперед</a>
+                                        </li>
+                                    </ul>
+                                    <div class="help-ico">
+                                        <img src="images/quesstion.svg" width="16" height="16" alt="">
+                                    </div>
+                                </div>
+                                <div class="news-body scroll">
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                    <div class="news-row">
+                                        <span class="news-date">10 минут назад</span>
+                                        <a href="javascript:void(0)" class="news-link">GBP/USD: сохраняет шансы на рост</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="chat-box section">
+                                <div class="chat-head flex-space-b section-head">
+                                    <span class="section-title">Чат</span>
+                                    <div class="help-ico">
+                                        <img src="images/quesstion.svg" width="16" height="16" alt="">
+                                    </div>
+                                </div>
+                                <div class="chat-body scroll">
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                    <div class="chat-row">
+                                        <div class="avatar">
+                                            <span class="avatar-t">MK</span>
+                                        </div>
+                                        <div class="chat-row-head">
+                                            <span class="chat-user">Mark Kov</span>
+                                            <span class="chat-user-online">30 минут назад</span>
+                                        </div>
+                                        <span class="chat-text">
+                                            FTSE MIB (Borsa Italiana) (H19) в течениетече ниетghhе днячевая...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="chat-bottom flex-center-y">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Написать сообщение" class="chat-area"></textarea>
+                                    <button class="chat-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 10L0 20L1 11L10 10L1 9L0 0L20 10Z" fill="#32AB67"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-bottom">
+                    <div class="content-row flex">
+                        <div class="col-lg">
+                            <div id="container" style="height: 700px; min-width: 310px"></div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="money-info section">
+                                <div class="money-info-row">
+                                    <span class="money-info-title">Баланс:</span>
+                                    <span class="money-info-val down">-$120 346</span>
+                                </div>
+                                <div class="money-info-row">
+                                    <span class="money-info-title">Прибыль:</span>
+                                    <span class="money-info-val up">+$1 000 983</span>
+                                </div>
+                            </div>
+                            <div class="calculate-section section tabs-holder">
+                                <div class="calculate-head flex section-head tabs-nav">
+                                    <a href="javascript:void(0)" class="calculate-link tab-link active" data-tab="now-tab">Сейчас</a>
+                                    <a href="javascript:void(0)" class="calculate-link tab-link" data-tab="quot-tab">При котрировке</a>
+                                    <div class="help-ico">
+                                        <img src="images/quesstion.svg" width="16" height="16" alt="">
+                                    </div>
+                                </div>
+                                <div class="calculate-inner-section">
+                                    <div class="calculate parent-tab show-box" data-tab="now-tab">
+                                        <div class="calculate-body">
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Сума сделки</span>
+                                                <div class="custom-select valute">
+                                                    <select name="">
+                                                        <option value="0">1000</option>
+                                                        <option value="1">2000</option>
+                                                        <option value="2">3000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Мультипликатор</span>
+                                                <div class="flex">
+                                                    <div class="multi-input-box">
+                                                        <input type="text" class="std-input multi-input" value="10">
+                                                    </div>
+                                                    <span class="input-sub">= $10 000</span>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Ограничить прибыль и убыток</span>
+                                                <div class="pl-row flex">
+                                                    <div class="checkbox-box">
+                                                        <input type="checkbox" class="checkbox" id="p-check">
+                                                        <label for="p-check" class="checkbox-label">Прибыль</label>
+                                                    </div>
+                                                    <div class="pl-input-box spinner-box disabled">
+                                                        <input type="text" readonly class="std-input pl-input spinner">
+                                                        <a href="javascript:void(0)" class="spin-up"></a>
+                                                        <a href="javascript:void(0)" class="spin-down"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pl-row flex">
+                                                    <div class="checkbox-box">
+                                                        <input type="checkbox" class="checkbox" id="l-check">
+                                                        <label for="l-check" class="checkbox-label">Убыток</label>
+                                                    </div>
+                                                    <div class="pl-input-box spinner-box">
+                                                        <input type="text" class="std-input pl-input spinner">
+                                                        <a href="javascript:void(0)" class="spin-up"></a>
+                                                        <a href="javascript:void(0)" class="spin-down"></a>
+                                                    </div>
+                                                    <span class="pl-val">-30.00%</span>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-actions flex-space-b">
+                                                <a href="javascript:void(0)" class="action-btn buy">Купить</a>
+                                                <a href="javascript:void(0)" class="action-btn sell">Продать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculate parent-tab" data-tab="quot-tab">
+                                        <div class="calculate-body">
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Сума сделки</span>
+                                                <div class="custom-select">
+                                                    <select name="">
+                                                        <option value="0">1000</option>
+                                                        <option value="1">2000</option>
+                                                        <option value="2">3000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Мультипликатор</span>
+                                                <div class="flex">
+                                                    <div class="multi-input-box">
+                                                        <input type="text" class="std-input multi-input" value="10">
+                                                    </div>
+                                                    <span class="input-sub">= $10 000</span>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-box">
+                                                <span class="calculate-title">Ограничить прибыль и убыток</span>
+                                                <div class="pl-row flex">
+                                                    <div class="checkbox-box">
+                                                        <input type="checkbox" class="checkbox" id="p-check1">
+                                                        <label for="p-check1" class="checkbox-label">Прибыль</label>
+                                                    </div>
+                                                    <div class="pl-input-box spinner-box disabled">
+                                                        <input type="text" readonly class="std-input pl-input spinner">
+                                                        <a href="javascript:void(0)" class="spin-up"></a>
+                                                        <a href="javascript:void(0)" class="spin-down"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="pl-row flex">
+                                                    <div class="checkbox-box">
+                                                        <input type="checkbox" class="checkbox" id="l-check1">
+                                                        <label for="l-check1" class="checkbox-label">Убыток</label>
+                                                    </div>
+                                                    <div class="pl-input-box spinner-box">
+                                                        <input type="text" class="std-input pl-input spinner">
+                                                        <a href="javascript:void(0)" class="spin-up"></a>
+                                                        <a href="javascript:void(0)" class="spin-down"></a>
+                                                    </div>
+                                                    <span class="pl-val">-30.00%</span>
+                                                </div>
+                                            </div>
+                                            <div class="calculate-actions flex-space-b">
+                                                <a href="javascript:void(0)" class="action-btn buy">Купить</a>
+                                                <a href="javascript:void(0)" class="action-btn sell">Продать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal news-modal">
+        <a href="javascript:void(0)" class="close-modal">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 15M1 15L15 1" stroke="#46454B" stroke-linecap="round"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="modal-prev"></a>
+        <a href="javascript:void(0)" class="modal-next"></a>
+        <div class="scroll">
+            <span class="news-title">Серебро в течение дня: Ключевая линия сопротивления расположена на уровне 15,9400</span>
+            <span class="news-date">27 февраля 2019 в 13:43 GMT (22 минуты назад) </span>
+            <div class="news-inner">
+                <div class="news-inner-head flex-space-b">
+                    <span class="news-item-name"> Silver</span>
+                    <span class="news-item-quot">65.6044</span>
+                    <span class="news-item-change up">0.16%</span>
+                    <a href="javascript:void(0)" class="open-deal">Открыть сделку </a>
+                </div>
+                <div class="news-graph flex-center-x">
+                    <img src="images/news-graph.png" alt="">
+                </div>
+                <div class="news-text">
+                    <p>Покупать выше 65,25 с целевыми точками 66,75 и 67,30.</p>
+                    <p>Наша точка разворота находится на уровне 65,25.</p>
+                    <p>Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 67-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                    </p>
+                    <p>Покупать выше 65,25 с целевыми точками 66,75 и 67,30.</p>
+                    <p>Наша точка разворота находится на уровне 65,25.</p>
+                    <p>Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 67-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                    </p>
+                    <p>Покупать выше 65,25 с целевыми точками 66,75 и 67,30.</p>
+                    <p>Наша точка разворота находится на уровне 65,25.</p>
+                    <p>Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 67-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                        Указание цены: 66.05 последняя известная цена на 02-27-2019 в 14:50 UTC+1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/themes/dark-unica.js"></script>
+    <script>
+        $.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/new-intraday.json', function (data) {
+
+            // create the chart
+            Highcharts.stockChart('container', {
+
+
+                title: {
+                    text: 'AAPL stock price by minute'
+                },
+
+                rangeSelector: {
+                    buttons: [{
+                        type: 'hour',
+                        count: 1,
+                        text: '1h'
+                    }, {
+                        type: 'day',
+                        count: 1,
+                        text: '1D'
+                    }, {
+                        type: 'all',
+                        count: 1,
+                        text: 'All'
+                    }],
+                    selected: 1,
+                    inputEnabled: false
+                },
+
+                series: [{
+                    name: 'AAPL',
+                    type: 'candlestick',
+                    data: data,
+                    tooltip: {
+                        valueDecimals: 2
+                    }
+                }]
+            });
+        });
+    </script>
+  </body>
+</html>
