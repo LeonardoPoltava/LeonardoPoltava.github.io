@@ -1,0 +1,15 @@
+.nav {
+    grid-area: n;
+    background: gray;
+    padding: 15px;
+}
+.nav-list li {
+    margin: 5px 0;
+}
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-list li a.active {
+    color: gold;
+}
