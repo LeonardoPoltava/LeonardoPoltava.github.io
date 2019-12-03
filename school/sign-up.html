@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a href="javascript:void(0)" class="show-sidebar">
+            <span></span><span></span><span></span>
+        </a>
+        <aside class="sidebar">
+            <a href="javascript:void(0)" class="logo"><img src="images/logo.png" width="75" height="105" alt=""></a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link">Мой профиль</a>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link nav-show-drop">
+                            Мероприятия
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="nav-drop">
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Будущие</a>
+                            </li>
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Прошлые</a>
+                            </li>
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Я участник</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link">Видеоконференция <sup>live</sup></a>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link">Задать вопрос</a>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link">Главная страница</a>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link">Контакты</a>
+                    </li>
+                    <li class="nav-el">
+                        <a href="javascript:void(0)" class="nav-link nav-show-drop">
+                            Язык
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="nav-drop">
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Украинский</a>
+                            </li>
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Русский</a>
+                            </li>
+                            <li class="nav-drop-el">
+                                <a href="javascript:void(0)" class="nav-drop-link">Английский</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex">
+                <a href="javascript:void(0)" class="std-btn exit-btn">Выйти из системы</a>
+            </div>
+        </aside>
+        <div class="content flex-center-y">
+            <div class="container">
+                <a href="javascript:void(0)" class="logo"><img src="images/logo.png" width="75" height="105" alt=""></a>
+                <section class="sign-box">
+                    <h1>Регистрация</h1>
+                    <form action="javascript:void(0)" class="login-form">
+                        <div class="form-box">
+                            <div class="form-box-head flex-space-b">
+                                <label for="fullname" class="form-label">ФИО</label>
+                            </div>
+                            <div class="input-holder">
+                                <input type="text" id="fullname" class="form-input">
+                                <i class="fas fa-file-signature input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="form-box-head flex-space-b">
+                                <label for="email" class="form-label">Электронный адрес</label>
+                            </div>
+                            <div class="input-holder">
+                                <input type="email" id="email" class="form-input">
+                                <i class="fas fa-envelope input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="form-box-head flex-space-b">
+                                <label for="login" class="form-label">Логин</label>
+                            </div>
+                            <div class="input-holder">
+                                <input type="text" id="login" class="form-input">
+                                <i class="fas fa-user input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="form-box-head flex-space-b">
+                                <label for="password-repeat" class="form-label">Пароль</label>
+                            </div>
+                            <div class="input-holder">
+                                <input type="password" id="password-repeat" class="form-input">
+                                <i class="fas fa-key input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <input type="checkbox" id="remember" class="checkbox">
+                            <label for="remember" class="remember-pass">Запомнить пароль?</label>
+                        </div>
+                        <div class="form-box">
+                            <input type="checkbox" id="personal-accept" class="checkbox">
+                            <label for="personal-accept" class="remember-pass"><a href="javascript:void(0)" class="check-link">Согласие на обработку персональных данных</a></label>
+                        </div>
+                        <div class="flex-center-x">
+                            <button class="form-btn std-btn">Зарегистрироваться</button>
+                        </div>
+                        <span class="reg-text">У вас уже есть аккаунт? <a href="javascript:void(0)" class="reg-btn">Войти</a></span>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span class="copy">&copy; Цигун LIVE 2019</span>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
