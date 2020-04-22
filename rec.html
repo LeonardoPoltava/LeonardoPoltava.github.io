@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow"/>
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="flex-space-b">
+                    <div class="header-side flex-end-y">
+                        <a href="#" class="header__link flex-center-y flex-center-x active">
+                            <img src="images/SVG/qr.svg" width="19" height="19" alt="" class="header__img">
+                            <label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1></label>
+                        </a>
+                        <h1 class="header__title">Rec</h1>
+                    </div>
+                    <div class="header-aside flex-end-y">
+                        <a href="#" class="header__link flex-center-y flex-center-x">
+                            <img src="images/SVG/header-icon1.svg" width="12" height="14" alt="" class="header__img header__img_video">
+                        </a>
+                        <a href="#" class="header__link flex-center-y flex-center-x">
+                            <img src="images/SVG/header-icon2.svg" width="19" height="17" alt="" class="header__img header__img_user">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="content-section">
+                    <h2 class="content-section__title">SCAN</h2>
+                    <div class="content-box">
+                        <div>
+                            <b>Device has camera: </b>
+                            <span id="cam-has-camera"></span>
+                            <br>
+                            <video muted playsinline id="qr-video"></video>
+                        </div>
+                        <div>
+                            <select id="inversion-mode-select">
+                                <option value="original">Scan original (dark QR code on bright background)</option>
+                                <option value="invert">Scan with inverted colors (bright QR code on dark background)</option>
+                                <option value="both">Scan both</option>
+                            </select>
+                            <br>
+                        </div>
+                        <b>Detected QR code: </b>
+                        <span id="cam-qr-result">None</span>
+                        <br>
+                        <b>Last detected at: </b>
+                        <span id="cam-qr-result-timestamp"></span>
+                        <hr>
+
+                        <h1>Scan from File:</h1>
+                        <input type="file" id="file-selector">
+                        <b>Detected QR code: </b>
+                        <span id="file-qr-result">None</span>
+                    </div>
+                    <div class="content-box qr-section">
+                        <input type=text size=16 placeholder="Tracking Code" class=qrcode-text>
+                        <label class="qrcode-text-btn qr flex-center-x flex-center-y">
+                            <input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" class="qr-file" tabindex=-1>
+                            <span class="qr__title">+ Scan QR</span>
+                            <img src="images/SVG/qr-ico.svg" alt="" class="qr__img">
+                        </label>
+                        <img src="images/SVG/qr-img.svg" alt="" class="qr__icon">
+                        <span class="qr__text">Scan the QR code on the camera mounted by the padel track</span>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h2 class="content-section__title">ADD PAYMENT</h2>
+                    <div class="content-box payment-box flex-space-b">
+                        <div class="flex-space-b flex-center-y">
+                            <img src="images/1x/cards.png" srcset="images/2x/cards@2x.png 2x, images/3x/cards@3x.png 3x" alt="" class="cards">
+                            <img src="images/SVG/lock.svg" alt="" class="lock-icon">
+                        </div>
+                        <div class="payment-card">
+                            <a href="#" class="btn std-btn add-btn">+ Add card</a>
+                            <form action="#" class="add-card-form">
+                                <div class="form-holder">
+                                    <div class="add-card-row flex-center-y">
+                                        <div class="add-card-img flex-center-y flex-center-x">
+                                            <img src="images/SVG/user-ico.svg" alt="" class="add-card-icon">
+                                        </div>
+                                        <label for="card-name" class="add-card__label">Name on card</label>
+                                        <input type="text" id="card-name" name="card-name" class="add-card__input">
+                                    </div>
+                                    <div class="add-card-row flex-center-y">
+                                        <div class="add-card-img flex-center-y flex-center-x">
+                                            <img src="images/SVG/card-ico.svg" alt="" class="add-card-icon">
+                                        </div>
+                                        <label for="card-number" class="add-card__label">Card number</label>
+                                        <input type="text" data-format="**** **** **** ****" id="card-number" name="card-number" class="add-card__input masked">
+                                    </div>
+                                    <div class="add-card-row add-card-double flex-center-y">
+                                        <div class="add-card-col">
+                                            <div class="add-card-img flex-center-y flex-center-x">
+                                                <img src="images/SVG/card-number.svg" alt="" class="add-card-icon">
+                                            </div>
+                                            <label for="card-date" class="add-card__label">MM / ÅÅ</label>
+                                            <input type="text" data-format="**/**" id="card-date" name="card-date" class="add-card__input masked">
+                                        </div>
+                                        <div class="add-card-col">
+                                            <div class="add-card-img flex-center-y flex-center-x">
+                                                <img src="images/SVG/cvc-ico.svg" alt="" class="add-card-icon">
+                                            </div>
+                                            <label for="card-cv" class="add-card__label">CVC</label>
+                                            <input type="text" data-format="***" id="card-cv" name="card-cv" class="add-card__input masked">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn std-btn add-card-form__btn">Pay 99 sek</button>
+                            </form>
+                        </div>
+                        <span class="payment-bot">99:- / 1 H</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+    <script type="module">
+        import QrScanner from "/js/qr-scanner.min.js";
+        QrScanner.WORKER_PATH = '/js/qr-scanner-worker.min.js';
+
+        const video = document.getElementById('qr-video');
+        const camHasCamera = document.getElementById('cam-has-camera');
+        const camQrResult = document.getElementById('cam-qr-result');
+        const camQrResultTimestamp = document.getElementById('cam-qr-result-timestamp');
+        const fileSelector = document.getElementById('file-selector');
+        const fileQrResult = document.getElementById('file-qr-result');
+
+        function setResult(label, result) {
+            label.textContent = result;
+            camQrResultTimestamp.textContent = new Date().toString();
+            label.style.color = 'teal';
+            clearTimeout(label.highlightTimeout);
+            label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+        }
+
+        // ####### Web Cam Scanning #######
+
+        QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
+
+        const scanner = new QrScanner(video, result => setResult(camQrResult, result));
+        scanner.start();
+
+        document.getElementById('inversion-mode-select').addEventListener('change', event => {
+            scanner.setInversionMode(event.target.value);
+        });
+
+        // ####### File Scanning #######
+
+        fileSelector.addEventListener('change', event => {
+            const file = fileSelector.files[0];
+            if (!file) {
+                return;
+            }
+            QrScanner.scanImage(file)
+                .then(result => setResult(fileQrResult, result))
+                .catch(e => setResult(fileQrResult, e || 'No QR code found.'));
+        });
+
+    </script>
+</body>
+</html>

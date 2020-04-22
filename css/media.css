@@ -1,0 +1,586 @@
+@media (min-width: 560px) {
+    body {
+        font-size: 17px;
+    }
+    .wrapper {
+        padding-bottom: 25px;
+    }
+    .container {
+        padding: 0 18px;
+    }
+    .header {
+        height: 66px;
+    }
+    .header .container {
+        padding: 0 11px;
+    }
+    .header__img {
+        width: 19px;
+    }
+    .header__img_video {
+        width: 13px;
+    }
+    .header__title {
+        margin: 0 0 2px 20px;
+        font-size: 35px;
+    }
+    .content-section__title {
+        padding-bottom: 10px;
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+    .content {
+        padding-top: 17px;
+    }
+    .content-section:not(:last-child) {
+        padding-bottom: 25px;
+    }
+    .content-box {
+        padding: 25px 25px 35px;
+    }
+    .cards {
+        width: 87px;
+    }
+    .qr {
+        width: 245px;
+        height: 245px;
+    }
+    .qr__title {
+        font-size: 33px;
+    }
+    .qr__img {
+        width: 61px;
+    }
+    .qr__icon {
+        width: 66px;
+        margin: 32px auto 18px;
+    }
+    .lock-icon {
+        width: 17px;
+    }
+    .payment-box {
+        height: 420px;
+    }
+    .btn {
+        border-radius: 50px;
+        padding: 13px 0;
+    }
+    .std-btn {
+        font-size: 13px;
+    }
+    .add-btn {
+        font-size: 33px;
+        height: 72px;
+    }
+    .add-card-icon {
+        width: 20px;
+    }
+    .add-card-img {
+        left: 12px;
+    }
+    .add-card__label {
+        left: 49px;
+        top: 15px;
+    }
+    .active .add-card__label {
+        top: 10px;
+        font-size: 13px;
+    }
+    .add-card__input {
+        height: 46px;
+        padding-left: 49px;
+        padding-top: 24px;
+        font-size: 13px;
+    }
+    .add-card-form__btn {
+        margin-top: 17px;
+        font-size: 13px;
+    }
+    .section-main, .section-welcome, .section-login, .section-register {
+        padding-bottom: 50px;
+    }
+    .logo {
+        width: 75px;
+        margin-right: 4px;
+    }
+    .text-logo {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .section-main .block-btn {
+        margin: 122px auto;
+        max-width: 343px;
+    }
+    .block-logo {
+        padding-top: 20px;
+    }
+    .block-btn a:last-child {
+        margin-top: 21px;
+    }
+    .login-btn {
+        font-size: 35px;
+        max-width: 343px;
+    }
+    .input-border-white,
+    .input-border-white + button.btn {
+        margin: 10px 0;
+        padding: 18px 35px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .input-border-white + button.btn {
+        padding-bottom: 19px;
+        padding-top: 19px;
+    }
+    .form-login {
+        padding: 0 20px;
+    }
+    .form-login__txt {
+        font-size: 35px;
+        margin-bottom: 21px;
+        margin-top: 51px;
+        padding-left: 0;
+    }
+    .text-bottom {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .section-welcome_title {
+        font-size: 56px;
+        margin-bottom: 25px;
+    }
+    .section-welcome_text {
+        text-align: center;
+        display: block;
+        color: #ffffff;
+        font-size: 32px;
+    }
+    .payment__check {
+        width: 133px;
+    }
+    .payment__text {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+    .qr-section {
+        height: 423px;
+        padding: 35px 15px;
+    }
+    .payment-check-box {
+        margin-top: 40px;
+    }
+    .title {
+        font-size: 33px;
+        margin: 40px 0 20px;
+    }
+    .share__title {
+        padding: 0 40px;
+        font-size: 33px;
+        margin-bottom: 12px;
+    }
+    .share-form {
+        margin-top: 25px;
+    }
+    .share-input-box:before {
+        height: 74px;
+    }
+    .share__input {
+        height: 72px;
+        border-radius: 35px;
+        padding: 0 50px 0 31px;
+        font-size: 24px;
+        background-size: 9px 18px;
+        background-position: 96% 50%;
+    }
+    .share-add__btn {
+        font-size: 19px;
+    }
+    .share__add_plus {
+        margin-bottom: 22px;
+    }
+    .share-form-bottom {
+        padding-top: 53px;
+        margin-top: 65px;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+    .content-box.share {
+        padding-bottom: 53px;
+    }
+    .camera__img {
+        width: 134px;
+        margin: 35px auto 0;
+    }
+    .camera__img + .title {
+        margin-top: 35px;
+    }
+    .camera-info__img {
+        margin-bottom: 10px;
+        width: 14px;
+    }
+    .share-input-box {
+        margin-bottom: 16px;
+    }
+    .share-add {
+        margin-top: 25px;
+    }
+    .share-form__btn {
+        margin-bottom: 20px;
+    }
+    .share__button {
+        width: 72px;
+        height: 72px;
+        right: 0;
+        top: 0;
+        background-position: 50% 50%;
+        background-size: 9px 18px;
+    }
+    .share-email-holder {
+        margin-top: 31px;
+    }
+    /* video */
+    .hollow-btn {
+        border-radius: 25px;
+        font-size: 32px;
+        padding: 10px 63px;
+    }
+    .video-section .qr__title {
+        margin-bottom: 8px;
+    }
+    .video-section {
+        min-height: 470px;
+    }
+    .content__date {
+        font-size: 15px;
+    }
+    .video-section-head {
+        margin-bottom: 15px;
+    }
+    .video-box__play {
+        top: calc(50% - 45px);
+        left: calc(50% - 45px);
+        width: 90px;
+    }
+    .video-actions {
+        margin-top: 20px;
+    }
+    .info__btn {
+        border-radius: 25px;
+        padding: 8px 0;
+    }
+    .video-title {
+        margin-bottom: 15px;
+    }
+    .friends__img {
+        width: 36px;
+        height: 36px;
+    }
+    .friends__name {
+        margin-left: 10px;
+    }
+    .video-players {
+        margin-top: 39px;
+        margin-bottom: 28px;
+    }
+    .video-players .info__btn {
+        margin-top: 12px;
+    }
+    .modal {
+        padding: 40px 26px;
+        width: calc(100% - 36px);
+        left: 18px;
+        border-radius: 20px;
+        max-height: 90vh;
+    }
+    .modal.in {
+        bottom: 28px;
+    }
+    .modal .section-search {
+        padding: 33px 26px 18px;
+        margin: 30px -26px 0;
+    }
+    .modal .box-invite {
+        padding: 40px 26px 27px;
+        margin: 0 -26px;
+    }
+    .search-results .friends-section {
+        margin-top: 18px;
+    }
+    .modal__close {
+        width: 31px;
+        height: 31px;
+        top: 15px;
+        right: 26px;
+    }
+    /* Profile */
+    .nav-profile__link, .profile-information__title,
+    .description-video__title {
+        font-size: 12px;
+    }
+    .nav-profile li:not(:first-child) {
+        margin-left: 20px;
+    }
+    .nav-profile__link.active {
+        padding-bottom: 12px;
+    }
+    .profile-text {
+        padding-bottom: 12px;
+    }
+    .profile-information {
+        margin-top: 18px;
+    }
+    .profile-information__title,
+    .description-video__title {
+        padding-bottom: 12px;
+    }
+    .profile-information__img {
+        width: 112px;
+        height: 112px;
+        margin-top: 12px;
+    }
+    .btn-edit, .section-video-catalog .player__info {
+        height: 34px;
+        width: 60px;
+        display: block;
+        line-height: 34px;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+    .profile-information__img_add {
+        height: 35px;
+        width: 61px;
+        margin-top: 12px;
+    }
+    .profile-information__name {
+        font-size: 15px;
+        height: 40px;
+        width: calc(100% - 104px);
+    }
+    .profile-information__name:not([readonly]) {
+        padding-left: 12px;
+    }
+    .profile-information__block-information_inner .profile-information__name:not([readonly]) {
+        margin: 8px 0;
+    }
+    .profile-information__block-information  {
+        margin-top: 6px;
+    }
+    .profile-information {
+        padding: 20px 22px 32px;
+        margin-bottom: 20px
+    }
+    .form-card {
+        padding: 20px 22px 33px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .form-card .lock-icon {
+        margin-right: 12px;
+    }
+    .profile-information .btn-edit,
+    .form-card__block-edit {
+        margin-top: 10px;
+    }
+    .header__img_avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .header-link___user-img {
+        border-radius: 25px;
+        width: 36px;
+        height: 36px;
+    }
+    .friends {
+        margin-bottom: 12px;
+    }
+    .friends__name {
+        margin-left: 10px;
+    }
+    .btn-edit_x {
+        font-size: 12px;
+    }
+    .section-friends .content-box {
+        margin-top: 20px;
+    }
+    .btn-more {
+        padding-bottom: 12px;
+        margin: 29px auto 0;
+    }
+    .block-search {
+        margin-top: 32px;
+        border-radius: 25vw;
+        height: calc(70px + 2px);
+        width: calc(99% + 2px);
+    }
+    .search {
+        height: 70px;
+        border-radius: 25vw;
+        font-size: 22px;
+        padding-top: 4px;
+        padding-left: 29px;
+        padding-right: 57px;
+    }
+    .search-btn {
+        width: 20px;
+        height: 20px;
+        right: 24px;
+    }
+    /* Invite */
+    .box-invite .qr__text {
+        margin-bottom: 30px;
+    }
+    .box-invite .share__title {
+        padding: 0 28px;
+    }
+    .box-invite .share__title {
+        margin-bottom: 16px;
+    }
+    .box-invite .share-add__btn {
+        font-size: 17px;
+    }
+    .box-invite .share__add_plus {
+        margin-bottom: 16px;
+    }
+    .box-invite .share__title {
+        margin-top: 34px;
+    }
+    .section-profile-friend .profile-friend {
+        padding: 24px;
+        margin-top: 21px;
+        margin-bottom: 20px;
+    }
+    .section-search .qr__text {
+        margin-top: 18px;
+    }
+    .friends-box {
+        padding-top: 40px;
+    }
+    .description-video__title {
+        margin-bottom: 14px;
+    }
+    .description-video__txt {
+        padding: 8px 0 10px 0;
+    }
+    .description-video {
+        margin-top: 8px;
+    }
+    .block-players {
+        margin-top: 10px;
+    }
+    .block-players .friends__block-name {
+        /*margin-bottom: 12px;*/
+    }
+    .block-players .friends__block-name:nth-of-type(1) {
+        /*margin-top: 21px;*/
+    }
+    .header__img_live-feed {
+        width: 27px;
+    }
+    /* btn-share-up */
+    .btn__share-video {
+        padding: 10px 34px 10px 20px;
+        font-size: 17px;
+        max-width: 140px;
+    }
+    .btn__share-video:after {
+        width: 16px;
+        height: 10px;
+        top: 16px;
+        right: 12px;
+    }
+    /* share-up */
+    .share-up {
+        padding: 27px 27px 62px 27px;
+        border-radius: 15px;
+        max-height: 60vh;
+        min-height: 360px;
+    }
+    .share-up:before {
+        width: 29px;
+        height: 19px;
+        top: 32px;
+        left: 26px;
+    }
+    .share-up__close {
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        right: 20px;
+        top: 16px;
+    }
+    .share-up__content .share__title {
+        margin-top: 14px;
+    }
+    .share-box {
+        width: calc(100% + 42px);
+        display: block;
+        padding: 21px 21px 0;
+        margin: 20px -21px 0;
+    }
+    .video-actions .profile-information__name {
+        font-size: 16px;
+    }
+    .content-box-video {
+        padding-bottom: 60px;
+    }
+    .add-players__btn {
+        margin-top: 12px;
+    }
+    .alert {
+        padding: 25px;
+        border-radius: 15px;
+        font-size: 33px;
+    }
+    .messages-inner .share-up__close {
+        top: 81px;
+        font-size: 17px;
+    }
+    .share-up .share__input {
+        padding-top: 5px;
+    }
+    .ajax-loader {
+        width: 40px;
+        right: 13px;
+    }
+    .catalog-thumbnails .content-box {
+        max-width: 49%;
+        width: 100%;
+    }
+    .video-catalog .btn-more-video {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    .section-video-catalog .video-score {
+        margin-top: 25px;
+    }
+    .section-video-catalog .section-search {
+        margin-bottom: 2.9vw;
+    }
+}
+@media (max-height: 600px) {
+    .welcome {
+        height: auto;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        position: static;
+        min-height: auto;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-welcome,
+    .colored-bg {
+        background: url(../images/2x/bg-multi-color@2x.png) no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+only screen and (-webkit-min-device-pixel-ratio: 2.25),
+only screen and (min-device-pixel-ratio: 2.25),
+only screen and (min-resolution: 2.25dppx) {
+    .section-welcome,
+    .colored-bg {
+        background: url(../images/3x/bg-multi-color@3x.png) no-repeat;
+        background-size: cover;
+    }
+}
